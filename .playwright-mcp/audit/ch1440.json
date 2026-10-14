@@ -1,0 +1,179 @@
+{
+  "n": 3,
+  "out": [
+    {
+      "k": "LI:Product@468,47",
+      "base": "rgba(255, 255, 255, 0.8) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Automation@561,47",
+      "base": "rgba(255, 255, 255, 0.8) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Reports@682,47",
+      "base": "rgba(255, 255, 255, 0.8) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Security@775,47",
+      "base": "rgba(255, 255, 255, 0.8) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Pricing@869,47",
+      "base": "rgba(255, 255, 255, 0.8) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:UA Українська@1125,46",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Alert on Unusual Expenses@499,3309",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Automate Recurring Report@941,3309",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Expense Breakdown@499,4017",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Custom Financial Reports@941,4017",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Secure Accounts Integrati@499,4725",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:Role-Based Access Control@941,4725",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@114,6253",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@141,6253",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:hello@usevault.ai@170,6253",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Product@844,6235",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Automation@844,6273",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Reports@844,6311",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Security@844,6349",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Pricing@844,6387",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Help Center@1008,6235",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Status@1008,6273",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Migration offer@1008,6311",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Partner program@1008,6349",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Terms of Service@1210,6235",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Privacy Policy@1210,6273",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:DPA@1210,6311",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "SPAN:@1215,6504",
+      "base": "rgb(191, 191, 191) | bg rgb(37, 34, 44)",
+      "hover": "background-color:rgb(117 6 167 / var(",
+      "tr": "all 0s ease"
+    },
+    {
+      "k": "SPAN:@1295,6503",
+      "base": "rgb(255, 255, 255) | bg rgb(37, 34, 44)",
+      "hover": "background-color:rgb(117 6 167 / var(",
+      "tr": "all 0s ease"
+    }
+  ]
+}

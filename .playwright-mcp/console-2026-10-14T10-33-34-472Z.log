@@ -1,0 +1,4 @@
+[  249126ms] [ERROR] Access to fetch at 'https://connect.facebook.net/en_US/fbevents.js' from origin 'https://www.usevault.ai' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.usevault.ai/:0
+[  249127ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://connect.facebook.net/en_US/fbevents.js:0
+[  313329ms] [ERROR] Access to fetch at 'https://connect.facebook.net/en_US/fbevents.js' from origin 'https://www.usevault.ai' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.usevault.ai/#automation:0
+[  313329ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://connect.facebook.net/en_US/fbevents.js:0

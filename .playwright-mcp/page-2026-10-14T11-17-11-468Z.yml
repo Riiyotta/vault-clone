@@ -1,0 +1,333 @@
+- generic [ref=f12e2]:
+  - navigation [ref=f12e3]:
+    - generic [ref=f12e4]:
+      - link "Vault AI home" [ref=f12e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=f12e9]:
+        - listitem [ref=f12e10]:
+          - link "Product" [ref=f12e11] [cursor=pointer]:
+            - /url: /#product
+        - listitem [ref=f12e12]:
+          - link "Automation" [ref=f12e13] [cursor=pointer]:
+            - /url: /#automation
+        - listitem [ref=f12e14]:
+          - link "Reports" [ref=f12e15] [cursor=pointer]:
+            - /url: /#reports
+        - listitem [ref=f12e16]:
+          - link "Security" [ref=f12e17] [cursor=pointer]:
+            - /url: /#security
+        - listitem [ref=f12e18]:
+          - link "Pricing" [ref=f12e19] [cursor=pointer]:
+            - /url: /pricing
+      - generic [ref=f12e20]:
+        - group "Language" [ref=f12e21]:
+          - link "EN English" [ref=f12e23] [cursor=pointer]:
+            - /url: /pricing
+            - text: EN
+            - generic [ref=f12e24]: English
+          - generic [ref=f12e25]:
+            - generic [aria-hidden] [ref=f12e26]: /
+            - link "UA Українська" [ref=f12e27] [cursor=pointer]:
+              - /url: /ua/pricing
+              - text: UA
+              - generic [ref=f12e28]: Українська
+        - link "Get started" [ref=f12e29] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+  - main [ref=f12e38]:
+    - generic [ref=f12e39]:
+      - generic [ref=f12e41]:
+        - generic [ref=f12e42]:
+          - generic [ref=f12e43]: PRICING
+          - heading "Start free. Upgrade when you need more." [level=1] [ref=f12e47]
+          - paragraph [ref=f12e48]:
+            - generic [ref=f12e49]: Every new workspace starts with a 1-month Pro trial.
+            - generic [ref=f12e50]: No credit card required · Cancel anytime.
+        - radiogroup "Billing period" [ref=f12e51]:
+          - radio "Monthly" [ref=f12e52] [cursor=pointer]
+          - radio "Annual 2 months free" [checked] [ref=f12e54] [cursor=pointer]:
+            - generic [ref=f12e56]: Annual
+            - generic [ref=f12e57]: 2 months free
+      - generic [ref=f12e67]:
+        - article [ref=f12e68]:
+          - generic [ref=f12e69]:
+            - heading "Free" [level=3] [ref=f12e71]
+            - paragraph [ref=f12e72]: For individuals
+          - generic [ref=f12e73]:
+            - paragraph [ref=f12e74]:
+              - generic [ref=f12e75]: $0
+            - paragraph [aria-hidden] [ref=f12e76]
+          - link "Get started" [ref=f12e78] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+          - list [ref=f12e80]:
+            - listitem [ref=f12e81]: 200 transactions per month
+            - listitem [ref=f12e84]: Manual entry and CSV import
+            - listitem [ref=f12e87]: Up to 3 seats
+        - article [ref=f12e90]:
+          - generic [ref=f12e91]:
+            - heading "Basic" [level=3] [ref=f12e93]
+            - paragraph [ref=f12e94]: For small teams
+          - generic [ref=f12e95]:
+            - paragraph [ref=f12e96]:
+              - generic [ref=f12e97]: $25
+            - paragraph [ref=f12e98]: per seat / month, billed annually
+          - link "Get started" [ref=f12e100] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+          - generic [ref=f12e101]:
+            - paragraph [ref=f12e102]: "Everything in Free, plus:"
+            - list [ref=f12e103]:
+              - listitem [ref=f12e104]: 800 transactions per month
+              - listitem [ref=f12e107]: 2 bank connections
+              - listitem [ref=f12e110]: No seat limit
+              - listitem [ref=f12e113]: Flexible user access settings
+              - listitem [ref=f12e116]: Payment calendar and Cashflow reports
+        - article [ref=f12e119]:
+          - generic [ref=f12e120]:
+            - generic [ref=f12e121]:
+              - heading "Pro" [level=3] [ref=f12e122]
+              - generic [ref=f12e123]: Recommended
+            - paragraph [ref=f12e125]: For growing teams
+          - generic [ref=f12e126]:
+            - paragraph [ref=f12e127]:
+              - generic [ref=f12e128]: $42
+            - paragraph [ref=f12e129]: per seat / month, billed annually
+          - link [ref=f12e131] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+          - generic [ref=f12e135]:
+            - paragraph [ref=f12e136]: "Everything in Basic, plus:"
+            - list [ref=f12e137]:
+              - listitem [ref=f12e138]: 1,500 transactions per month
+              - listitem [ref=f12e141]: 10 bank connections
+              - listitem [ref=f12e144]: Crypto wallets
+              - listitem [ref=f12e147]: P&L and custom reports
+              - listitem [ref=f12e150]: Priority support
+        - article [ref=f12e153]:
+          - generic [ref=f12e154]:
+            - heading "Enterprise" [level=3] [ref=f12e156]
+            - paragraph [ref=f12e157]: For larger companies
+          - generic [ref=f12e158]:
+            - paragraph [ref=f12e159]:
+              - generic [ref=f12e160]: Custom
+            - paragraph [aria-hidden] [ref=f12e161]
+          - button "Contact us" [ref=f12e163] [cursor=pointer]
+          - generic [ref=f12e164]:
+            - paragraph [ref=f12e165]: "Everything in Pro, plus:"
+            - list [ref=f12e166]:
+              - listitem [ref=f12e167]: Custom transaction volume
+              - listitem [ref=f12e170]: Custom number of bank connections
+              - listitem [ref=f12e173]: More frequent balance refresh on integrations
+    - region [ref=f12e184]:
+      - heading "Compare plans" [level=2] [ref=f12e187]
+      - table [ref=f12e198]:
+        - caption [ref=f12e199]: Compare plans
+        - rowgroup [ref=f12e200]:
+          - row [ref=f12e201]:
+            - columnheader "Feature" [ref=f12e202]
+            - columnheader "Free" [ref=f12e204]
+            - columnheader "Basic" [ref=f12e205]
+            - columnheader "Pro" [ref=f12e206]
+            - columnheader "Enterprise" [ref=f12e207]
+        - rowgroup [ref=f12e208]:
+          - row [ref=f12e209]:
+            - columnheader "Usage" [ref=f12e210]
+          - row [ref=f12e211]:
+            - rowheader "Transactions per month" [ref=f12e212]
+            - cell "200" [ref=f12e213]
+            - cell "800" [ref=f12e214]
+            - cell "1,500" [ref=f12e215]
+            - cell "Custom" [ref=f12e216]
+          - row [ref=f12e217]:
+            - rowheader "Manual entry & CSV import" [ref=f12e218]
+            - cell "Included" [ref=f12e219]
+            - cell "Included" [ref=f12e223]
+            - cell "Included" [ref=f12e227]
+            - cell "Included" [ref=f12e231]
+        - rowgroup [ref=f12e235]:
+          - row [ref=f12e236]:
+            - columnheader "Integrations" [ref=f12e237]
+          - row [ref=f12e238]:
+            - rowheader "Bank connections" [ref=f12e239]
+            - cell "Not included" [ref=f12e240]: —
+            - cell "2" [ref=f12e242]
+            - cell "10" [ref=f12e243]
+            - cell "Custom" [ref=f12e244]
+          - row [ref=f12e245]:
+            - rowheader "Crypto wallets" [ref=f12e246]
+            - cell "Not included" [ref=f12e247]: —
+            - cell "Not included" [ref=f12e249]: —
+            - cell "Included" [ref=f12e251]
+            - cell "Included" [ref=f12e255]
+          - row [ref=f12e259]:
+            - rowheader "Balance refresh" [ref=f12e260]
+            - cell "Standard" [ref=f12e261]
+            - cell "Standard" [ref=f12e262]
+            - cell "Standard" [ref=f12e263]
+            - cell "More frequent" [ref=f12e264]
+        - rowgroup [ref=f12e265]:
+          - row [ref=f12e266]:
+            - columnheader "Reports" [ref=f12e267]
+          - row [ref=f12e268]:
+            - rowheader "Payment calendar" [ref=f12e269]
+            - cell "Not included" [ref=f12e270]: —
+            - cell "Included" [ref=f12e272]
+            - cell "Included" [ref=f12e276]
+            - cell "Included" [ref=f12e280]
+          - row [ref=f12e284]:
+            - rowheader "Cashflow" [ref=f12e285]
+            - cell "Not included" [ref=f12e286]: —
+            - cell "Included" [ref=f12e288]
+            - cell "Included" [ref=f12e292]
+            - cell "Included" [ref=f12e296]
+          - row [ref=f12e300]:
+            - rowheader "P&L" [ref=f12e301]
+            - cell "Not included" [ref=f12e302]: —
+            - cell "Not included" [ref=f12e304]: —
+            - cell "Included" [ref=f12e306]
+            - cell "Included" [ref=f12e310]
+          - row [ref=f12e314]:
+            - rowheader "Custom reports" [ref=f12e315]
+            - cell "Not included" [ref=f12e316]: —
+            - cell "Not included" [ref=f12e318]: —
+            - cell "Included" [ref=f12e320]
+            - cell "Included" [ref=f12e324]
+        - rowgroup [ref=f12e328]:
+          - row [ref=f12e329]:
+            - columnheader "Team & access" [ref=f12e330]
+          - row [ref=f12e331]:
+            - rowheader "Seats" [ref=f12e332]
+            - cell "Up to 3" [ref=f12e333]
+            - cell "No limit" [ref=f12e334]
+            - cell "No limit" [ref=f12e335]
+            - cell "No limit" [ref=f12e336]
+          - row [ref=f12e337]:
+            - rowheader "Flexible user access settings" [ref=f12e338]
+            - cell "Not included" [ref=f12e339]: —
+            - cell "Included" [ref=f12e341]
+            - cell "Included" [ref=f12e345]
+            - cell "Included" [ref=f12e349]
+        - rowgroup [ref=f12e353]:
+          - row [ref=f12e354]:
+            - columnheader "Support" [ref=f12e355]
+          - row [ref=f12e356]:
+            - rowheader "Priority support" [ref=f12e357]
+            - cell "Not included" [ref=f12e358]: —
+            - cell "Not included" [ref=f12e360]: —
+            - cell "Included" [ref=f12e362]
+            - cell "Included" [ref=f12e366]
+    - region [ref=f12e378]:
+      - heading "Frequently asked questions" [level=2] [ref=f12e381]
+      - list [ref=f12e391]:
+        - listitem [ref=f12e392]:
+          - heading [level=3] [ref=f12e393]:
+            - button "What happens after the free trial?" [ref=f12e394] [cursor=pointer]
+          - region "What happens after the free trial?":
+            - paragraph [ref=f12e397]: After one month, you choose Free or Basic, or keep Pro. We ask for card details at that point.
+        - listitem [ref=f12e398]:
+          - heading [level=3] [ref=f12e399]:
+            - button "Can I use Vault without connecting a bank?" [ref=f12e400] [cursor=pointer]
+          - region "Can I use Vault without connecting a bank?":
+            - paragraph [ref=f12e403]: Yes. On every plan you can add transactions manually or import them from CSV. Bank connections are available from Basic, crypto wallets from Pro.
+        - listitem [ref=f12e404]:
+          - heading [level=3] [ref=f12e405]:
+            - button "How does annual billing work?" [ref=f12e406] [cursor=pointer]
+          - region "How does annual billing work?":
+            - paragraph [ref=f12e409]: You pay for 12 months upfront at a lower monthly rate, about 2 months free.
+        - listitem [ref=f12e410]:
+          - heading [level=3] [ref=f12e411]:
+            - button "Switching from another finance tool?" [ref=f12e412] [cursor=pointer]
+          - region "Switching from another finance tool?":
+            - paragraph [ref=f12e415]:
+              - text: Choose an annual plan, and we deduct the cost of the months left on your current subscription from your first invoice. See the
+              - link "migration offer" [ref=f12e416] [cursor=pointer]:
+                - /url: /migration-offer
+              - text: .
+        - listitem [ref=f12e417]:
+          - heading [level=3] [ref=f12e418]:
+            - button "Do you offer custom plans?" [ref=f12e419] [cursor=pointer]
+          - region "Do you offer custom plans?":
+            - paragraph [ref=f12e422]:
+              - text: Yes. Enterprise plans can have custom transaction volumes and bank connection limits.
+              - button "Contact us" [ref=f12e423] [cursor=pointer]
+              - text: .
+    - generic [ref=f12e433]:
+      - heading "Gain Clarity on your Finances" [level=2] [ref=f12e436]
+      - generic [ref=f12e451]:
+        - generic [ref=f12e452]:
+          - generic [ref=f12e453]:
+            - generic [ref=f12e454]:
+              - button "Play step 1" [ref=f12e455] [cursor=pointer]:
+                - generic [ref=f12e456]: "1"
+              - heading "Connect your accounts" [level=6] [ref=f12e457]
+            - paragraph [ref=f12e459]: Sign up and securely connect your bank accounts and Web3 wallets.
+          - generic [ref=f12e461]:
+            - button "Play step 2" [ref=f12e462] [cursor=pointer]:
+              - generic [ref=f12e463]: "2"
+            - heading "Structure your data" [level=6] [ref=f12e464]
+          - generic [ref=f12e466]:
+            - button "Play step 3" [ref=f12e467] [cursor=pointer]:
+              - generic [ref=f12e468]: "3"
+            - heading "Turn data into decisions" [level=6] [ref=f12e469]
+        - link [ref=f12e470] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+    - generic [ref=f12e495]:
+      - generic [ref=f12e496]:
+        - generic [ref=f12e497]:
+          - link "Vault AI home" [ref=f12e498] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f12e502]:
+            - link "LinkedIn" [ref=f12e503] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/usevault-ai/
+            - link "Vault AI on Telegram" [ref=f12e506] [cursor=pointer]:
+              - /url: https://t.me/usevault_ai
+            - link "hello@usevault.ai" [ref=f12e509] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+        - generic [ref=f12e514]:
+          - paragraph [ref=f12e515]: Platform
+          - list "Platform" [ref=f12e516]:
+            - listitem [ref=f12e517]:
+              - link "Product" [ref=f12e518] [cursor=pointer]:
+                - /url: /#product
+            - listitem [ref=f12e519]:
+              - link "Automation" [ref=f12e520] [cursor=pointer]:
+                - /url: /#automation
+            - listitem [ref=f12e521]:
+              - link "Reports" [ref=f12e522] [cursor=pointer]:
+                - /url: /#reports
+            - listitem [ref=f12e523]:
+              - link "Security" [ref=f12e524] [cursor=pointer]:
+                - /url: /#security
+            - listitem [ref=f12e525]:
+              - link "Pricing" [ref=f12e526] [cursor=pointer]:
+                - /url: /pricing
+        - generic [ref=f12e527]:
+          - paragraph [ref=f12e528]: Resources
+          - list "Resources" [ref=f12e529]:
+            - listitem [ref=f12e530]:
+              - link "Help Center" [ref=f12e531] [cursor=pointer]:
+                - /url: https://help.usevault.ai/en/
+            - listitem [ref=f12e532]:
+              - link "Status" [ref=f12e533] [cursor=pointer]:
+                - /url: https://status.usevault.ai/
+            - listitem [ref=f12e534]:
+              - link "Migration offer" [ref=f12e535] [cursor=pointer]:
+                - /url: /migration-offer
+            - listitem [ref=f12e536]:
+              - link "Partner program" [ref=f12e537] [cursor=pointer]:
+                - /url: /partners
+        - generic [ref=f12e538]:
+          - paragraph [ref=f12e539]: Legal
+          - list "Legal" [ref=f12e540]:
+            - listitem [ref=f12e541]:
+              - link "Terms of Service" [ref=f12e542] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f12e543]:
+              - link "Privacy Policy" [ref=f12e544] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f12e545]:
+              - link "DPA" [ref=f12e546] [cursor=pointer]:
+                - /url: /dpa
+      - generic [ref=f12e547]:
+        - generic [ref=f12e548]: © 2026 VAULT AI. All rights reserved.
+        - generic [ref=f12e549]:
+          - generic [ref=f12e550]: Built by
+          - link "Overcode (opens in a new tab)" [ref=f12e551] [cursor=pointer]:
+            - /url: https://www.overcode.tech/

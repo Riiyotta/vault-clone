@@ -1,0 +1,637 @@
+<div class='relative flex min-h-screen max-w-screen flex-col items-center bg-primary-black'>
+  <nav class='hidden w-full max-w-360 lg:block lg:px-14'>
+    <div class='flex items-center justify-between border-x-[1.5px] border-white/5 py-8 lg:px-6 xl:px-14'>
+      <a aria-label='Vault AI home' href='#top'>
+        <svg class='h-6.5 w-47' viewBox='0 0 188 26' w=None h=None>
+        <defs >
+          <clippath id='logo_svg__a'>
+            <path >
+  <ul class='flex items-center justify-center gap-5 whitespace-nowrap xl:gap-9.25'>
+    <li class='leading-6.5 text-white/80 transition-colors duration-400 hover:text-white'>
+      <a href='#product'>
+        "Product"
+    <li class='leading-6.5 text-white/80 transition-colors duration-400 hover:text-white'>
+      <a href='#automation'>
+        "Automation"
+    <li class='leading-6.5 text-white/80 transition-colors duration-400 hover:text-white'>
+      <a href='#reports'>
+        "Reports"
+    <li class='leading-6.5 text-white/80 transition-colors duration-400 hover:text-white'>
+      <a href='#security'>
+        "Security"
+    <li class='leading-6.5 text-white/80 transition-colors duration-400 hover:text-white'>
+      <a href='/pricing'>
+        "Pricing"
+  <div class='flex items-center gap-4 xl:gap-8'>
+    <div role='group' aria-label='Language' class='flex shrink-0 items-center gap-1'>
+      <span class='flex items-center gap-1'>
+        <a class='px-1 py-1 text-sm leading-5 transition-colors duration-400 text-white' href='/'>
+          "EN"
+          <span class='sr-only'>
+            "English"
+      <span class='flex items-center gap-1'>
+        <span class='text-sm text-white/20'>
+          "/"
+        <a class='px-1 py-1 text-sm leading-5 transition-colors duration-400 text-white/50 hover:text-white' href='/ua'>
+          "UA"
+          <span class='sr-only'>
+            "Українська"
+    <a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center border text-lg px-6 py-4 text-white border-white/20 leading-5.5' href='https://app.usevault.ai/login'>
+      "Get started"
+<div class='relative z-50 flex w-full justify-center lg:hidden'>
+<nav class='w-full max-w-360 px-6 md:px-10'>
+  <div class='flex items-center justify-between border-x-[1.5px] border-white/5 px-3 py-4 md:px-8 md:py-6'>
+    <a aria-label='Vault AI home' href='#top'>
+      <svg class='h-4 w-29 md:h-7 md:w-50' viewBox='0 0 188 26' w=None h=None>
+      <defs >
+        <clippath id='logo_svg__a'>
+          <path >
+<button class='flex cursor-pointer items-center justify-center text-white' type='button' aria-label='Open menu'>
+  <svg class='size-6 md:size-7' viewBox='0 0 28 28' w=None h=None>
+<div class='relative flex h-px w-full justify-center bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<main class='flex w-full flex-col items-center overflow-hidden text-white'>
+<section class='relative flex w-screen max-w-full flex-col items-center overflow-hidden before:absolute before:top-20 before:h-full before:w-full before:bg-[url("/img/hero/planet.png")] before:z-0 before:bg-contain before:bg-top before:bg-no-repeat lg:before:top-10 xxl:before:bg-cover'>
+<div class='relative z-10 w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='flex flex-col items-center border-x-[1.5px] border-white/5'>
+<div class='relative z-10 mx-auto flex max-w-100 flex-col items-center gap-4 pt-34 md:max-w-140 md:gap-6 lg:max-w-187.5 lg:pt-36.5 [&:lang(ru)]:max-w-220 [&:lang(uk)]:max-w-220'>
+<div class='flex items-center gap-1.5 rounded-full bg-white/8 px-2 py-1 shadow-[inset_0px_0.5px_0.5px_0px_rgba(255,255,255,0.12),inset_0px_1px_3px_0px_rgba(255,255,255,0.10),inset_0px_2px_8px_0px_rgba(255,255,255,0.04),0px_0.5px_0.5px_0px_rgba(8,1,20,0.03),0px_1px_1px_-0.5px_rgba(8,1,20,0.03),0px_2px_2px_-1px_rgba(8,1,20,0.03)]'>
+<svg class='size-3.5' viewBox='0 0 14 14' w=None h=None>
+<defs >
+<lineargradient id='zap-icon_svg__a'>
+<stop >
+<stop >
+<span class='text-[11px] leading-4 font-medium tracking-wider uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"FINANCIAL MANAGEMENT PLATFORM"
+<h1 class='word-spacing-4 md:word-spacing-6 lg:word-spacing-8 inline-flex text-center font-display text-[32px] leading-[120%] font-semibold tracking-[2%] whitespace-pre-line text-white md:text-5xl md:leading-[110%] lg:text-[64px] lg:leading-18'>
+"Control your Business Finances in One Place"
+<p class='px-4 text-center text-sm leading-5 font-light md:max-w-125 md:text-base md:leading-6.5'>
+"AI-native platform to track transactions, generate reports, and automate manual financial work, built for SMBs."
+<div class='relative flex h-full w-full justify-center px-2 pt-19 md:px-8 md:pt-14 lg:px-28 lg:pt-22.5 before:absolute before:-top-4 before:left-1/2 before:z-0 before:h-50 before:w-50 before:bg-contain before:bg-no-repeat md:before:size-80 before:-translate-x-1/2 before:bg-[url("/img/gradients/hero-img-before-gradient.svg")] md:before:-top-18 lg:before:-top-44 lg:before:h-150 lg:before:w-150 after:absolute af'>
+<div class='relative z-5 w-full max-w-276 before:absolute before:-top-3.25 before:left-1/2 before:z-10 before:h-6 before:w-60 before:-translate-x-1/2 before:bg-[url("/img/gradients/hero-highlight-before-gradient.svg")] before:bg-contain before:bg-center before:bg-no-repeat md:before:-top-3.25 md:before:h-6 md:before:w-90 lg:before:-top-5 lg:before:h-10 lg:before:w-180 after:absolute after:top-[-17%] after:lef'>
+<img alt='Vault AI dashboard showing the total balance, a balance chart and recent transactions' width='3312' height='2004' class='relative z-10 h-full w-full object-contain' style='color:transparent' srcset='/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-en.0iy~tz90zg3.r.png&w=3840&q=75&dpl=dpl_38fkCxztx732p9RyLWqVLhZi9wGH 1x' src='/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-en.0iy~tz90zg3.r.png&w=3840&q=75&dpl=dpl_38fkCxztx732p9RyLWqVLhZi9wGH'>
+<div class='py-10 md:pt-12 md:pb-17.5 lg:py-16'>
+<a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center bg-white text-[#090A11] border-4 border-white/20 bg-clip-padding text-lg leading-5.5 gap-4 pl-6 pr-4 py-3' href='https://app.usevault.ai/login'>
+"Get started"
+<span class='flex items-center justify-center rounded-full bg-[#05040C] size-8'>
+<svg class='size-4' viewBox='0 0 16 16' w=None h=None>
+<div class='absolute right-0 bottom-0 left-0 h-100 bg-[linear-gradient(180deg,rgba(3,2,11,0)_0%,rgba(3,2,11,0.05)_4.78%,#03020B_35.5%)]'>
+<div class='relative flex h-px w-full justify-center bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='relative flex w-full justify-center border-x border-white/5 py-34 md:py-53 lg:py-75 before:absolute before:top-1/2 before:left-[51%] before:z-0 before:h-full before:max-h-65.5 before:w-full before:max-w-77 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[url("/img/scroll-coloring-text/scroll-coloring-text-bg.svg")] before:bg-contain before:bg-no-repeat md:before:left-1/2 md:before:h-136 '>
+<p class='word-spacing-2 relative z-10 flex flex-wrap justify-center px-5 font-display text-lg font-semibold tracking-wide uppercase md:text-[32px] lg:max-w-300 lg:px-0 lg:text-4xl' style='opacity:0'>
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"Vault"
+<span style='opacity:0'>
+"Vault"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"gives"
+<span style='opacity:0'>
+"gives"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"you"
+<span style='opacity:0'>
+"you"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"a"
+<span style='opacity:0'>
+"a"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"complete"
+<span style='opacity:0'>
+"complete"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"system"
+<span style='opacity:0'>
+"system"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"to"
+<span style='opacity:0'>
+"to"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"track,"
+<span style='opacity:0'>
+"track,"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"understand,"
+<span style='opacity:0'>
+"understand,"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"and"
+<span style='opacity:0'>
+"and"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"automate"
+<span style='opacity:0'>
+"automate"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"your"
+<span style='opacity:0'>
+"your"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"business"
+<span style='opacity:0'>
+"business"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"finances"
+<span style='opacity:0'>
+"finances"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"bringing"
+<span style='opacity:0'>
+"bringing"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"transactions,"
+<span style='opacity:0'>
+"transactions,"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"reports,"
+<span style='opacity:0'>
+"reports,"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"and"
+<span style='opacity:0'>
+"and"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"workflows"
+<span style='opacity:0'>
+"workflows"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"together"
+<span style='opacity:0'>
+"together"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"in"
+<span style='opacity:0'>
+"in"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"one"
+<span style='opacity:0'>
+"one"
+<span class='relative mt-1.5 mr-1.5 md:mr-2 lg:mt-3 lg:mr-3'>
+<span class='absolute opacity-20'>
+"place"
+<span style='opacity:0'>
+"place"
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<section id='product' class='flex w-full scroll-mt-10 flex-col items-center'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='grid grid-cols-1 gap-x-5 gap-y-6 border-x-[1.5px] border-white/5 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-17.5'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y md:h-87.5 lg:h-93 border-t-0 border-white/5 md:border-r md:border-b'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 pr-2 pl-3 md:px-4 md:pt-6 xl:px-6 xl:pt-6.5'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"Global Financial Ledger"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"A unified system that brings all your financial data into one reliable source of truth."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex w-full pl-3 pt-px h-[calc(100%+2px)]'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='Global Financial Ledger animation' width='418' height='231'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y md:h-87.5 lg:h-93 border-white/5 md:border-t-0 md:border-l lg:border-r'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 pr-2 pl-3 md:px-4 md:pt-6 xl:px-6 xl:pt-6.5'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"Secure Bank & Web3 Integrations"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"Connect your bank accounts and Web3 wallets through trusted providers like Plaid."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex h-full w-full px-2.5 md:px-4 xl:px-6'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='Secure Bank and Web3 Integrations animation' width='381' height='230'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y md:h-87.5 lg:h-93 border-white/5 md:border-r lg:border-t-0 lg:border-l'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 pr-2 pl-3 md:px-4 md:pt-6 xl:px-6 xl:pt-6.5'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"Custom Financial Reports"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"Go beyond standard P&L - build reports around the metrics that matter to your business."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex h-full w-full px-5 pb-[38px] md:pb-7 lg:px-9 lg:pb-7'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='Custom Financial Reports animation' width='357' height='202'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y border-white/5 md:h-87.5 lg:h-93 md:border-l lg:border-r lg:border-b-0 lg:border-l-0'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 pr-2 pl-3 md:px-4 md:pt-6 xl:px-6 xl:pt-6.5'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"User Management"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"Control access with configurable roles and permissions for your team."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex h-full w-full px-1.5 md:px-3 xxl:px-0'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='User Management animation' width='430' height='230'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y md:h-87.5 lg:h-93 bg-[linear-gradient(180deg,rgba(217,217,217,0)_0%,rgba(217,217,217,0.02)_100%)] px-3 pb-4.5 md:px-4 xl:px-6 md:pb-4 lg:pb-8 border-white/5 md:border-r md:border-b-0 lg:border-l'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 md:pt-6 xl:pt-6.5 px-0 md:px-0 xl:px-0'>
+<div class='flex flex-wrap items-center gap-x-2 gap-y-1'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"Workflow Automations"
+<div class='flex items-center gap-1.5 rounded-full bg-white/8 px-2 py-1 shadow-[inset_0px_0.5px_0.5px_0px_rgba(255,255,255,0.12),inset_0px_1px_3px_0px_rgba(255,255,255,0.10),inset_0px_2px_8px_0px_rgba(255,255,255,0.04),0px_0.5px_0.5px_0px_rgba(8,1,20,0.03),0px_1px_1px_-0.5px_rgba(8,1,20,0.03),0px_2px_2px_-1px_rgba(8,1,20,0.03)]'>
+<span class='text-[11px] leading-4 font-medium tracking-wider uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"Soon"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"Automate routine financial tasks with customizable workflows and AI-powered transaction enrichment."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex h-full w-full bg-size-[14px_14px,100%_100%] bg-center bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0.8px,transparent_0.8px)] pt-4 pb-3 md:py-4.5 lg:pt-4 lg:pb-3'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='Workflow Automations animation' width='381' height='173'>
+<div class='relative flex h-89 w-full flex-col justify-between gap-8 border-y md:h-87.5 lg:h-93 border-b-0 border-white/5 md:border-l'>
+<svg class='absolute -top-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -top-1.5 -right-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -bottom-1.5 -left-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='absolute -right-1.5 -bottom-1.5 z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='flex flex-col gap-2 pt-3 pr-2 pl-3 md:px-4 md:pt-6 xl:px-6 xl:pt-6.5'>
+<div class='flex flex-wrap items-center gap-x-2 gap-y-1'>
+<h4 class='text-lg leading-[150%] font-medium text-white'>
+"Invoice Builder"
+<div class='flex items-center gap-1.5 rounded-full bg-white/8 px-2 py-1 shadow-[inset_0px_0.5px_0.5px_0px_rgba(255,255,255,0.12),inset_0px_1px_3px_0px_rgba(255,255,255,0.10),inset_0px_2px_8px_0px_rgba(255,255,255,0.04),0px_0.5px_0.5px_0px_rgba(8,1,20,0.03),0px_1px_1px_-0.5px_rgba(8,1,20,0.03),0px_2px_2px_-1px_rgba(8,1,20,0.03)]'>
+<span class='text-[11px] leading-4 font-medium tracking-wider uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"Soon"
+<p class='leading-[140%] tracking-normal text-white/60 md:text-sm xl:text-base'>
+"Create and manage invoices instantly. Keep revenue tracking in one place."
+<div class='relative h-full w-full overflow-hidden md:h-54 lg:h-57.5'>
+<div class='flex w-full pl-3 h-[calc(100%+2px)]'>
+<div style='width:100%;height:100%;line-height:0'>
+<canvas style='width:100%;height:100%' aria-label='Invoice Builder animation' width='418' height='232'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<section class='flex w-full flex-col items-center'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='h-24 border-x-[1.5px] border-white/5 lg:h-50'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<div id='automation' class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='border-x-[1.5px] border-white/5'>
+<div class='relative flex items-center justify-between overflow-hidden px-2.5 py-4 md:px-3 lg:hidden'>
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Previous feature'>
+<svg class='' viewBox='' w=24 h=24>
+<h3 class='text-center text-lg leading-5.5 font-medium text-white md:text-xl' style='opacity:1;transform:none'>
+"Enrich Financial Data"
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Next feature'>
+<svg class='' viewBox='' w=24 h=24>
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='hidden grid-cols-3 lg:grid'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium transition-colors duration-300 hover:text-white text-white' type='button'>
+"Enrich Financial Data"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white border-x border-white/5' type='button'>
+"Alert on Unusual Expenses"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white' type='button'>
+"Automate Recurring Reports"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='flex flex-col lg:flex-row-reverse'>
+<div class='h-60 overflow-hidden border-b-[1.5px] border-b-white/5 bg-size-[8px_8px,100%_100%] md:h-108 md:bg-size-[12px_12px,100%_100%] bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0.8px,transparent_0.8px),linear-gradient(180deg,rgba(217,217,217,0.03)_0%,rgba(217,217,217,0.01)_100%)] shrink-0 lg:w-[50%] lg:border-b-0'>
+<div class='relative size-full'>
+<div class='flex h-full w-full'>
+<div class='size-full'>
+<canvas style='width:100%;height:100%' width='662' height='432'>
+<div class='flex flex-col gap-8 px-3 py-8 md:px-6 md:py-10 xl:px-15 xl:pt-20'>
+<div class='flex flex-col gap-4 md:max-w-140'>
+<h3 class='word-spacing-3 bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.8)_100%)] bg-clip-text font-display text-2xl leading-[120%] font-semibold md:max-w-122 md:text-[28px]'>
+"Automate financial tasks that used to require manual work"
+<p class='leading-[140%] tracking-wide text-white/60'>
+"Set up smart automations and let Vault categorize transactions, enrich financial data, send reports and alerts, and run financial workflows automatically. Save hours of repetitive work every week."
+<a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center bg-white text-[#090A11] border-4 border-white/20 bg-clip-padding gap-3.5 pl-5 pr-3.5 py-2.5' href='https://app.usevault.ai/login'>
+"Try it free"
+<span class='flex items-center justify-center rounded-full bg-[#05040C] size-7'>
+<svg class='size-3.5' viewBox='0 0 16 16' w=None h=None>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<section class='flex w-full flex-col items-center'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='h-24 border-x-[1.5px] border-white/5 lg:h-50'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<div id='reports' class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='border-x-[1.5px] border-white/5'>
+<div class='relative flex items-center justify-between overflow-hidden px-2.5 py-4 md:px-3 lg:hidden'>
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Previous feature'>
+<svg class='' viewBox='' w=24 h=24>
+<h3 class='text-center text-lg leading-5.5 font-medium text-white md:text-xl' style='opacity:1;transform:none'>
+"Profit & Loss Overview"
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Next feature'>
+<svg class='' viewBox='' w=24 h=24>
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='hidden grid-cols-3 lg:grid'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium transition-colors duration-300 hover:text-white text-white' type='button'>
+"Profit & Loss Overview"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white border-x border-white/5' type='button'>
+"Expense Breakdown"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white' type='button'>
+"Custom Financial Reports"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='flex flex-col lg:flex-row-reverse'>
+<div class='h-60 overflow-hidden border-b-[1.5px] border-b-white/5 bg-size-[8px_8px,100%_100%] md:h-108 md:bg-size-[12px_12px,100%_100%] bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0.8px,transparent_0.8px),linear-gradient(180deg,rgba(217,217,217,0.03)_0%,rgba(217,217,217,0.01)_100%)] shrink-0 lg:w-[50%] lg:border-b-0'>
+<div class='relative size-full'>
+<div class='flex h-full w-full'>
+<div class='size-full'>
+<canvas style='width:100%;height:100%' width='662' height='432'>
+<div class='flex flex-col gap-8 px-3 py-8 md:px-6 md:py-10 xl:px-15 xl:pt-20'>
+<div class='flex flex-col gap-4 md:max-w-140'>
+<h3 class='word-spacing-3 bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.8)_100%)] bg-clip-text font-display text-2xl leading-[120%] font-semibold md:max-w-122 md:text-[28px]'>
+"Understand your business finances in real time"
+<p class='leading-[140%] tracking-wide text-white/60'>
+"Vault transforms transactions into real-time reports that help you understand revenue, expenses, cash flow, and profitability. Go beyond standard P&L - visualize any financial data to make better business decisions."
+<a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center bg-white text-[#090A11] border-4 border-white/20 bg-clip-padding gap-3.5 pl-5 pr-3.5 py-2.5' href='https://app.usevault.ai/login'>
+"Try it free"
+<span class='flex items-center justify-center rounded-full bg-[#05040C] size-7'>
+<svg class='size-3.5' viewBox='0 0 16 16' w=None h=None>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<section class='flex w-full flex-col items-center'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='h-24 border-x-[1.5px] border-white/5 lg:h-50'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<div id='security' class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='border-x-[1.5px] border-white/5'>
+<div class='relative flex items-center justify-between overflow-hidden px-2.5 py-4 md:px-3 lg:hidden'>
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Previous feature'>
+<svg class='' viewBox='' w=24 h=24>
+<h3 class='text-center text-lg leading-5.5 font-medium text-white md:text-xl' style='opacity:1;transform:none'>
+"Centralized Financial Ledger"
+<button class='flex shrink-0 cursor-pointer items-center justify-center text-white/50 transition-colors duration-300 hover:text-white' type='button' aria-label='Next feature'>
+<svg class='' viewBox='' w=24 h=24>
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='hidden grid-cols-3 lg:grid'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium transition-colors duration-300 hover:text-white text-white' type='button'>
+"Centralized Financial Ledger"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white border-x border-white/5' type='button'>
+"Secure Accounts Integrations"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<button class='relative flex h-18.5 cursor-pointer items-center justify-center overflow-hidden text-lg xl:justify-start xl:pl-15 leading-5.5 font-medium text-white/50 transition-colors duration-300 hover:text-white' type='button'>
+"Role-Based Access Control"
+<span class='absolute right-0 bottom-0 left-0 h-px bg-white/5'>
+<div class='flex flex-col lg:flex-row-reverse'>
+<div class='h-60 overflow-hidden border-b-[1.5px] border-b-white/5 bg-size-[8px_8px,100%_100%] md:h-108 md:bg-size-[12px_12px,100%_100%] bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0.8px,transparent_0.8px),linear-gradient(180deg,rgba(217,217,217,0.03)_0%,rgba(217,217,217,0.01)_100%)] shrink-0 lg:w-[50%] lg:border-b-0'>
+<div class='relative size-full'>
+<div class='flex h-full w-full'>
+<div class='size-full'>
+<canvas style='width:100%;height:100%' width='662' height='432'>
+<div class='flex flex-col gap-8 px-3 py-8 md:px-6 md:py-10 xl:px-15 xl:pt-20'>
+<div class='flex flex-col gap-4 md:max-w-140'>
+<h3 class='word-spacing-3 bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.8)_100%)] bg-clip-text font-display text-2xl leading-[120%] font-semibold md:max-w-122 md:text-[28px]'>
+"Built on secure financial infrastructure"
+<p class='leading-[140%] tracking-wide text-white/60'>
+"Vault is designed with a reliable financial data architecture, secure integrations, and role-based access control to ensure your data stays accurate and protected."
+<a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center bg-white text-[#090A11] border-4 border-white/20 bg-clip-padding gap-3.5 pl-5 pr-3.5 py-2.5' href='https://app.usevault.ai/login'>
+"Try it free"
+<span class='flex items-center justify-center rounded-full bg-[#05040C] size-7'>
+<svg class='size-3.5' viewBox='0 0 16 16' w=None h=None>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-6 md:before:inset-x-10 lg:before:inset-x-0'>
+<section class='w-full'>
+<div id='how-it-works' class='flex w-full flex-col items-center lg:scroll-mb-30'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='flex flex-col items-center border-x-[1.5px] border-white/5 pt-24 pb-10 md:pb-12 lg:pt-30 lg:pb-16'>
+<h2 class='word-spacing-4 lg:word-spacing-7 inline-flex text-center font-display text-3xl font-semibold whitespace-pre-line text-white uppercase md:text-3xl lg:text-5xl lg:leading-16'>
+"Gain Clarity"
+<br >
+"on your Finances"
+<div >
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5 before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-4.5 md:before:inset-x-8.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='flex flex-col gap-8 border-x-[1.5px] border-white/5 md:gap-10 lg:h-100 lg:flex-row-reverse lg:justify-between lg:gap-1 xl:gap-10'>
+<div class='h-52.5 w-full border-b border-b-white/5 bg-size-[8px_8px,100%_100%] md:h-103 md:bg-size-[12px_12px,100%_100%] lg:h-100 lg:w-[50%] lg:shrink-0 lg:border-b-0 bg-[radial-gradient(circle,rgba(49,49,56,0.35)_0.8px,transparent_0.8px),linear-gradient(180deg,rgba(217,217,217,0.01)_0%,rgba(217,217,217,0.03)_100%)]'>
+<div class='relative size-full overflow-hidden'>
+<div class='absolute inset-0 top-[-7%] h-[114%] w-full md:top-0 md:h-full'>
+<canvas style='width:100%;height:100%' width='662' height='400'>
+<div class='flex h-90 w-full flex-col gap-8 overflow-hidden px-3 md:h-107.5 md:pl-6 lg:h-full lg:flex-1 lg:gap-6 lg:pt-8 lg:pr-0 xl:pt-12 xl:pl-14'>
+<div class='flex w-full flex-col gap-5'>
+<div class='relative flex w-full flex-col'>
+<div class='relative z-10 flex items-center gap-4.5 xl:gap-7'>
+<button type='button' aria-label='Play step 1' class='relative flex size-9 cursor-pointer appearance-none items-center justify-center border border-white/10 bg-transparent p-0 text-inherit md:size-10.5 xl:size-10' style='background-color:rgba(255,255,255,0.02)'>
+<span class='pointer-events-none absolute -top-px -left-px z-10 size-1.25 border-t border-l border-[#EDEDFA] md:size-1.5'>
+<span class='pointer-events-none absolute -right-px -bottom-px z-10 size-1.25 border-r border-b border-[#EDEDFA] md:size-1.5'>
+<span class='relative z-10 text-sm font-bold text-primary-black md:text-base xl:text-xl' style='color: rgb(255, 255, 255);'>
+"1"
+<h6 class='word-spacing-2 font-display text-xl leading-7 font-semibold text-white md:leading-6 xl:text-xl'>
+"Connect your accounts"
+<div class='grid transition-[grid-template-rows] duration-300 ease-out grid-rows-[1fr]'>
+<p class='min-h-0 w-full overflow-hidden pl-13.5 text-sm leading-5.5 tracking-tight whitespace-pre-line text-white/60 md:pl-15 lg:text-base lg:leading-6 xl:pl-17' style='opacity:0;transform:translateY(-6px)'>
+"Sign up and securely connect your bank
+ accounts and Web3 wallets."
+<div class='relative flex w-full flex-col'>
+<div class='relative z-10 flex items-center gap-4.5 xl:gap-7'>
+<button type='button' aria-label='Play step 2' class='relative flex size-9 cursor-pointer appearance-none items-center justify-center border border-white/10 bg-transparent p-0 text-inherit md:size-10.5 xl:size-10' style='background-color:rgba(255,255,255,0.02)'>
+<span class='pointer-events-none absolute -top-px -left-px z-10 size-1.25 border-t border-l border-[#EDEDFA] md:size-1.5'>
+<span class='pointer-events-none absolute -right-px -bottom-px z-10 size-1.25 border-r border-b border-[#EDEDFA] md:size-1.5'>
+<span class='relative z-10 text-sm font-bold text-primary-black md:text-base xl:text-xl' style='color: rgb(255, 255, 255);'>
+"2"
+<h6 class='word-spacing-2 font-display text-xl leading-7 font-semibold text-white md:leading-6 xl:text-xl'>
+"Structure your data"
+<div class='grid transition-[grid-template-rows] duration-300 ease-out grid-rows-[0fr]'>
+<p class='min-h-0 w-full overflow-hidden pl-13.5 text-sm leading-5.5 tracking-tight whitespace-pre-line text-white/60 md:pl-15 lg:text-base lg:leading-6 xl:pl-17' style='opacity:0;transform:translateY(-6px)'>
+"Set up automations, define revenue and expense
+ categories, and create reports tailored to your business."
+<div class='relative flex w-full flex-col'>
+<div class='relative z-10 flex items-center gap-4.5 xl:gap-7'>
+<button type='button' aria-label='Play step 3' class='relative flex size-9 cursor-pointer appearance-none items-center justify-center border border-white/10 bg-transparent p-0 text-inherit md:size-10.5 xl:size-10' style='background-color:rgba(255,255,255,0.02)'>
+<span class='pointer-events-none absolute -top-px -left-px z-10 size-1.25 border-t border-l border-[#EDEDFA] md:size-1.5'>
+<span class='pointer-events-none absolute -right-px -bottom-px z-10 size-1.25 border-r border-b border-[#EDEDFA] md:size-1.5'>
+<span class='relative z-10 text-sm font-bold text-primary-black md:text-base xl:text-xl' style='color: rgb(255, 255, 255);'>
+"3"
+<h6 class='word-spacing-2 font-display text-xl leading-7 font-semibold text-white md:leading-6 xl:text-xl'>
+"Turn data into decisions"
+<div class='grid transition-[grid-template-rows] duration-300 ease-out grid-rows-[0fr]'>
+<p class='min-h-0 w-full overflow-hidden pl-13.5 text-sm leading-5.5 tracking-tight whitespace-pre-line text-white/60 md:pl-15 lg:text-base lg:leading-6 xl:pl-17' style='opacity:0;transform:translateY(-6px)'>
+"Vault transforms raw data into insights that reveal
+ what's working, what's changing, and where to focus
+ next - so you can act with confidence."
+<a class='flex items-center rounded-full w-fit cursor-pointer font-medium justify-center bg-white text-[#090A11] border-4 border-white/20 bg-clip-padding gap-3.5 pl-5 pr-3.5 py-2.5' href='https://app.usevault.ai/login'>
+"Get started"
+<span class='flex items-center justify-center rounded-full bg-[#05040C] size-7'>
+<svg class='size-3.5' viewBox='0 0 16 16' w=None h=None>
+<div class='flex w-full flex-col items-center md:hidden lg:flex'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5 before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-4.5 md:before:inset-x-8.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='h-24 border-x-[1.5px] border-white/5 lg:h-50'>
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5 before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-4.5 md:before:inset-x-8.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<footer class='flex w-full flex-col items-center'>
+<div class='w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='border-x-[1.5px] border-white/5'>
+<div class='grid grid-cols-2 gap-x-6 gap-y-10 border-b-[1.5px] border-white/5 px-4 pt-10 pb-8 md:grid-cols-[repeat(3,max-content)] md:justify-between md:px-6 md:pt-12 md:pb-10 lg:grid-cols-[minmax(0,1fr)_repeat(3,max-content)] lg:gap-x-12 lg:py-14 xl:gap-x-20 xl:px-14'>
+<div class='col-span-2 flex flex-col items-start gap-6 md:col-span-3 lg:col-span-1'>
+<a aria-label='Vault AI home' href='#top'>
+<svg class='h-4 w-29 md:h-6.5 md:w-47' viewBox='0 0 188 26' w=None h=None>
+<defs >
+<clippath id='logo_svg__a'>
+<path >
+<div class='flex items-center gap-4'>
+<a class='relative flex h-4 items-center text-gray transition-colors duration-400 hover:text-white before:absolute before:top-1/2 before:left-1/2 before:size-6 before:-translate-x-1/2 before:-translate-y-1/2 before:content-['']' target='_blank' aria-label='LinkedIn' href='https://www.linkedin.com/company/usevault-ai/'>
+<svg class='relative h-4 w-auto [&:lang(ru)]:top-[0.45px] [&:lang(uk)]:top-[0.45px]' viewBox='3.273 -1.051 18.011 25.16' w=None h=None>
+<a class='relative flex h-4 items-center text-gray transition-colors duration-400 hover:text-white before:absolute before:top-1/2 before:left-1/2 before:size-6 before:-translate-x-1/2 before:-translate-y-1/2 before:content-['']' target='_blank' aria-label='Vault AI on Telegram' href='https://t.me/usevault_ai'>
+<svg class='relative h-4 w-auto [&:lang(ru)]:top-[0.45px] [&:lang(uk)]:top-[0.45px]' viewBox='4.54 4.309 13.024 16.029' w=None h=None>
+<a class='relative flex h-4 items-center text-gray transition-colors duration-400 hover:text-white gap-1.5 before:absolute before:inset-x-0 before:-inset-y-1 before:content-['']' href='mailto:hello@usevault.ai'>
+<svg class='relative h-4 w-auto [&:lang(ru)]:top-[0.45px] [&:lang(uk)]:top-[0.45px]' viewBox='0 0 15.547 16' w=None h=None>
+<path >
+<span class='text-sm md:text-base'>
+"hello@usevault.ai"
+<div class='flex flex-col gap-4'>
+<p id='footer-platform' class='text-[11px] leading-4 font-medium tracking-wider text-white/40 uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"Platform"
+<ul class='flex flex-col gap-3'>
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='#product'>
+"Product"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='#automation'>
+"Automation"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='#reports'>
+"Reports"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='#security'>
+"Security"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/pricing'>
+"Pricing"
+<div class='flex flex-col gap-4'>
+<p id='footer-resources' class='text-[11px] leading-4 font-medium tracking-wider text-white/40 uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"Resources"
+<ul class='flex flex-col gap-3'>
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a target='_blank' href='https://help.usevault.ai/en/'>
+"Help Center"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a target='_blank' href='https://status.usevault.ai/'>
+"Status"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/migration-offer'>
+"Migration offer"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/partners'>
+"Partner program"
+<div class='flex flex-col gap-4 max-md:col-span-2'>
+<p id='footer-legal' class='text-[11px] leading-4 font-medium tracking-wider text-white/40 uppercase [&:lang(ru)]:text-[12px] [&:lang(uk)]:text-[12px]'>
+"Legal"
+<ul class='flex flex-col gap-3'>
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/terms'>
+"Terms of Service"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/privacy'>
+"Privacy Policy"
+<li class='leading-6.5 whitespace-nowrap text-white/60 transition-colors duration-400 hover:text-white'>
+<a href='/dpa'>
+"DPA"
+<div class='flex flex-wrap items-center justify-between gap-3 p-4 text-gray md:p-6 lg:py-8 xl:px-14'>
+<span class='inline-flex'>
+"© 2026 VAULT AI. All rights reserved."
+<div class='flex items-center gap-2'>
+<span class='text-gray'>
+"Built by"
+<a class='group flex items-center' aria-label='Overcode (opens in a new tab)' target='_blank' href='https://www.overcode.tech/'>
+<div class='flex rounded-full bg-[#25222C] px-3 pt-1.25 pb-1.75 group-hover:bg-primary'>
+<svg class='h-2.5 w-15' viewBox='0 0 133 24' w=None h=None>
+<path >
+<div class='-ml-1 flex rounded-full bg-[#25222c] py-1.5 pr-2.5 pl-2.75 group-hover:bg-primary'>
+<svg class='size-2.75 text-white' viewBox='0 0 25 24' w=None h=None>
+<path >
+<path >
+<path >
+<path >
+<path >
+<path >
+<path >
+<path >
+<path >
+<div class='relative flex h-px w-full justify-center lg:bg-white/5'>
+<div class='relative flex w-full max-w-360 items-center justify-between px-4.5 md:px-8.5 lg:px-12.5 before:absolute before:top-1/2 before:h-px before:-translate-y-1/2 before:bg-white/5 lg:before:hidden before:inset-x-4.5 md:before:inset-x-8.5'>
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<svg class='relative z-100 size-3' viewBox='0 0 11 11' w=None h=None>
+<path >
+<div class='mx-auto w-full max-w-360 px-6 md:px-10 lg:px-14'>
+<div class='h-12 border-x-[1.5px] border-white/5 md:h-12.5 lg:h-16'>

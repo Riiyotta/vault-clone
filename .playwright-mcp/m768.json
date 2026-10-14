@@ -1,0 +1,396 @@
+{
+  "vw": 768,
+  "docH": 7280,
+  "navDesktop": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "navMobile": [
+    0,
+    0,
+    768,
+    76
+  ],
+  "navMobileInner": [
+    40,
+    0,
+    688,
+    76
+  ],
+  "navMobileLogo": [
+    74,
+    24,
+    200,
+    28
+  ],
+  "burger": [
+    667,
+    24,
+    28,
+    28
+  ],
+  "navInner": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "navInnerPad": "32px 0px",
+  "navUlGap": "20px",
+  "hero": [
+    0,
+    77,
+    768,
+    979
+  ],
+  "heroInner": [
+    104,
+    77,
+    560,
+    366
+  ],
+  "heroInnerPad": "136px",
+  "heroGap": "24px",
+  "eyebrow": [
+    261,
+    213,
+    247,
+    24
+  ],
+  "h1": [
+    104,
+    261,
+    560,
+    106
+  ],
+  "h1T": "48px/52.8px w600 ls2% ws6px pad:0px",
+  "heroP": [
+    134,
+    391,
+    500,
+    52
+  ],
+  "heroPT": "16px/26px w300 lsnormal ws0px pad:0px 16px",
+  "imgOuter": [
+    42,
+    443,
+    685,
+    432
+  ],
+  "imgOuterPad": "56px 32px 0px",
+  "img": [
+    74,
+    499,
+    621,
+    376
+  ],
+  "imgOuterBefore": {
+    "w": "320px",
+    "h": "320px",
+    "top": "-72px",
+    "left": "342.5px",
+    "translate": "-50%"
+  },
+  "imgOuterAfter": {
+    "w": "200px",
+    "h": "200px",
+    "top": "32px",
+    "left": "342.5px",
+    "translate": "-50%"
+  },
+  "imgWrapBefore": {
+    "w": "360px",
+    "h": "24px",
+    "top": "-13px",
+    "left": "310.5px",
+    "translate": "-50%"
+  },
+  "imgWrapAfter": {
+    "w": "652.047px",
+    "h": "375.75px",
+    "top": "-63.875px",
+    "left": "310.5px",
+    "translate": "-50%"
+  },
+  "heroCta": [
+    290,
+    922,
+    188,
+    64
+  ],
+  "heroCtaWrap": "48px 0px 70px",
+  "heroBefore": {
+    "w": "768px",
+    "h": "979.344px",
+    "top": "80px",
+    "left": "0px",
+    "translate": "none"
+  },
+  "scWrap": [
+    40,
+    1057,
+    688,
+    759
+  ],
+  "scWrapPad": "212px 0px",
+  "sc": [
+    41,
+    1269,
+    686,
+    335
+  ],
+  "scT": "32px/49.7778px w600 ls0.8px ws2px pad:0px",
+  "scBefore": {
+    "w": "626px",
+    "h": "544px",
+    "top": "379.32px",
+    "left": "343px",
+    "translate": "-50% -50%"
+  },
+  "scWordMargin": "6px 8px 0px 0px",
+  "cards": [
+    [
+      42,
+      1817,
+      333,
+      350
+    ],
+    [
+      394,
+      1817,
+      333,
+      350
+    ],
+    [
+      42,
+      2191,
+      333,
+      350
+    ],
+    [
+      394,
+      2191,
+      333,
+      350
+    ],
+    [
+      42,
+      2565,
+      333,
+      350
+    ],
+    [
+      394,
+      2565,
+      333,
+      350
+    ]
+  ],
+  "cardHeader": "16px/24px w400 lsnormal ws0px pad:24px 16px 0px",
+  "cardH4": "18px/27px w500 lsnormal ws0px pad:0px",
+  "cardP": "14px/19.6px w400 lsnormal ws0px pad:0px",
+  "cardAnim": [
+    42,
+    1950,
+    332,
+    216
+  ],
+  "gridGap": "24px 20px",
+  "fsSpacer": [
+    40,
+    2916,
+    688,
+    96
+  ],
+  "fsTabs": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "fsTabBtn": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "fsTabBtnPad": "0px",
+  "fsMobileHdr": [
+    42,
+    3013,
+    685,
+    56
+  ],
+  "fsMobileH3": "20px/22px w500 lsnormal ws0px pad:0px",
+  "fsLot": [
+    42,
+    3069,
+    685,
+    432
+  ],
+  "fsText": [
+    42,
+    3501,
+    685,
+    318
+  ],
+  "fsTextPad": "40px 24px",
+  "fsH3": [
+    66,
+    3541,
+    488,
+    67
+  ],
+  "fsH3T": "28px/33.6px w600 lsnormal ws3px pad:0px",
+  "fsP": [
+    66,
+    3624,
+    560,
+    67
+  ],
+  "fsPT": "16px/22.4px w400 ls0.4px ws0px pad:0px",
+  "fsCta": [
+    66,
+    3723,
+    153,
+    56
+  ],
+  "stepsHead": [
+    40,
+    5652,
+    688,
+    216
+  ],
+  "stepsH2": [
+    232,
+    5748,
+    304,
+    72
+  ],
+  "stepsH2T": "30px/36px w600 lsnormal ws4px pad:0px",
+  "stepsRow": [
+    40,
+    5869,
+    688,
+    882
+  ],
+  "stepsLot": [
+    42,
+    5869,
+    685,
+    412
+  ],
+  "stepsText": [
+    42,
+    6321,
+    685,
+    430
+  ],
+  "stepsTextPad": "0px 12px 0px 24px",
+  "stepBtn": [
+    66,
+    6321,
+    42,
+    42
+  ],
+  "stepNumT": "16px/24px w700 lsnormal ws0px pad:0px",
+  "stepH6T": "20px/24px w600 lsnormal ws2px pad:0px",
+  "stepP": "14px/22px w400 ls-0.35px ws0px pad:0px 0px 0px 60px",
+  "stepCta": [
+    66,
+    6563,
+    166,
+    56
+  ],
+  "stepsBottomSpacer": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "footer": [
+    0,
+    6752,
+    768,
+    529
+  ],
+  "footerGrid": [
+    42,
+    6752,
+    685,
+    406
+  ],
+  "footerGridPad": "48px 24px 40px",
+  "footerGridCols": "84.0156px 121.203px 116.891px",
+  "footerGridGap": "40px 24px",
+  "footerCols": [
+    [
+      66,
+      6800,
+      637,
+      66
+    ],
+    [
+      66,
+      6906,
+      84,
+      210
+    ],
+    [
+      307,
+      6906,
+      121,
+      210
+    ],
+    [
+      586,
+      6906,
+      117,
+      210
+    ]
+  ],
+  "footerBottom": [
+    42,
+    7157,
+    685,
+    72
+  ],
+  "footerBottomPad": "24px",
+  "footerBottomT": "16px/24px w400 lsnormal ws0px pad:0px",
+  "footerEnd": [
+    40,
+    7230,
+    688,
+    50
+  ],
+  "footerLinkT": "16px/26px w400 lsnormal ws0px pad:0px",
+  "footerEmailT": "16px/24px w400 lsnormal ws0px pad:0px",
+  "logo": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "footerLogo": [
+    66,
+    6800,
+    188,
+    26
+  ],
+  "crosses": [
+    [
+      34,
+      71,
+      12,
+      12
+    ],
+    [
+      722,
+      71,
+      12,
+      12
+    ]
+  ]
+}

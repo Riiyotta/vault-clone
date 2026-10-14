@@ -1,0 +1,471 @@
+- generic [active] [ref=f76e1]:
+  - generic [ref=f76e2]:
+    - navigation [ref=f76e3]:
+      - generic [ref=f76e4]:
+        - link "Vault AI home" [ref=f76e5] [cursor=pointer]:
+          - /url: /
+        - list [ref=f76e9]:
+          - listitem [ref=f76e10]:
+            - link "Product" [ref=f76e11] [cursor=pointer]:
+              - /url: /#product
+          - listitem [ref=f76e12]:
+            - link "Automation" [ref=f76e13] [cursor=pointer]:
+              - /url: /#automation
+          - listitem [ref=f76e14]:
+            - link "Reports" [ref=f76e15] [cursor=pointer]:
+              - /url: /#reports
+          - listitem [ref=f76e16]:
+            - link "Security" [ref=f76e17] [cursor=pointer]:
+              - /url: /#security
+          - listitem [ref=f76e18]:
+            - link "Pricing" [ref=f76e19] [cursor=pointer]:
+              - /url: /pricing
+        - generic [ref=f76e20]:
+          - group "Language" [ref=f76e21]:
+            - link "EN English" [ref=f76e23] [cursor=pointer]:
+              - /url: /terms
+              - text: EN
+              - generic [ref=f76e24]: English
+            - generic [ref=f76e25]:
+              - generic [aria-hidden] [ref=f76e26]: /
+              - link "UA Українська" [ref=f76e27] [cursor=pointer]:
+                - /url: /ua/terms
+                - text: UA
+                - generic [ref=f76e28]: Українська
+          - link "Get started" [ref=f76e29] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+    - main [ref=f76e38]:
+      - article [ref=f76e41]:
+        - heading "Terms of Service" [level=1] [ref=f76e42]
+        - paragraph [ref=f76e43]:
+          - strong [ref=f76e44]: Vault AI
+          - text: "Effective date: 12 October 2026"
+        - separator [ref=f76e45]
+        - heading "1. About these Terms" [level=2] [ref=f76e46]
+        - paragraph [ref=f76e47]:
+          - text: These Terms of Service ("Terms") form a binding agreement between you and
+          - strong [ref=f76e48]: Overcode Limited
+          - text: ", a company registered in England and Wales under company number 14697980, with its registered office at Fifth Floor, 167-169 Great Portland Street, London, W1W 5PF, United Kingdom (\"Overcode\", \"we\", \"us\")."
+        - paragraph [ref=f76e49]:
+          - text: We operate
+          - strong [ref=f76e50]: Vault AI
+          - text: ("Vault", the "Service"), a financial management and planning platform available at usevault.ai.
+        - paragraph [ref=f76e51]: By creating an account, accessing the Service, or accepting an invitation to join a Workspace, you agree to these Terms. If you do not agree, do not use the Service.
+        - paragraph [ref=f76e52]:
+          - text: These Terms incorporate by reference our
+          - strong [ref=f76e53]:
+            - link "Privacy Policy" [ref=f76e54] [cursor=pointer]:
+              - /url: /privacy
+          - text: and our
+          - strong [ref=f76e55]:
+            - link "Data Processing Agreement" [ref=f76e56] [cursor=pointer]:
+              - /url: /dpa
+          - text: ", both available at usevault.ai."
+        - separator [ref=f76e57]
+        - heading "2. Definitions" [level=2] [ref=f76e58]
+        - paragraph [ref=f76e59]:
+          - strong [ref=f76e60]: Workspace
+          - text: — a separate environment within the Service representing a single business, containing its accounts, transactions, reports and members.
+        - paragraph [ref=f76e61]:
+          - strong [ref=f76e62]: Customer
+          - text: — the business entity or sole trader on whose behalf a Workspace is created. The Customer is our contracting party.
+        - paragraph [ref=f76e63]:
+          - strong [ref=f76e64]: Owner
+          - text: — the individual who creates a Workspace and is authorised to act on behalf of the Customer.
+        - paragraph [ref=f76e65]:
+          - strong [ref=f76e66]: Member
+          - text: — any individual granted access to a Workspace.
+        - paragraph [ref=f76e67]:
+          - strong [ref=f76e68]: Seat
+          - text: — a paid allocation permitting one Member to access a Workspace.
+        - paragraph [ref=f76e69]:
+          - strong [ref=f76e70]: Customer Data
+          - text: — all data submitted to, or imported into, the Service by or on behalf of the Customer, including transactions, balances, account details, categories and custom attributes.
+        - separator [ref=f76e71]
+        - heading "3. Eligibility" [level=2] [ref=f76e72]
+        - paragraph [ref=f76e73]:
+          - strong [ref=f76e74]: 3.1 Business use only.
+          - text: The Service is provided exclusively to businesses. You may use the Service only if you are a legal entity or a registered sole trader acting in the course of a business. The Service is not offered to consumers, and you may not use it for personal, family or household purposes.
+        - paragraph [ref=f76e75]:
+          - strong [ref=f76e76]: 3.2 Authority.
+          - text: By creating a Workspace, you represent that you are at least 18 years old and authorised to enter into these Terms on behalf of the Customer.
+        - paragraph [ref=f76e77]:
+          - strong [ref=f76e78]: 3.3 Restricted jurisdictions.
+          - text: The Service is not available to persons or entities located in, organised under the laws of, or ordinarily resident in any jurisdiction subject to comprehensive sanctions administered by the United Kingdom, the European Union or the United States, nor to any person or entity named on any sanctions list maintained by those authorities. As at the effective date of these Terms this includes, without limitation, Russia, Belarus, Iran, North Korea, Syria and the occupied territories of Ukraine. You represent that you are not subject to such measures and will notify us immediately if that changes.
+        - separator [ref=f76e79]
+        - heading "4. Accounts and Workspaces" [level=2] [ref=f76e80]
+        - paragraph [ref=f76e81]:
+          - strong [ref=f76e82]: 4.1 Account security.
+          - text: You are responsible for maintaining the confidentiality of access to your account and for all activity that occurs under it. You must notify us promptly at
+          - link "hello@usevault.ai" [ref=f76e83] [cursor=pointer]:
+            - /url: mailto:hello@usevault.ai
+          - text: if you become aware of any unauthorised access.
+        - paragraph [ref=f76e84]:
+          - strong [ref=f76e85]: 4.2 Members and permissions.
+          - text: The Owner and any Member granted user-management rights may invite further Members and configure their permissions. The Customer is responsible for the acts and omissions of all its Members, and for ensuring that permissions granted within a Workspace remain appropriate.
+        - paragraph [ref=f76e86]:
+          - strong [ref=f76e87]: 4.3 Accuracy.
+          - text: You must provide accurate registration information and keep it current.
+        - separator [ref=f76e88]
+        - heading "5. Plans, Seats and Payment" [level=2] [ref=f76e89]
+        - paragraph [ref=f76e90]:
+          - strong [ref=f76e91]: 5.1 Plans.
+          - text: "The Service is offered on the following plans:"
+        - table [ref=f76e93]:
+          - rowgroup [ref=f76e94]:
+            - row [ref=f76e95]:
+              - columnheader "Plan" [ref=f76e96]
+              - columnheader "Price" [ref=f76e97]
+              - columnheader "Transactions / month" [ref=f76e98]
+              - columnheader "Bank accounts" [ref=f76e99]
+          - rowgroup [ref=f76e100]:
+            - row [ref=f76e101]:
+              - cell [ref=f76e102]:
+                - strong [ref=f76e103]: Free
+              - cell "free, for teams of up to 3" [ref=f76e104]
+              - cell "200" [ref=f76e105]
+              - cell "none — manual entry and import only" [ref=f76e106]
+            - row [ref=f76e107]:
+              - cell [ref=f76e108]:
+                - strong [ref=f76e109]: Basic
+              - cell "$30 per Seat / month, or $25 per Seat / month paid annually" [ref=f76e110]
+              - cell "800" [ref=f76e111]
+              - cell "2" [ref=f76e112]
+            - row [ref=f76e113]:
+              - cell [ref=f76e114]:
+                - strong [ref=f76e115]: Pro
+              - cell "$50 per Seat / month, or $42 per Seat / month paid annually" [ref=f76e116]
+              - cell "1,500" [ref=f76e117]
+              - cell "10" [ref=f76e118]
+            - row [ref=f76e119]:
+              - cell [ref=f76e120]:
+                - strong [ref=f76e121]: Enterprise
+              - cell "on request" [ref=f76e122]
+              - cell "agreed individually" [ref=f76e123]
+              - cell "agreed individually" [ref=f76e124]
+        - paragraph [ref=f76e125]: The Free plan supports manual accounts and imported data only; bank connections require a paid plan. Basic adds configurable member permissions and the Payment Calendar and Cashflow reports. Pro adds crypto wallet connections, the P&L report and custom reports. Enterprise adds more frequent balance refresh and priority support, on terms agreed in writing.
+        - paragraph [ref=f76e126]: Plan features and prices may be updated in accordance with clause 15.
+        - paragraph [ref=f76e127]:
+          - strong [ref=f76e128]: 5.1a Plan limits.
+          - text: Each plan includes a monthly transaction limit, counted per calendar month. We will notify you in the Service as a Workspace approaches and reaches this limit, and may suggest a plan that fits its usage. If a Workspace exceeds the limit, we will not stop syncing its accounts, block new transactions or delete data because of it.
+        - paragraph [ref=f76e129]: Where a Workspace has reached the bank account limit of its plan, no further bank accounts may be connected until an existing connection is removed or the Workspace is upgraded.
+        - paragraph [ref=f76e130]:
+          - strong [ref=f76e131]: 5.2 Free trial.
+          - text: Each new Workspace receives a one-month free trial of the Pro plan. No payment card is required to start the trial. Before the trial ends, the Customer may keep the Pro plan or choose another plan; payment details are required to continue on a paid plan. If no paid subscription is started by the end of the trial, the Workspace reverts to the free plan. We may limit free trials to one per Customer.
+        - paragraph [ref=f76e132]:
+          - strong [ref=f76e133]: 5.3 Seats.
+          - text: Paid plans are charged per Seat. You purchase a number of Seats, not a number of named individuals. You may assign and reassign Seats among Members at any time.
+          - strong [ref=f76e134]: Charges are based on the number of Seats purchased, whether or not all of them are assigned.
+          - text: Reducing the number of Members does not reduce your charges for the remainder of the paid period.
+        - paragraph [ref=f76e135]:
+          - strong [ref=f76e136]: 5.4 Adding Seats.
+          - text: Seats added during a billing period are charged on a pro-rata basis for the remainder of that period.
+        - paragraph [ref=f76e137]:
+          - strong [ref=f76e138]: 5.5 Billing.
+          - text: Subscriptions may be paid monthly or annually in advance. Annual subscriptions are charged in full at the start of the annual period. Payment is made by card through our payment processor, Stripe, or by bank transfer against an invoice where we have agreed to that method.
+        - paragraph [ref=f76e139]:
+          - strong [ref=f76e140]: 5.6 Currency.
+          - text: Prices are quoted and charged in US dollars unless we have expressly agreed otherwise in writing. Where we agree to invoice in another currency, conversion is made at the rate applicable on the invoice date.
+        - paragraph [ref=f76e141]:
+          - strong [ref=f76e142]: 5.7 Taxes.
+          - text: Prices are exclusive of taxes. You are responsible for any value added tax, goods and services tax, sales tax, withholding tax or similar charge arising in your jurisdiction. Where a reverse charge mechanism applies, you are responsible for accounting for the applicable tax.
+        - paragraph [ref=f76e143]:
+          - strong [ref=f76e144]: 5.8 No refunds.
+          - strong [ref=f76e145]: All payments are non-refundable
+          - text: ", except where a refund is required by applicable law. This includes, without limitation, unused Seats, unused portions of a subscription period, and periods during which you chose not to use the Service."
+        - paragraph [ref=f76e146]:
+          - strong [ref=f76e147]: 5.9 Failed payment.
+          - text: If a payment fails, we will attempt to collect it again in accordance with the standard retry process of our payment processor. If payment has not been received after those attempts, we may suspend or terminate paid features, including bank and wallet integrations and access to the Service, without further notice. Data will be retained and deleted in accordance with clause 12.
+        - paragraph [ref=f76e148]:
+          - strong [ref=f76e149]: 5.10 Price changes.
+          - text: We may change our prices. Changes take effect at the start of your next billing period and we will give you at least 30 days' notice.
+        - separator [ref=f76e150]
+        - heading "6. What the Service Is, and What It Is Not" [level=2] [ref=f76e151]
+        - paragraph [ref=f76e152]:
+          - strong [ref=f76e153]: This clause is important. Please read it carefully.
+        - paragraph [ref=f76e154]:
+          - strong [ref=f76e155]: 6.1 Purpose.
+          - text: Vault imports, organises and presents financial information so that you can see and plan your business finances. It provides visualisation, categorisation, reporting and planning tools.
+        - paragraph [ref=f76e156]:
+          - strong [ref=f76e157]: 6.2 Not accounting, tax or advice.
+          - text: The Service is
+          - strong [ref=f76e158]: not
+          - text: an accounting system, a bookkeeping system, a tax filing tool, or a source of financial, investment, legal or tax advice. Figures presented in the Service are informational. They are not, and must not be relied upon as, statutory accounts, tax records or audited financial statements.
+        - paragraph [ref=f76e159]:
+          - strong [ref=f76e160]: 6.3 Verification is your responsibility.
+          - text: You are responsible for verifying all figures against your primary sources — your bank statements, accounting records and other authoritative documents — before relying on them for any purpose.
+          - strong [ref=f76e161]: We do not warrant that figures presented in the Service are complete, accurate or current.
+        - paragraph [ref=f76e162]:
+          - strong [ref=f76e163]: 6.4 Decisions are yours.
+          - text: Any business, financial or commercial decision you take is yours alone. We are not responsible for the consequences of decisions made in reliance on information presented by the Service.
+        - paragraph [ref=f76e164]:
+          - strong [ref=f76e165]: 6.5 Professional advice.
+          - text: You should consult a qualified accountant, auditor or tax adviser regarding your accounting, reporting and tax obligations.
+        - separator [ref=f76e166]
+        - heading "7. Bank Connections, Wallets and Third-Party Data" [level=2] [ref=f76e167]
+        - paragraph [ref=f76e168]:
+          - strong [ref=f76e169]: 7.1 Read-only access.
+          - text: Where you connect a bank account, Vault obtains
+          - strong [ref=f76e170]: read-only
+          - text: access to account and transaction information through a licensed open banking provider.
+          - strong [ref=f76e171]: Vault cannot initiate payments, move funds, or make any change to your bank account under any circumstances.
+        - paragraph [ref=f76e172]:
+          - strong [ref=f76e173]: 7.2 Your consent.
+          - text: Bank connections require your explicit consent, given directly to the open banking provider and your bank. Consents are granted for a limited period and may require periodic renewal. Where a consent expires or is withdrawn, data will stop refreshing until it is renewed.
+        - paragraph [ref=f76e174]:
+          - strong [ref=f76e175]: 7.3 Crypto wallets.
+          - text: Where you add a blockchain wallet address, Vault reads publicly available transaction data associated with that address. Vault does not hold private keys and cannot move, spend or otherwise control any assets.
+        - paragraph [ref=f76e176]:
+          - strong [ref=f76e177]: 7.4 Third-party data.
+          - text: Account, balance and transaction data originates from your bank, payment provider or the public blockchain. We transmit and present it without altering its financial substance.
+          - strong [ref=f76e178]: We are not responsible for the accuracy, completeness, timeliness or availability of data supplied by third parties
+          - text: ", nor for interruptions, delays, errors or outages originating with a bank, an open banking provider, a blockchain network or any other third party."
+        - paragraph [ref=f76e179]:
+          - strong [ref=f76e180]: 7.5 Coverage.
+          - text: The banks and institutions available for connection depend on the coverage of our providers and may change. We do not guarantee that any particular institution is or will remain available.
+        - separator [ref=f76e181]
+        - heading "8. Your Obligations and Acceptable Use" [level=2] [ref=f76e182]
+        - paragraph [ref=f76e183]:
+          - strong [ref=f76e184]: 8.1 Lawful data.
+          - text: You must have the right to submit all Customer Data to the Service. Where Customer Data includes personal data of third parties — such as counterparties, employees or contractors — you are responsible for having a lawful basis to process it and for providing any notices required.
+        - paragraph [ref=f76e185]:
+          - strong [ref=f76e186]: 8.2 Prohibited conduct.
+          - text: "You must not, and must not permit any Member or third party to:"
+        - list [ref=f76e187]:
+          - listitem [ref=f76e188]: resell, sublicense, rent or otherwise make the Service available to any third party who is not a Member of your Workspace;
+          - listitem [ref=f76e189]: reverse engineer, decompile or disassemble any part of the Service, or attempt to derive its source code, except to the extent this restriction is prohibited by applicable law;
+          - listitem [ref=f76e190]: scrape, crawl or use automated means to extract data from the Service, other than through functionality we provide;
+          - listitem [ref=f76e191]: circumvent or attempt to circumvent any access control, permission, rate limit or usage limit;
+          - listitem [ref=f76e192]: upload data you do not have the right to process, or data that is unlawful, malicious or infringing;
+          - listitem [ref=f76e193]: use the Service to develop a competing product, or for benchmarking made public without our written consent;
+          - listitem [ref=f76e194]: interfere with the integrity, security or performance of the Service.
+        - paragraph [ref=f76e195]:
+          - strong [ref=f76e196]: 8.3 Consequences.
+          - text: We may suspend access immediately where we reasonably believe this clause has been breached, or where continued access presents a risk to the Service or to other customers.
+        - separator [ref=f76e197]
+        - heading "9. Data Protection" [level=2] [ref=f76e198]
+        - paragraph [ref=f76e199]:
+          - strong [ref=f76e200]: "9.1"
+          - text: Our handling of personal data is described in our
+          - strong [ref=f76e201]:
+            - link "Privacy Policy" [ref=f76e202] [cursor=pointer]:
+              - /url: /privacy
+          - text: .
+        - paragraph [ref=f76e203]:
+          - strong [ref=f76e204]: "9.2"
+          - text: Where we process personal data contained in Customer Data on your behalf, we act as processor and you act as controller. That processing is governed by our
+          - strong [ref=f76e205]:
+            - link "Data Processing Agreement" [ref=f76e206] [cursor=pointer]:
+              - /url: /dpa
+          - text: ", which forms part of these Terms."
+        - paragraph [ref=f76e207]:
+          - strong [ref=f76e208]: "9.3"
+          - text: Each party will comply with applicable data protection law in respect of its own processing.
+        - separator [ref=f76e209]
+        - heading "10. Availability and Support" [level=2] [ref=f76e210]
+        - paragraph [ref=f76e211]:
+          - strong [ref=f76e212]: 10.1 No uptime commitment.
+          - text: We aim to keep the Service available and performing well, but
+          - strong [ref=f76e213]: we do not guarantee any particular level of availability, uptime or performance
+          - text: ", and we provide no service credits. The Service is provided on an \"as available\" basis."
+        - paragraph [ref=f76e214]:
+          - strong [ref=f76e215]: 10.2 Maintenance.
+          - text: We may carry out maintenance that temporarily affects availability. Where maintenance is planned, we will give at least 24 hours' notice by email or in-app notification. Emergency maintenance may be carried out without notice.
+        - paragraph [ref=f76e216]:
+          - strong [ref=f76e217]: 10.3 Support.
+          - text: Support is available by email at
+          - link "hello@usevault.ai" [ref=f76e218] [cursor=pointer]:
+            - /url: mailto:hello@usevault.ai
+          - text: and through the in-app chat. We aim to respond promptly during business hours but do not commit to a specific response time.
+        - separator [ref=f76e219]
+        - heading "11. Intellectual Property" [level=2] [ref=f76e220]
+        - paragraph [ref=f76e221]:
+          - strong [ref=f76e222]: 11.1 Our rights.
+          - text: The Service, including all software, design, text, graphics and documentation, is owned by Overcode or its licensors and is protected by intellectual property law. These Terms grant you a limited, non-exclusive, non-transferable, revocable right to use the Service during your subscription, and nothing more.
+        - paragraph [ref=f76e223]:
+          - strong [ref=f76e224]: 11.2 Your data.
+          - text: You retain all rights in Customer Data. You grant us a limited licence to host, process, transmit and display Customer Data solely to provide and support the Service, and to the extent necessary to comply with law.
+        - paragraph [ref=f76e225]:
+          - strong [ref=f76e226]: 11.3 Feedback.
+          - text: If you give us suggestions or feedback, we may use them without restriction or obligation to you.
+        - separator [ref=f76e227]
+        - heading "12. Suspension, Termination, Export and Deletion" [level=2] [ref=f76e228]
+        - paragraph [ref=f76e229]:
+          - strong [ref=f76e230]: 12.1 Your right to terminate.
+          - text: You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period. Consistent with clause 5.8, no refund is due for the remainder of that period.
+        - paragraph [ref=f76e231]:
+          - strong [ref=f76e232]: 12.2 Our right to terminate.
+          - text: "We may suspend or terminate your access:"
+        - list [ref=f76e233]:
+          - listitem [ref=f76e234]: for non-payment, in accordance with clause 5.9;
+          - listitem [ref=f76e235]: immediately, for breach of clause 3.3 (sanctions) or clause 8 (acceptable use);
+          - listitem [ref=f76e236]: for any other material breach not remedied within 14 days of written notice;
+          - listitem [ref=f76e237]: on 30 days' notice, if we discontinue the Service.
+        - paragraph [ref=f76e238]:
+          - strong [ref=f76e239]: 12.3 Export.
+          - text: You may export your transactions from the Service in CSV format at any time while your Workspace exists.
+        - paragraph [ref=f76e240]:
+          - strong [ref=f76e241]: 12.4 Deletion.
+          - text: "Cancelling a paid subscription does not delete any data: the Workspace moves to the Free plan and its Customer Data remains accessible. When a Workspace is deleted, all Customer Data in it is permanently deleted from our production systems immediately, and any bank or wallet connections are revoked."
+          - strong [ref=f76e242]: There is no recovery period
+          - text: ", so you should export any data you need before deleting the Workspace. Residual copies may remain in encrypted database backups for up to"
+          - strong [ref=f76e243]: 7 days
+          - text: and in system logs and error reports for up to
+          - strong [ref=f76e244]: 30 days
+          - text: ", after which they are overwritten."
+        - paragraph [ref=f76e245]:
+          - strong [ref=f76e246]: 12.5 Backups.
+          - text: Data removed from production systems persists in encrypted backups for up to
+          - strong [ref=f76e247]: 7 days
+          - text: before those backups expire and the data is no longer recoverable.
+        - paragraph [ref=f76e248]:
+          - strong [ref=f76e249]: 12.6 Member profiles.
+          - text: Deleting a Workspace deletes the Workspace and its Customer Data. It does not delete the personal user profiles of Members, which are separate and may be associated with other Workspaces. An individual may request deletion of their own profile as described in the Privacy Policy.
+        - paragraph [ref=f76e250]:
+          - strong [ref=f76e251]: 12.7 Records we must keep.
+          - text: We may retain invoices, payment records and similar documents where required to comply with legal, accounting or tax obligations.
+        - separator [ref=f76e252]
+        - heading "13. Warranties and Disclaimers" [level=2] [ref=f76e253]
+        - paragraph [ref=f76e254]:
+          - strong [ref=f76e255]: "13.1"
+          - text: To the maximum extent permitted by law, the Service is provided
+          - strong [ref=f76e256]: "\"as is\" and \"as available\""
+          - text: ", without warranty of any kind, whether express, implied or statutory."
+        - paragraph [ref=f76e257]:
+          - strong [ref=f76e258]: "13.2"
+          - text: We specifically disclaim any implied warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, and uninterrupted or error-free operation.
+        - paragraph [ref=f76e259]:
+          - strong [ref=f76e260]: "13.3"
+          - text: We do not warrant that the Service will meet your requirements, that defects will be corrected, or that any data presented is accurate, complete or current.
+        - separator [ref=f76e261]
+        - heading "14. Limitation of Liability" [level=2] [ref=f76e262]
+        - paragraph [ref=f76e263]:
+          - strong [ref=f76e264]: 14.1 Cap.
+          - text: To the maximum extent permitted by law, our total aggregate liability arising out of or in connection with these Terms and the Service, whether in contract, tort (including negligence), breach of statutory duty or otherwise,
+          - strong [ref=f76e265]: shall not exceed the total amount you paid to us in the twelve (12) months immediately preceding the event giving rise to the claim
+          - text: .
+        - paragraph [ref=f76e266]:
+          - strong [ref=f76e267]: 14.2 Excluded losses.
+          - text: "We shall not be liable for any:"
+        - list [ref=f76e268]:
+          - listitem [ref=f76e269]: loss of profit, revenue, business, contracts or anticipated savings;
+          - listitem [ref=f76e270]: loss, corruption or inaccuracy of data, other than our obligation to maintain backups as described in clause 12.5;
+          - listitem [ref=f76e271]: loss of goodwill or reputational harm;
+          - listitem [ref=f76e272]: indirect, consequential, special or punitive loss;
+          - listitem [ref=f76e273]: loss arising from decisions taken in reliance on information presented by the Service;
+          - listitem [ref=f76e274]: loss arising from the acts, omissions, errors, delays or unavailability of any bank, open banking provider, payment processor, blockchain network or other third party.
+        - paragraph [ref=f76e275]:
+          - strong [ref=f76e276]: 14.3 What is not excluded.
+          - text: Nothing in these Terms excludes or limits liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot lawfully be excluded or limited.
+        - paragraph [ref=f76e277]:
+          - strong [ref=f76e278]: 14.4 Free plan and trials.
+          - text: Where the Service is provided free of charge, including on the free plan and during a free trial, our liability is limited to the maximum extent permitted by law.
+        - separator [ref=f76e279]
+        - heading "15. Changes to These Terms" [level=2] [ref=f76e280]
+        - paragraph [ref=f76e281]:
+          - strong [ref=f76e282]: "15.1"
+          - text: We may amend these Terms. Where an amendment is material, we will give at least 30 days' notice by email to the Workspace Owner or by in-app notification.
+        - paragraph [ref=f76e283]:
+          - strong [ref=f76e284]: "15.2"
+          - text: Continued use of the Service after the amendment takes effect constitutes acceptance. If you do not accept an amendment, you may terminate under clause 12.1 before it takes effect.
+        - separator [ref=f76e285]
+        - heading "16. General" [level=2] [ref=f76e286]
+        - paragraph [ref=f76e287]:
+          - strong [ref=f76e288]: 16.1 Assignment.
+          - text: You may not assign or transfer these Terms without our written consent. We may assign or transfer these Terms in connection with a merger, acquisition, corporate reorganisation or sale of assets.
+        - paragraph [ref=f76e289]:
+          - strong [ref=f76e290]: 16.2 Entire agreement.
+          - text: These Terms, together with the Privacy Policy and the Data Processing Agreement, constitute the entire agreement between the parties in relation to the Service and supersede all prior discussions and representations.
+        - paragraph [ref=f76e291]:
+          - strong [ref=f76e292]: 16.3 Severability.
+          - text: If any provision is held unenforceable, the remaining provisions continue in full force.
+        - paragraph [ref=f76e293]:
+          - strong [ref=f76e294]: 16.4 No waiver.
+          - text: Failure to enforce any provision is not a waiver of it.
+        - paragraph [ref=f76e295]:
+          - strong [ref=f76e296]: 16.5 Third parties.
+          - text: A person who is not a party to these Terms has no right to enforce any of its terms under the Contracts (Rights of Third Parties) Act 1999.
+        - paragraph [ref=f76e297]:
+          - strong [ref=f76e298]: 16.6 Force majeure.
+          - text: Neither party is liable for failure to perform caused by events beyond its reasonable control.
+        - paragraph [ref=f76e299]:
+          - strong [ref=f76e300]: 16.7 Language.
+          - text: These Terms may be made available in languages other than English.
+          - strong [ref=f76e301]: In the event of any inconsistency, the English version prevails.
+        - separator [ref=f76e302]
+        - heading "17. Governing Law and Jurisdiction" [level=2] [ref=f76e303]
+        - paragraph [ref=f76e304]:
+          - text: These Terms and any dispute arising out of or in connection with them are governed by the laws of
+          - strong [ref=f76e305]: England and Wales
+          - text: . The courts of England and Wales have exclusive jurisdiction.
+        - separator [ref=f76e306]
+        - heading "18. Contact" [level=2] [ref=f76e307]
+        - paragraph [ref=f76e308]: Overcode LimitedFifth Floor, 167-169 Great Portland StreetLondon, W1W 5PF, United KingdomCompany number 14697980
+        - paragraph [ref=f76e309]:
+          - strong [ref=f76e310]:
+            - link "hello@usevault.ai" [ref=f76e311] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+      - generic [ref=f76e322]:
+        - generic [ref=f76e323]:
+          - generic [ref=f76e324]:
+            - link "Vault AI home" [ref=f76e325] [cursor=pointer]:
+              - /url: /
+            - generic [ref=f76e329]:
+              - link "LinkedIn" [ref=f76e330] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/usevault-ai/
+              - link "Vault AI on Telegram" [ref=f76e333] [cursor=pointer]:
+                - /url: https://t.me/usevault_ai
+              - link "hello@usevault.ai" [ref=f76e336] [cursor=pointer]:
+                - /url: mailto:hello@usevault.ai
+          - generic [ref=f76e341]:
+            - paragraph [ref=f76e342]: Platform
+            - list "Platform" [ref=f76e343]:
+              - listitem [ref=f76e344]:
+                - link "Product" [ref=f76e345] [cursor=pointer]:
+                  - /url: /#product
+              - listitem [ref=f76e346]:
+                - link "Automation" [ref=f76e347] [cursor=pointer]:
+                  - /url: /#automation
+              - listitem [ref=f76e348]:
+                - link "Reports" [ref=f76e349] [cursor=pointer]:
+                  - /url: /#reports
+              - listitem [ref=f76e350]:
+                - link "Security" [ref=f76e351] [cursor=pointer]:
+                  - /url: /#security
+              - listitem [ref=f76e352]:
+                - link "Pricing" [ref=f76e353] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=f76e354]:
+            - paragraph [ref=f76e355]: Resources
+            - list "Resources" [ref=f76e356]:
+              - listitem [ref=f76e357]:
+                - link "Help Center" [ref=f76e358] [cursor=pointer]:
+                  - /url: https://help.usevault.ai/en/
+              - listitem [ref=f76e359]:
+                - link "Status" [ref=f76e360] [cursor=pointer]:
+                  - /url: https://status.usevault.ai/
+              - listitem [ref=f76e361]:
+                - link "Migration offer" [ref=f76e362] [cursor=pointer]:
+                  - /url: /migration-offer
+              - listitem [ref=f76e363]:
+                - link "Partner program" [ref=f76e364] [cursor=pointer]:
+                  - /url: /partners
+          - generic [ref=f76e365]:
+            - paragraph [ref=f76e366]: Legal
+            - list "Legal" [ref=f76e367]:
+              - listitem [ref=f76e368]:
+                - link "Terms of Service" [ref=f76e369] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=f76e370]:
+                - link "Privacy Policy" [ref=f76e371] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=f76e372]:
+                - link "DPA" [ref=f76e373] [cursor=pointer]:
+                  - /url: /dpa
+        - generic [ref=f76e374]:
+          - generic [ref=f76e375]: © 2026 VAULT AI. All rights reserved.
+          - generic [ref=f76e376]:
+            - generic [ref=f76e377]: Built by
+            - link "Overcode (opens in a new tab)" [ref=f76e378] [cursor=pointer]:
+              - /url: https://www.overcode.tech/
+  - alert [ref=f76e405]

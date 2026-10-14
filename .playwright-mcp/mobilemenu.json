@@ -1,0 +1,842 @@
+{
+  "items": [
+    {
+      "t": "NAV",
+      "c": "w-full max-w-360 px-6 md:px-10",
+      "txt": "",
+      "box": [
+        0,
+        0,
+        390,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px 24px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "flex items-center justify-between border-x-[1.5px] border-white/5 px-3 py-4 md:px-8 md:py-6",
+      "txt": "",
+      "box": [
+        24,
+        0,
+        342,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "16px 12px",
+      "border": "0px 1.5px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "",
+      "txt": "",
+      "box": [
+        38,
+        20,
+        116,
+        16
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "#top"
+    },
+    {
+      "t": "svg",
+      "c": "h-4 w-29 md:h-7 md:w-50",
+      "txt": "",
+      "box": [
+        38,
+        20,
+        116,
+        16
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "g",
+      "c": "",
+      "txt": "",
+      "box": [
+        38,
+        20,
+        115,
+        16
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "defs",
+      "c": "",
+      "txt": "",
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "clipPath",
+      "c": "",
+      "txt": "",
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "BUTTON",
+      "c": "flex cursor-pointer items-center justify-center text-white",
+      "txt": "",
+      "box": [
+        329,
+        16,
+        24,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "href": ""
+    },
+    {
+      "t": "svg",
+      "c": "size-6 md:size-7",
+      "txt": "",
+      "box": [
+        329,
+        16,
+        24,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "absolute top-[calc(100%+1px)] right-0 left-0 z-40 overflow-hidden px-6 md:px-10",
+      "txt": "",
+      "box": [
+        0,
+        57,
+        390,
+        443
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px 24px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "mx-auto w-full max-w-360 overflow-hidden border-x-[1.5px] border-white/5 backdrop-blur-lg bg-[linear-gradient(180deg,#03020B_0%,rgba(3,2,11,0)_100%)] shadow-2xl shadow-black/20",
+      "txt": "",
+      "box": [
+        24,
+        57,
+        342,
+        443
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "linear-gradient(rgb(3, 2, 11) 0%, rgba(3, 2, 11, 0) 100%)",
+      "bd": "blur(16px)",
+      "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.2) 0px 25px 50px -12px",
+      "pad": "0px",
+      "border": "0px 1.5px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "scrollbar-hide flex min-h-90 w-full flex-col gap-6 border-b-white/5 pb-5 md:gap-8 md:border-b-[1.5px] md:pb-8",
+      "txt": "",
+      "box": [
+        26,
+        57,
+        339,
+        443
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px 0px 20px",
+      "border": "0px solid rgb(0, 0, 0) rgb(0, 0, 0) oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "UL",
+      "c": "flex flex-col divide-y divide-white/5 border-b border-b-white/5",
+      "txt": "",
+      "box": [
+        26,
+        57,
+        339,
+        285
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px 0px 1px solid rgb(0, 0, 0) rgb(0, 0, 0) oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "LI",
+      "c": "",
+      "txt": "",
+      "box": [
+        26,
+        57,
+        339,
+        57
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px 0px 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "group flex w-full cursor-pointer items-center gap-8 px-4 py-3.75 transition-colors duration-300 md:px-8.5 md:py-4",
+      "txt": "",
+      "box": [
+        26,
+        57,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "15px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "#product"
+    },
+    {
+      "t": "SPAN",
+      "c": "text-white/40 transition-colors duration-300 group-hover:text-white",
+      "txt": "01 .",
+      "box": [
+        42,
+        73,
+        21,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "leading-6.5 text-white/80 transition-colors duration-300 group-hover:text-white",
+      "txt": "Product",
+      "box": [
+        94,
+        72,
+        56,
+        26
+      ],
+      "fs": "16px/26px w400",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "href": ""
+    },
+    {
+      "t": "LI",
+      "c": "",
+      "txt": "",
+      "box": [
+        26,
+        114,
+        339,
+        57
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px 0px 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "group flex w-full cursor-pointer items-center gap-8 px-4 py-3.75 transition-colors duration-300 md:px-8.5 md:py-4",
+      "txt": "",
+      "box": [
+        26,
+        114,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "15px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "#automation"
+    },
+    {
+      "t": "SPAN",
+      "c": "text-white/40 transition-colors duration-300 group-hover:text-white",
+      "txt": "02 .",
+      "box": [
+        42,
+        130,
+        24,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "leading-6.5 text-white/80 transition-colors duration-300 group-hover:text-white",
+      "txt": "Automation",
+      "box": [
+        97,
+        129,
+        84,
+        26
+      ],
+      "fs": "16px/26px w400",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "href": ""
+    },
+    {
+      "t": "LI",
+      "c": "",
+      "txt": "",
+      "box": [
+        26,
+        171,
+        339,
+        57
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px 0px 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "group flex w-full cursor-pointer items-center gap-8 px-4 py-3.75 transition-colors duration-300 md:px-8.5 md:py-4",
+      "txt": "",
+      "box": [
+        26,
+        171,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "15px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "#reports"
+    },
+    {
+      "t": "SPAN",
+      "c": "text-white/40 transition-colors duration-300 group-hover:text-white",
+      "txt": "03 .",
+      "box": [
+        42,
+        187,
+        23,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "leading-6.5 text-white/80 transition-colors duration-300 group-hover:text-white",
+      "txt": "Reports",
+      "box": [
+        97,
+        186,
+        56,
+        26
+      ],
+      "fs": "16px/26px w400",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "href": ""
+    },
+    {
+      "t": "LI",
+      "c": "",
+      "txt": "",
+      "box": [
+        26,
+        228,
+        339,
+        57
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px 0px 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "group flex w-full cursor-pointer items-center gap-8 px-4 py-3.75 transition-colors duration-300 md:px-8.5 md:py-4",
+      "txt": "",
+      "box": [
+        26,
+        228,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "15px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "#security"
+    },
+    {
+      "t": "SPAN",
+      "c": "text-white/40 transition-colors duration-300 group-hover:text-white",
+      "txt": "04 .",
+      "box": [
+        42,
+        244,
+        24,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "leading-6.5 text-white/80 transition-colors duration-300 group-hover:text-white",
+      "txt": "Security",
+      "box": [
+        98,
+        243,
+        58,
+        26
+      ],
+      "fs": "16px/26px w400",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "href": ""
+    },
+    {
+      "t": "LI",
+      "c": "",
+      "txt": "",
+      "box": [
+        26,
+        285,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "group flex w-full cursor-pointer items-center gap-8 px-4 py-3.75 transition-colors duration-300 md:px-8.5 md:py-4",
+      "txt": "",
+      "box": [
+        26,
+        285,
+        339,
+        56
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "15px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": "/pricing"
+    },
+    {
+      "t": "SPAN",
+      "c": "text-white/40 transition-colors duration-300 group-hover:text-white",
+      "txt": "05 .",
+      "box": [
+        42,
+        301,
+        23,
+        24
+      ],
+      "fs": "16px/24px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "leading-6.5 text-white/80 transition-colors duration-300 group-hover:text-white",
+      "txt": "Pricing",
+      "box": [
+        97,
+        300,
+        49,
+        26
+      ],
+      "fs": "16px/26px w400",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "px-3 md:px-7.5",
+      "txt": "",
+      "box": [
+        26,
+        366,
+        339,
+        28
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px 12px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "flex shrink-0 items-center gap-1",
+      "txt": "",
+      "box": [
+        38,
+        366,
+        315,
+        28
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "flex items-center gap-1",
+      "txt": "",
+      "box": [
+        38,
+        366,
+        26,
+        28
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "px-1 py-1 text-sm leading-5 transition-colors duration-400 text-white",
+      "txt": "EN",
+      "box": [
+        38,
+        366,
+        26,
+        28
+      ],
+      "fs": "14px/20px w400",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "4px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "href": "/"
+    },
+    {
+      "t": "SPAN",
+      "c": "sr-only",
+      "txt": " English",
+      "box": [
+        59,
+        369,
+        1,
+        1
+      ],
+      "fs": "14px/20px w400",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "flex items-center gap-1",
+      "txt": "",
+      "box": [
+        68,
+        366,
+        36,
+        28
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "SPAN",
+      "c": "text-sm text-white/20",
+      "txt": "/",
+      "box": [
+        68,
+        370,
+        5,
+        20
+      ],
+      "fs": "14px/20px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "px-1 py-1 text-sm leading-5 transition-colors duration-400 text-white/50 hover:text-white",
+      "txt": "UA",
+      "box": [
+        77,
+        366,
+        27,
+        28
+      ],
+      "fs": "14px/20px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "4px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "href": "/ua"
+    },
+    {
+      "t": "SPAN",
+      "c": "sr-only",
+      "txt": " Українська",
+      "box": [
+        99,
+        369,
+        1,
+        1
+      ],
+      "fs": "14px/20px w400",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px",
+      "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "href": ""
+    },
+    {
+      "t": "DIV",
+      "c": "px-4 md:px-8",
+      "txt": "",
+      "box": [
+        26,
+        418,
+        339,
+        62
+      ],
+      "fs": "16px/24px w400",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "0px 16px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "href": ""
+    },
+    {
+      "t": "A",
+      "c": "flex items-center cursor-pointer font-medium justify-center bt-transparent border border-white/20 rounded-[36px] text-lg text-white py-4 w-full",
+      "txt": "Get started",
+      "box": [
+        42,
+        418,
+        307,
+        62
+      ],
+      "fs": "18px/28px w500",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "bd": "none",
+      "sh": "none",
+      "pad": "16px 0px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+      "href": "https://app.usevault.ai/login"
+    }
+  ],
+  "closeSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 21 21\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.667\" d=\"m15.24 5.117-10 10m0-10 10 10\"></path></svg>",
+  "bodyPos": "fixed"
+}

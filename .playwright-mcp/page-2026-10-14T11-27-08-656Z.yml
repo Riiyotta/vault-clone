@@ -1,0 +1,442 @@
+- generic [active] [ref=f75e1]:
+  - generic [ref=f75e2]:
+    - navigation [ref=f75e3]:
+      - generic [ref=f75e4]:
+        - link "Vault AI home" [ref=f75e5] [cursor=pointer]:
+          - /url: /
+        - list [ref=f75e9]:
+          - listitem [ref=f75e10]:
+            - link "Product" [ref=f75e11] [cursor=pointer]:
+              - /url: /#product
+          - listitem [ref=f75e12]:
+            - link "Automation" [ref=f75e13] [cursor=pointer]:
+              - /url: /#automation
+          - listitem [ref=f75e14]:
+            - link "Reports" [ref=f75e15] [cursor=pointer]:
+              - /url: /#reports
+          - listitem [ref=f75e16]:
+            - link "Security" [ref=f75e17] [cursor=pointer]:
+              - /url: /#security
+          - listitem [ref=f75e18]:
+            - link "Pricing" [ref=f75e19] [cursor=pointer]:
+              - /url: /pricing
+        - generic [ref=f75e20]:
+          - group "Language" [ref=f75e21]:
+            - link "EN English" [ref=f75e23] [cursor=pointer]:
+              - /url: /dpa
+              - text: EN
+              - generic [ref=f75e24]: English
+            - generic [ref=f75e25]:
+              - generic [aria-hidden] [ref=f75e26]: /
+              - link "UA Українська" [ref=f75e27] [cursor=pointer]:
+                - /url: /ua/dpa
+                - text: UA
+                - generic [ref=f75e28]: Українська
+          - link "Get started" [ref=f75e29] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+    - main [ref=f75e38]:
+      - article [ref=f75e41]:
+        - heading "Data Processing Agreement" [level=1] [ref=f75e42]
+        - paragraph [ref=f75e43]:
+          - strong [ref=f75e44]: Vault AI
+          - text: "Effective date: 12 October 2026"
+        - separator [ref=f75e45]
+        - paragraph [ref=f75e46]:
+          - text: This Data Processing Agreement ("DPA") forms part of the Terms of Service between
+          - strong [ref=f75e47]: Overcode Limited
+          - text: ("Processor", "we", "us") and the customer identified in the Terms of Service ("Controller", "you"), and governs our processing of personal data on your behalf.
+        - paragraph [ref=f75e48]:
+          - text: By accepting the Terms of Service you accept this DPA. No separate signature is required. If your internal policy requires a signed copy, contact
+          - strong [ref=f75e49]:
+            - link "hello@usevault.ai" [ref=f75e50] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+          - text: and we will provide one.
+        - separator [ref=f75e51]
+        - heading "1. Definitions" [level=2] [ref=f75e52]
+        - paragraph [ref=f75e53]: Terms defined in the Terms of Service have the same meaning here.
+        - paragraph [ref=f75e54]:
+          - strong [ref=f75e55]: Data Protection Law
+          - text: — the UK GDPR, the Data Protection Act 2018, and Regulation (EU) 2016/679 (the EU GDPR), together with any national implementing legislation, in each case as applicable to the processing.
+        - paragraph [ref=f75e56]:
+          - strong [ref=f75e57]: Personal Data
+          - text: — personal data within the meaning of Data Protection Law that we process on your behalf in providing the Service.
+        - paragraph [ref=f75e58]:
+          - strong [ref=f75e59]: Data Subject
+          - text: ","
+          - strong [ref=f75e60]: Controller
+          - text: ","
+          - strong [ref=f75e61]: Processor
+          - text: ","
+          - strong [ref=f75e62]: Processing
+          - text: ","
+          - strong [ref=f75e63]: Personal Data Breach
+          - text: and
+          - strong [ref=f75e64]: Supervisory Authority
+          - text: have the meanings given in Data Protection Law.
+        - paragraph [ref=f75e65]:
+          - strong [ref=f75e66]: Sub-processor
+          - text: — a third party engaged by us to process Personal Data.
+        - separator [ref=f75e67]
+        - heading "2. Roles of the parties" [level=2] [ref=f75e68]
+        - paragraph [ref=f75e69]:
+          - strong [ref=f75e70]: "2.1"
+          - text: You are the Controller. We are the Processor.
+        - paragraph [ref=f75e71]:
+          - strong [ref=f75e72]: "2.2"
+          - text: You determine the purposes and means of processing the Personal Data you place in the Service. We process it only to provide the Service and only on your instructions.
+        - paragraph [ref=f75e73]:
+          - strong [ref=f75e74]: "2.3"
+          - text: You are responsible for ensuring you have a lawful basis for the processing, for the accuracy and lawfulness of the Personal Data you submit, and for providing any notices or obtaining any consents required from Data Subjects.
+        - paragraph [ref=f75e75]:
+          - strong [ref=f75e76]: "2.4"
+          - text: This DPA does not apply to personal data for which we act as Controller — such as the account data of your users, billing data and usage data. That is covered by our
+          - strong [ref=f75e77]:
+            - link "Privacy Policy" [ref=f75e78] [cursor=pointer]:
+              - /url: /privacy
+          - text: .
+        - separator [ref=f75e79]
+        - heading "3. Scope of processing" [level=2] [ref=f75e80]
+        - heading "3.1 Subject matter and duration" [level=3] [ref=f75e81]
+        - paragraph [ref=f75e82]: We process Personal Data for the duration of the Terms of Service and for the retention periods set out in clause 9.
+        - heading "3.2 Nature and purpose" [level=3] [ref=f75e83]
+        - paragraph [ref=f75e84]: Hosting, storing, organising, transmitting, structuring and displaying Personal Data for the purpose of providing a financial management and planning service, and providing support in connection with it.
+        - heading "3.3 Types of Personal Data" [level=3] [ref=f75e85]
+        - paragraph [ref=f75e86]: "Personal Data contained in the financial records you place in the Service, which may include:"
+        - list [ref=f75e87]:
+          - listitem [ref=f75e88]: names and identifiers of counterparties, including individuals and sole traders;
+          - listitem [ref=f75e89]: bank account identifiers and payment references;
+          - listitem [ref=f75e90]: transaction amounts, dates, descriptions and free-text notes;
+          - listitem [ref=f75e91]: names appearing in transaction descriptions or in custom attributes;
+          - listitem [ref=f75e92]: categories, projects, departments or other attributes you define, where these identify individuals.
+        - paragraph [ref=f75e93]: We do not require, and do not ask for, any special category data within the meaning of Article 9 of the GDPR.
+        - heading "3.4 Categories of Data Subjects" [level=3] [ref=f75e94]
+        - paragraph [ref=f75e95]: Your counterparties, suppliers, customers, contractors and employees, to the extent they appear in the financial records you place in the Service.
+        - separator [ref=f75e96]
+        - heading "4. Our obligations" [level=2] [ref=f75e97]
+        - paragraph [ref=f75e98]: "We shall:"
+        - paragraph [ref=f75e99]:
+          - strong [ref=f75e100]: 4.1 Process on instruction.
+          - text: Process Personal Data only on your documented instructions, including the instructions contained in the Terms of Service and this DPA, unless required to do otherwise by law. Where we are required by law to process otherwise, we will inform you before doing so unless the law prohibits it.
+        - paragraph [ref=f75e101]:
+          - strong [ref=f75e102]: 4.2 Not use it for our own purposes.
+          - text: Not sell Personal Data, not share it for advertising, not use it for our own commercial purposes, and
+          - strong [ref=f75e103]: not use it to train any machine learning or artificial intelligence model
+          - text: .
+        - paragraph [ref=f75e104]:
+          - strong [ref=f75e105]: 4.3 Confidentiality.
+          - text: Ensure that personnel authorised to process Personal Data are bound by a duty of confidentiality.
+        - paragraph [ref=f75e106]:
+          - strong [ref=f75e107]: 4.4 Security.
+          - text: Implement and maintain the technical and organisational measures set out in
+          - strong [ref=f75e108]:
+            - link "Annex 1" [ref=f75e109] [cursor=pointer]:
+              - /url: "#annex-1"
+          - text: .
+        - paragraph [ref=f75e110]:
+          - strong [ref=f75e111]: 4.5 Assist you.
+          - text: "Taking into account the nature of processing and the information available to us, provide reasonable assistance with:"
+        - list [ref=f75e112]:
+          - listitem [ref=f75e113]: responding to requests from Data Subjects exercising their rights (clause 6);
+          - listitem [ref=f75e114]: your obligations regarding security, breach notification, data protection impact assessments and prior consultation with a Supervisory Authority.
+        - paragraph [ref=f75e115]:
+          - strong [ref=f75e116]: 4.6 Notify you of a breach.
+          - text: Notify you of a Personal Data Breach affecting your Personal Data
+          - strong [ref=f75e117]: without undue delay and in any event within 72 hours
+          - text: of becoming aware of it, providing the information reasonably available to us to enable you to meet your own obligations.
+        - paragraph [ref=f75e118]:
+          - strong [ref=f75e119]: 4.7 Delete or return.
+          - text: On termination, delete Personal Data in accordance with clause 9.
+        - paragraph [ref=f75e120]:
+          - strong [ref=f75e121]: 4.8 Demonstrate compliance.
+          - text: Make available the information reasonably necessary to demonstrate compliance with this DPA, as set out in clause 7.
+        - paragraph [ref=f75e122]:
+          - strong [ref=f75e123]: 4.9 Notify unlawful instructions.
+          - text: Inform you if, in our opinion, an instruction from you infringes Data Protection Law. We may suspend the affected processing until the instruction is withdrawn or amended.
+        - separator [ref=f75e124]
+        - heading "5. Sub-processors" [level=2] [ref=f75e125]
+        - paragraph [ref=f75e126]:
+          - strong [ref=f75e127]: 5.1 General authorisation.
+          - text: You give general written authorisation for us to engage Sub-processors to provide the Service.
+        - paragraph [ref=f75e128]:
+          - strong [ref=f75e129]: 5.2 Current list.
+          - text: Our Sub-processors are listed in
+          - strong [ref=f75e130]:
+            - link "Annex 2" [ref=f75e131] [cursor=pointer]:
+              - /url: "#annex-2"
+          - text: and maintained at
+          - link "usevault.ai/subprocessors" [ref=f75e132] [cursor=pointer]:
+            - /url: /subprocessors
+          - text: .
+        - paragraph [ref=f75e133]:
+          - strong [ref=f75e134]: 5.3 Terms.
+          - text: Except as set out in clause 8.4, we impose on each Sub-processor data protection obligations no less protective than those in this DPA, and remain fully liable to you for their performance.
+        - paragraph [ref=f75e135]:
+          - strong [ref=f75e136]: 5.4 Changes.
+          - text: We will give at least
+          - strong [ref=f75e137]: 30 days' notice
+          - text: before adding or replacing a Sub-processor, by email or in-app notification. You may object on reasonable data protection grounds within that period. If we cannot resolve your objection, you may terminate the affected part of the Service and receive a pro-rata refund of prepaid fees for the unused remainder of the period — this being an exception to clause 5.8 of the Terms of Service.
+        - separator [ref=f75e138]
+        - heading "6. Data Subject requests" [level=2] [ref=f75e139]
+        - paragraph [ref=f75e140]:
+          - strong [ref=f75e141]: "6.1"
+          - text: If a Data Subject contacts us directly regarding Personal Data we process on your behalf, we will not respond substantively. We will refer them to you and inform you promptly.
+        - paragraph [ref=f75e142]:
+          - strong [ref=f75e143]: "6.2"
+          - text: Taking into account the nature of the processing, we will assist you by appropriate technical and organisational measures, insofar as possible, in fulfilling your obligation to respond to such requests. The Service provides functionality allowing you to access, correct, export and delete data within your workspace.
+        - paragraph [ref=f75e144]:
+          - strong [ref=f75e145]: "6.3"
+          - text: Where assistance requires work beyond the functionality of the Service, we may charge a reasonable fee, agreed with you in advance.
+        - separator [ref=f75e146]
+        - heading "7. Audit and compliance" [level=2] [ref=f75e147]
+        - paragraph [ref=f75e148]:
+          - strong [ref=f75e149]: "7.1"
+          - text: On your written request, and no more than
+          - strong [ref=f75e150]: once in any twelve-month period
+          - text: ", we will provide information reasonably necessary to demonstrate compliance with this DPA. This may take the form of written responses to a security questionnaire, or copies of any certifications or assessment reports we hold."
+        - paragraph [ref=f75e151]:
+          - strong [ref=f75e152]: "7.2"
+          - text: "Where the information provided under clause 7.1 is not sufficient to demonstrate compliance, and where you are required by a Supervisory Authority or by Data Protection Law to carry out an audit, you may conduct one subject to:"
+        - list [ref=f75e153]:
+          - listitem [ref=f75e154]:
+            - text: at least
+            - strong [ref=f75e155]: 30 days' written notice
+            - text: ;
+          - listitem [ref=f75e156]: being conducted during our normal business hours, without unreasonable disruption;
+          - listitem [ref=f75e157]: being limited to information and systems relevant to the processing of your Personal Data;
+          - listitem [ref=f75e158]: the auditor being bound by confidentiality obligations, and not being a competitor of ours;
+          - listitem [ref=f75e159]: being carried out at your expense.
+        - paragraph [ref=f75e160]:
+          - strong [ref=f75e161]: "7.3"
+          - text: An additional audit may be conducted following a Personal Data Breach affecting your Personal Data, without regard to the frequency limit in clause 7.1.
+        - separator [ref=f75e162]
+        - heading "8. International transfers" [level=2] [ref=f75e163]
+        - paragraph [ref=f75e164]:
+          - strong [ref=f75e165]: "8.1"
+          - text: Our application database and hosting are located in the
+          - strong [ref=f75e166]: European Union
+          - text: .
+        - paragraph [ref=f75e167]:
+          - strong [ref=f75e168]: "8.2"
+          - text: "Except as set out in clause 8.4, certain Sub-processors listed in Annex 2 are located outside the UK and the EEA. Where Personal Data is transferred to such a Sub-processor, the transfer is made under an appropriate transfer mechanism permitted by Data Protection Law, which may include:"
+        - list [ref=f75e169]:
+          - listitem [ref=f75e170]: an adequacy decision;
+          - listitem [ref=f75e171]: the European Commission's Standard Contractual Clauses (Decision 2021/914);
+          - listitem [ref=f75e172]: the UK International Data Transfer Addendum to the Standard Contractual Clauses.
+        - paragraph [ref=f75e173]:
+          - strong [ref=f75e174]: "8.3"
+          - text: "Where required, the Standard Contractual Clauses are incorporated into this DPA by reference, with:"
+        - list [ref=f75e175]:
+          - listitem [ref=f75e176]: the Controller as data exporter and the Processor as data importer;
+          - listitem [ref=f75e177]: Module Two (Controller to Processor) applying;
+          - listitem [ref=f75e178]: the optional docking clause applying;
+          - listitem [ref=f75e179]: Clause 9, Option 2 (general written authorisation) applying, with the notice period in clause 5.4 of this DPA;
+          - listitem [ref=f75e180]: Clause 11 (independent dispute resolution) — the optional wording does not apply;
+          - listitem [ref=f75e181]: Clause 17 — the governing law being the law of Ireland;
+          - listitem [ref=f75e182]: Clause 18(b) — the courts of Ireland;
+          - listitem [ref=f75e183]: Annexes I, II and III being populated by clauses 3, 4 and Annexes 1 and 2 of this DPA.
+        - paragraph [ref=f75e184]:
+          - strong [ref=f75e185]: 8.4 TronGrid.
+          - text: "When you enter a TRON wallet address to connect it, we send TronGrid that public address so that it can return that address's balances and transactions from the public TRON blockchain. We send TronGrid no other Personal Data: no names, email addresses or other workspace data. We send nothing to TronGrid otherwise. TronGrid does not offer a data processing agreement or Standard Contractual Clauses, does not name a legal entity, and does not state where it processes data; its terms are governed by the laws of Singapore. Accordingly, the safeguards in clauses 5.3 and 8.2 do not apply to TronGrid. If this is not acceptable to you, do not enter TRON wallet addresses in Vault."
+        - separator [ref=f75e186]
+        - heading "9. Retention and deletion" [level=2] [ref=f75e187]
+        - paragraph [ref=f75e188]:
+          - strong [ref=f75e189]: "9.1"
+          - text: We retain Personal Data for as long as your account is active.
+        - paragraph [ref=f75e190]:
+          - strong [ref=f75e191]: "9.2"
+          - text: When a workspace is deleted, all Personal Data in it is permanently deleted from our production systems immediately, and any bank or wallet connections are revoked.
+          - strong [ref=f75e192]: There is no recovery period
+          - text: ", so you should export any data you need before deleting the workspace. Residual copies may remain in encrypted database backups for up to"
+          - strong [ref=f75e193]: 7 days
+          - text: and in system logs and error reports for up to
+          - strong [ref=f75e194]: 30 days
+          - text: ", after which they are overwritten. Billing and invoice records are retained by our payment processor as required by applicable tax law."
+        - paragraph [ref=f75e195]:
+          - strong [ref=f75e196]: "9.3"
+          - text: Personal Data deleted from production systems persists in encrypted backups for up to
+          - strong [ref=f75e197]: 7 days
+          - text: ", after which the backups expire and the data is no longer recoverable."
+        - paragraph [ref=f75e198]:
+          - strong [ref=f75e199]: "9.4"
+          - text: We may retain Personal Data beyond these periods only where required by law, and only for as long as required. Data so retained remains subject to this DPA.
+        - paragraph [ref=f75e200]:
+          - strong [ref=f75e201]: "9.5"
+          - text: On your written request we will confirm deletion.
+        - separator [ref=f75e202]
+        - heading "10. Liability" [level=2] [ref=f75e203]
+        - paragraph [ref=f75e204]: The limitations and exclusions of liability set out in the Terms of Service apply to this DPA. This does not limit either party's liability to Data Subjects or to a Supervisory Authority under Data Protection Law.
+        - separator [ref=f75e205]
+        - heading "11. General" [level=2] [ref=f75e206]
+        - paragraph [ref=f75e207]:
+          - strong [ref=f75e208]: 11.1 Precedence.
+          - text: In the event of conflict between this DPA and the Terms of Service, this DPA prevails in respect of the processing of Personal Data.
+        - paragraph [ref=f75e209]:
+          - strong [ref=f75e210]: 11.2 Changes.
+          - text: We may update this DPA where required by a change in Data Protection Law, in our Sub-processors, or in the Service. Material changes are notified in accordance with clause 15 of the Terms of Service.
+        - paragraph [ref=f75e211]:
+          - strong [ref=f75e212]: 11.3 Term.
+          - text: This DPA takes effect when you accept the Terms of Service and continues until all Personal Data has been deleted in accordance with clause 9.
+        - paragraph [ref=f75e213]:
+          - strong [ref=f75e214]: 11.4 Governing law.
+          - text: This DPA is governed by the laws of England and Wales, save where clause 8.3 provides otherwise in respect of the Standard Contractual Clauses.
+        - separator [ref=f75e215]
+        - heading "Annex 1 — Technical and organisational measures" [level=2] [ref=f75e216]
+        - paragraph [ref=f75e217]:
+          - strong [ref=f75e218]: Encryption
+        - list [ref=f75e219]:
+          - listitem [ref=f75e220]: Data encrypted in transit using TLS.
+          - listitem [ref=f75e221]: Data encrypted at rest at the infrastructure level.
+        - paragraph [ref=f75e222]:
+          - strong [ref=f75e223]: Access control
+        - list [ref=f75e224]:
+          - listitem [ref=f75e225]: Row-level security enforced at the database, so that data belonging to one customer is not reachable by another.
+          - listitem [ref=f75e226]: Role-based permissions within each workspace, configurable by the customer, controlling access to accounts, transactions, reports and settings.
+          - listitem [ref=f75e227]: Bank access tokens are excluded from the permissions available to the application front-end and are not readable by customers.
+          - listitem [ref=f75e228]: Access to production systems restricted to authorised personnel and requiring authentication.
+          - listitem [ref=f75e229]: Two-factor authentication available to all users.
+        - paragraph [ref=f75e230]:
+          - strong [ref=f75e231]: Resilience and recovery
+        - list [ref=f75e232]:
+          - listitem [ref=f75e233]: Automatic backups with point-in-time recovery, allowing restoration to a specific moment.
+          - listitem [ref=f75e234]: Infrastructure operated by providers maintaining recognised security certifications.
+        - paragraph [ref=f75e235]:
+          - strong [ref=f75e236]: Monitoring
+        - list [ref=f75e237]:
+          - listitem [ref=f75e238]: Application error monitoring and diagnostic logging.
+          - listitem [ref=f75e239]: Application errors are monitored and diagnostic logs and error reports are retained for up to 30 days.
+        - paragraph [ref=f75e240]:
+          - strong [ref=f75e241]: Organisational
+        - list [ref=f75e242]:
+          - listitem [ref=f75e243]: Personnel bound by confidentiality obligations.
+          - listitem [ref=f75e244]: Access granted on a least-privilege basis and reviewed when roles change.
+        - paragraph [ref=f75e245]: These measures may be updated as the Service develops. We will not make changes that materially reduce the level of protection.
+        - separator [ref=f75e246]
+        - heading "Annex 2 — Sub-processors" [level=2] [ref=f75e247]
+        - table [ref=f75e249]:
+          - rowgroup [ref=f75e250]:
+            - row [ref=f75e251]:
+              - columnheader "Sub-processor" [ref=f75e252]
+              - columnheader "Purpose" [ref=f75e253]
+              - columnheader "Location" [ref=f75e254]
+          - rowgroup [ref=f75e255]:
+            - row [ref=f75e256]:
+              - cell "Supabase (on Amazon Web Services)" [ref=f75e257]
+              - cell "Application database, authentication, backups" [ref=f75e258]
+              - cell "Frankfurt, Germany (eu-central-1)" [ref=f75e259]
+            - row [ref=f75e260]:
+              - cell "Vercel" [ref=f75e261]
+              - cell "Application hosting and delivery" [ref=f75e262]
+              - cell "European Union" [ref=f75e263]
+            - row [ref=f75e264]:
+              - cell "Stripe" [ref=f75e265]
+              - cell "Payment processing and invoicing" [ref=f75e266]
+              - cell "United States, Ireland" [ref=f75e267]
+            - row [ref=f75e268]:
+              - cell "Enable Banking Oy" [ref=f75e269]
+              - 'cell "Account information services: retrieving the bank accounts, balances and transactions you authorise" [ref=f75e270]'
+              - cell "Finland (European Union)" [ref=f75e271]
+            - row [ref=f75e272]:
+              - cell "Alchemy" [ref=f75e273]
+              - cell "Reading public blockchain data" [ref=f75e274]
+              - cell "United States" [ref=f75e275]
+            - row [ref=f75e276]:
+              - cell "TronGrid" [ref=f75e277]
+              - cell "Reading public TRON blockchain data (balances and transactions) for wallet addresses you connect" [ref=f75e278]
+              - cell [ref=f75e279]:
+                - text: Outside the EU (its terms are governed by the laws of Singapore) (see DPA clause
+                - strong [ref=f75e280]:
+                  - link "8.4" [ref=f75e281] [cursor=pointer]:
+                    - /url: "#8"
+                - text: )
+            - row [ref=f75e282]:
+              - cell "Resend" [ref=f75e283]
+              - cell "Transactional and product email" [ref=f75e284]
+              - cell "United States" [ref=f75e285]
+            - row [ref=f75e286]:
+              - cell "Intercom" [ref=f75e287]
+              - cell "Chat and support" [ref=f75e288]
+              - cell "United States, Ireland" [ref=f75e289]
+            - row [ref=f75e290]:
+              - cell "Sentry" [ref=f75e291]
+              - cell "Error monitoring" [ref=f75e292]
+              - cell "United States" [ref=f75e293]
+            - row [ref=f75e294]:
+              - cell "Google Analytics" [ref=f75e295]
+              - cell "Website usage statistics" [ref=f75e296]
+              - cell "United States" [ref=f75e297]
+        - paragraph [ref=f75e298]:
+          - text: The current list is maintained at
+          - link "usevault.ai/subprocessors" [ref=f75e299] [cursor=pointer]:
+            - /url: /subprocessors
+          - text: .
+        - separator [ref=f75e300]
+        - heading "Contact" [level=2] [ref=f75e301]
+        - paragraph [ref=f75e302]: Overcode LimitedFifth Floor, 167-169 Great Portland StreetLondon, W1W 5PF, United KingdomCompany number 14697980
+        - paragraph [ref=f75e303]:
+          - strong [ref=f75e304]:
+            - link "hello@usevault.ai" [ref=f75e305] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+      - generic [ref=f75e316]:
+        - generic [ref=f75e317]:
+          - generic [ref=f75e318]:
+            - link "Vault AI home" [ref=f75e319] [cursor=pointer]:
+              - /url: /
+            - generic [ref=f75e323]:
+              - link "LinkedIn" [ref=f75e324] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/usevault-ai/
+              - link "Vault AI on Telegram" [ref=f75e327] [cursor=pointer]:
+                - /url: https://t.me/usevault_ai
+              - link "hello@usevault.ai" [ref=f75e330] [cursor=pointer]:
+                - /url: mailto:hello@usevault.ai
+          - generic [ref=f75e335]:
+            - paragraph [ref=f75e336]: Platform
+            - list "Platform" [ref=f75e337]:
+              - listitem [ref=f75e338]:
+                - link "Product" [ref=f75e339] [cursor=pointer]:
+                  - /url: /#product
+              - listitem [ref=f75e340]:
+                - link "Automation" [ref=f75e341] [cursor=pointer]:
+                  - /url: /#automation
+              - listitem [ref=f75e342]:
+                - link "Reports" [ref=f75e343] [cursor=pointer]:
+                  - /url: /#reports
+              - listitem [ref=f75e344]:
+                - link "Security" [ref=f75e345] [cursor=pointer]:
+                  - /url: /#security
+              - listitem [ref=f75e346]:
+                - link "Pricing" [ref=f75e347] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=f75e348]:
+            - paragraph [ref=f75e349]: Resources
+            - list "Resources" [ref=f75e350]:
+              - listitem [ref=f75e351]:
+                - link "Help Center" [ref=f75e352] [cursor=pointer]:
+                  - /url: https://help.usevault.ai/en/
+              - listitem [ref=f75e353]:
+                - link "Status" [ref=f75e354] [cursor=pointer]:
+                  - /url: https://status.usevault.ai/
+              - listitem [ref=f75e355]:
+                - link "Migration offer" [ref=f75e356] [cursor=pointer]:
+                  - /url: /migration-offer
+              - listitem [ref=f75e357]:
+                - link "Partner program" [ref=f75e358] [cursor=pointer]:
+                  - /url: /partners
+          - generic [ref=f75e359]:
+            - paragraph [ref=f75e360]: Legal
+            - list "Legal" [ref=f75e361]:
+              - listitem [ref=f75e362]:
+                - link "Terms of Service" [ref=f75e363] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=f75e364]:
+                - link "Privacy Policy" [ref=f75e365] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=f75e366]:
+                - link "DPA" [ref=f75e367] [cursor=pointer]:
+                  - /url: /dpa
+        - generic [ref=f75e368]:
+          - generic [ref=f75e369]: © 2026 VAULT AI. All rights reserved.
+          - generic [ref=f75e370]:
+            - generic [ref=f75e371]: Built by
+            - link "Overcode (opens in a new tab)" [ref=f75e372] [cursor=pointer]:
+              - /url: https://www.overcode.tech/
+  - alert [ref=f75e399]

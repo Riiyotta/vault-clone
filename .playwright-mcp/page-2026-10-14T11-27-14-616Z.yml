@@ -1,0 +1,449 @@
+- generic [active] [ref=f77e1]:
+  - generic [ref=f77e2]:
+    - navigation [ref=f77e3]:
+      - generic [ref=f77e4]:
+        - link "Vault AI home" [ref=f77e5] [cursor=pointer]:
+          - /url: /
+        - list [ref=f77e9]:
+          - listitem [ref=f77e10]:
+            - link "Product" [ref=f77e11] [cursor=pointer]:
+              - /url: /#product
+          - listitem [ref=f77e12]:
+            - link "Automation" [ref=f77e13] [cursor=pointer]:
+              - /url: /#automation
+          - listitem [ref=f77e14]:
+            - link "Reports" [ref=f77e15] [cursor=pointer]:
+              - /url: /#reports
+          - listitem [ref=f77e16]:
+            - link "Security" [ref=f77e17] [cursor=pointer]:
+              - /url: /#security
+          - listitem [ref=f77e18]:
+            - link "Pricing" [ref=f77e19] [cursor=pointer]:
+              - /url: /pricing
+        - generic [ref=f77e20]:
+          - group "Language" [ref=f77e21]:
+            - link "EN English" [ref=f77e23] [cursor=pointer]:
+              - /url: /privacy
+              - text: EN
+              - generic [ref=f77e24]: English
+            - generic [ref=f77e25]:
+              - generic [aria-hidden] [ref=f77e26]: /
+              - link "UA Українська" [ref=f77e27] [cursor=pointer]:
+                - /url: /ua/privacy
+                - text: UA
+                - generic [ref=f77e28]: Українська
+          - link "Get started" [ref=f77e29] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+    - main [ref=f77e38]:
+      - article [ref=f77e41]:
+        - heading "Privacy Policy" [level=1] [ref=f77e42]
+        - paragraph [ref=f77e43]:
+          - strong [ref=f77e44]: Vault AI
+          - text: "Effective date: 12 October 2026"
+        - separator [ref=f77e45]
+        - heading "1. Who we are" [level=2] [ref=f77e46]
+        - paragraph [ref=f77e47]:
+          - strong [ref=f77e48]: Overcode Limited
+          - text: ("Overcode", "we", "us") is a company registered in England and Wales under company number 14697980, with its registered office at Fifth Floor, 167-169 Great Portland Street, London, W1W 5PF, United Kingdom.
+        - paragraph [ref=f77e49]:
+          - text: We operate
+          - strong [ref=f77e50]: Vault AI
+          - text: ("Vault", the "Service"), a financial management and planning platform for businesses, available at usevault.ai.
+        - paragraph [ref=f77e51]: This policy explains what personal data we handle, why, and what rights you have.
+        - paragraph [ref=f77e52]:
+          - strong [ref=f77e53]:
+            - text: "Contact for any privacy question or request:"
+            - link "hello@usevault.ai" [ref=f77e54] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+        - separator [ref=f77e55]
+        - heading "2. Two different roles" [level=2] [ref=f77e56]
+        - paragraph [ref=f77e57]: We handle personal data in two distinct capacities, and it matters which one applies.
+        - paragraph [ref=f77e58]:
+          - strong [ref=f77e59]: As controller.
+          - text: For data about the people who use Vault — account holders and workspace members — we decide why and how the data is processed. This section of the policy covers that.
+        - paragraph [ref=f77e60]:
+          - strong [ref=f77e61]: As processor.
+          - text: For the financial data a business imports into its workspace — transactions, counterparties, descriptions — the business decides why and how it is processed. We act on its instructions. That relationship is governed by our
+          - strong [ref=f77e62]:
+            - link "Data Processing Agreement" [ref=f77e63] [cursor=pointer]:
+              - /url: /dpa
+          - text: ", not by this policy."
+        - paragraph [ref=f77e64]:
+          - text: "In practice: how we handle"
+          - emphasis [ref=f77e65]: your account
+          - text: is described here. How we handle
+          - emphasis [ref=f77e66]: your company's financial records
+          - text: is described in the DPA.
+        - separator [ref=f77e67]
+        - heading "3. Data we process as controller" [level=2] [ref=f77e68]
+        - heading "3.1 Account data" [level=3] [ref=f77e69]
+        - table [ref=f77e71]:
+          - rowgroup [ref=f77e72]:
+            - row [ref=f77e73]:
+              - columnheader "What" [ref=f77e74]
+              - columnheader "Why" [ref=f77e75]
+              - columnheader "Lawful basis" [ref=f77e76]
+          - rowgroup [ref=f77e77]:
+            - row [ref=f77e78]:
+              - cell "Name, email address, profile picture" [ref=f77e79]
+              - cell "To create and operate your account" [ref=f77e80]
+              - cell "Performance of a contract" [ref=f77e81]
+            - row [ref=f77e82]:
+              - cell "Authentication data (sign-in method, two-factor settings)" [ref=f77e83]
+              - cell "To sign you in securely" [ref=f77e84]
+              - cell "Performance of a contract" [ref=f77e85]
+            - row [ref=f77e86]:
+              - cell "Workspace membership and permissions" [ref=f77e87]
+              - cell "To determine what you can access" [ref=f77e88]
+              - cell "Performance of a contract" [ref=f77e89]
+            - row [ref=f77e90]:
+              - cell "Language, timezone, theme preferences" [ref=f77e91]
+              - cell "To present the Service as you configured it" [ref=f77e92]
+              - cell "Performance of a contract" [ref=f77e93]
+        - heading "3.2 Billing data" [level=3] [ref=f77e94]
+        - table [ref=f77e96]:
+          - rowgroup [ref=f77e97]:
+            - row [ref=f77e98]:
+              - columnheader "What" [ref=f77e99]
+              - columnheader "Why" [ref=f77e100]
+              - columnheader "Lawful basis" [ref=f77e101]
+          - rowgroup [ref=f77e102]:
+            - row [ref=f77e103]:
+              - cell "Company name, billing address, tax identifiers" [ref=f77e104]
+              - cell "To issue invoices and meet tax obligations" [ref=f77e105]
+              - cell "Legal obligation" [ref=f77e106]
+            - row [ref=f77e107]:
+              - cell "Subscription plan, seat count, payment history" [ref=f77e108]
+              - cell "To administer your subscription" [ref=f77e109]
+              - cell "Performance of a contract" [ref=f77e110]
+        - paragraph [ref=f77e111]:
+          - strong [ref=f77e112]: We do not receive or store full payment card details.
+          - text: Card data is collected and held by Stripe, our payment processor. We receive only a token, the last four digits and the card type.
+        - heading "3.3 Usage and technical data" [level=3] [ref=f77e113]
+        - table [ref=f77e115]:
+          - rowgroup [ref=f77e116]:
+            - row [ref=f77e117]:
+              - columnheader "What" [ref=f77e118]
+              - columnheader "Why" [ref=f77e119]
+              - columnheader "Lawful basis" [ref=f77e120]
+          - rowgroup [ref=f77e121]:
+            - row [ref=f77e122]:
+              - cell "IP address, browser and device type, pages viewed" [ref=f77e123]
+              - cell "To operate and secure the Service, and to understand how it is used" [ref=f77e124]
+              - cell "Legitimate interests" [ref=f77e125]
+            - row [ref=f77e126]:
+              - cell "Error reports and diagnostic logs" [ref=f77e127]
+              - cell "To detect and fix faults" [ref=f77e128]
+              - cell "Legitimate interests" [ref=f77e129]
+            - row [ref=f77e130]:
+              - cell "Support conversations" [ref=f77e131]
+              - cell "To answer your questions and improve support" [ref=f77e132]
+              - cell "Legitimate interests" [ref=f77e133]
+        - paragraph [ref=f77e134]: Our legitimate interest is in keeping the Service secure, reliable and usable. We balance this against your interests and use the minimum data needed.
+        - heading "3.4 Marketing" [level=3] [ref=f77e135]
+        - paragraph [ref=f77e136]: If you sign up for our waiting list, request a demo or contact us, we process your name, email and what you told us in order to reply and, where you have consented, to send you product updates. You can withdraw consent at any time using the unsubscribe link or by emailing us.
+        - separator [ref=f77e137]
+        - heading "4. Data we process as processor" [level=2] [ref=f77e138]
+        - paragraph [ref=f77e139]: "When a business connects a bank account or imports data, the workspace fills with financial records: transaction amounts, dates, descriptions, counterparty names, account identifiers and balances."
+        - paragraph [ref=f77e140]:
+          - strong [ref=f77e141]: Some of that content is personal data about third parties
+          - text: — a supplier who is a sole trader, a contractor paid by transfer, an employee named in a payment description. We do not choose to collect it and we do not decide what it is used for. The business does.
+        - paragraph [ref=f77e142]: "For that data:"
+        - list [ref=f77e143]:
+          - listitem [ref=f77e144]:
+            - text: the business is the
+            - strong [ref=f77e145]: controller
+            - text: and is responsible for having a lawful basis to process it;
+          - listitem [ref=f77e146]:
+            - text: we are the
+            - strong [ref=f77e147]: processor
+            - text: and act only on the business's documented instructions;
+          - listitem [ref=f77e148]:
+            - text: our obligations are set out in the
+            - strong [ref=f77e149]:
+              - link "Data Processing Agreement" [ref=f77e150] [cursor=pointer]:
+                - /url: /dpa
+            - text: ;
+          - listitem [ref=f77e151]:
+            - strong [ref=f77e152]: we do not use it for our own purposes
+            - text: ", do not sell it, do not share it for advertising, and do not use it to train any machine learning model."
+        - paragraph [ref=f77e153]: If you are a third party whose data appears in a Vault workspace and you wish to exercise your rights, contact the business that holds the workspace. If you contact us, we will refer you to them.
+        - separator [ref=f77e154]
+        - heading "5. Bank and wallet connections" [level=2] [ref=f77e155]
+        - paragraph [ref=f77e156]:
+          - strong [ref=f77e157]: 5.1 Read-only.
+          - text: Bank connections give Vault read-only access to account and transaction information.
+          - strong [ref=f77e158]: Vault cannot initiate payments or move funds under any circumstances.
+        - paragraph [ref=f77e159]:
+          - strong [ref=f77e160]: 5.2 How consent works.
+          - text: You grant consent directly to your bank through a licensed open banking provider. We never see or store your online banking credentials. Consent lasts for a limited period and may need to be renewed; when it lapses, data stops refreshing until you renew it.
+        - paragraph [ref=f77e161]:
+          - strong [ref=f77e162]: 5.3 Access tokens.
+          - text: To keep your connection working we store an access token issued by the open banking provider. It permits reading data only. Tokens are held in our database, which is encrypted at rest by our infrastructure providers, and access to them is restricted at the database permission level so that they are not readable by the application front-end or by other customers.
+        - paragraph [ref=f77e163]:
+          - strong [ref=f77e164]: 5.4 Crypto wallets.
+          - text: If you add a blockchain wallet address, we read publicly available transaction data associated with it.
+          - strong [ref=f77e165]: We never hold private keys
+          - text: and cannot move or control any assets.
+        - separator [ref=f77e166]
+        - heading "6. Who we share data with" [level=2] [ref=f77e167]
+        - paragraph [ref=f77e168]:
+          - text: We share data only with the service providers listed below, each of which processes it on our instructions and under contract.
+          - strong [ref=f77e169]: We do not sell personal data and do not share it for advertising.
+        - table [ref=f77e171]:
+          - rowgroup [ref=f77e172]:
+            - row [ref=f77e173]:
+              - columnheader "Provider" [ref=f77e174]
+              - columnheader "Purpose" [ref=f77e175]
+              - columnheader "Location" [ref=f77e176]
+          - rowgroup [ref=f77e177]:
+            - row [ref=f77e178]:
+              - cell [ref=f77e179]:
+                - strong [ref=f77e180]: Supabase
+                - text: (on AWS)
+              - cell "Application database and authentication" [ref=f77e181]
+              - cell "Frankfurt, Germany (eu-central-1)" [ref=f77e182]
+            - row [ref=f77e183]:
+              - cell [ref=f77e184]:
+                - strong [ref=f77e185]: Vercel
+              - cell "Application hosting and delivery" [ref=f77e186]
+              - cell "European Union" [ref=f77e187]
+            - row [ref=f77e188]:
+              - cell [ref=f77e189]:
+                - strong [ref=f77e190]: Stripe
+              - cell "Payment processing and invoicing" [ref=f77e191]
+              - cell "United States, Ireland" [ref=f77e192]
+            - row [ref=f77e193]:
+              - cell [ref=f77e194]:
+                - strong [ref=f77e195]: Enable Banking Oy
+              - 'cell "Account information services: retrieving the bank accounts, balances and transactions you authorise" [ref=f77e196]'
+              - cell "Finland (European Union)" [ref=f77e197]
+            - row [ref=f77e198]:
+              - cell [ref=f77e199]:
+                - strong [ref=f77e200]: Alchemy
+              - cell "Reading public blockchain data" [ref=f77e201]
+              - cell "United States" [ref=f77e202]
+            - row [ref=f77e203]:
+              - cell [ref=f77e204]:
+                - strong [ref=f77e205]: TronGrid
+              - cell "Reading public TRON blockchain data (balances and transactions) for wallet addresses you connect" [ref=f77e206]
+              - cell [ref=f77e207]:
+                - text: Outside the EU (its terms are governed by the laws of Singapore) (see DPA clause
+                - strong [ref=f77e208]:
+                  - link "8.4" [ref=f77e209] [cursor=pointer]:
+                    - /url: /dpa#8
+                - text: )
+            - row [ref=f77e210]:
+              - cell [ref=f77e211]:
+                - strong [ref=f77e212]: Resend
+              - cell "Transactional and product emails" [ref=f77e213]
+              - cell "United States" [ref=f77e214]
+            - row [ref=f77e215]:
+              - cell [ref=f77e216]:
+                - strong [ref=f77e217]: Intercom
+              - cell "Chat and support" [ref=f77e218]
+              - cell "United States, Ireland" [ref=f77e219]
+            - row [ref=f77e220]:
+              - cell [ref=f77e221]:
+                - strong [ref=f77e222]: Sentry
+              - cell "Error monitoring" [ref=f77e223]
+              - cell "United States" [ref=f77e224]
+            - row [ref=f77e225]:
+              - cell [ref=f77e226]:
+                - strong [ref=f77e227]: Google Analytics
+              - cell "Website usage statistics" [ref=f77e228]
+              - cell "United States" [ref=f77e229]
+        - paragraph [ref=f77e230]: When you connect a bank account or crypto wallet, the connection provider you choose (Monobank or Enable Banking for banks; Alchemy or TronGrid for wallets) receives the requests needed to retrieve your data. Monobank processes it under its own terms.
+        - paragraph [ref=f77e231]:
+          - text: An up-to-date list is maintained at
+          - link "usevault.ai/subprocessors" [ref=f77e232] [cursor=pointer]:
+            - /url: /subprocessors
+          - text: . We will give at least 30 days' notice before adding a new provider that processes customer data, by email or in-app notification.
+        - paragraph [ref=f77e233]: We may also disclose data where required by law, court order or a competent authority, and to professional advisers under a duty of confidentiality.
+        - separator [ref=f77e234]
+        - heading "7. International transfers" [level=2] [ref=f77e235]
+        - paragraph [ref=f77e236]:
+          - text: Our application database and hosting are located in the
+          - strong [ref=f77e237]: European Union
+          - text: .
+        - paragraph [ref=f77e238]:
+          - text: Some providers listed above are located in the
+          - strong [ref=f77e239]: United States
+          - text: ". Where personal data is transferred outside the UK or the EEA, we rely on the appropriate safeguards permitted by data protection law — principally the European Commission's Standard Contractual Clauses, the UK International Data Transfer Addendum, or an adequacy decision where one applies. The exception is TronGrid, which we use only if you enter a TRON wallet address to connect it: it does not offer these safeguards, and we send it only the public wallet address. See clause 8.4 of our"
+          - strong [ref=f77e240]:
+            - link "DPA" [ref=f77e241] [cursor=pointer]:
+              - /url: /dpa
+          - text: .
+        - paragraph [ref=f77e242]:
+          - text: You may request more information about these safeguards at
+          - link "hello@usevault.ai" [ref=f77e243] [cursor=pointer]:
+            - /url: mailto:hello@usevault.ai
+          - text: .
+        - separator [ref=f77e244]
+        - heading "8. How long we keep data" [level=2] [ref=f77e245]
+        - table [ref=f77e247]:
+          - rowgroup [ref=f77e248]:
+            - row [ref=f77e249]:
+              - columnheader "Data" [ref=f77e250]
+              - columnheader "Retention" [ref=f77e251]
+          - rowgroup [ref=f77e252]:
+            - row [ref=f77e253]:
+              - cell "Account and workspace data" [ref=f77e254]
+              - cell "For as long as the account is active" [ref=f77e255]
+            - row [ref=f77e256]:
+              - cell "Workspace data after the workspace is deleted" [ref=f77e257]
+              - cell "Permanently deleted immediately; no recovery period" [ref=f77e258]
+            - row [ref=f77e259]:
+              - cell "Encrypted backups" [ref=f77e260]
+              - cell "Up to 7 days after deletion from production, then expired" [ref=f77e261]
+            - row [ref=f77e262]:
+              - cell "Invoices and payment records" [ref=f77e263]
+              - cell "As required by tax and accounting law" [ref=f77e264]
+            - row [ref=f77e265]:
+              - cell "Support conversations" [ref=f77e266]
+              - cell "Up to 24 months" [ref=f77e267]
+            - row [ref=f77e268]:
+              - cell "Error and diagnostic logs" [ref=f77e269]
+              - cell "Up to 30 days" [ref=f77e270]
+        - paragraph [ref=f77e271]:
+          - strong [ref=f77e272]: Deleting a workspace deletes the workspace and its data. It does not delete the personal profiles of its members
+          - text: ", which are separate and may belong to other workspaces. An individual may request deletion of their own profile at any time."
+        - separator [ref=f77e273]
+        - heading "9. Security" [level=2] [ref=f77e274]
+        - list [ref=f77e275]:
+          - listitem [ref=f77e276]: Data is encrypted in transit (TLS) and at rest.
+          - listitem [ref=f77e277]: Access to customer data within the application is controlled at the database level, so that one customer's data is not reachable by another.
+          - listitem [ref=f77e278]: Access to production systems is restricted to authorised personnel and requires authentication.
+          - listitem [ref=f77e279]: Automatic backups with point-in-time recovery, allowing restoration to a specific moment.
+          - listitem [ref=f77e280]: Two-factor authentication is available on user accounts and we recommend enabling it.
+        - paragraph [ref=f77e281]:
+          - text: No system is perfectly secure. If a personal data breach occurs that is likely to affect you, we will notify the affected business customer
+          - strong [ref=f77e282]: without undue delay and in any event within 72 hours
+          - text: of becoming aware of it, and will notify the relevant supervisory authority where required.
+        - separator [ref=f77e283]
+        - heading "10. Your rights" [level=2] [ref=f77e284]
+        - paragraph [ref=f77e285]: "Where we act as controller, you have the right to:"
+        - list [ref=f77e286]:
+          - listitem [ref=f77e287]:
+            - strong [ref=f77e288]: access
+            - text: the personal data we hold about you;
+          - listitem [ref=f77e289]:
+            - strong [ref=f77e290]: correct
+            - text: data that is inaccurate or incomplete;
+          - listitem [ref=f77e291]:
+            - strong [ref=f77e292]: delete
+            - text: your data, where we have no overriding obligation to keep it;
+          - listitem [ref=f77e293]:
+            - strong [ref=f77e294]: restrict
+            - text: or
+            - strong [ref=f77e295]: object to
+            - text: processing based on legitimate interests;
+          - listitem [ref=f77e296]:
+            - strong [ref=f77e297]: portability
+            - text: — receive your data in a structured, machine-readable format;
+          - listitem [ref=f77e298]:
+            - strong [ref=f77e299]: withdraw consent
+            - text: at any time, where processing is based on consent;
+          - listitem [ref=f77e300]:
+            - strong [ref=f77e301]: complain
+            - text: to a supervisory authority.
+        - paragraph [ref=f77e302]:
+          - text: To exercise any of these, email
+          - strong [ref=f77e303]:
+            - link "hello@usevault.ai" [ref=f77e304] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+          - text: . We will respond within one month.
+        - paragraph [ref=f77e305]:
+          - text: You may complain to the
+          - strong [ref=f77e306]: Information Commissioner's Office
+          - text: in the United Kingdom (ico.org.uk), or to the supervisory authority in your country of residence.
+        - paragraph [ref=f77e307]:
+          - strong [ref=f77e308]: A note on scope.
+          - text: These rights apply to data we hold about you as a Vault user. They do not extend to financial records inside a business's workspace — for those, contact the business.
+        - separator [ref=f77e309]
+        - heading "11. Automated decision-making" [level=2] [ref=f77e310]
+        - paragraph [ref=f77e311]: We do not make decisions producing legal or similarly significant effects about you by automated means.
+        - paragraph [ref=f77e312]:
+          - strong [ref=f77e313]: Artificial intelligence.
+          - text: We do not currently send customer financial data to any third-party artificial intelligence or machine learning provider, and we do not use customer data to train models. If that changes, we will update this policy and notify affected customers in advance.
+        - separator [ref=f77e314]
+        - heading "12. Cookies" [level=2] [ref=f77e315]
+        - paragraph [ref=f77e316]: We use cookies that are strictly necessary for the Service to function — to keep you signed in and to remember which workspace you are viewing.
+        - paragraph [ref=f77e317]: Where you consent, we also use analytics cookies to understand how the Service is used. You can decline these and change your choice at any time.
+        - separator [ref=f77e318]
+        - heading "13. Children" [level=2] [ref=f77e319]
+        - paragraph [ref=f77e320]: The Service is provided to businesses and is not intended for anyone under 18. We do not knowingly process the personal data of children.
+        - separator [ref=f77e321]
+        - heading "14. Changes to this policy" [level=2] [ref=f77e322]
+        - paragraph [ref=f77e323]: We may update this policy. Where a change is material, we will give at least 30 days' notice by email or in-app notification. The effective date at the top shows when the current version took effect.
+        - separator [ref=f77e324]
+        - heading "15. Contact" [level=2] [ref=f77e325]
+        - paragraph [ref=f77e326]: Overcode LimitedFifth Floor, 167-169 Great Portland StreetLondon, W1W 5PF, United KingdomCompany number 14697980
+        - paragraph [ref=f77e327]:
+          - strong [ref=f77e328]:
+            - link "hello@usevault.ai" [ref=f77e329] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+      - generic [ref=f77e340]:
+        - generic [ref=f77e341]:
+          - generic [ref=f77e342]:
+            - link "Vault AI home" [ref=f77e343] [cursor=pointer]:
+              - /url: /
+            - generic [ref=f77e347]:
+              - link "LinkedIn" [ref=f77e348] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/usevault-ai/
+              - link "Vault AI on Telegram" [ref=f77e351] [cursor=pointer]:
+                - /url: https://t.me/usevault_ai
+              - link "hello@usevault.ai" [ref=f77e354] [cursor=pointer]:
+                - /url: mailto:hello@usevault.ai
+          - generic [ref=f77e359]:
+            - paragraph [ref=f77e360]: Platform
+            - list "Platform" [ref=f77e361]:
+              - listitem [ref=f77e362]:
+                - link "Product" [ref=f77e363] [cursor=pointer]:
+                  - /url: /#product
+              - listitem [ref=f77e364]:
+                - link "Automation" [ref=f77e365] [cursor=pointer]:
+                  - /url: /#automation
+              - listitem [ref=f77e366]:
+                - link "Reports" [ref=f77e367] [cursor=pointer]:
+                  - /url: /#reports
+              - listitem [ref=f77e368]:
+                - link "Security" [ref=f77e369] [cursor=pointer]:
+                  - /url: /#security
+              - listitem [ref=f77e370]:
+                - link "Pricing" [ref=f77e371] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=f77e372]:
+            - paragraph [ref=f77e373]: Resources
+            - list "Resources" [ref=f77e374]:
+              - listitem [ref=f77e375]:
+                - link "Help Center" [ref=f77e376] [cursor=pointer]:
+                  - /url: https://help.usevault.ai/en/
+              - listitem [ref=f77e377]:
+                - link "Status" [ref=f77e378] [cursor=pointer]:
+                  - /url: https://status.usevault.ai/
+              - listitem [ref=f77e379]:
+                - link "Migration offer" [ref=f77e380] [cursor=pointer]:
+                  - /url: /migration-offer
+              - listitem [ref=f77e381]:
+                - link "Partner program" [ref=f77e382] [cursor=pointer]:
+                  - /url: /partners
+          - generic [ref=f77e383]:
+            - paragraph [ref=f77e384]: Legal
+            - list "Legal" [ref=f77e385]:
+              - listitem [ref=f77e386]:
+                - link "Terms of Service" [ref=f77e387] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=f77e388]:
+                - link "Privacy Policy" [ref=f77e389] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=f77e390]:
+                - link "DPA" [ref=f77e391] [cursor=pointer]:
+                  - /url: /dpa
+        - generic [ref=f77e392]:
+          - generic [ref=f77e393]: © 2026 VAULT AI. All rights reserved.
+          - generic [ref=f77e394]:
+            - generic [ref=f77e395]: Built by
+            - link "Overcode (opens in a new tab)" [ref=f77e396] [cursor=pointer]:
+              - /url: https://www.overcode.tech/
+  - alert [ref=f77e423]

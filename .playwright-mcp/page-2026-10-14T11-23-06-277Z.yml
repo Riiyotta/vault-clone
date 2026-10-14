@@ -1,0 +1,341 @@
+- generic [active] [ref=f38e1]:
+  - generic [ref=f38e2]:
+    - navigation [ref=f38e4]:
+      - generic [ref=f38e5]:
+        - link "Vault AI home" [ref=f38e6] [cursor=pointer]:
+          - /url: /
+        - button "Open menu" [ref=f38e10] [cursor=pointer]
+    - main [ref=f38e21]:
+      - generic [ref=f38e24]:
+        - generic [ref=f38e25]:
+          - generic [ref=f38e26]:
+            - generic [ref=f38e27]: Partner program
+            - heading "Bring your clients to Vault" [level=1] [ref=f38e31]
+            - paragraph [ref=f38e32]:
+              - generic [ref=f38e33]: For accounting firms, CFOs, consultants and teams serving SMBs.
+              - generic [ref=f38e35]: Your clients get clarity on their finances in real time, and you earn a reward for the businesses you bring.
+          - button [ref=f38e37] [cursor=pointer]
+        - generic [ref=f38e43]:
+          - generic [ref=f38e45]:
+            - generic [ref=f38e50]:
+              - generic [ref=f38e51]: Your invite link
+              - generic [ref=f38e52]: Sign-ups through it are tracked
+            - generic [ref=f38e54]:
+              - generic [ref=f38e55]: app.usevault.ai/?ref=K7M2QX9D
+              - generic [ref=f38e56]:
+                - generic [ref=f38e57]: Copy
+                - generic [ref=f38e59]: Copied
+          - generic [ref=f38e61]: Via your link
+          - generic [ref=f38e66]:
+            - paragraph [ref=f38e67]: Workspaces
+            - generic [ref=f38e68]:
+              - generic [ref=f38e69]: LE
+              - generic [ref=f38e70]:
+                - generic [ref=f38e71]: Ledgerline
+                - generic [ref=f38e72]: Your workspace
+            - generic [ref=f38e73]:
+              - generic [ref=f38e74]: NS
+              - generic [ref=f38e75]:
+                - generic [ref=f38e76]: Northwind Studio
+                - generic [ref=f38e77]: Accountant
+            - generic [ref=f38e78]:
+              - generic [ref=f38e79]: HD
+              - generic [ref=f38e80]:
+                - generic [ref=f38e81]: Harbor Dental
+                - generic [ref=f38e82]: Admin
+            - generic [ref=f38e84]:
+              - generic [ref=f38e85]: AL
+              - generic [ref=f38e86]:
+                - generic [ref=f38e87]: Alder Logistics
+                - generic [ref=f38e88]: Accountant · new invite
+      - region [ref=f38e97]:
+        - heading "Who it's for" [level=2] [ref=f38e100]
+        - list [ref=f38e111]:
+          - listitem [ref=f38e112]:
+            - heading "Accounting and fractional CFO firms" [level=3] [ref=f38e119]
+            - paragraph [ref=f38e120]: Give your clients a live view of their cash and expenses, and work from the same numbers they see.
+          - listitem [ref=f38e121]:
+            - heading "Freelance CFOs" [level=3] [ref=f38e127]
+            - paragraph [ref=f38e128]: Run several clients' finances from one account, with reports built around how each business works.
+          - listitem [ref=f38e129]:
+            - heading "Consulting companies" [level=3] [ref=f38e136]
+            - paragraph [ref=f38e137]: Recommend Vault to clients who need clear finance reporting, and earn a reward for it.
+          - listitem [ref=f38e138]:
+            - heading "SaaS products" [level=3] [ref=f38e144]
+            - paragraph [ref=f38e145]: Serve the same small and mid-sized businesses? Refer your users to Vault and add value for them.
+          - listitem [ref=f38e146]:
+            - heading "Service companies" [level=3] [ref=f38e152]
+            - paragraph [ref=f38e153]: Agencies and service firms whose clients need a clearer view of their finances.
+      - paragraph [ref=f38e164]:
+        - generic [ref=f38e165]:
+          - generic [ref=f38e166]: The
+          - text: The
+        - generic [ref=f38e167]:
+          - generic [ref=f38e168]: Vault
+          - text: Vault
+        - generic [ref=f38e169]:
+          - generic [ref=f38e170]: partner
+          - text: partner
+        - generic [ref=f38e171]:
+          - generic [ref=f38e172]: program
+          - text: program
+        - generic [ref=f38e173]:
+          - generic [ref=f38e174]: is
+          - text: is
+        - generic [ref=f38e175]:
+          - generic [ref=f38e176]: how
+          - text: how
+        - generic [ref=f38e177]:
+          - generic [ref=f38e178]: we
+          - text: we
+        - generic [ref=f38e179]:
+          - generic [ref=f38e180]: grow
+          - text: grow
+        - generic [ref=f38e181]:
+          - generic [ref=f38e182]: together
+          - text: together
+        - generic [ref=f38e183]:
+          - generic [ref=f38e184]: with
+          - text: with
+        - generic [ref=f38e185]:
+          - generic [ref=f38e186]: the
+          - text: the
+        - generic [ref=f38e187]:
+          - generic [ref=f38e188]: people
+          - text: people
+        - generic [ref=f38e189]:
+          - generic [ref=f38e190]: businesses
+          - text: businesses
+        - generic [ref=f38e191]:
+          - generic [ref=f38e192]: already
+          - text: already
+        - generic [ref=f38e193]:
+          - generic [ref=f38e194]: trust
+          - text: trust
+        - generic [ref=f38e195]:
+          - generic [ref=f38e196]: with
+          - text: with
+        - generic [ref=f38e197]:
+          - generic [ref=f38e198]: their
+          - text: their
+        - generic [ref=f38e199]:
+          - generic [ref=f38e200]: finances.
+          - text: finances.
+      - region [ref=f38e209]:
+        - heading "What you and your clients get" [level=2] [ref=f38e212]
+        - generic [ref=f38e222]:
+          - generic [ref=f38e223]:
+            - heading "Your client" [level=3] [ref=f38e225]
+            - generic [ref=f38e226]:
+              - generic [ref=f38e227]:
+                - heading "Already uses a similar tool" [level=4] [ref=f38e228]
+                - paragraph [ref=f38e229]: "Our migration offer: the cost of the months left on their current subscription comes off their first annual Vault invoice."
+                - link "Learn more" [ref=f38e230] [cursor=pointer]:
+                  - /url: /migration-offer
+              - generic [ref=f38e233]: Or
+              - generic [ref=f38e237]:
+                - heading "Starting fresh" [level=4] [ref=f38e238]
+                - paragraph [ref=f38e239]: An extended free trial and free personal onboarding.
+          - generic [ref=f38e240]:
+            - heading "Your company" [level=3] [ref=f38e242]
+            - generic [ref=f38e243]:
+              - list [ref=f38e244]:
+                - listitem [ref=f38e245]:
+                  - generic [ref=f38e246]:
+                    - heading "Referral rewards" [level=4] [ref=f38e247]
+                    - paragraph [ref=f38e248]: Earn a reward when the businesses you bring pay for Vault. We agree the terms with each partner individually.
+                - listitem [ref=f38e249]:
+                  - generic [ref=f38e250]:
+                    - heading "Personal invite link" [level=4] [ref=f38e251]
+                    - paragraph [ref=f38e252]: Share your own invite link. We see who signed up through you, so every referral counts.
+                - listitem [ref=f38e253]:
+                  - generic [ref=f38e254]:
+                    - heading "Your clients' workspaces" [level=4] [ref=f38e255]
+                    - paragraph [ref=f38e256]: Join your clients' workspaces with the role you need and work with each client's finances from one account.
+              - paragraph [ref=f38e257]: Contact us to discuss the current terms. We'll explain how rewards work and tailor the partnership to your company.
+              - button [ref=f38e258] [cursor=pointer]
+      - region [ref=f38e270]:
+        - heading "Frequently asked questions" [level=2] [ref=f38e273]
+        - list [ref=f38e283]:
+          - listitem [ref=f38e284]:
+            - heading [level=3] [ref=f38e285]:
+              - button "How much do partners earn?" [ref=f38e286] [cursor=pointer]
+            - region "How much do partners earn?":
+              - paragraph [ref=f38e289]: Terms depend on your company and your clients. We agree them individually on an intro call.
+          - listitem [ref=f38e290]:
+            - heading [level=3] [ref=f38e291]:
+              - button "How do you track my referrals?" [ref=f38e292] [cursor=pointer]
+            - region "How do you track my referrals?":
+              - paragraph [ref=f38e295]: Every partner gets a personal invite link. When a business signs up through it, we see that it came from you and let you know.
+          - listitem [ref=f38e296]:
+            - heading [level=3] [ref=f38e297]:
+              - button "Can I work in my clients' workspaces?" [ref=f38e298] [cursor=pointer]
+            - region "Can I work in my clients' workspaces?":
+              - paragraph [ref=f38e301]: Yes. Your clients invite you with the role you need, and you work with each of them from one account.
+          - listitem [ref=f38e302]:
+            - heading [level=3] [ref=f38e303]:
+              - button "What do my clients get?" [ref=f38e304] [cursor=pointer]
+            - region "What do my clients get?":
+              - paragraph [ref=f38e307]:
+                - text: If they already use a similar tool, our
+                - link "migration offer" [ref=f38e308] [cursor=pointer]:
+                  - /url: /migration-offer
+                - text: . If not, an extended free trial and free personal onboarding.
+      - region [ref=f38e317]:
+        - heading "How to become a partner" [level=2] [ref=f38e320]
+        - generic [ref=f38e330]:
+          - generic [ref=f38e331]:
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Partner application
+                    - generic: Ready to send
+                  - generic:
+                    - generic:
+                      - generic: Company
+                      - generic: Ledgerline
+                    - generic:
+                      - generic: Your clients
+                      - generic: Small and mid-sized businesses
+                    - generic:
+                      - generic: You are
+                      - generic: Accounting firm
+                  - generic: Send
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Intro call
+                      - generic: Video call
+                  - generic:
+                    - generic:
+                      - generic: LE
+                      - generic:
+                        - generic: Ledgerline
+                        - generic: Partner
+                    - generic:
+                      - generic:
+                        - generic: Partner team
+                        - generic: Vault
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Your invite link
+                      - generic: Sign-ups through it are tracked
+                  - generic:
+                    - generic: app.usevault.ai/?ref=K7M2QX9D
+                    - generic: Copy
+              - generic:
+                - generic:
+                  - paragraph: Your referrals
+                  - generic:
+                    - generic: NS
+                    - generic:
+                      - generic: Northwind Studio
+                      - generic: Pays for Vault
+                    - generic: Scheduled
+                  - generic:
+                    - generic: HD
+                    - generic:
+                      - generic: Harbor Dental
+                      - generic: Pays for Vault
+                    - generic: Scheduled
+                  - generic:
+                    - generic: AL
+                    - generic:
+                      - generic: Alder Logistics
+                      - generic: Pays for Vault
+                    - generic: Scheduled
+          - generic [ref=f38e332]:
+            - list [ref=f38e333]:
+              - listitem [ref=f38e334]:
+                - heading [level=3] [ref=f38e335]:
+                  - button "1 Leave a request" [ref=f38e336] [cursor=pointer]:
+                    - generic [ref=f38e337]: "1"
+                    - generic [ref=f38e338]: Leave a request
+                - paragraph [ref=f38e341]: Tell us about your company and your clients in a short form.
+              - listitem [ref=f38e343]:
+                - heading [level=3] [ref=f38e344]:
+                  - button "2 Intro call" [ref=f38e345] [cursor=pointer]:
+                    - generic [ref=f38e346]: "2"
+                    - generic [ref=f38e347]: Intro call
+                - paragraph [ref=f38e348]: We discuss your clients, referral terms and how we'll work together.
+              - listitem [ref=f38e350]:
+                - heading [level=3] [ref=f38e351]:
+                  - button "3 Get your invite link" [ref=f38e352] [cursor=pointer]:
+                    - generic [ref=f38e353]: "3"
+                    - generic [ref=f38e354]: Get your invite link
+                - paragraph [ref=f38e355]: You get a personal invite link, and you can join your clients' workspaces.
+              - listitem [ref=f38e357]:
+                - heading [level=3] [ref=f38e358]:
+                  - button "4 Earn rewards" [ref=f38e359] [cursor=pointer]:
+                    - generic [ref=f38e360]: "4"
+                    - generic [ref=f38e361]: Earn rewards
+                - paragraph [ref=f38e362]: We track sign-ups from your link and pay rewards on the agreed schedule.
+            - button [ref=f38e363] [cursor=pointer]
+      - generic [ref=f38e387]:
+        - generic [ref=f38e388]:
+          - generic [ref=f38e389]:
+            - link "Vault AI home" [ref=f38e390] [cursor=pointer]:
+              - /url: /
+            - generic [ref=f38e394]:
+              - link "LinkedIn" [ref=f38e395] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/usevault-ai/
+              - link "Vault AI on Telegram" [ref=f38e398] [cursor=pointer]:
+                - /url: https://t.me/usevault_ai
+              - link "hello@usevault.ai" [ref=f38e401] [cursor=pointer]:
+                - /url: mailto:hello@usevault.ai
+          - generic [ref=f38e406]:
+            - paragraph [ref=f38e407]: Platform
+            - list "Platform" [ref=f38e408]:
+              - listitem [ref=f38e409]:
+                - link "Product" [ref=f38e410] [cursor=pointer]:
+                  - /url: /#product
+              - listitem [ref=f38e411]:
+                - link "Automation" [ref=f38e412] [cursor=pointer]:
+                  - /url: /#automation
+              - listitem [ref=f38e413]:
+                - link "Reports" [ref=f38e414] [cursor=pointer]:
+                  - /url: /#reports
+              - listitem [ref=f38e415]:
+                - link "Security" [ref=f38e416] [cursor=pointer]:
+                  - /url: /#security
+              - listitem [ref=f38e417]:
+                - link "Pricing" [ref=f38e418] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=f38e419]:
+            - paragraph [ref=f38e420]: Resources
+            - list "Resources" [ref=f38e421]:
+              - listitem [ref=f38e422]:
+                - link "Help Center" [ref=f38e423] [cursor=pointer]:
+                  - /url: https://help.usevault.ai/en/
+              - listitem [ref=f38e424]:
+                - link "Status" [ref=f38e425] [cursor=pointer]:
+                  - /url: https://status.usevault.ai/
+              - listitem [ref=f38e426]:
+                - link "Migration offer" [ref=f38e427] [cursor=pointer]:
+                  - /url: /migration-offer
+              - listitem [ref=f38e428]:
+                - link "Partner program" [ref=f38e429] [cursor=pointer]:
+                  - /url: /partners
+          - generic [ref=f38e430]:
+            - paragraph [ref=f38e431]: Legal
+            - list "Legal" [ref=f38e432]:
+              - listitem [ref=f38e433]:
+                - link "Terms of Service" [ref=f38e434] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=f38e435]:
+                - link "Privacy Policy" [ref=f38e436] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=f38e437]:
+                - link "DPA" [ref=f38e438] [cursor=pointer]:
+                  - /url: /dpa
+        - generic [ref=f38e439]:
+          - generic [ref=f38e440]: © 2026 VAULT AI. All rights reserved.
+          - generic [ref=f38e441]:
+            - generic [ref=f38e442]: Built by
+            - link "Overcode (opens in a new tab)" [ref=f38e443] [cursor=pointer]:
+              - /url: https://www.overcode.tech/
+  - alert [ref=f38e470]

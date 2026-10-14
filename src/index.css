@@ -1,0 +1,192 @@
+/* Fonts — ASSET_MANIFEST.md "@font-face rules" (paths changed to /assets/fonts) */
+/* Outfit — latin */
+@font-face{font-family:Outfit;font-style:normal;font-weight:100 900;font-display:swap;
+  src:url(/assets/fonts/Outfit-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* Outfit — latin-ext */
+@font-face{font-family:Outfit;font-style:normal;font-weight:100 900;font-display:swap;
+  src:url(/assets/fonts/Outfit-latin-ext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Outfit Fallback";src:local(Arial);ascent-override:100.18%;descent-override:26.05%;line-gap-override:0%;size-adjust:99.82%}
+
+/* Clash Display — NO font-weight descriptor, on purpose (matches the original rendering) */
+@font-face{font-family:clashDisplay;src:url(/assets/fonts/ClashDisplay-Variable.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"clashDisplay Fallback";src:local(Arial);ascent-override:77.76%;descent-override:21.84%;line-gap-override:7.86%;size-adjust:114.46%}
+
+/* Manrope / Unbounded — loaded on /ua pages only (ASSET_MANIFEST.md "Optional"; rules copied verbatim from the
+   site CSS, size-adjust included). Fallback metrics from the same stylesheet. */
+@font-face{size-adjust:87.963%;ascent-override:113.684%;descent-override:29.558%;line-gap-override:0%;font-family:manrope;src:url(/assets/fonts/Manrope-latin-cyrillic.woff2) format("woff2");font-display:swap;font-weight:200 800;font-style:normal}
+@font-face{size-adjust:87.832%;ascent-override:101.33%;descent-override:28.464%;line-gap-override:10.247%;font-family:unbounded;src:url(/assets/fonts/Unbounded-latin-cyrillic.woff2) format("woff2");font-display:swap;font-weight:200 900;font-style:normal}
+@font-face{font-family:"Manrope Fallback";src:local(Arial);size-adjust:111.581%;ascent-override:89.621%;descent-override:23.301%;line-gap-override:0%}
+@font-face{font-family:"Unbounded Fallback";src:local(Arial);size-adjust:148.948%;ascent-override:59.753%;descent-override:16.784%;line-gap-override:6.042%}
+
+/* Locale font variables (CLONE_SPEC_partners_ua_legal.md §C.2). EN uses the defaults below; UA pages set
+   `--font-body: var(--font-manrope); --font-display: var(--font-unbounded)` inline on <html> (src/i18n). */
+:root {
+  --font-outfit: Outfit, "Outfit Fallback";
+  --font-clash: clashDisplay, "clashDisplay Fallback";
+  --font-manrope: "manrope", "Manrope Fallback", Arial, sans-serif;
+  --font-unbounded: "unbounded", "Unbounded Fallback", Arial, sans-serif;
+  --font-body: var(--font-outfit);
+  --font-display: var(--font-clash);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme('colors.primary-black');
+    font-family: theme('fontFamily.body');
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@layer utilities {
+  .word-spacing-1 { word-spacing: 1px; }
+  .word-spacing-2 { word-spacing: 2px; }
+  .word-spacing-3 { word-spacing: 3px; }
+  .word-spacing-4 { word-spacing: 4px; }
+  .word-spacing-5 { word-spacing: 5px; }
+  .word-spacing-6 { word-spacing: 6px; }
+  .word-spacing-7 { word-spacing: 7px; }
+  .word-spacing-8 { word-spacing: 8px; }
+  .word-spacing-9 { word-spacing: 9px; }
+  .word-spacing-10 { word-spacing: 10px; }
+  .word-spacing-11 { word-spacing: 11px; }
+  .word-spacing-12 { word-spacing: 12px; }
+
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+}
+
+@layer components {
+  /* ---- Hero (spec §2) pseudo-element decorations ---- */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-image: theme('backgroundImage.planet');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: theme('screens.lg')) {
+    .hero-section::before { top: 40px; }
+  }
+  @media (min-width: theme('screens.xxl')) {
+    .hero-section::before { background-size: cover; }
+  }
+
+  .hero-img-outer::before,
+  .hero-img-outer::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    translate: -50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .hero-img-outer::before {
+    background-image: theme('backgroundImage.hero-img-before');
+    width: 200px; height: 200px; top: -16px;
+  }
+  .hero-img-outer::after {
+    background-image: theme('backgroundImage.hero-img-after');
+    width: 200px; height: 200px; top: 32px;
+  }
+  @media (min-width: theme('screens.md')) {
+    .hero-img-outer::before { width: 320px; height: 320px; top: -72px; }
+  }
+  @media (min-width: theme('screens.lg')) {
+    .hero-img-outer::before { width: 600px; height: 600px; top: -176px; }
+    .hero-img-outer::after { width: 800px; height: 400px; top: 0; }
+  }
+
+  .hero-img-wrap::before,
+  .hero-img-wrap::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .hero-img-wrap::before {
+    z-index: 10;
+    background-image: theme('backgroundImage.hero-highlight-before');
+    background-position: center;
+    width: 240px; height: 24px; top: -13px;
+  }
+  .hero-img-wrap::after {
+    z-index: 2;
+    background-image: theme('backgroundImage.hero-highlight-after');
+    width: 100%; height: 100%; top: -17%;
+  }
+  @media (min-width: theme('screens.md')) {
+    .hero-img-wrap::before { width: 360px; height: 24px; top: -13px; }
+    .hero-img-wrap::after { width: 105%; }
+  }
+  @media (min-width: theme('screens.lg')) {
+    .hero-img-wrap::before { width: 720px; height: 40px; top: -20px; }
+    .hero-img-wrap::after { width: 100%; height: 560px; top: -80px; }
+  }
+  @media (min-width: theme('screens.xl')) {
+    .hero-img-wrap::after { top: -104px; width: 1200px; }
+  }
+
+  /* ---- Statement (spec §3) V-mark ---- */
+  .statement-frame::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    z-index: 0;
+    translate: -50% -50%;
+    height: 100%;
+    max-height: 262px;
+    width: 100%;
+    max-width: 308px;
+    background-image: theme('backgroundImage.statement-mark');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: theme('screens.md')) {
+    .statement-frame::before {
+      left: 50%;
+      width: 626px; height: 544px;
+      max-width: none; max-height: none;
+    }
+  }
+}
+
+@layer components {
+  /* ---- Pricing (CLONE_SPEC_pricing_migration.md §P1) Pro card highlight ---- */
+  .plan-card-pro {
+    background: linear-gradient(180deg, rgba(81, 118, 254, 0.1) 0%, rgba(3, 2, 11, 0) 55%),
+      linear-gradient(theme('colors.primary-black'), theme('colors.primary-black'));
+  }
+  .plan-card-pro::before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    background: linear-gradient(96.18deg, rgba(81, 118, 254, 0.75) 7.9%, rgba(155, 174, 242, 0.5) 64.2%, rgba(81, 118, 254, 0.1) 118.37%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  }
+
+  /* ---- Migration hero (§M1) dot grid: DotGridPanel bg masked to an ellipse ---- */
+  .migration-hero-dots {
+    -webkit-mask-image: radial-gradient(closest-side, black 35%, transparent);
+    mask-image: radial-gradient(closest-side, black 35%, transparent);
+  }
+}

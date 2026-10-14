@@ -1,0 +1,239 @@
+- generic [ref=f128e3]:
+  - banner [ref=f128e4]:
+    - navigation [ref=f128e6]:
+      - generic [ref=f128e7]:
+        - link "Vault AI" [ref=f128e8] [cursor=pointer]:
+          - /url: "#top"
+          - img "Vault AI" [ref=f128e9]
+        - button "Open menu" [ref=f128e10] [cursor=pointer]
+  - main [ref=f128e16]:
+    - generic [ref=f128e19]:
+      - generic [ref=f128e20]:
+        - generic [ref=f128e21]: Financial management platform
+        - heading "Control your Business Finances in One Place" [level=1] [ref=f128e24]
+        - paragraph [ref=f128e25]: AI-native platform to track transactions, generate reports, and automate manual financial work, built for SMBs.
+      - img "Vault AI dashboard showing the total balance, a balance chart and recent transactions" [ref=f128e28]
+      - link [ref=f128e30] [cursor=pointer]:
+        - /url: https://app.usevault.ai/login
+    - paragraph [ref=f128e40]:
+      - generic [ref=f128e41]:
+        - generic [aria-hidden] [ref=f128e42]: Vault
+        - text: Vault
+      - generic [ref=f128e43]:
+        - generic [aria-hidden] [ref=f128e44]: gives
+        - text: gives
+      - generic [ref=f128e45]:
+        - generic [aria-hidden] [ref=f128e46]: you
+        - text: you
+      - generic [ref=f128e47]:
+        - generic [aria-hidden] [ref=f128e48]: a
+        - text: a
+      - generic [ref=f128e49]:
+        - generic [aria-hidden] [ref=f128e50]: complete
+        - text: complete
+      - generic [ref=f128e51]:
+        - generic [aria-hidden] [ref=f128e52]: system
+        - text: system
+      - generic [ref=f128e53]:
+        - generic [aria-hidden] [ref=f128e54]: to
+        - text: to
+      - generic [ref=f128e55]:
+        - generic [aria-hidden] [ref=f128e56]: track,
+        - text: track,
+      - generic [ref=f128e57]:
+        - generic [aria-hidden] [ref=f128e58]: understand,
+        - text: understand,
+      - generic [ref=f128e59]:
+        - generic [aria-hidden] [ref=f128e60]: and
+        - text: and
+      - generic [ref=f128e61]:
+        - generic [aria-hidden] [ref=f128e62]: automate
+        - text: automate
+      - generic [ref=f128e63]:
+        - generic [aria-hidden] [ref=f128e64]: your
+        - text: your
+      - generic [ref=f128e65]:
+        - generic [aria-hidden] [ref=f128e66]: business
+        - text: business
+      - generic [ref=f128e67]:
+        - generic [aria-hidden] [ref=f128e68]: finances
+        - text: finances
+      - generic [ref=f128e69]:
+        - generic [aria-hidden] [ref=f128e70]: bringing
+        - text: bringing
+      - generic [ref=f128e71]:
+        - generic [aria-hidden] [ref=f128e72]: transactions,
+        - text: transactions,
+      - generic [ref=f128e73]:
+        - generic [aria-hidden] [ref=f128e74]: reports,
+        - text: reports,
+      - generic [ref=f128e75]:
+        - generic [aria-hidden] [ref=f128e76]: and
+        - text: and
+      - generic [ref=f128e77]:
+        - generic [aria-hidden] [ref=f128e78]: workflows
+        - text: workflows
+      - generic [ref=f128e79]:
+        - generic [aria-hidden] [ref=f128e80]: together
+        - text: together
+      - generic [ref=f128e81]:
+        - generic [aria-hidden] [ref=f128e82]: in
+        - text: in
+      - generic [ref=f128e83]:
+        - generic [aria-hidden] [ref=f128e84]: one
+        - text: one
+      - generic [ref=f128e85]:
+        - generic [aria-hidden] [ref=f128e86]: place
+        - text: place
+    - generic [ref=f128e91]:
+      - article [ref=f128e92]:
+        - generic [ref=f128e97]:
+          - heading "Global Financial Ledger" [level=4] [ref=f128e98]
+          - paragraph [ref=f128e99]: A unified system that brings all your financial data into one reliable source of truth.
+        - generic "Global Financial Ledger animation" [ref=f128e104]
+      - article [ref=f128e105]:
+        - generic [ref=f128e110]:
+          - heading "Secure Bank & Web3 Integrations" [level=4] [ref=f128e111]
+          - paragraph [ref=f128e112]: Connect your bank accounts and Web3 wallets through trusted providers like Plaid.
+        - generic "Secure Bank and Web3 Integrations animation" [ref=f128e117]
+      - article [ref=f128e118]:
+        - generic [ref=f128e123]:
+          - heading "Custom Financial Reports" [level=4] [ref=f128e124]
+          - paragraph [ref=f128e125]: Go beyond standard P&L - build reports around the metrics that matter to your business.
+        - generic "Custom Financial Reports animation" [ref=f128e130]
+      - article [ref=f128e131]:
+        - generic [ref=f128e136]:
+          - heading "User Management" [level=4] [ref=f128e137]
+          - paragraph [ref=f128e138]: Control access with configurable roles and permissions for your team.
+        - generic "User Management animation" [ref=f128e143]
+      - article [ref=f128e144]:
+        - generic [ref=f128e149]:
+          - generic [ref=f128e150]:
+            - heading "Workflow Automations" [level=4] [ref=f128e151]
+            - generic [ref=f128e152]: Soon
+          - paragraph [ref=f128e153]: Automate routine financial tasks with customizable workflows and AI-powered transaction enrichment.
+        - generic "Workflow Automations animation" [ref=f128e158]
+      - article [ref=f128e159]:
+        - generic [ref=f128e164]:
+          - generic [ref=f128e165]:
+            - heading "Invoice Builder" [level=4] [ref=f128e166]
+            - generic [ref=f128e167]: Soon
+          - paragraph [ref=f128e168]: Create and manage invoices instantly. Keep revenue tracking in one place.
+        - generic "Invoice Builder animation" [ref=f128e173]
+    - generic [ref=f128e185]:
+      - generic [ref=f128e186]:
+        - button "Previous feature" [ref=f128e187] [cursor=pointer]
+        - heading "Enrich Financial Data" [level=3] [ref=f128e189]
+        - button "Next feature" [ref=f128e190] [cursor=pointer]
+      - generic [ref=f128e198]:
+        - generic [ref=f128e199]:
+          - heading "Automate financial tasks that used to require manual work" [level=3] [ref=f128e200]
+          - paragraph [ref=f128e201]: Set up smart automations and let Vault categorize transactions, enrich financial data, send reports and alerts, and run financial workflows automatically. Save hours of repetitive work every week.
+        - link [ref=f128e202] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+    - generic [ref=f128e216]:
+      - generic [ref=f128e217]:
+        - button "Previous feature" [ref=f128e218] [cursor=pointer]
+        - heading "Profit & Loss Overview" [level=3] [ref=f128e220]
+        - button "Next feature" [ref=f128e221] [cursor=pointer]
+      - generic [ref=f128e229]:
+        - generic [ref=f128e230]:
+          - heading "Understand your business finances in real time" [level=3] [ref=f128e231]
+          - paragraph [ref=f128e232]: Vault transforms transactions into real-time reports that help you understand revenue, expenses, cash flow, and profitability. Go beyond standard P&L - visualize any financial data to make better business decisions.
+        - link [ref=f128e233] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+    - generic [ref=f128e247]:
+      - generic [ref=f128e248]:
+        - button "Previous feature" [ref=f128e249] [cursor=pointer]
+        - heading "Centralized Financial Ledger" [level=3] [ref=f128e251]
+        - button "Next feature" [ref=f128e252] [cursor=pointer]
+      - generic [ref=f128e260]:
+        - generic [ref=f128e261]:
+          - heading "Built on secure financial infrastructure" [level=3] [ref=f128e262]
+          - paragraph [ref=f128e263]: Vault is designed with a reliable financial data architecture, secure integrations, and role-based access control to ensure your data stays accurate and protected.
+        - link [ref=f128e264] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+    - generic [ref=f128e270]:
+      - heading "Gain Clarity on your Finances" [level=2] [ref=f128e274]: Gain Clarityon your Finances
+      - generic [ref=f128e287]:
+        - generic [ref=f128e288]:
+          - generic [ref=f128e289]:
+            - generic [ref=f128e290]:
+              - button "Play step 1" [ref=f128e291] [cursor=pointer]:
+                - generic [ref=f128e292]: "1"
+              - heading "Connect your accounts" [level=6] [ref=f128e293]
+            - paragraph [ref=f128e295]: Sign up and securely connect your bank accounts and Web3 wallets.
+          - generic [ref=f128e297]:
+            - button "Play step 2" [ref=f128e298] [cursor=pointer]:
+              - generic [ref=f128e299]: "2"
+            - heading "Structure your data" [level=6] [ref=f128e300]
+          - generic [ref=f128e302]:
+            - button "Play step 3" [ref=f128e303] [cursor=pointer]:
+              - generic [ref=f128e304]: "3"
+            - heading "Turn data into decisions" [level=6] [ref=f128e305]
+        - link [ref=f128e306] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+  - contentinfo [ref=f128e321]:
+    - generic [ref=f128e324]:
+      - generic [ref=f128e325]:
+        - generic [ref=f128e326]:
+          - link "Vault AI home" [ref=f128e327] [cursor=pointer]:
+            - /url: "#top"
+          - generic [ref=f128e328]:
+            - link "LinkedIn" [ref=f128e329] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/usevault-ai/
+            - link "Vault AI on Telegram" [ref=f128e331] [cursor=pointer]:
+              - /url: https://t.me/usevault_ai
+            - link "hello@usevault.ai" [ref=f128e333] [cursor=pointer]:
+              - /url: mailto:hello@usevault.ai
+        - generic [ref=f128e336]:
+          - paragraph [ref=f128e337]: Platform
+          - list [ref=f128e338]:
+            - listitem [ref=f128e339]:
+              - link "Product" [ref=f128e340] [cursor=pointer]:
+                - /url: "#product"
+            - listitem [ref=f128e341]:
+              - link "Automation" [ref=f128e342] [cursor=pointer]:
+                - /url: "#automation"
+            - listitem [ref=f128e343]:
+              - link "Reports" [ref=f128e344] [cursor=pointer]:
+                - /url: "#reports"
+            - listitem [ref=f128e345]:
+              - link "Security" [ref=f128e346] [cursor=pointer]:
+                - /url: "#security"
+            - listitem [ref=f128e347]:
+              - link "Pricing" [ref=f128e348] [cursor=pointer]:
+                - /url: /pricing
+        - generic [ref=f128e349]:
+          - paragraph [ref=f128e350]: Resources
+          - list [ref=f128e351]:
+            - listitem [ref=f128e352]:
+              - link "Help Center" [ref=f128e353] [cursor=pointer]:
+                - /url: https://help.usevault.ai/en/
+            - listitem [ref=f128e354]:
+              - link "Status" [ref=f128e355] [cursor=pointer]:
+                - /url: https://status.usevault.ai/
+            - listitem [ref=f128e356]:
+              - link "Migration offer" [ref=f128e357] [cursor=pointer]:
+                - /url: /migration-offer
+            - listitem [ref=f128e358]:
+              - link "Partner program" [ref=f128e359] [cursor=pointer]:
+                - /url: /partners
+        - generic [ref=f128e360]:
+          - paragraph [ref=f128e361]: Legal
+          - list [ref=f128e362]:
+            - listitem [ref=f128e363]:
+              - link "Terms of Service" [ref=f128e364] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f128e365]:
+              - link "Privacy Policy" [ref=f128e366] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f128e367]:
+              - link "DPA" [ref=f128e368] [cursor=pointer]:
+                - /url: /dpa
+      - generic [ref=f128e369]:
+        - generic [ref=f128e370]: © 2026 VAULT AI. All rights reserved.
+        - generic [ref=f128e371]:
+          - generic [ref=f128e372]: Built by
+          - link "Overcode (opens in a new tab)" [ref=f128e373] [cursor=pointer]:
+            - /url: https://www.overcode.tech/

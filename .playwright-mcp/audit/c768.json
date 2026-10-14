@@ -1,0 +1,4055 @@
+{
+  "vw": 768,
+  "docH": 7280,
+  "sw": 768,
+  "fonts": [
+    "Outfit 100 900",
+    "Outfit Fallback normal",
+    "clashDisplay normal",
+    "clashDisplay Fallback normal"
+  ],
+  "texts": [
+    {
+      "k": "SPAN:Financial management platform",
+      "r": [
+        288.6,
+        217,
+        210.9,
+        16
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "H1:Control your Business Finances in One Pl",
+      "r": [
+        104,
+        261,
+        560,
+        105.6
+      ],
+      "ff": "clashDisplay",
+      "fs": "48px",
+      "fw": "600",
+      "lh": "52.8px",
+      "ls": "0.96px",
+      "ws": "6px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:AI-native platform to track transactions",
+      "r": [
+        134,
+        390.6,
+        500,
+        52
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "300",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Get started",
+      "r": [
+        289.8,
+        922.3,
+        188.4,
+        64
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "22px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(9, 10, 17)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:Vault",
+      "r": [
+        110.4,
+        1275.3,
+        117.9,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:Vault",
+      "r": [
+        110.4,
+        1281.8,
+        117.9,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:gives",
+      "r": [
+        236.3,
+        1275.3,
+        101.8,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:gives",
+      "r": [
+        236.3,
+        1281.8,
+        101.8,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:you",
+      "r": [
+        346,
+        1275.3,
+        73.8,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:you",
+      "r": [
+        346,
+        1281.8,
+        73.8,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:a",
+      "r": [
+        427.8,
+        1275.3,
+        26.1,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:a",
+      "r": [
+        427.8,
+        1281.8,
+        26.1,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:complete",
+      "r": [
+        461.9,
+        1275.3,
+        187.7,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:complete",
+      "r": [
+        461.9,
+        1281.8,
+        187.7,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:system",
+      "r": [
+        85.9,
+        1331.1,
+        142.2,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:system",
+      "r": [
+        85.9,
+        1337.6,
+        142.2,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:to",
+      "r": [
+        236.2,
+        1331.1,
+        48,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:to",
+      "r": [
+        236.2,
+        1337.6,
+        48,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:track,",
+      "r": [
+        292.2,
+        1331.1,
+        128.8,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:track,",
+      "r": [
+        292.2,
+        1337.6,
+        128.8,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:understand,",
+      "r": [
+        429,
+        1331.1,
+        245.1,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:understand,",
+      "r": [
+        429,
+        1337.6,
+        245.1,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:and",
+      "r": [
+        99.8,
+        1386.9,
+        74.8,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:and",
+      "r": [
+        99.8,
+        1393.4,
+        74.8,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:automate",
+      "r": [
+        182.6,
+        1386.9,
+        198.5,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:automate",
+      "r": [
+        182.6,
+        1393.4,
+        198.5,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:your",
+      "r": [
+        389.1,
+        1386.9,
+        96.7,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:your",
+      "r": [
+        389.1,
+        1393.4,
+        96.7,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:business",
+      "r": [
+        493.8,
+        1386.9,
+        166.4,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:business",
+      "r": [
+        493.8,
+        1393.4,
+        166.4,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:finances",
+      "r": [
+        65.9,
+        1442.7,
+        171.3,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:finances",
+      "r": [
+        65.9,
+        1449.2,
+        171.3,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:bringing",
+      "r": [
+        245.2,
+        1442.7,
+        161.4,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:bringing",
+      "r": [
+        245.2,
+        1449.2,
+        161.4,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:transactions,",
+      "r": [
+        414.5,
+        1442.7,
+        279.5,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:transactions,",
+      "r": [
+        414.5,
+        1449.2,
+        279.5,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:reports,",
+      "r": [
+        134.5,
+        1498.4,
+        167.7,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:reports,",
+      "r": [
+        134.5,
+        1504.9,
+        167.7,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:and",
+      "r": [
+        310.2,
+        1498.4,
+        74.8,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:and",
+      "r": [
+        310.2,
+        1504.9,
+        74.8,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:workflows",
+      "r": [
+        393,
+        1498.4,
+        232.5,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:workflows",
+      "r": [
+        393,
+        1504.9,
+        232.5,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:together",
+      "r": [
+        166.8,
+        1554.2,
+        185.3,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:together",
+      "r": [
+        166.8,
+        1560.7,
+        185.3,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:in",
+      "r": [
+        360.1,
+        1554.2,
+        32.2,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:in",
+      "r": [
+        360.1,
+        1560.7,
+        32.2,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:one",
+      "r": [
+        400.3,
+        1554.2,
+        70.7,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:one",
+      "r": [
+        400.3,
+        1560.7,
+        70.7,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:place",
+      "r": [
+        479,
+        1554.2,
+        114.2,
+        49.8
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:place",
+      "r": [
+        479,
+        1560.7,
+        114.2,
+        36.5
+      ],
+      "ff": "clashDisplay",
+      "fs": "32px",
+      "fw": "600",
+      "lh": "49.7778px",
+      "ls": "0.8px",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "H4:Global Financial Ledger",
+      "r": [
+        57.5,
+        1841,
+        299.5,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:A unified system that brings all your fi",
+      "r": [
+        57.5,
+        1876,
+        299.5,
+        39.2
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H4:Secure Bank & Web3 Integrations",
+      "r": [
+        411,
+        1841,
+        299.5,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Connect your bank accounts and Web3 wall",
+      "r": [
+        411,
+        1876,
+        299.5,
+        39.2
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H4:Custom Financial Reports",
+      "r": [
+        57.5,
+        2216,
+        299.5,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Go beyond standard P&L - build reports a",
+      "r": [
+        57.5,
+        2251,
+        299.5,
+        39.2
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H4:User Management",
+      "r": [
+        411,
+        2216,
+        299.5,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Control access with configurable roles a",
+      "r": [
+        411,
+        2251,
+        299.5,
+        39.2
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H4:Workflow Automations",
+      "r": [
+        57.5,
+        2590,
+        182.7,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:Soon",
+      "r": [
+        248.2,
+        2591.5,
+        49.8,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "P:Automate routine financial tasks with cu",
+      "r": [
+        57.5,
+        2625,
+        299.5,
+        58.8
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H4:Invoice Builder",
+      "r": [
+        411,
+        2590,
+        116.4,
+        27
+      ],
+      "ff": "Outfit",
+      "fs": "18px",
+      "fw": "500",
+      "lh": "27px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:Soon",
+      "r": [
+        535.4,
+        2591.5,
+        49.8,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "P:Create and manage invoices instantly. Ke",
+      "r": [
+        411,
+        2625,
+        299.5,
+        39.2
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "19.6px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Enrich Financial Data",
+      "r": [
+        289,
+        3030,
+        190,
+        22
+      ],
+      "ff": "Outfit",
+      "fs": "20px",
+      "fw": "500",
+      "lh": "22px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Automate financial tasks that used to re",
+      "r": [
+        65.5,
+        3541,
+        488,
+        67.2
+      ],
+      "ff": "clashDisplay",
+      "fs": "28px",
+      "fw": "600",
+      "lh": "33.6px",
+      "ls": "normal",
+      "ws": "3px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Set up smart automations and let Vault c",
+      "r": [
+        65.5,
+        3624.2,
+        560,
+        67.2
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "22.4px",
+      "ls": "0.4px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Try it free",
+      "r": [
+        65.5,
+        3723.4,
+        152.7,
+        56
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "500",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(9, 10, 17)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Profit & Loss Overview",
+      "r": [
+        284.5,
+        3934.4,
+        199,
+        22
+      ],
+      "ff": "Outfit",
+      "fs": "20px",
+      "fw": "500",
+      "lh": "22px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Understand your business finances in rea",
+      "r": [
+        65.5,
+        4445.4,
+        488,
+        67.2
+      ],
+      "ff": "clashDisplay",
+      "fs": "28px",
+      "fw": "600",
+      "lh": "33.6px",
+      "ls": "normal",
+      "ws": "3px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Vault transforms transactions into real-",
+      "r": [
+        65.5,
+        4528.6,
+        560,
+        89.6
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "22.4px",
+      "ls": "0.4px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Try it free",
+      "r": [
+        65.5,
+        4650.1,
+        152.7,
+        56
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "500",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(9, 10, 17)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Centralized Financial Ledger",
+      "r": [
+        256.8,
+        4861.1,
+        254.4,
+        22
+      ],
+      "ff": "Outfit",
+      "fs": "20px",
+      "fw": "500",
+      "lh": "22px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H3:Built on secure financial infrastructure",
+      "r": [
+        65.5,
+        5372.1,
+        488,
+        67.2
+      ],
+      "ff": "clashDisplay",
+      "fs": "28px",
+      "fw": "600",
+      "lh": "33.6px",
+      "ls": "normal",
+      "ws": "3px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Vault is designed with a reliable financ",
+      "r": [
+        65.5,
+        5455.3,
+        560,
+        67.2
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "22.4px",
+      "ls": "0.4px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Try it free",
+      "r": [
+        65.5,
+        5554.5,
+        152.7,
+        56
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "500",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(9, 10, 17)",
+      "tt": "none"
+    },
+    {
+      "k": "H2:Gain Clarityon your Finances",
+      "r": [
+        231.8,
+        5747.5,
+        304.4,
+        72
+      ],
+      "ff": "clashDisplay",
+      "fs": "30px",
+      "fw": "600",
+      "lh": "36px",
+      "ls": "normal",
+      "ws": "4px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "SPAN:1",
+      "r": [
+        83.5,
+        6329.5,
+        6.1,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "700",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H6:Connect your accounts",
+      "r": [
+        125.5,
+        6329.5,
+        235.7,
+        24
+      ],
+      "ff": "clashDisplay",
+      "fs": "20px",
+      "fw": "600",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Sign up and securely connect your bank a",
+      "r": [
+        65.5,
+        6356.5,
+        649,
+        44
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "22px",
+      "ls": "-0.35px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:2",
+      "r": [
+        82,
+        6435.5,
+        9,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "700",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H6:Structure your data",
+      "r": [
+        125.5,
+        6435.5,
+        203,
+        24
+      ],
+      "ff": "clashDisplay",
+      "fs": "20px",
+      "fw": "600",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Set up automations, define revenue and e",
+      "r": [
+        65.5,
+        6462.5,
+        649,
+        0
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "22px",
+      "ls": "-0.35px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:3",
+      "r": [
+        82,
+        6497.5,
+        8.9,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "700",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "H6:Turn data into decisions",
+      "r": [
+        125.5,
+        6497.5,
+        240.4,
+        24
+      ],
+      "ff": "clashDisplay",
+      "fs": "20px",
+      "fw": "600",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "2px",
+      "c": "rgb(255, 255, 255)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Vault transforms raw data into insights ",
+      "r": [
+        65.5,
+        6524.5,
+        649,
+        0
+      ],
+      "ff": "Outfit",
+      "fs": "14px",
+      "fw": "400",
+      "lh": "22px",
+      "ls": "-0.35px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Get started",
+      "r": [
+        65.5,
+        6562.5,
+        166.1,
+        56
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "500",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(9, 10, 17)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:hello@usevault.ai",
+      "r": [
+        143.5,
+        6845.5,
+        120.6,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(191, 191, 191)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Platform",
+      "r": [
+        65.5,
+        6905.5,
+        84,
+        16
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.4)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "A:Product",
+      "r": [
+        65.5,
+        6940.5,
+        56.1,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Automation",
+      "r": [
+        65.5,
+        6978.5,
+        84,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Reports",
+      "r": [
+        65.5,
+        7016.5,
+        55.5,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Security",
+      "r": [
+        65.5,
+        7054.5,
+        57.5,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Pricing",
+      "r": [
+        65.5,
+        7092.5,
+        49.1,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Resources",
+      "r": [
+        307,
+        6905.5,
+        121.2,
+        16
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.4)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "A:Help Center",
+      "r": [
+        307,
+        6940.5,
+        85,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Status",
+      "r": [
+        307,
+        6978.5,
+        44.8,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Migration offer",
+      "r": [
+        307,
+        7016.5,
+        106.9,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Partner program",
+      "r": [
+        307,
+        7054.5,
+        121.2,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "P:Legal",
+      "r": [
+        585.6,
+        6905.5,
+        116.9,
+        16
+      ],
+      "ff": "Outfit",
+      "fs": "11px",
+      "fw": "500",
+      "lh": "16px",
+      "ls": "0.55px",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.4)",
+      "tt": "uppercase"
+    },
+    {
+      "k": "A:Terms of Service",
+      "r": [
+        585.6,
+        6940.5,
+        116.9,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:Privacy Policy",
+      "r": [
+        585.6,
+        6978.5,
+        97.7,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "A:DPA",
+      "r": [
+        585.6,
+        7016.5,
+        31.6,
+        20
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "26px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgba(255, 255, 255, 0.6)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:© 2026 VAULT AI. All rights reserved.",
+      "r": [
+        65.5,
+        7181,
+        262.9,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(191, 191, 191)",
+      "tt": "none"
+    },
+    {
+      "k": "SPAN:Built by",
+      "r": [
+        530.7,
+        7181,
+        51.8,
+        24
+      ],
+      "ff": "Outfit",
+      "fs": "16px",
+      "fw": "400",
+      "lh": "24px",
+      "ls": "normal",
+      "ws": "0px",
+      "c": "rgb(191, 191, 191)",
+      "tt": "none"
+    }
+  ],
+  "boxes": [
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        0,
+        688,
+        76
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        0,
+        76,
+        768,
+        1
+      ],
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        0,
+        656.3,
+        768,
+        400
+      ],
+      "bg": "",
+      "bi": "linear-gradient(rgba(3, 2, 11, 0) 0%, rgba(3, 2, 11, 0.05) 4.78%, rgb(3, 2, 11) 35.5%)",
+      "bs": "auto|0% 0%|repeat",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        77,
+        688,
+        979.3
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        260.6,
+        213,
+        246.9,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.08)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0.5px 0.5px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.04) 0px 2px 8px 0px inset, rgba(8, 1, 20, 0.03) 0px 0.5px 0.5px 0px, rgba(8, 1, 20, 0.03) 0px 1px 1px -0.5px, rgba(8, 1, 20, 0.03) 0px 2px 2px -1px",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "A",
+      "r": [
+        289.8,
+        922.3,
+        188.4,
+        64
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "4px 4px 4px 4px",
+      "bc": "rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2)",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        426.2,
+        938.3,
+        32,
+        32
+      ],
+      "bg": "rgb(5, 4, 12)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        0,
+        1056.3,
+        768,
+        1
+      ],
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        1057.3,
+        688,
+        758.6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1px 0px 1px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        1817,
+        688,
+        1098
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        41.5,
+        1817,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1px 1px 0px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        53.5,
+        1951,
+        319.5,
+        217
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        394,
+        1817,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 0px 1px 1px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        411,
+        1950,
+        299.5,
+        216
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        41.5,
+        2191,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 1px 1px 0px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        61.5,
+        2324,
+        291.5,
+        188
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        394,
+        2191,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 0px 1px 1px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        407,
+        2324,
+        307.5,
+        216
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        41.5,
+        2565,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "linear-gradient(rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.02) 100%)",
+      "bs": "auto|0% 0%|repeat",
+      "bw": "1px 1px 0px 0px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        248.2,
+        2591.5,
+        49.8,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.08)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0.5px 0.5px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.04) 0px 2px 8px 0px inset, rgba(8, 1, 20, 0.03) 0px 0.5px 0.5px 0px, rgba(8, 1, 20, 0.03) 0px 1px 1px -0.5px, rgba(8, 1, 20, 0.03) 0px 2px 2px -1px",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        57.5,
+        2715.8,
+        299.5,
+        183.2
+      ],
+      "bg": "",
+      "bi": "radial-gradient(circle, rgba(255, 255, 255, 0.08) 0.8px, rgba(0, 0, 0, 0) 0.8px)",
+      "bs": "14px 14px|50% 50%|repeat",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        57.5,
+        2733.8,
+        299.5,
+        147.2
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "ARTICLE",
+      "r": [
+        394,
+        2565,
+        332.5,
+        350
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 0px 0px 1px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        535.4,
+        2591.5,
+        49.8,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.08)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0.5px 0.5px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.04) 0px 2px 8px 0px inset, rgba(8, 1, 20, 0.03) 0px 0.5px 0.5px 0px, rgba(8, 1, 20, 0.03) 0px 1px 1px -0.5px, rgba(8, 1, 20, 0.03) 0px 2px 2px -1px",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        407,
+        2699,
+        319.5,
+        218
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        2916,
+        688,
+        96
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        3013,
+        688,
+        806.4
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        53.5,
+        3029,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        690.5,
+        3029,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        41.5,
+        3068,
+        685,
+        1
+      ],
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        41.5,
+        3069,
+        685,
+        432
+      ],
+      "bg": "",
+      "bi": "radial-gradient(circle, rgba(255, 255, 255, 0.08) 0.8px, rgba(0, 0, 0, 0) 0.8px), linear-gradient(rgba(217, 217, 217, 0.03) 0%, rgba(217, 217, 217, 0.01) 100%)",
+      "bs": "12px 12px, 100% 100%|0% 0%, 0% 0%|repeat, repeat",
+      "bw": "0px 0px 1.5px 0px",
+      "bc": "rgb(255, 255, 255) rgb(255, 255, 255) rgba(255, 255, 255, 0.05) rgb(255, 255, 255)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        41.5,
+        3069,
+        685,
+        430.5
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "H3",
+      "r": [
+        65.5,
+        3541,
+        488,
+        67.2
+      ],
+      "bg": "",
+      "bi": "linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 100%)",
+      "bs": "auto|0% 0%|repeat",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "A",
+      "r": [
+        65.5,
+        3723.4,
+        152.7,
+        56
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "4px 4px 4px 4px",
+      "bc": "rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2)",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        172.2,
+        3737.4,
+        28,
+        28
+      ],
+      "bg": "rgb(5, 4, 12)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        3820.4,
+        688,
+        96
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        3917.4,
+        688,
+        828.8
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        53.5,
+        3933.4,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        690.5,
+        3933.4,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        41.5,
+        3972.4,
+        685,
+        1
+      ],
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        41.5,
+        3973.4,
+        685,
+        432
+      ],
+      "bg": "",
+      "bi": "radial-gradient(circle, rgba(255, 255, 255, 0.08) 0.8px, rgba(0, 0, 0, 0) 0.8px), linear-gradient(rgba(217, 217, 217, 0.03) 0%, rgba(217, 217, 217, 0.01) 100%)",
+      "bs": "12px 12px, 100% 100%|0% 0%, 0% 0%|repeat, repeat",
+      "bw": "0px 0px 1.5px 0px",
+      "bc": "rgb(255, 255, 255) rgb(255, 255, 255) rgba(255, 255, 255, 0.05) rgb(255, 255, 255)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        41.5,
+        3973.4,
+        685,
+        430.5
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "H3",
+      "r": [
+        65.5,
+        4445.4,
+        488,
+        67.2
+      ],
+      "bg": "",
+      "bi": "linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 100%)",
+      "bs": "auto|0% 0%|repeat",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "A",
+      "r": [
+        65.5,
+        4650.1,
+        152.7,
+        56
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "4px 4px 4px 4px",
+      "bc": "rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2)",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        172.2,
+        4664.1,
+        28,
+        28
+      ],
+      "bg": "rgb(5, 4, 12)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        4747.1,
+        688,
+        96
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        4844.1,
+        688,
+        806.4
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        53.5,
+        4860.1,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        690.5,
+        4860.1,
+        24,
+        24
+      ],
+      "bg": "rgba(255, 255, 255, 0.5)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        41.5,
+        4899.1,
+        685,
+        1
+      ],
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        41.5,
+        4900.1,
+        685,
+        432
+      ],
+      "bg": "",
+      "bi": "radial-gradient(circle, rgba(255, 255, 255, 0.08) 0.8px, rgba(0, 0, 0, 0) 0.8px), linear-gradient(rgba(217, 217, 217, 0.03) 0%, rgba(217, 217, 217, 0.01) 100%)",
+      "bs": "12px 12px, 100% 100%|0% 0%, 0% 0%|repeat, repeat",
+      "bw": "0px 0px 1.5px 0px",
+      "bc": "rgb(255, 255, 255) rgb(255, 255, 255) rgba(255, 255, 255, 0.05) rgb(255, 255, 255)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        41.5,
+        4900.1,
+        685,
+        430.5
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "H3",
+      "r": [
+        65.5,
+        5372.1,
+        488,
+        67.2
+      ],
+      "bg": "",
+      "bi": "linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 100%)",
+      "bs": "auto|0% 0%|repeat",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "A",
+      "r": [
+        65.5,
+        5554.5,
+        152.7,
+        56
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "4px 4px 4px 4px",
+      "bc": "rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2)",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        172.2,
+        5568.5,
+        28,
+        28
+      ],
+      "bg": "rgb(5, 4, 12)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        5651.5,
+        688,
+        216
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        5868.5,
+        688,
+        882
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        41.5,
+        5868.5,
+        685,
+        412
+      ],
+      "bg": "",
+      "bi": "radial-gradient(circle, rgba(49, 49, 56, 0.35) 0.8px, rgba(0, 0, 0, 0) 0.8px), linear-gradient(rgba(217, 217, 217, 0.01) 0%, rgba(217, 217, 217, 0.03) 100%)",
+      "bs": "12px 12px, 100% 100%|0% 0%, 0% 0%|repeat, repeat",
+      "bw": "0px 0px 1px 0px",
+      "bc": "rgb(255, 255, 255) rgb(255, 255, 255) rgba(255, 255, 255, 0.05) rgb(255, 255, 255)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "CANVAS",
+      "r": [
+        41.5,
+        5868.5,
+        685,
+        411
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "BUTTON",
+      "r": [
+        65.5,
+        6320.5,
+        42,
+        42
+      ],
+      "bg": "rgba(255, 255, 255, 0.02)",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 1px 1px 1px",
+      "bc": "rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        65.5,
+        6320.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 0px 0px 1px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        101.5,
+        6356.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1px 1px 0px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "BUTTON",
+      "r": [
+        65.5,
+        6426.5,
+        42,
+        42
+      ],
+      "bg": "rgba(255, 255, 255, 0.02)",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 1px 1px 1px",
+      "bc": "rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        65.5,
+        6426.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 0px 0px 1px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        101.5,
+        6462.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1px 1px 0px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "BUTTON",
+      "r": [
+        65.5,
+        6488.5,
+        42,
+        42
+      ],
+      "bg": "rgba(255, 255, 255, 0.02)",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 1px 1px 1px",
+      "bc": "rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        65.5,
+        6488.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "1px 0px 0px 1px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        101.5,
+        6524.5,
+        6,
+        6
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1px 1px 0px",
+      "bc": "rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250) rgb(237, 237, 250)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "10"
+    },
+    {
+      "t": "A",
+      "r": [
+        65.5,
+        6562.5,
+        166.1,
+        56
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "4px 4px 4px 4px",
+      "bc": "rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2)",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        185.6,
+        6576.5,
+        28,
+        28
+      ],
+      "bg": "rgb(5, 4, 12)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        6751.5,
+        688,
+        477.5
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        41.5,
+        6751.5,
+        685,
+        405.5
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 0px 1.5px 0px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        65.5,
+        6849.5,
+        11.4,
+        16
+      ],
+      "bg": "rgb(191, 191, 191)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        92.9,
+        6849.5,
+        13,
+        16
+      ],
+      "bg": "rgb(191, 191, 191)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        121.9,
+        6849.5,
+        15.5,
+        16
+      ],
+      "bg": "rgb(191, 191, 191)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        590.5,
+        7182,
+        84,
+        22
+      ],
+      "bg": "rgb(37, 34, 44)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        670.5,
+        7181.5,
+        32,
+        23
+      ],
+      "bg": "rgb(37, 34, 44)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "9999px",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "SPAN",
+      "r": [
+        681.5,
+        7187.5,
+        11,
+        11
+      ],
+      "bg": "rgb(255, 255, 255)",
+      "bi": "",
+      "bs": "",
+      "bw": "",
+      "bc": "",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    },
+    {
+      "t": "DIV",
+      "r": [
+        40,
+        7230,
+        688,
+        50
+      ],
+      "bg": "",
+      "bi": "",
+      "bs": "",
+      "bw": "0px 1.5px 0px 1.5px",
+      "bc": "rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05) rgba(255, 255, 255, 0.05)",
+      "sh": "",
+      "rad": "",
+      "bd": "",
+      "z": "auto"
+    }
+  ],
+  "imgs": [
+    {
+      "src": "vault-logo.svg",
+      "r": [
+        73.5,
+        24,
+        200,
+        28
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    },
+    {
+      "src": "menu-burger.svg",
+      "r": [
+        666.5,
+        24,
+        28,
+        28
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        34,
+        70.5,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        722,
+        70.5,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    },
+    {
+      "src": "zap-icon.svg",
+      "r": [
+        268.6,
+        218,
+        14,
+        14
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "hero-en.png",
+      "r": [
+        73.5,
+        498.6,
+        621,
+        375.8
+      ],
+      "of": "contain",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "arrow-right.svg",
+      "r": [
+        434.2,
+        946.3,
+        16,
+        16
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(9, 10, 17)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        34,
+        1050.8,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        722,
+        1050.8,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        1811,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        1811,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        2160,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        2160,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        1811,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        1811,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        2160,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        2160,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        2186,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        2186,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        2534,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        2534,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        2186,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        2186,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        2534,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        2534,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        2560,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        2560,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        35.5,
+        2909,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        367,
+        2909,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        2560,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        2560,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        389,
+        2909,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        720.5,
+        2909,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "arrow-right.svg",
+      "r": [
+        179.2,
+        3744.4,
+        14,
+        14
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(9, 10, 17)"
+    },
+    {
+      "src": "arrow-right.svg",
+      "r": [
+        179.2,
+        4671.1,
+        14,
+        14
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(9, 10, 17)"
+    },
+    {
+      "src": "arrow-right.svg",
+      "r": [
+        179.2,
+        5575.5,
+        14,
+        14
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(9, 10, 17)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        34,
+        5862,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        722,
+        5862,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "arrow-right.svg",
+      "r": [
+        192.6,
+        6583.5,
+        14,
+        14
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(9, 10, 17)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        34,
+        6745,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        722,
+        6745,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(255, 255, 255)"
+    },
+    {
+      "src": "vault-logo.svg",
+      "r": [
+        65.5,
+        6799.5,
+        188,
+        26
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    },
+    {
+      "src": "overcode-wordmark.svg",
+      "r": [
+        602.5,
+        7187,
+        60,
+        10
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(191, 191, 191)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        34,
+        7223.5,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    },
+    {
+      "src": "cross-plus-marker.svg",
+      "r": [
+        722,
+        7223.5,
+        12,
+        12
+      ],
+      "of": "fill",
+      "op": "1",
+      "col": "rgb(0, 0, 0)"
+    }
+  ],
+  "pseudos": [
+    {
+      "host": "SECTION0,77,768,979.3",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "80px",
+      "left": "0px",
+      "right": "0px",
+      "bottom": "-80px",
+      "w": "768px",
+      "h": "979.344px",
+      "tr": "none|none",
+      "bg": "",
+      "bi": "url(planet.png)",
+      "bs": "contain|50% 0%",
+      "z": "0",
+      "op": "1"
+    },
+    {
+      "host": "DIV41.5,442.6,685,431.8",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "-72px",
+      "left": "342.5px",
+      "right": "22.5px",
+      "bottom": "183.75px",
+      "w": "320px",
+      "h": "320px",
+      "tr": "-50%|none",
+      "bg": "",
+      "bi": "url(hero-img-before-gradient.svg)",
+      "bs": "contain|0% 0%",
+      "z": "0",
+      "op": "1"
+    },
+    {
+      "host": "DIV41.5,442.6,685,431.8",
+      "p": "::after",
+      "pos": "absolute",
+      "top": "32px",
+      "left": "342.5px",
+      "right": "142.5px",
+      "bottom": "199.75px",
+      "w": "200px",
+      "h": "200px",
+      "tr": "-50%|none",
+      "bg": "",
+      "bi": "url(hero-img-after-gradient.svg)",
+      "bs": "contain|0% 0%",
+      "z": "0",
+      "op": "1"
+    },
+    {
+      "host": "DIV73.5,498.6,621,375.8",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "-13px",
+      "left": "310.5px",
+      "right": "-49.5px",
+      "bottom": "364.75px",
+      "w": "360px",
+      "h": "24px",
+      "tr": "-50%|none",
+      "bg": "",
+      "bi": "url(hero-highlight-before-gradient.svg)",
+      "bs": "contain|50% 50%",
+      "z": "10",
+      "op": "1"
+    },
+    {
+      "host": "DIV73.5,498.6,621,375.8",
+      "p": "::after",
+      "pos": "absolute",
+      "top": "-63.875px",
+      "left": "310.5px",
+      "right": "-341.547px",
+      "bottom": "63.875px",
+      "w": "652.047px",
+      "h": "375.75px",
+      "tr": "-50%|none",
+      "bg": "",
+      "bi": "url(hero-highlight-after-gradient.svg)",
+      "bs": "contain|0% 0%",
+      "z": "2",
+      "op": "1"
+    },
+    {
+      "host": "DIV40,1057.3,688,758.6",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "379.32px",
+      "left": "343px",
+      "right": "-283px",
+      "bottom": "-164.68px",
+      "w": "626px",
+      "h": "544px",
+      "tr": "-50% -50%|none",
+      "bg": "",
+      "bi": "url(scroll-coloring-text-bg.svg)",
+      "bs": "contain|0% 0%",
+      "z": "0",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,1816,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,2915,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,3012,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,3819.4,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,3916.4,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,4746.1,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,4843.1,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,5650.5,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "40px",
+      "right": "40px",
+      "bottom": "-0.5px",
+      "w": "688px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,5867.5,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "34px",
+      "right": "34px",
+      "bottom": "-0.5px",
+      "w": "700px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,6750.5,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "34px",
+      "right": "34px",
+      "bottom": "-0.5px",
+      "w": "700px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    },
+    {
+      "host": "DIV0,7229,768,1",
+      "p": "::before",
+      "pos": "absolute",
+      "top": "0.5px",
+      "left": "34px",
+      "right": "34px",
+      "bottom": "-0.5px",
+      "w": "700px",
+      "h": "1px",
+      "tr": "none|matrix(1, 0, 0, 1, 0, -0.5)",
+      "bg": "rgba(255, 255, 255, 0.05)",
+      "bi": "",
+      "bs": "auto|0% 0%",
+      "z": "auto",
+      "op": "1"
+    }
+  ]
+}

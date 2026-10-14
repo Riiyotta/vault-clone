@@ -1,0 +1,143 @@
+{
+  "n": 3,
+  "out": [
+    {
+      "k": "BUTTON:@36,3756",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,3756",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@36,4516",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,4516",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@36,5299",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,5299",
+      "base": "rgba(255, 255, 255, 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@42,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@69,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:hello@usevault.ai@98,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Product@42,6972",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Automation@42,7010",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Reports@42,7048",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Security@42,7086",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Pricing@42,7124",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Help Center@207,6972",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Status@207,7010",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Migration offer@207,7048",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Partner program@207,7086",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Terms of Service@42,7222",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Privacy Policy@42,7260",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:DPA@42,7298",
+      "base": "rgba(255, 255, 255, 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:rgb(255 255 255 / var(",
+      "tr": "color, background-color, border-color, text-decoration-color, fill, stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "SPAN:@101,7410",
+      "base": "rgb(191, 191, 191) | bg rgb(37, 34, 44)",
+      "hover": "background-color:rgb(117 6 167 / var(",
+      "tr": "all 0s ease"
+    },
+    {
+      "k": "SPAN:@181,7410",
+      "base": "rgb(255, 255, 255) | bg rgb(37, 34, 44)",
+      "hover": "background-color:rgb(117 6 167 / var(",
+      "tr": "all 0s ease"
+    }
+  ]
+}

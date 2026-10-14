@@ -1,0 +1,255 @@
+- generic [active] [ref=f50e1]:
+  - generic [ref=f50e2]:
+    - navigation [ref=f50e3]:
+      - generic [ref=f50e4]:
+        - link "Vault AI — на головну" [ref=f50e5] [cursor=pointer]:
+          - /url: "#top"
+        - list [ref=f50e9]:
+          - listitem [ref=f50e10]:
+            - link "Продукт" [ref=f50e11] [cursor=pointer]:
+              - /url: "#product"
+          - listitem [ref=f50e12]:
+            - link "Автоматизація" [ref=f50e13] [cursor=pointer]:
+              - /url: "#automation"
+          - listitem [ref=f50e14]:
+            - link "Звіти" [ref=f50e15] [cursor=pointer]:
+              - /url: "#reports"
+          - listitem [ref=f50e16]:
+            - link "Безпека" [ref=f50e17] [cursor=pointer]:
+              - /url: "#security"
+          - listitem [ref=f50e18]:
+            - link "Тарифи" [ref=f50e19] [cursor=pointer]:
+              - /url: /ua/pricing
+        - generic [ref=f50e20]:
+          - group "Мова" [ref=f50e21]:
+            - link "EN English" [ref=f50e23] [cursor=pointer]:
+              - /url: /
+              - text: EN
+              - generic [ref=f50e24]: English
+            - generic [ref=f50e25]:
+              - generic [aria-hidden] [ref=f50e26]: /
+              - link "UA Українська" [ref=f50e27] [cursor=pointer]:
+                - /url: /ua
+                - text: UA
+                - generic [ref=f50e28]: Українська
+          - link "Почати" [ref=f50e29] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+    - main [ref=f50e38]:
+      - generic [ref=f50e41]:
+        - generic [ref=f50e42]:
+          - generic [ref=f50e43]: ПЛАТФОРМА УПРАВЛІННЯ ФІНАНСАМИ
+          - heading "Усі фінанси бізнесу на одному екрані" [level=1] [ref=f50e47]
+          - paragraph [ref=f50e48]: AI-платформа для обліку транзакцій, звітів та автоматизації рутинної фінансової роботи. Для малого й середнього бізнесу.
+        - img "Інтерфейс Vault AI" [ref=f50e51]
+        - link [ref=f50e53] [cursor=pointer]:
+          - /url: https://app.usevault.ai/login
+      - paragraph [ref=f50e68]:
+        - generic [ref=f50e69]:
+          - generic [ref=f50e70]: Vault
+          - text: Vault
+        - generic [ref=f50e71]:
+          - generic [ref=f50e72]: дає
+          - text: дає
+        - generic [ref=f50e73]:
+          - generic [ref=f50e74]: повну
+          - text: повну
+        - generic [ref=f50e75]:
+          - generic [ref=f50e76]: систему,
+          - text: систему,
+        - generic [ref=f50e77]:
+          - generic [ref=f50e78]: щоб
+          - text: щоб
+        - generic [ref=f50e79]:
+          - generic [ref=f50e80]: відстежувати,
+          - text: відстежувати,
+        - generic [ref=f50e81]:
+          - generic [ref=f50e82]: розуміти
+          - text: розуміти
+        - generic [ref=f50e83]:
+          - generic [ref=f50e84]: й
+          - text: й
+        - generic [ref=f50e85]:
+          - generic [ref=f50e86]: автоматизувати
+          - text: автоматизувати
+        - generic [ref=f50e87]:
+          - generic [ref=f50e88]: фінанси
+          - text: фінанси
+        - generic [ref=f50e89]:
+          - generic [ref=f50e90]: бізнесу,
+          - text: бізнесу,
+        - generic [ref=f50e91]:
+          - generic [ref=f50e92]: об’єднуючи
+          - text: об’єднуючи
+        - generic [ref=f50e93]:
+          - generic [ref=f50e94]: транзакції,
+          - text: транзакції,
+        - generic [ref=f50e95]:
+          - generic [ref=f50e96]: звіти
+          - text: звіти
+        - generic [ref=f50e97]:
+          - generic [ref=f50e98]: та
+          - text: та
+        - generic [ref=f50e99]:
+          - generic [ref=f50e100]: процеси
+          - text: процеси
+        - generic [ref=f50e101]:
+          - generic [ref=f50e102]: на
+          - text: на
+        - generic [ref=f50e103]:
+          - generic [ref=f50e104]: одному
+          - text: одному
+        - generic [ref=f50e105]:
+          - generic [ref=f50e106]: екрані
+          - text: екрані
+      - generic [ref=f50e111]:
+        - generic [ref=f50e112]:
+          - generic [ref=f50e125]:
+            - heading "Єдиний фінансовий реєстр" [level=4] [ref=f50e126]
+            - paragraph [ref=f50e127]: Усі фінансові дані компанії консолідуються в одному достовірному джерелі.
+          - generic "Анімація «Єдиний фінансовий реєстр»" [ref=f50e131]
+        - generic [ref=f50e132]:
+          - generic [ref=f50e145]:
+            - heading "Інтеграції з банками та Web3" [level=4] [ref=f50e146]
+            - paragraph [ref=f50e147]: Підключайте банківські рахунки та Web3-гаманці через перевірених провайдерів на кшталт Plaid.
+          - generic "Анімація «Інтеграції з банками та Web3»" [ref=f50e151]
+        - generic [ref=f50e152]:
+          - generic [ref=f50e165]:
+            - heading "Налаштовувані звіти" [level=4] [ref=f50e166]
+            - paragraph [ref=f50e167]: "Стандартний P&L — лише початок: будуйте звіти навколо метрик, важливих саме для вашого бізнеса."
+          - generic "Анімація «Налаштовувані звіти»" [ref=f50e171]
+        - generic [ref=f50e172]:
+          - generic [ref=f50e185]:
+            - heading "Керування доступом" [level=4] [ref=f50e186]
+            - paragraph [ref=f50e187]: Налаштовувані ролі та права доступу для всієї команди.
+          - generic "Анімація «Керування доступом»" [ref=f50e191]
+        - generic [ref=f50e192]:
+          - generic [ref=f50e205]:
+            - generic [ref=f50e206]:
+              - heading "Автоматизація процесів" [level=4] [ref=f50e207]
+              - generic [ref=f50e208]: Незабаром
+            - paragraph [ref=f50e210]: Автоматизуйте рутинні фінансові задачі за допомогою налаштовуваних сценаріїв та AI-збагачення транзакцій.
+          - generic "Анімація «Автоматизація процесів»" [ref=f50e214]
+        - generic [ref=f50e215]:
+          - generic [ref=f50e228]:
+            - generic [ref=f50e229]:
+              - heading "Конструктор інвойсів" [level=4] [ref=f50e230]
+              - generic [ref=f50e231]: Незабаром
+            - paragraph [ref=f50e233]: Створюйте інвойси й керуйте ними миттєво. Облік виручки — на одному екрані.
+          - generic "Анімація «Конструктор інвойсів»" [ref=f50e237]
+      - generic [ref=f50e246]:
+        - generic [ref=f50e247]:
+          - button "Збагачення даних" [ref=f50e248] [cursor=pointer]
+          - button "Сповіщення про витрати" [ref=f50e250] [cursor=pointer]
+          - button "Регулярні звіти" [ref=f50e252] [cursor=pointer]
+        - generic [ref=f50e260]:
+          - generic [ref=f50e261]:
+            - heading "Автоматизуйте фінансові завдання, які раніше виконувалися вручну" [level=3] [ref=f50e262]
+            - paragraph [ref=f50e263]: Налаштуйте розумні сценарії — і Vault сам категоризує транзакції, збагачуватиме фінансові дані, надсилатиме звіти й сповіщення, запускатиме фінансові процеси. Заощаджуйте години рутини щотижня.
+          - link [ref=f50e264] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+      - generic [ref=f50e276]:
+        - generic [ref=f50e277]:
+          - button "Огляд P&L" [ref=f50e278] [cursor=pointer]
+          - button "Структура витрат" [ref=f50e280] [cursor=pointer]
+          - button "Налаштовувані звіти" [ref=f50e282] [cursor=pointer]
+        - generic [ref=f50e290]:
+          - generic [ref=f50e291]:
+            - heading "Аналізуйте фінанси бізнесу в реальному часі" [level=3] [ref=f50e292]
+            - paragraph [ref=f50e293]: "Vault перетворює транзакції на звіти у режимі реального часу: виручка, витрати, грошовий потік і прибутковість. Не обмежуйтеся стандартним P&L — візуалізуйте будь-які фінансові дані й ухвалюйте рішення впевненіше."
+          - link [ref=f50e294] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+      - generic [ref=f50e306]:
+        - generic [ref=f50e307]:
+          - button "Централізований реєстр" [ref=f50e308] [cursor=pointer]
+          - button "Безпечні інтеграції" [ref=f50e310] [cursor=pointer]
+          - button "Рольова модель доступу" [ref=f50e312] [cursor=pointer]
+        - generic [ref=f50e320]:
+          - generic [ref=f50e321]:
+            - heading "Побудовано на надійній фінансовій інфраструктурі" [level=3] [ref=f50e322]
+            - paragraph [ref=f50e323]: В основі Vault — продумана архітектура фінансових даних, безпечні інтеграції та рольова модель доступу. Ваші дані залишаються точними й захищеними.
+          - link [ref=f50e324] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+      - generic [ref=f50e331]:
+        - heading "Прозорість у ваших фінансах" [level=2] [ref=f50e334]
+        - generic [ref=f50e349]:
+          - generic [ref=f50e350]:
+            - generic [ref=f50e351]:
+              - generic [ref=f50e352]:
+                - button "Відтворити крок 1" [ref=f50e353] [cursor=pointer]:
+                  - generic [ref=f50e354]: "1"
+                - heading "Підключіть рахунки" [level=6] [ref=f50e355]
+              - paragraph [ref=f50e357]: Зареєструйтеся та безпечно підключіть банківські рахунки й Web3-гаманці.
+            - generic [ref=f50e359]:
+              - button "Відтворити крок 2" [ref=f50e360] [cursor=pointer]:
+                - generic [ref=f50e361]: "2"
+              - heading "Структуруйте дані" [level=6] [ref=f50e362]
+            - generic [ref=f50e364]:
+              - button "Відтворити крок 3" [ref=f50e365] [cursor=pointer]:
+                - generic [ref=f50e366]: "3"
+              - heading "Перетворіть дані на рішення" [level=6] [ref=f50e367]
+          - link [ref=f50e368] [cursor=pointer]:
+            - /url: https://app.usevault.ai/login
+      - generic [ref=f50e393]:
+        - generic [ref=f50e394]:
+          - generic [ref=f50e395]:
+            - link "Vault AI — на головну" [ref=f50e396] [cursor=pointer]:
+              - /url: "#top"
+            - generic [ref=f50e400]:
+              - link "LinkedIn" [ref=f50e401] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/usevault-ai/
+              - link "Vault AI у Telegram" [ref=f50e404] [cursor=pointer]:
+                - /url: https://t.me/usevault_ai
+              - link "hello@usevault.ai" [ref=f50e407] [cursor=pointer]:
+                - /url: mailto:hello@usevault.ai
+          - generic [ref=f50e412]:
+            - paragraph [ref=f50e413]: Платформа
+            - list "Платформа" [ref=f50e414]:
+              - listitem [ref=f50e415]:
+                - link "Продукт" [ref=f50e416] [cursor=pointer]:
+                  - /url: "#product"
+              - listitem [ref=f50e417]:
+                - link "Автоматизація" [ref=f50e418] [cursor=pointer]:
+                  - /url: "#automation"
+              - listitem [ref=f50e419]:
+                - link "Звіти" [ref=f50e420] [cursor=pointer]:
+                  - /url: "#reports"
+              - listitem [ref=f50e421]:
+                - link "Безпека" [ref=f50e422] [cursor=pointer]:
+                  - /url: "#security"
+              - listitem [ref=f50e423]:
+                - link "Тарифи" [ref=f50e424] [cursor=pointer]:
+                  - /url: /ua/pricing
+          - generic [ref=f50e425]:
+            - paragraph [ref=f50e426]: Ресурси
+            - list "Ресурси" [ref=f50e427]:
+              - listitem [ref=f50e428]:
+                - link "Довідковий центр" [ref=f50e429] [cursor=pointer]:
+                  - /url: https://help.usevault.ai/uk/
+              - listitem [ref=f50e430]:
+                - link "Статус" [ref=f50e431] [cursor=pointer]:
+                  - /url: https://status.usevault.ai/
+              - listitem [ref=f50e432]:
+                - link "Перехід на Vault" [ref=f50e433] [cursor=pointer]:
+                  - /url: /ua/migration-offer
+              - listitem [ref=f50e434]:
+                - link "Партнерська програма" [ref=f50e435] [cursor=pointer]:
+                  - /url: /ua/partners
+          - generic [ref=f50e436]:
+            - paragraph [ref=f50e437]: Документи
+            - list "Документи" [ref=f50e438]:
+              - listitem [ref=f50e439]:
+                - link "Умови використання" [ref=f50e440] [cursor=pointer]:
+                  - /url: /ua/terms
+              - listitem [ref=f50e441]:
+                - link "Політика конфіденційності" [ref=f50e442] [cursor=pointer]:
+                  - /url: /ua/privacy
+              - listitem [ref=f50e443]:
+                - link "DPA" [ref=f50e444] [cursor=pointer]:
+                  - /url: /ua/dpa
+        - generic [ref=f50e445]:
+          - generic [ref=f50e446]: © 2026 VAULT AI. Усі права захищені.
+          - generic [ref=f50e447]:
+            - generic [ref=f50e448]: Створено в
+            - link "Overcode (відкривається в новій вкладці)" [ref=f50e449] [cursor=pointer]:
+              - /url: https://www.overcode.tech/
+  - alert [ref=f50e476]

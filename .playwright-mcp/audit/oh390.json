@@ -1,0 +1,143 @@
+{
+  "n": 9,
+  "out": [
+    {
+      "k": "BUTTON:@36,3756",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,3756",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@36,4516",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,4516",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@36,5299",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "BUTTON:@331,5299",
+      "base": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@42,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:@69,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "A:hello@usevault.ai@98,6884",
+      "base": "rgb(191, 191, 191) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Product@42,6972",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Automation@42,7010",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Reports@42,7048",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Security@42,7086",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Pricing@42,7124",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Help Center@207,6972",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Status@207,7010",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Migration offer@207,7048",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Partner program@207,7086",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Terms of Service@42,7222",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:Privacy Policy@42,7260",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "LI:DPA@42,7298",
+      "base": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6) | bg rgba(0, 0, 0, 0)",
+      "hover": "color:var(--color-white)",
+      "tr": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "k": "DIV:@101,7410",
+      "base": "rgb(191, 191, 191) | bg rgb(37, 34, 44)",
+      "hover": "background-color:var(--color-primary)",
+      "tr": "all 0s ease"
+    },
+    {
+      "k": "DIV:@181,7410",
+      "base": "rgb(191, 191, 191) | bg rgb(37, 34, 44)",
+      "hover": "background-color:var(--color-primary)",
+      "tr": "all 0s ease"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "vw": 390,
+  "docH": 7498,
+  "navDesktop": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "navMobile": [
+    0,
+    0,
+    390,
+    56
+  ],
+  "navMobileInner": [
+    24,
+    0,
+    342,
+    56
+  ],
+  "navMobileLogo": [
+    38,
+    20,
+    116,
+    16
+  ],
+  "burger": [
+    329,
+    16,
+    24,
+    24
+  ],
+  "navInner": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "navInnerPad": "32px 0px",
+  "navUlGap": "20px",
+  "hero": [
+    0,
+    57,
+    390,
+    783
+  ],
+  "heroInner": [
+    26,
+    57,
+    339,
+    367
+  ],
+  "heroInnerPad": "136px",
+  "heroGap": "16px",
+  "eyebrow": [
+    72,
+    193,
+    247,
+    24
+  ],
+  "h1": [
+    26,
+    233,
+    339,
+    115
+  ],
+  "h1T": "32px/38.4px w600 ls2% ws4px pad:0px",
+  "heroP": [
+    26,
+    364,
+    339,
+    60
+  ],
+  "heroPT": "14px/20px w300 lsnormal ws0px pad:0px 16px",
+  "imgOuter": [
+    26,
+    424,
+    339,
+    271
+  ],
+  "imgOuterPad": "76px 8px 0px",
+  "img": [
+    34,
+    500,
+    323,
+    195
+  ],
+  "imgOuterBefore": {
+    "w": "200px",
+    "h": "200px",
+    "top": "-16px",
+    "left": "169.5px",
+    "translate": "-50%"
+  },
+  "imgOuterAfter": {
+    "w": "200px",
+    "h": "200px",
+    "top": "32px",
+    "left": "169.5px",
+    "translate": "-50%"
+  },
+  "imgWrapBefore": {
+    "w": "240px",
+    "h": "24px",
+    "top": "-13px",
+    "left": "161.5px",
+    "translate": "-50%"
+  },
+  "imgWrapAfter": {
+    "w": "323px",
+    "h": "195.438px",
+    "top": "-33.2188px",
+    "left": "161.5px",
+    "translate": "-50%"
+  },
+  "heroCta": [
+    101,
+    736,
+    188,
+    64
+  ],
+  "heroCtaWrap": "40px 0px",
+  "heroBefore": {
+    "w": "390px",
+    "h": "782.633px",
+    "top": "80px",
+    "left": "0px",
+    "translate": "none"
+  },
+  "scWrap": [
+    24,
+    841,
+    342,
+    544
+  ],
+  "scWrapPad": "136px 0px",
+  "sc": [
+    25,
+    977,
+    340,
+    272
+  ],
+  "scT": "18px/28px w600 ls0.45px ws2px pad:0px",
+  "scBefore": {
+    "w": "308px",
+    "h": "262px",
+    "top": "272px",
+    "left": "173.398px",
+    "translate": "-50% -50%"
+  },
+  "scWordMargin": "6px 6px 0px 0px",
+  "cards": [
+    [
+      26,
+      1386,
+      339,
+      356
+    ],
+    [
+      26,
+      1766,
+      339,
+      356
+    ],
+    [
+      26,
+      2146,
+      339,
+      356
+    ],
+    [
+      26,
+      2526,
+      339,
+      356
+    ],
+    [
+      26,
+      2906,
+      339,
+      356
+    ],
+    [
+      26,
+      3286,
+      339,
+      356
+    ]
+  ],
+  "cardHeader": "16px/24px w400 lsnormal ws0px pad:12px 8px 0px 12px",
+  "cardH4": "18px/27px w500 lsnormal ws0px pad:0px",
+  "cardP": "16px/22.4px w400 lsnormal ws0px pad:0px",
+  "cardAnim": [
+    26,
+    1509,
+    339,
+    231
+  ],
+  "gridGap": "24px 20px",
+  "fsSpacer": [
+    24,
+    3643,
+    342,
+    96
+  ],
+  "fsTabs": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "fsTabBtn": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "fsTabBtnPad": "0px",
+  "fsMobileHdr": [
+    26,
+    3740,
+    339,
+    56
+  ],
+  "fsMobileH3": "18px/22px w500 lsnormal ws0px pad:0px",
+  "fsLot": [
+    26,
+    3796,
+    339,
+    240
+  ],
+  "fsText": [
+    26,
+    4036,
+    339,
+    366
+  ],
+  "fsTextPad": "32px 12px",
+  "fsH3": [
+    38,
+    4068,
+    315,
+    86
+  ],
+  "fsH3T": "24px/28.8px w600 lsnormal ws3px pad:0px",
+  "fsP": [
+    38,
+    4170,
+    315,
+    112
+  ],
+  "fsPT": "16px/22.4px w400 ls0.4px ws0px pad:0px",
+  "fsCta": [
+    38,
+    4314,
+    153,
+    56
+  ],
+  "stepsHead": [
+    24,
+    5895,
+    342,
+    208
+  ],
+  "stepsH2": [
+    43,
+    5991,
+    304,
+    72
+  ],
+  "stepsH2T": "30px/36px w600 lsnormal ws4px pad:0px",
+  "stepsRow": [
+    24,
+    6104,
+    342,
+    602
+  ],
+  "stepsLot": [
+    26,
+    6104,
+    339,
+    210
+  ],
+  "stepsText": [
+    26,
+    6346,
+    339,
+    360
+  ],
+  "stepsTextPad": "0px 12px",
+  "stepBtn": [
+    38,
+    6346,
+    36,
+    36
+  ],
+  "stepNumT": "14px/20px w700 lsnormal ws0px pad:0px",
+  "stepH6T": "20px/28px w600 lsnormal ws2px pad:0px",
+  "stepP": "14px/22px w400 ls-0.35px ws0px pad:0px 0px 0px 54px",
+  "stepCta": [
+    38,
+    6570,
+    166,
+    56
+  ],
+  "stepsBottomSpacer": [
+    0,
+    6706,
+    390,
+    97
+  ],
+  "footer": [
+    0,
+    6804,
+    390,
+    695
+  ],
+  "footerGrid": [
+    26,
+    6804,
+    339,
+    554
+  ],
+  "footerGridPad": "40px 16px 32px",
+  "footerGridCols": "141.5px 141.5px",
+  "footerGridGap": "40px 24px",
+  "footerCols": [
+    [
+      42,
+      6844,
+      307,
+      56
+    ],
+    [
+      42,
+      6940,
+      142,
+      210
+    ],
+    [
+      207,
+      6940,
+      142,
+      210
+    ],
+    [
+      42,
+      7190,
+      307,
+      134
+    ]
+  ],
+  "footerBottom": [
+    26,
+    7357,
+    339,
+    92
+  ],
+  "footerBottomPad": "16px",
+  "footerBottomT": "16px/24px w400 lsnormal ws0px pad:0px",
+  "footerEnd": [
+    24,
+    7450,
+    342,
+    48
+  ],
+  "footerLinkT": "16px/26px w400 lsnormal ws0px pad:0px",
+  "footerEmailT": "14px/20px w400 lsnormal ws0px pad:0px",
+  "logo": [
+    0,
+    1700,
+    0,
+    0
+  ],
+  "footerLogo": [
+    42,
+    6844,
+    116,
+    16
+  ],
+  "crosses": [
+    [
+      18,
+      51,
+      12,
+      12
+    ],
+    [
+      360,
+      51,
+      12,
+      12
+    ]
+  ]
+}

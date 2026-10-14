@@ -1,0 +1,25 @@
+section,category,templates,routes,Home,Pricing,Migration offer,Partners,Legal document,Not found (clone-only)
+chrome.navbar,CHROME,6,17,x,x,x,x,x,x
+chrome.grid-frame,CHROME,6,17,x,x,x,x,x,x
+chrome.footer,CHROME,6,17,x,x,x,x,x,x
+content.legal-article,CONTENT,1,8,,,,,x,
+support.faq-accordion,SUPPORT,3,6,,x,x,x,,
+narrative.scroll-statement,NARRATIVE,2,4,x,,,x,,
+process.lottie-steps,PROCESS,2,4,x,x,,,,
+process.visual-steps,PROCESS,2,4,,,x,x,,
+hero.home-dashboard,HERO,1,2,x,,,,,
+hero.pricing-plans,HERO,1,2,,x,,,,
+hero.migration-split,HERO,1,2,,,x,,,
+hero.partners-split,HERO,1,2,,,,x,,
+features.product-grid,FEATURES,1,2,x,,,,,
+features.showcase-automation,FEATURES,1,2,x,,,,,
+features.showcase-reports,FEATURES,1,2,x,,,,,
+features.showcase-security,FEATURES,1,2,x,,,,,
+features.migration-explainer,FEATURES,1,2,,,x,,,
+features.migration-conditions,FEATURES,1,2,,,x,,,
+features.partner-audience,FEATURES,1,2,,,,x,,
+features.partner-value-grid,FEATURES,1,2,,,,x,,
+commerce.compare-table,COMMERCE,1,2,,x,,,,
+forms.partner-popup,FORMS,1,2,,,,x,,
+hero.not-found,HERO,1,1,,,,,,x
+ROUTE COUNT,,,17,2,2,2,2,8,1
