@@ -1,0 +1,1787 @@
+{
+  "$comment": "Citation ledger. Every 'evidence' id used anywhere in this design-repo resolves here. 'path' is relative to the SOURCE PROJECT ROOT (the folder that contains design-repo/ when it ships beside its clone). extraction/verify_all.py checks: the id exists (always, error); and, when the sibling source file is present, that the line range is within the file and the anchor text occurs inside that range (error). When the source tree is absent (e.g. this folder was unzipped on its own) external checks degrade to warnings. Anchors are structural (headings, class names, identifiers) and never marketing copy.",
+  "version": "1.0.0",
+  "sourceProject": {
+    "name": "Vault AI clone (React 18 + Vite 5 + Tailwind v3)",
+    "relation": "parent directory of design-repo/ at build time",
+    "original": "https://www.usevault.ai/ (real, live company site; design system only extracted)"
+  },
+  "citations": [
+    {
+      "id": "ev.spec.home.stack",
+      "path": "CLONE_SPEC.md",
+      "lines": "7-14",
+      "anchor": "## 0. Stack detected on the original",
+      "claim": "Original is Next.js + Tailwind v4 + Framer Motion + dotLottie (0.71) + zenscroll 1000ms."
+    },
+    {
+      "id": "ev.spec.home.tokens",
+      "path": "CLONE_SPEC.md",
+      "lines": "16-34",
+      "anchor": "### 0.1 Design tokens",
+      "claim": "Root color tokens, white-alpha usage map, default easing/transition, blur-lg, body font, breakpoints."
+    },
+    {
+      "id": "ev.spec.home.grid-frame",
+      "path": "CLONE_SPEC.md",
+      "lines": "36-42",
+      "anchor": "### 0.2 Global grid frame",
+      "claim": "1440 frame column with 24/40/56 gutters, 1.5px white/5 side hairlines, 1px separators, 12px cross markers at 18/34/50."
+    },
+    {
+      "id": "ev.spec.home.v4-v3",
+      "path": "CLONE_SPEC.md",
+      "lines": "44-47",
+      "anchor": "### 0.3 Tailwind v4 to v3 notes",
+      "claim": "Spacing 4px/unit; arbitrary values needed in v3; word-spacing utilities 1-12."
+    },
+    {
+      "id": "ev.spec.home.nav",
+      "path": "CLONE_SPEC.md",
+      "lines": "51-76",
+      "anchor": "## 1. Nav",
+      "claim": "Desktop nav 120px static; mobile 56/76px with blurred dropdown; menu timings; body scroll lock."
+    },
+    {
+      "id": "ev.spec.home.hero",
+      "path": "CLONE_SPEC.md",
+      "lines": "80-110",
+      "anchor": "## 2. Hero",
+      "claim": "Centered hero: eyebrow pill, display h1 64/72 at lg, 300-weight sub, framed screenshot with 4 glow layers; no motion."
+    },
+    {
+      "id": "ev.spec.home.statement",
+      "path": "CLONE_SPEC.md",
+      "lines": "114-130",
+      "anchor": "## 3. Scroll-coloring statement",
+      "claim": "Word-by-word scroll fill, offset start 0.9 -> start 0.25, ghost 0.2; type 36/40 lg."
+    },
+    {
+      "id": "ev.spec.home.product-grid",
+      "path": "CLONE_SPEC.md",
+      "lines": "134-155",
+      "anchor": "## 4. Product highlights grid",
+      "claim": "3x2 card grid, 372px cards at lg, looping canvas animation per card, optional Soon pill."
+    },
+    {
+      "id": "ev.spec.home.showcases",
+      "path": "CLONE_SPEC.md",
+      "lines": "159-205",
+      "anchor": "## 5–7. Feature showcases",
+      "claim": "Tabbed showcase: 3 tabs, 1px linear progress bar, IO 0.35, tab duration from animation markers /30fps."
+    },
+    {
+      "id": "ev.spec.home.process",
+      "path": "CLONE_SPEC.md",
+      "lines": "209-241",
+      "anchor": "## 8.",
+      "claim": "3 timed steps beside one animation, number box corner ticks, connector 1.55s easeInOut."
+    },
+    {
+      "id": "ev.spec.home.footer",
+      "path": "CLONE_SPEC.md",
+      "lines": "245-270",
+      "anchor": "## 9. Footer",
+      "claim": "Footer grid: brand column + 3 link groups; 11px uppercase labels; bottom bar; final spacer."
+    },
+    {
+      "id": "ev.spec.home.responsive",
+      "path": "CLONE_SPEC.md",
+      "lines": "274-291",
+      "anchor": "## 10. Responsive deltas summary",
+      "claim": "Per-breakpoint deltas for nav, hero, statement, cards, tabs, steps, footer."
+    },
+    {
+      "id": "ev.spec.home.hover",
+      "path": "CLONE_SPEC.md",
+      "lines": "293-306",
+      "anchor": "## 11. Hover inventory",
+      "claim": "Hover is color-only, 300/400ms; CTAs have no hover; all wrapped in (hover:hover)."
+    },
+    {
+      "id": "ev.spec.home.motion",
+      "path": "CLONE_SPEC.md",
+      "lines": "308-317",
+      "anchor": "## 12. Motion inventory",
+      "claim": "Complete home motion inventory; fade-in .18s and scale-in .22s keyframes; no entrance animations."
+    },
+    {
+      "id": "ev.spec.pm.shell",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "23-25",
+      "anchor": "### 0.1 Page shell",
+      "claim": "Shared page shell on pricing/migration."
+    },
+    {
+      "id": "ev.spec.pm.separator",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "43-48",
+      "anchor": "### 0.4 Separator component",
+      "claim": "between-crosses-until-lg separator variant."
+    },
+    {
+      "id": "ev.spec.pm.section-heading",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "50-56",
+      "anchor": "### 0.5 Section heading block",
+      "claim": "Section h2 48/64 ws7 at lg, 30/36 ws4 below; padding 120/64 lg."
+    },
+    {
+      "id": "ev.spec.pm.eyebrow",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "58-63",
+      "anchor": "### 0.6 Eyebrow pill",
+      "claim": "Eyebrow pill: 11/16 500 .05em uppercase, white/8 bg, 6-layer pill shadow."
+    },
+    {
+      "id": "ev.spec.pm.hero-type",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "65-69",
+      "anchor": "### 0.7 Hero h1 + sub",
+      "claim": "Non-home hero h1 56/64 lg, 48/52.8 md, 32/38.4 base; sub 300 weight."
+    },
+    {
+      "id": "ev.spec.pm.buttons",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "71-90",
+      "anchor": "### 0.8 Buttons",
+      "claim": "Outline/primary large/primary small buttons, no hover; contact button = Intercom else mailto."
+    },
+    {
+      "id": "ev.spec.pm.faq",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "92-116",
+      "anchor": "### 0.9 FAQ accordion",
+      "claim": "Multi-open accordion, grid-rows 300ms ease-out, chevron 90deg -> -90deg."
+    },
+    {
+      "id": "ev.spec.pm.mock",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "118-135",
+      "anchor": "### 0.10 Mock UI primitives",
+      "claim": "MockCard/MockPill/MockRow/IconDisc/Skeleton/DotGridPanel primitives."
+    },
+    {
+      "id": "ev.spec.pm.reveal",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "137-141",
+      "anchor": "### 0.11 Reveal hook",
+      "claim": "useReveal once, amount .3 default, EASE_OUT_EXPO."
+    },
+    {
+      "id": "ev.spec.pm.pricing-order",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "156-170",
+      "anchor": "DOM order:",
+      "claim": "Pricing DOM order: hero+cards, compare, FAQ, process steps, footer."
+    },
+    {
+      "id": "ev.spec.pm.p1",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "183-267",
+      "anchor": "### P1. Hero + billing toggle + plan cards",
+      "claim": "Billing segmented control, 4 subgrid plan cards, recommended card gradient ring, price fade-in."
+    },
+    {
+      "id": "ev.spec.pm.p2",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "269-314",
+      "anchor": "### P2.",
+      "claim": "Compare table: sticky header md+, sticky plan picker <md, Pro column surface, 5 groups."
+    },
+    {
+      "id": "ev.spec.pm.p3",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "316-332",
+      "anchor": "### P3. FAQ",
+      "claim": "Pricing FAQ: 5 items."
+    },
+    {
+      "id": "ev.spec.pm.p4",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "334-338",
+      "anchor": "### P4.",
+      "claim": "Process steps reused on pricing without the how-it-works anchor id."
+    },
+    {
+      "id": "ev.spec.pm.pricing-responsive",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "340-354",
+      "anchor": "### Pricing: responsive deltas",
+      "claim": "Pricing responsive table."
+    },
+    {
+      "id": "ev.spec.pm.migration-order",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "380-394",
+      "anchor": "DOM order:",
+      "claim": "Migration DOM order: split hero, explainer, conditions, FAQ, visual steps, footer."
+    },
+    {
+      "id": "ev.spec.pm.m1",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "405-457",
+      "anchor": "### M1. Split hero",
+      "claim": "Split hero 62% text column + mock scene; one-time reveal sequence 0.4-2.7s."
+    },
+    {
+      "id": "ev.spec.pm.m2",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "459-502",
+      "anchor": "### M2. Offer explanation",
+      "claim": "Two paragraphs + 12-col timeline chart; bars scaleX on reveal amount .2."
+    },
+    {
+      "id": "ev.spec.pm.m3",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "504-544",
+      "anchor": "### M3. Conditions",
+      "claim": "Icon-row list (44/56 icons), glow, glyph animations at amount .6."
+    },
+    {
+      "id": "ev.spec.pm.m4",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "546-565",
+      "anchor": "### M4. FAQ",
+      "claim": "Migration FAQ: 7 items, one multi-paragraph."
+    },
+    {
+      "id": "ev.spec.pm.m5",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "567-657",
+      "anchor": "### M5.",
+      "claim": "Visual steps: 4 steps, 5s auto-advance loop, 4.8s linear connector, DOM mock panes."
+    },
+    {
+      "id": "ev.spec.pm.migration-responsive",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "659-675",
+      "anchor": "### Migration-offer: responsive deltas",
+      "claim": "Migration responsive table."
+    },
+    {
+      "id": "ev.spec.pm.motion-summary",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "691-702",
+      "anchor": "## 3. Motion summary",
+      "claim": "CSS vs Framer split; reduced motion honoured on these routes; no scroll-scrubbed effects."
+    },
+    {
+      "id": "ev.spec.pm.not-cloned",
+      "path": "CLONE_SPEC_pricing_migration.md",
+      "lines": "704-708",
+      "anchor": "## 4. Not measurable",
+      "claim": "Intercom, tracking and /ru not cloned; mailto fallback."
+    },
+    {
+      "id": "ev.spec.pul.chrome",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "11-21",
+      "anchor": "# A. Shared chrome",
+      "claim": "Shared chrome on non-home routes; locale-aware hrefs."
+    },
+    {
+      "id": "ev.spec.pul.partners-order",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "33-51",
+      "anchor": "## B.1 Page structure",
+      "claim": "Partners DOM order and heights."
+    },
+    {
+      "id": "ev.spec.pul.section-heading",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "53-60",
+      "anchor": "## B.2 Section heading frame",
+      "claim": "Section heading frame on partners."
+    },
+    {
+      "id": "ev.spec.pul.split-hero",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "62-111",
+      "anchor": "## B.3 Split hero",
+      "claim": "Partners split hero: text 62%, glow 460x660 blur 24, dot grid mask, mock scene."
+    },
+    {
+      "id": "ev.spec.pul.hero-motion",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "113-129",
+      "anchor": "### Hero scene motion",
+      "claim": "Scene reveal timeline; reduced motion = duration 0."
+    },
+    {
+      "id": "ev.spec.pul.audience",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "131-161",
+      "anchor": "## B.4",
+      "claim": "Audience icon-row list, 5 rows, glyph animations 0.25s delay at amount .6."
+    },
+    {
+      "id": "ev.spec.pul.statement",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "163-166",
+      "anchor": "## B.5 Scroll-coloring statement",
+      "claim": "Partners statement uses staticWhenReducedMotion; 18 words."
+    },
+    {
+      "id": "ev.spec.pul.value-grid",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "168-192",
+      "anchor": "## B.6",
+      "claim": "Two-column value grid with Or divider and primary small CTA."
+    },
+    {
+      "id": "ev.spec.pul.faq",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "194-215",
+      "anchor": "## B.7 FAQ",
+      "claim": "Partners FAQ: 4 items."
+    },
+    {
+      "id": "ev.spec.pul.steps",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "217-274",
+      "anchor": "## B.8",
+      "claim": "Partners visual steps; reduced motion expands all, static step 3."
+    },
+    {
+      "id": "ev.spec.pul.popup",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "276-328",
+      "anchor": "## B.9",
+      "claim": "Lead form modal: 484 max, 32px radius gradient ring, scale-in .22s, validation, focus trap."
+    },
+    {
+      "id": "ev.spec.pul.partners-responsive",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "343-358",
+      "anchor": "## B.11 Responsive deltas summary",
+      "claim": "Partners responsive table."
+    },
+    {
+      "id": "ev.spec.pul.ua-fonts",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "373-384",
+      "anchor": "## C.2 Fonts",
+      "claim": "UA locale swaps display->Unbounded, body->Manrope via CSS vars on <html>; sizes unchanged."
+    },
+    {
+      "id": "ev.spec.pul.ua-lang",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "386-392",
+      "anchor": "## C.3",
+      "claim": "lang(uk) overrides: micro-labels 12px, hero text block max-w 880, legal headings hyphens auto."
+    },
+    {
+      "id": "ev.spec.pul.ua-shifts",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "394-413",
+      "anchor": "## C.4 Layout shifts",
+      "claim": "UA string-length shifts (CTA widths, statement word count)."
+    },
+    {
+      "id": "ev.spec.pul.ua-links",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "422-445",
+      "anchor": "## C.6 Language switch",
+      "claim": "Locale switch and /ua prefix rule; /ru exists but unlinked."
+    },
+    {
+      "id": "ev.spec.pul.legal-layout",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "548-558",
+      "anchor": "# D. Legal pages",
+      "claim": "Legal template: no hero/TOC/motion; 750px article; body copy intentionally not reproduced."
+    },
+    {
+      "id": "ev.spec.pul.legal-type",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "560-575",
+      "anchor": "## D.2 Typography",
+      "claim": "Legal element styles h1/h2/h3/p/ul/a."
+    },
+    {
+      "id": "ev.spec.pul.legal-tables",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "577-594",
+      "anchor": "## D.3 Tables",
+      "claim": "Responsive table pair: table md+, card list below md."
+    },
+    {
+      "id": "ev.spec.pul.legal-behaviour",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "596-600",
+      "anchor": "## D.4 Behaviour",
+      "claim": "Anchor scroll 1000ms, lands 40px below top."
+    },
+    {
+      "id": "ev.spec.pul.limits",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "685-689",
+      "anchor": "# E. Limits",
+      "claim": "Popup submit not exercised (would create a real lead); flags are Twemoji."
+    },
+    {
+      "id": "ev.assets.fonts",
+      "path": "ASSET_MANIFEST.md",
+      "lines": "7-37",
+      "anchor": "## Fonts",
+      "claim": "Font files and @font-face/fallback metrics (files themselves NOT shipped here)."
+    },
+    {
+      "id": "ev.assets.pm-none",
+      "path": "ASSET_MANIFEST_pricing_migration.md",
+      "lines": "14-14",
+      "anchor": "No new raster images",
+      "claim": "Pricing/migration add no rasters; inline SVG only."
+    },
+    {
+      "id": "ev.assets.flags",
+      "path": "ASSET_MANIFEST_partners_ua_legal.md",
+      "lines": "25-25",
+      "anchor": "Twemoji",
+      "claim": "Flag graphics are Twemoji, CC-BY 4.0."
+    },
+    {
+      "id": "ev.assets.ua-fonts",
+      "path": "ASSET_MANIFEST_partners_ua_legal.md",
+      "lines": "33-33",
+      "anchor": "Manrope-latin-cyrillic",
+      "claim": "Manrope/Unbounded loaded on /ua pages."
+    },
+    {
+      "id": "ev.src.package",
+      "path": "package.json",
+      "lines": "12-25",
+      "anchor": "\"framer-motion\"",
+      "claim": "React 18.3 / Framer Motion 14.2 / dotlottie-react 0.20 (dotlottie-web 0.81) / Tailwind 3.4 / Vite 5.4."
+    },
+    {
+      "id": "ev.src.tokens-json",
+      "path": "src/tokens.json",
+      "lines": "1-21",
+      "anchor": "\"primary-black\": \"#03020B\"",
+      "claim": "Color + stepBox tokens."
+    },
+    {
+      "id": "ev.src.tw-screens",
+      "path": "tailwind.config.cjs",
+      "lines": "14-22",
+      "anchor": "xxl: '1440px'",
+      "claim": "Breakpoints incl. custom xxl 1440."
+    },
+    {
+      "id": "ev.src.tw-fonts",
+      "path": "tailwind.config.cjs",
+      "lines": "29-35",
+      "anchor": "display: 'var(--font-display)'",
+      "claim": "font-display/font-body read CSS vars."
+    },
+    {
+      "id": "ev.src.tw-shadow-pill",
+      "path": "tailwind.config.cjs",
+      "lines": "39-42",
+      "anchor": "pill:",
+      "claim": "Pill shadow (6 layers)."
+    },
+    {
+      "id": "ev.src.tw-backgrounds",
+      "path": "tailwind.config.cjs",
+      "lines": "43-71",
+      "anchor": "backgroundImage: {",
+      "claim": "Gradient backgrounds: hero fade, dots, glows, hatch, popup ring."
+    },
+    {
+      "id": "ev.src.tw-keyframes",
+      "path": "tailwind.config.cjs",
+      "lines": "72-84",
+      "anchor": "'scale-in'",
+      "claim": "fade-in .18s / scale-in .22s keyframes."
+    },
+    {
+      "id": "ev.src.tw-divide",
+      "path": "tailwind.config.cjs",
+      "lines": "92-113",
+      "anchor": "divide-y",
+      "claim": "divide-* reimplemented with v4 semantics (border-bottom on all but last child)."
+    },
+    {
+      "id": "ev.src.tw-lang-uk",
+      "path": "tailwind.config.cjs",
+      "lines": "97-98",
+      "anchor": "addVariant('lang-uk'",
+      "claim": "lang-uk variant."
+    },
+    {
+      "id": "ev.src.css-fonts",
+      "path": "src/index.css",
+      "lines": "1-21",
+      "anchor": "@font-face",
+      "claim": "Font faces + metric-adjusted fallbacks."
+    },
+    {
+      "id": "ev.src.css-font-vars",
+      "path": "src/index.css",
+      "lines": "23-32",
+      "anchor": "--font-display: var(--font-clash);",
+      "claim": "Locale font variables."
+    },
+    {
+      "id": "ev.src.css-body",
+      "path": "src/index.css",
+      "lines": "38-45",
+      "anchor": "font-size: 16px;",
+      "claim": "Body 16/24 on primary-black."
+    },
+    {
+      "id": "ev.src.css-word-spacing",
+      "path": "src/index.css",
+      "lines": "47-63",
+      "anchor": ".word-spacing-1",
+      "claim": "word-spacing utilities 1-12px."
+    },
+    {
+      "id": "ev.src.css-pro-card",
+      "path": "src/index.css",
+      "lines": "169-185",
+      "anchor": ".plan-card-pro::before",
+      "claim": "Recommended plan gradient ring via mask."
+    },
+    {
+      "id": "ev.src.i18n-locale",
+      "path": "src/i18n/index.jsx",
+      "lines": "6-13",
+      "anchor": "localeFromPath",
+      "claim": "Locale from /ua prefix; /ru out of scope."
+    },
+    {
+      "id": "ev.src.i18n-font-swap",
+      "path": "src/i18n/index.jsx",
+      "lines": "65-85",
+      "anchor": "--font-unbounded",
+      "claim": "UA sets font vars inline on <html>."
+    },
+    {
+      "id": "ev.src.app-routes",
+      "path": "src/App.jsx",
+      "lines": "27-57",
+      "anchor": "const PAGES = [",
+      "claim": "8 EN pages x 2 locales + clone-only catch-all."
+    },
+    {
+      "id": "ev.src.page-home",
+      "path": "src/pages/Home.jsx",
+      "lines": "20-47",
+      "anchor": "<HowItWorks />",
+      "claim": "Home section order."
+    },
+    {
+      "id": "ev.src.page-pricing",
+      "path": "src/pages/Pricing.jsx",
+      "lines": "11-35",
+      "anchor": "<CompareTable />",
+      "claim": "Pricing section order; MotionConfig reducedMotion=user."
+    },
+    {
+      "id": "ev.src.page-migration",
+      "path": "src/pages/MigrationOffer.jsx",
+      "lines": "12-34",
+      "anchor": "<OfferExplanation />",
+      "claim": "Migration section order."
+    },
+    {
+      "id": "ev.src.page-partners",
+      "path": "src/pages/Partners.jsx",
+      "lines": "15-42",
+      "anchor": "staticWhenReducedMotion",
+      "claim": "Partners section order; statement frozen under reduced motion."
+    },
+    {
+      "id": "ev.src.page-legal",
+      "path": "src/pages/LegalPage.jsx",
+      "lines": "11-30",
+      "anchor": "CLONE-ONLY",
+      "claim": "Legal template; body copy is placeholder by design."
+    },
+    {
+      "id": "ev.src.page-legal-frame",
+      "path": "src/pages/LegalPage.jsx",
+      "lines": "165-166",
+      "anchor": "max-w-[750px]",
+      "claim": "Legal 750px article frame."
+    },
+    {
+      "id": "ev.src.legal-table-baseline",
+      "path": "src/pages/LegalPage.jsx",
+      "lines": "54-70",
+      "anchor": "align-baseline",
+      "claim": "Legal table cells vertical-align baseline (corrects spec D.3 align-top)."
+    },
+    {
+      "id": "ev.src.page-notfound",
+      "path": "src/pages/NotFound.jsx",
+      "lines": "10-21",
+      "anchor": "CLONE-ONLY PAGE",
+      "claim": "Not-found template exists only in the clone."
+    },
+    {
+      "id": "ev.src.statement",
+      "path": "src/components/Statement.jsx",
+      "lines": "25-35",
+      "anchor": "staticWhenReducedMotion && reduced",
+      "claim": "Home statement stays scroll-driven under reduced motion; partners freezes at 1."
+    },
+    {
+      "id": "ev.src.howitworks",
+      "path": "src/components/HowItWorks.jsx",
+      "lines": "22-24",
+      "anchor": "IN_VIEW_THRESHOLD = 0.4",
+      "claim": "Step durations 170/180/218 frames @30fps; connector 1.55s; IO 0.4."
+    },
+    {
+      "id": "ev.src.howitworks-io",
+      "path": "src/components/HowItWorks.jsx",
+      "lines": "100-146",
+      "anchor": "io.observe(wrapRef.current)",
+      "claim": "IO watches the #how-it-works wrapper, attached only after the animation loads."
+    },
+    {
+      "id": "ev.src.howitworks-anchor",
+      "path": "src/components/HowItWorks.jsx",
+      "lines": "99-100",
+      "anchor": "anchorId",
+      "claim": "Anchor id on home only; null on pricing."
+    },
+    {
+      "id": "ev.src.featuretabs",
+      "path": "src/components/FeatureTabs.jsx",
+      "lines": "11-20",
+      "anchor": "IN_VIEW_THRESHOLD = 0.35",
+      "claim": "Tab timers start only after animation markers load; IO 0.35."
+    },
+    {
+      "id": "ev.src.featuretabs-duration",
+      "path": "src/components/FeatureTabs.jsx",
+      "lines": "85-100",
+      "anchor": "/ FPS",
+      "claim": "Tab duration = (end-start)/30 s; fallback 5000ms."
+    },
+    {
+      "id": "ev.src.navbar-menu",
+      "path": "src/components/Navbar.jsx",
+      "lines": "140-150",
+      "anchor": "duration: 0.5",
+      "claim": "Menu panel height linear 0.5s open / 0.3s close; opacity .22/.16."
+    },
+    {
+      "id": "ev.src.navbar-wrapper",
+      "path": "src/components/Navbar.jsx",
+      "lines": "215-224",
+      "anchor": "initial={false}",
+      "claim": "Menu wrapper does not fade in on open; fades out .28s."
+    },
+    {
+      "id": "ev.src.cta",
+      "path": "src/components/Cta.jsx",
+      "lines": "8-33",
+      "anchor": "bg-cta-chip",
+      "claim": "Primary CTA large/small with arrow chip."
+    },
+    {
+      "id": "ev.src.gridframe",
+      "path": "src/components/GridFrame.jsx",
+      "lines": "16-57",
+      "anchor": "max-w-[1440px] px-6 md:px-10 lg:px-14",
+      "claim": "Frame/Separator/Spacer primitives."
+    },
+    {
+      "id": "ev.src.eyebrow",
+      "path": "src/components/shared/Eyebrow.jsx",
+      "lines": "2-9",
+      "anchor": "shadow-pill",
+      "claim": "Eyebrow pill; 12px under lang-uk."
+    },
+    {
+      "id": "ev.src.section-heading",
+      "path": "src/components/shared/SectionHeading.jsx",
+      "lines": "3-18",
+      "anchor": "lg:word-spacing-7",
+      "claim": "SectionHeading block."
+    },
+    {
+      "id": "ev.src.typography",
+      "path": "src/components/shared/typography.js",
+      "lines": "1-4",
+      "anchor": "HERO_H1",
+      "claim": "Shared hero h1/sub classes."
+    },
+    {
+      "id": "ev.src.contact",
+      "path": "src/components/shared/contact.jsx",
+      "lines": "3-12",
+      "anchor": "CONTACT_MAILTO",
+      "claim": "Contact uses mailto; Intercom intentionally absent."
+    },
+    {
+      "id": "ev.src.reveal",
+      "path": "src/components/shared/reveal.js",
+      "lines": "3-15",
+      "anchor": "EASE_OUT_EXPO",
+      "claim": "Reveal hook; reduced motion renders end state."
+    },
+    {
+      "id": "ev.src.faq",
+      "path": "src/components/shared/Faq.jsx",
+      "lines": "8-63",
+      "anchor": "[rotate:-90deg]",
+      "claim": "FAQ accordion implementation."
+    },
+    {
+      "id": "ev.src.segmented",
+      "path": "src/components/shared/SegmentedControl.jsx",
+      "lines": "5-62",
+      "anchor": "layoutId",
+      "claim": "Segmented control sliding pill 0.3s easeOut."
+    },
+    {
+      "id": "ev.src.visualsteps",
+      "path": "src/components/shared/VisualSteps.jsx",
+      "lines": "10-53",
+      "anchor": "STEP_DURATION = 5",
+      "claim": "Visual steps timing and reduced-motion static step."
+    },
+    {
+      "id": "ev.src.compare-table",
+      "path": "src/components/pricing/CompareTable.jsx",
+      "lines": "10-103",
+      "anchor": "group-label rows carry no border-top",
+      "claim": "Group rows have no top border; cells align baseline."
+    },
+    {
+      "id": "ev.src.plan-cards",
+      "path": "src/components/pricing/PlanCards.jsx",
+      "lines": "40-68",
+      "anchor": "grid-rows-subgrid",
+      "claim": "Plan card subgrid + recommended ring + motion-safe fade-in."
+    },
+    {
+      "id": "ev.src.plan-grid",
+      "path": "src/components/pricing/PlanCards.jsx",
+      "lines": "99-99",
+      "anchor": "xl:grid-cols-4",
+      "claim": "Plan grid 1/2/4 columns, 1px gap hairlines."
+    },
+    {
+      "id": "ev.src.pricing-hero-uk",
+      "path": "src/components/pricing/PricingHero.jsx",
+      "lines": "22-22",
+      "anchor": "lang-uk:max-w-[880px]",
+      "claim": "UA pricing hero text block max-w 880."
+    },
+    {
+      "id": "ev.src.offer-swatch",
+      "path": "src/components/migration/OfferExplanation.jsx",
+      "lines": "19-72",
+      "anchor": "rounded-[4px]",
+      "claim": "Legend swatch radius 4px (v4 rounded-sm)."
+    },
+    {
+      "id": "ev.src.steppanes-radius",
+      "path": "src/components/migration/StepPanes.jsx",
+      "lines": "34-41",
+      "anchor": "rounded-br-[4px]",
+      "claim": "Chat bubble tail radius 4px (v4 rounded-sm)."
+    },
+    {
+      "id": "ev.src.mock-card",
+      "path": "src/components/migration/Mock.jsx",
+      "lines": "10-10",
+      "anchor": "rounded-xl border border-white/10 bg-surface",
+      "claim": "MockCard."
+    },
+    {
+      "id": "ev.src.leadform",
+      "path": "src/components/partners/LeadForm.jsx",
+      "lines": "16-119",
+      "anchor": "no fetch, no external endpoint",
+      "claim": "Lead form submits locally only (simulated 800ms)."
+    },
+    {
+      "id": "ev.src.flags",
+      "path": "src/components/partners/PhoneField.jsx",
+      "lines": "8-8",
+      "anchor": "/assets/svg/flags/",
+      "claim": "Flags served locally (218 Twemoji SVGs)."
+    },
+    {
+      "id": "ev.src.popup",
+      "path": "src/components/partners/PartnerPopup.jsx",
+      "lines": "97-104",
+      "anchor": "rounded-[32px]",
+      "claim": "Popup ring + dialog."
+    },
+    {
+      "id": "ev.src.icon-row",
+      "path": "src/components/partners/Audience.jsx",
+      "lines": "98-98",
+      "anchor": "lg:grid-cols-[72px_minmax(0,0.9fr)_minmax(0,1.3fr)]",
+      "claim": "Icon-row grid."
+    },
+    {
+      "id": "ev.src.product-grid",
+      "path": "src/components/ProductHighlights.jsx",
+      "lines": "90-105",
+      "anchor": "lg:gap-y-[70px]",
+      "claim": "Product grid: looping autoplay animation; 1/2/3 columns."
+    },
+    {
+      "id": "ev.src.footer-grid",
+      "path": "src/components/Footer.jsx",
+      "lines": "53-53",
+      "anchor": "lg:grid-cols-[minmax(0,1fr)_repeat(3,max-content)]",
+      "claim": "Footer grid."
+    },
+    {
+      "id": "ev.src.anchor-scroll",
+      "path": "src/hooks/useAnchorScroll.js",
+      "lines": "5-15",
+      "anchor": "setup(1000, 0)",
+      "claim": "zenscroll 1000ms anchor scroll."
+    },
+    {
+      "id": "ev.ia",
+      "path": "ia.json",
+      "lines": "160-305",
+      "anchor": "\"templates\": [",
+      "claim": "IA templates/sections backbone (17 routes, 6 templates, 23 sections)."
+    },
+    {
+      "id": "ev.recon.qa",
+      "path": "recon/qa/orig-1440-full.png",
+      "lines": null,
+      "anchor": null,
+      "claim": "QA screenshot of the original (evidence only; never shipped)."
+    },
+    {
+      "id": "ev.recon.clone",
+      "path": "recon/qa/clone-1440-full.png",
+      "lines": null,
+      "anchor": null,
+      "claim": "QA screenshot of the clone (evidence only; never shipped)."
+    }
+  ],
+  "correctionsOverridingSpecs": [
+    {
+      "id": "corr.a",
+      "claim": "Home statement scroll-fill is NOT frozen under reduced motion (only /partners passes staticWhenReducedMotion).",
+      "evidence": [
+        "ev.src.statement",
+        "ev.src.page-partners"
+      ],
+      "overrides": "ev.spec.home.statement (line 'With prefers-reduced-motion, progress is fixed at 1')",
+      "enforcedBy": "compatibility/graph.json STATEMENT_REDUCED_MOTION_BY_TEMPLATE"
+    },
+    {
+      "id": "corr.b",
+      "claim": "Process-steps IntersectionObserver watches the anchor wrapper at 0.4 and is attached only after the animation loads (spec said: the visual).",
+      "evidence": [
+        "ev.src.howitworks-io"
+      ],
+      "overrides": "ev.spec.home.process"
+    },
+    {
+      "id": "corr.c",
+      "claim": "Feature-tab timers start only after animation markers load; tab duration = (end-start)/30 s.",
+      "evidence": [
+        "ev.src.featuretabs",
+        "ev.src.featuretabs-duration"
+      ]
+    },
+    {
+      "id": "corr.d",
+      "claim": "Compare-table group rows have NO top border; th/td compute vertical-align baseline (spec said align-middle / legal align-top).",
+      "evidence": [
+        "ev.src.compare-table",
+        "ev.src.legal-table-baseline"
+      ],
+      "overrides": "ev.spec.pm.p2, ev.spec.pul.legal-tables"
+    },
+    {
+      "id": "corr.e",
+      "claim": "Tailwind v4 rounded-sm = 4px (v3 = 2px); radius.sm token is 4px.",
+      "evidence": [
+        "ev.src.offer-swatch",
+        "ev.src.steppanes-radius"
+      ]
+    },
+    {
+      "id": "corr.f",
+      "claim": "divide-y follows v4 semantics: border-bottom on every child except the last.",
+      "evidence": [
+        "ev.src.tw-divide"
+      ]
+    },
+    {
+      "id": "corr.g",
+      "claim": "UA pricing hero text block max-w 880px (same as UA home hero).",
+      "evidence": [
+        "ev.src.pricing-hero-uk",
+        "ev.spec.pul.ua-lang"
+      ]
+    },
+    {
+      "id": "corr.h",
+      "claim": "Mobile menu wrapper does not fade in on open (only out, .28s); panel height linear 0.5s open / 0.3s close.",
+      "evidence": [
+        "ev.src.navbar-wrapper",
+        "ev.src.navbar-menu"
+      ],
+      "overrides": "ev.spec.home.nav (wrapper 'Opacity animates 0<->1')"
+    }
+  ],
+  "copyBudgetMethod": "maxWords = ceil(observedMaxWords * 1.2) for each slot, where observedMaxWords is the longest EN string measured for that slot in the source i18n messages (src/i18n/en.js, keyed as in the cited spec section). Only the COUNTS are recorded here; the strings themselves are deliberately not reproduced anywhere in this repo.",
+  "copyBudgets": {
+    "commerce.compare.cells.value": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    },
+    "commerce.compare.groups.label": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    },
+    "commerce.compare.heading": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    },
+    "commerce.compare.planNames": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    },
+    "commerce.compare.rows.feature": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    },
+    "content.legal.effectiveDateLine": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pul.legal-type"
+      ]
+    },
+    "content.legal.heading": {
+      "observedMaxWords": 8,
+      "maxWords": 10,
+      "evidence": [
+        "ev.spec.pul.legal-type"
+      ]
+    },
+    "content.legal.listItem": {
+      "observedMaxWords": 10,
+      "maxWords": 12,
+      "evidence": [
+        "ev.src.page-legal"
+      ]
+    },
+    "content.legal.paragraph": {
+      "observedMaxWords": 21,
+      "maxWords": 26,
+      "evidence": [
+        "ev.src.page-legal"
+      ]
+    },
+    "content.legal.table.column": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.legal-tables"
+      ]
+    },
+    "content.legal.title": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.legal-type"
+      ]
+    },
+    "features.explainer.chart.ariaLabel": {
+      "observedMaxWords": 28,
+      "maxWords": 34,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.explainer.chart.caption": {
+      "observedMaxWords": 8,
+      "maxWords": 10,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.explainer.chart.legend": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.explainer.chart.note": {
+      "observedMaxWords": 11,
+      "maxWords": 14,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.explainer.chart.visual.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.explainer.headingLines": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.explainer.paragraphs": {
+      "observedMaxWords": 41,
+      "maxWords": 50,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "features.migration-conditions.glow.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.migration-conditions.heading": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "features.migration-conditions.icon.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.migration-conditions.items.description": {
+      "observedMaxWords": 23,
+      "maxWords": 28,
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "features.migration-conditions.items.title": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "features.partner-audience.glow.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.partner-audience.heading": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.audience"
+      ]
+    },
+    "features.partner-audience.icon.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.partner-audience.items.description": {
+      "observedMaxWords": 19,
+      "maxWords": 23,
+      "evidence": [
+        "ev.spec.pul.audience"
+      ]
+    },
+    "features.partner-audience.items.title": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pul.audience"
+      ]
+    },
+    "features.productGrid.badge": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "features.productGrid.description": {
+      "observedMaxWords": 15,
+      "maxWords": 18,
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "features.productGrid.media.alt": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.productGrid.title": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "features.showcase.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.showcases"
+      ]
+    },
+    "features.showcase.description": {
+      "observedMaxWords": 30,
+      "maxWords": 36,
+      "evidence": [
+        "ev.spec.home.showcases"
+      ]
+    },
+    "features.showcase.media.alt": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "features.showcase.tabs": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.home.showcases"
+      ]
+    },
+    "features.showcase.title": {
+      "observedMaxWords": 9,
+      "maxWords": 11,
+      "evidence": [
+        "ev.spec.home.showcases"
+      ]
+    },
+    "features.valueGrid.benefit.description": {
+      "observedMaxWords": 19,
+      "maxWords": 23,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.benefit.title": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.block.description": {
+      "observedMaxWords": 20,
+      "maxWords": 24,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.block.title": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.columnTitle": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.dividerLabel": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.heading": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.linkLabel": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.note": {
+      "observedMaxWords": 19,
+      "maxWords": 23,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.secondary.description": {
+      "observedMaxWords": 8,
+      "maxWords": 10,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "features.valueGrid.secondary.title": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.value-grid"
+      ]
+    },
+    "footer.brandMark.alt": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "footer.copyright": {
+      "observedMaxWords": 7,
+      "maxWords": 9,
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    "footer.groups.label": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    "footer.links.label": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    "footer.social.alt": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "footer.social.label": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    "forms.popup.description": {
+      "observedMaxWords": 13,
+      "maxWords": 16,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.error.body": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.fields.error": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.fields.label": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.flags.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "forms.popup.heading": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.result.body": {
+      "observedMaxWords": 13,
+      "maxWords": 16,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.result.title": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "forms.popup.submitLabel": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "hero.home.backgroundArt.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.home.ctaLabel": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.home.eyebrow": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.home.headline": {
+      "observedMaxWords": 7,
+      "maxWords": 9,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.home.media.alt": {
+      "observedMaxWords": 13,
+      "maxWords": 16,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.home.subheadline": {
+      "observedMaxWords": 15,
+      "maxWords": 18,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.migration-split.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "hero.migration-split.eyebrow": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "hero.migration-split.glow.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.migration-split.headlineLines": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "hero.migration-split.scene.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.migration-split.subLines": {
+      "observedMaxWords": 22,
+      "maxWords": 27,
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "hero.notFound.eyebrow": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.src.page-notfound"
+      ]
+    },
+    "hero.notFound.headline": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.src.page-notfound"
+      ]
+    },
+    "hero.notFound.linkLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.src.page-notfound"
+      ]
+    },
+    "hero.notFound.subheadline": {
+      "observedMaxWords": 11,
+      "maxWords": 14,
+      "evidence": [
+        "ev.src.page-notfound"
+      ]
+    },
+    "hero.partners-split.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "hero.partners-split.eyebrow": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "hero.partners-split.glow.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.partners-split.headlineLines": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "hero.partners-split.scene.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "hero.partners-split.subLines": {
+      "observedMaxWords": 22,
+      "maxWords": 27,
+      "evidence": [
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "hero.pricing.billing.annualBadge": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.billing.label": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.eyebrow": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.headline": {
+      "observedMaxWords": 7,
+      "maxWords": 9,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.features": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.featuresHeader": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.name": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.price": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.recommendedLabel": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.subline.annual": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.subline.monthly": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.plans.tagline": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "hero.pricing.subLines": {
+      "observedMaxWords": 9,
+      "maxWords": 11,
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "meta.description": {
+      "observedMaxWords": 30,
+      "maxWords": 36,
+      "evidence": [
+        "ev.spec.pm.p1",
+        "ev.spec.pul.chrome"
+      ]
+    },
+    "meta.title": {
+      "observedMaxWords": 9,
+      "maxWords": 11,
+      "evidence": [
+        "ev.spec.pm.p1",
+        "ev.spec.pul.chrome"
+      ]
+    },
+    "narrative.statement.text": {
+      "observedMaxWords": 23,
+      "maxWords": 28,
+      "evidence": [
+        "ev.spec.home.statement",
+        "ev.spec.pul.statement"
+      ]
+    },
+    "narrative.statement.watermark.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "navbar.brandMark.alt": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "navbar.ctaLabel": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.home.nav"
+      ]
+    },
+    "navbar.links.label": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.nav"
+      ]
+    },
+    "process.lottie.ctaLabel": {
+      "observedMaxWords": 2,
+      "maxWords": 3,
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "process.lottie.headingLines": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "process.lottie.media.alt": {
+      "observedMaxWords": 6,
+      "maxWords": 8,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "process.lottie.steps.description": {
+      "observedMaxWords": 24,
+      "maxWords": 29,
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "process.lottie.steps.title": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "process.visual.ctaLabel": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pul.steps"
+      ]
+    },
+    "process.visual.heading": {
+      "observedMaxWords": 5,
+      "maxWords": 6,
+      "evidence": [
+        "ev.spec.pul.steps"
+      ]
+    },
+    "process.visual.steps.description": {
+      "observedMaxWords": 23,
+      "maxWords": 28,
+      "evidence": [
+        "ev.spec.pm.m5"
+      ]
+    },
+    "process.visual.steps.title": {
+      "observedMaxWords": 4,
+      "maxWords": 5,
+      "evidence": [
+        "ev.spec.pm.m5"
+      ]
+    },
+    "process.visual.steps.visual.alt": {
+      "observedMaxWords": 1,
+      "maxWords": 2,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "support.faq.answer": {
+      "observedMaxWords": 48,
+      "maxWords": 58,
+      "evidence": [
+        "ev.spec.pm.m4"
+      ]
+    },
+    "support.faq.heading": {
+      "observedMaxWords": 3,
+      "maxWords": 4,
+      "evidence": [
+        "ev.spec.pm.p3"
+      ]
+    },
+    "support.faq.question": {
+      "observedMaxWords": 9,
+      "maxWords": 11,
+      "evidence": [
+        "ev.spec.pm.m4"
+      ]
+    }
+  }
+}

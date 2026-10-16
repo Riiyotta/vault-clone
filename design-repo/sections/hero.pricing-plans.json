@@ -1,0 +1,357 @@
+{
+  "id": "hero.pricing-plans",
+  "category": "HERO",
+  "purpose": "Convert on price: eyebrow, headline, two-line sub, billing segmented control (default annual) and a 4-card plan grid with one recommended card.",
+  "implementedBy": "src/components/pricing/PricingHero.jsx + PlanCards.jsx",
+  "evidence": [
+    "ev.spec.pm.p1",
+    "ev.src.plan-cards",
+    "ev.src.plan-grid",
+    "ev.src.segmented",
+    "ev.src.pricing-hero-uk"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "headline",
+      "subLines",
+      "billing",
+      "plans"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 28,
+        "maxWords": 2
+      },
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 126,
+        "maxWords": 9
+      },
+      "subLines": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 154,
+          "maxWords": 11
+        },
+        "minItems": 1,
+        "maxItems": 2
+      },
+      "billing": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "monthlyLabel",
+          "annualLabel",
+          "annualBadge",
+          "default"
+        ],
+        "properties": {
+          "monthlyLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 28,
+            "maxWords": 2
+          },
+          "annualLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 28,
+            "maxWords": 2
+          },
+          "annualBadge": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 56,
+            "maxWords": 4
+          },
+          "default": {
+            "type": "string",
+            "enum": [
+              "monthly",
+              "annual"
+            ]
+          }
+        }
+      },
+      "plans": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "tagline",
+            "price",
+            "priceSubline",
+            "ctaLabel",
+            "ctaKind",
+            "recommended",
+            "featuresHeader",
+            "features"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 28,
+              "maxWords": 2
+            },
+            "tagline": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 56,
+              "maxWords": 4
+            },
+            "price": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "monthly",
+                "annual"
+              ],
+              "properties": {
+                "monthly": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 28,
+                  "maxWords": 2
+                },
+                "annual": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 28,
+                  "maxWords": 2
+                }
+              }
+            },
+            "priceSubline": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "monthly",
+                    "annual"
+                  ],
+                  "properties": {
+                    "monthly": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 70,
+                      "maxWords": 5
+                    },
+                    "annual": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 112,
+                      "maxWords": 8
+                    }
+                  }
+                }
+              ]
+            },
+            "ctaLabel": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 56,
+              "maxWords": 4
+            },
+            "ctaKind": {
+              "type": "string",
+              "enum": [
+                "outline-link",
+                "primary-link",
+                "contact-button"
+              ]
+            },
+            "recommended": {
+              "type": "boolean"
+            },
+            "recommendedLabel": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 28,
+              "maxWords": 2
+            },
+            "featuresHeader": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 70,
+                  "maxWords": 5
+                }
+              ]
+            },
+            "features": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 112,
+                "maxWords": 8
+              },
+              "minItems": 3,
+              "maxItems": 5
+            }
+          }
+        },
+        "minItems": 4,
+        "maxItems": 4
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "segmented-pill-and-price-fade": {
+        "allowedFallbacks": [
+          "css-transitions-none"
+        ],
+        "description": "Sliding pill (shared layout 0.3s easeOut); price + subline remount with fade-in .18s ease-out (motion-safe only); page wraps MotionConfig reducedMotion=user.",
+        "evidence": [
+          "ev.spec.pm.p1",
+          "ev.src.plan-cards",
+          "ev.src.segmented"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowGridFrame": true,
+    "exactlyOneRecommendedPlan": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "1 column cards, toggle 220x46, CTA text 16px, blank sublines hidden"
+    },
+    {
+      "at": "md",
+      "change": "2 columns, toggle 296x52"
+    },
+    {
+      "at": "xl",
+      "change": "4 columns on a shared subgrid"
+    },
+    {
+      "at": "uk",
+      "change": "text block max-w 880"
+    }
+  ],
+  "accessibility": {
+    "toggle": "role=radiogroup, options role=radio with aria-checked",
+    "cards": "article aria-labelledby plan name"
+  },
+  "example": {
+    "eyebrow": "Pricing",
+    "headline": "Simple plans for every team size",
+    "subLines": [
+      "Placeholder line about the trial period.",
+      "Placeholder line about billing terms."
+    ],
+    "billing": {
+      "monthlyLabel": "Monthly",
+      "annualLabel": "Annual",
+      "annualBadge": "Save more",
+      "default": "annual"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "tagline": "For individuals",
+        "price": {
+          "monthly": "$0",
+          "annual": "$0"
+        },
+        "priceSubline": null,
+        "ctaLabel": "Start now",
+        "ctaKind": "outline-link",
+        "recommended": false,
+        "featuresHeader": null,
+        "features": [
+          "Placeholder feature one",
+          "Placeholder feature two",
+          "Placeholder feature three"
+        ]
+      },
+      {
+        "name": "Team",
+        "tagline": "For small teams",
+        "price": {
+          "monthly": "$10",
+          "annual": "$8"
+        },
+        "priceSubline": {
+          "monthly": "per seat monthly",
+          "annual": "per seat, billed yearly"
+        },
+        "ctaLabel": "Start now",
+        "ctaKind": "outline-link",
+        "recommended": false,
+        "featuresHeader": "Everything above, plus:",
+        "features": [
+          "Placeholder feature one",
+          "Placeholder feature two",
+          "Placeholder feature three"
+        ]
+      },
+      {
+        "name": "Growth",
+        "tagline": "For growing teams",
+        "price": {
+          "monthly": "$20",
+          "annual": "$16"
+        },
+        "priceSubline": {
+          "monthly": "per seat monthly",
+          "annual": "per seat, billed yearly"
+        },
+        "ctaLabel": "Start trial",
+        "ctaKind": "primary-link",
+        "recommended": true,
+        "recommendedLabel": "Popular",
+        "featuresHeader": "Everything above, plus:",
+        "features": [
+          "Placeholder feature one",
+          "Placeholder feature two",
+          "Placeholder feature three"
+        ]
+      },
+      {
+        "name": "Custom",
+        "tagline": "For larger companies",
+        "price": {
+          "monthly": "Custom",
+          "annual": "Custom"
+        },
+        "priceSubline": null,
+        "ctaLabel": "Contact us",
+        "ctaKind": "contact-button",
+        "recommended": false,
+        "featuresHeader": "Everything above, plus:",
+        "features": [
+          "Placeholder feature one",
+          "Placeholder feature two",
+          "Placeholder feature three"
+        ]
+      }
+    ]
+  },
+  "notes": "'recommendedLabel' is required when recommended=true (semantic rule PRICING_ONE_RECOMMENDED)."
+}

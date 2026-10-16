@@ -1,0 +1,488 @@
+{
+  "version": "1.0.0",
+  "$comment": "Rhythm/position rules JSON Schema cannot express. Every rule id here is enforced by the function of the same id in schema/semantic_validate.py; extraction/verify_all.py fails if the two sets differ.",
+  "rules": [
+    {
+      "id": "TEMPLATE_NODE_SEQUENCE",
+      "severity": "error",
+      "description": "A PageSpec's node types must match its declared template's node list: every required section present, no section outside the template, same relative order, no repeats of non-repeatable nodes.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.ia",
+        "ev.src.page-home"
+      ]
+    },
+    {
+      "id": "DUPLICATE_SECTION_VARIANT",
+      "severity": "error",
+      "description": "No (section, variant) pair may appear twice on one page (keyed on the pair, not the bare id, so a future repeatable section with distinct variants is not a false positive).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.ia"
+      ]
+    },
+    {
+      "id": "NAV_FIRST",
+      "severity": "error",
+      "description": "chrome.navbar is node 0.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.page-home",
+        "ev.spec.pul.chrome"
+      ]
+    },
+    {
+      "id": "GRID_FRAME_SECOND",
+      "severity": "error",
+      "description": "chrome.grid-frame is node 1 (full separator with crosses right under the nav).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.home.grid-frame"
+      ]
+    },
+    {
+      "id": "FOOTER_LAST",
+      "severity": "error",
+      "description": "chrome.footer is the last node.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    {
+      "id": "ONE_HERO_PER_PAGE",
+      "severity": "error",
+      "description": "Exactly one HERO-category node per page.",
+      "exceptions": {
+        "templates": [
+          "template.legal"
+        ],
+        "reason": "Legal pages have no hero (spec D.1); they must have zero."
+      },
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.pul.legal-layout"
+      ]
+    },
+    {
+      "id": "HERO_AFTER_FRAME",
+      "severity": "error",
+      "description": "The hero (or, on heroless templates, the content.legal-article node) immediately follows chrome.grid-frame.",
+      "exceptions": {
+        "templates": [
+          "template.legal"
+        ],
+        "reason": "content.legal-article takes the hero slot"
+      },
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.page-home",
+        "ev.src.page-legal"
+      ]
+    },
+    {
+      "id": "POPUP_BEFORE_FOOTER",
+      "severity": "error",
+      "description": "forms.partner-popup, when present, is the node immediately before chrome.footer (it is an overlay mounted at page level).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.page-partners"
+      ]
+    },
+    {
+      "id": "POPUP_TRIGGER_PARITY",
+      "severity": "error",
+      "description": "If any node has ctaAction 'open-lead-form' the page must contain forms.partner-popup, and a page with forms.partner-popup must have at least one 'open-lead-form' trigger.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    {
+      "id": "STATEMENT_REDUCED_MOTION_BY_TEMPLATE",
+      "severity": "error",
+      "description": "narrative.scroll-statement on template.home must be variant 'scrubbed-always' with fallback 'scroll-driven-unchanged'; on template.partners it must be 'scrubbed-static-when-reduced' with 'progress-fixed-at-1' (corr.a).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.statement",
+        "ev.src.page-partners"
+      ]
+    },
+    {
+      "id": "LOTTIE_STEPS_ANCHOR_HOME_ONLY",
+      "severity": "error",
+      "description": "process.lottie-steps carries a non-null anchorId only on template.home; on template.pricing anchorId is null.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.howitworks-anchor",
+        "ev.spec.pm.p4"
+      ]
+    },
+    {
+      "id": "PRICING_ONE_RECOMMENDED",
+      "severity": "error",
+      "description": "hero.pricing-plans has exactly one plan with recommended=true, and that plan has a recommendedLabel.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    {
+      "id": "UNIQUE_ANCHOR_IDS",
+      "severity": "error",
+      "description": "anchorId values are unique within a page.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.home.stack"
+      ]
+    },
+    {
+      "id": "ROUTE_TEMPLATE_BINDING",
+      "severity": "error",
+      "description": "If the route is a known route (templates/routes.json) the template and locale must match its binding.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.app-routes"
+      ]
+    },
+    {
+      "id": "LOCALE_ROUTE_PREFIX",
+      "severity": "error",
+      "description": "Locale 'uk' iff the route is /ua or starts with /ua/; /ru routes are out of scope and rejected.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.i18n-locale",
+        "ev.spec.pul.ua-links"
+      ]
+    },
+    {
+      "id": "TEMPLATE_LOCALE",
+      "severity": "error",
+      "description": "The locale must be one the template supports.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.ia"
+      ]
+    },
+    {
+      "id": "MAX_WORDS",
+      "severity": "error",
+      "description": "Every text slot respects its maxWords copy budget (see extraction/measured-values.json copyBudgets).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.ia"
+      ]
+    },
+    {
+      "id": "BRAND_DENYLIST",
+      "severity": "error",
+      "description": "No string in a PageSpec may reference the source brand, its domains, or its agency (design system only; never the source's copy).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.home.stack"
+      ]
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "warn",
+      "description": "Two adjacent nodes of the same category read as stapled fragments; only adjacencies observed on the real site are exempt.",
+      "exceptions": {
+        "pairs": [
+          [
+            "chrome.navbar",
+            "chrome.grid-frame"
+          ],
+          [
+            "features.product-grid",
+            "features.showcase-automation"
+          ],
+          [
+            "features.showcase-automation",
+            "features.showcase-reports"
+          ],
+          [
+            "features.showcase-reports",
+            "features.showcase-security"
+          ],
+          [
+            "features.migration-explainer",
+            "features.migration-conditions"
+          ]
+        ]
+      },
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.ia"
+      ]
+    },
+    {
+      "id": "PROCESS_CLOSES_CONTENT",
+      "severity": "warn",
+      "description": "A PROCESS section, when present, is the last content section (only forms overlay and footer may follow).",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.page-home",
+        "ev.src.page-pricing",
+        "ev.src.page-migration",
+        "ev.src.page-partners"
+      ]
+    },
+    {
+      "id": "MOTION_BUDGET_AUTO_ADVANCE",
+      "severity": "warn",
+      "description": "At most 4 auto-advancing sections per page (home's observed maximum: 3 showcases + timed steps).",
+      "exceptions": {
+        "autoAdvancingSections": [
+          "features.showcase-automation",
+          "features.showcase-reports",
+          "features.showcase-security",
+          "process.lottie-steps",
+          "process.visual-steps"
+        ],
+        "max": 4
+      },
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.spec.home.motion"
+      ]
+    }
+  ],
+  "sectionCompatibility": {
+    "chrome.navbar": {
+      "category": "CHROME",
+      "observedBefore": [
+        "chrome.grid-frame"
+      ],
+      "observedAfter": []
+    },
+    "chrome.grid-frame": {
+      "category": "CHROME",
+      "observedBefore": [
+        "content.legal-article",
+        "hero.home-dashboard",
+        "hero.migration-split",
+        "hero.not-found",
+        "hero.partners-split",
+        "hero.pricing-plans"
+      ],
+      "observedAfter": [
+        "chrome.navbar"
+      ]
+    },
+    "chrome.footer": {
+      "category": "CHROME",
+      "observedBefore": [],
+      "observedAfter": [
+        "content.legal-article",
+        "forms.partner-popup",
+        "hero.not-found",
+        "process.lottie-steps",
+        "process.visual-steps"
+      ]
+    },
+    "hero.home-dashboard": {
+      "category": "HERO",
+      "observedBefore": [
+        "narrative.scroll-statement"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    },
+    "hero.pricing-plans": {
+      "category": "HERO",
+      "observedBefore": [
+        "commerce.compare-table"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    },
+    "hero.migration-split": {
+      "category": "HERO",
+      "observedBefore": [
+        "features.migration-explainer"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    },
+    "hero.partners-split": {
+      "category": "HERO",
+      "observedBefore": [
+        "features.partner-audience"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    },
+    "hero.not-found": {
+      "category": "HERO",
+      "observedBefore": [
+        "chrome.footer"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    },
+    "narrative.scroll-statement": {
+      "category": "NARRATIVE",
+      "observedBefore": [
+        "features.partner-value-grid",
+        "features.product-grid"
+      ],
+      "observedAfter": [
+        "features.partner-audience",
+        "hero.home-dashboard"
+      ]
+    },
+    "features.product-grid": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "features.showcase-automation"
+      ],
+      "observedAfter": [
+        "narrative.scroll-statement"
+      ]
+    },
+    "features.showcase-automation": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "features.showcase-reports"
+      ],
+      "observedAfter": [
+        "features.product-grid"
+      ]
+    },
+    "features.showcase-reports": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "features.showcase-security"
+      ],
+      "observedAfter": [
+        "features.showcase-automation"
+      ]
+    },
+    "features.showcase-security": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "process.lottie-steps"
+      ],
+      "observedAfter": [
+        "features.showcase-reports"
+      ]
+    },
+    "features.migration-explainer": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "features.migration-conditions"
+      ],
+      "observedAfter": [
+        "hero.migration-split"
+      ]
+    },
+    "features.migration-conditions": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "support.faq-accordion"
+      ],
+      "observedAfter": [
+        "features.migration-explainer"
+      ]
+    },
+    "features.partner-audience": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "narrative.scroll-statement"
+      ],
+      "observedAfter": [
+        "hero.partners-split"
+      ]
+    },
+    "features.partner-value-grid": {
+      "category": "FEATURES",
+      "observedBefore": [
+        "support.faq-accordion"
+      ],
+      "observedAfter": [
+        "narrative.scroll-statement"
+      ]
+    },
+    "commerce.compare-table": {
+      "category": "COMMERCE",
+      "observedBefore": [
+        "support.faq-accordion"
+      ],
+      "observedAfter": [
+        "hero.pricing-plans"
+      ]
+    },
+    "support.faq-accordion": {
+      "category": "SUPPORT",
+      "observedBefore": [
+        "process.lottie-steps",
+        "process.visual-steps"
+      ],
+      "observedAfter": [
+        "commerce.compare-table",
+        "features.migration-conditions",
+        "features.partner-value-grid"
+      ]
+    },
+    "process.lottie-steps": {
+      "category": "PROCESS",
+      "observedBefore": [
+        "chrome.footer"
+      ],
+      "observedAfter": [
+        "features.showcase-security",
+        "support.faq-accordion"
+      ]
+    },
+    "process.visual-steps": {
+      "category": "PROCESS",
+      "observedBefore": [
+        "chrome.footer",
+        "forms.partner-popup"
+      ],
+      "observedAfter": [
+        "support.faq-accordion"
+      ]
+    },
+    "forms.partner-popup": {
+      "category": "FORMS",
+      "observedBefore": [
+        "chrome.footer"
+      ],
+      "observedAfter": [
+        "process.visual-steps"
+      ]
+    },
+    "content.legal-article": {
+      "category": "CONTENT",
+      "observedBefore": [
+        "chrome.footer"
+      ],
+      "observedAfter": [
+        "chrome.grid-frame"
+      ]
+    }
+  }
+}

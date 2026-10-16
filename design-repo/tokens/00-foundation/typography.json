@@ -1,0 +1,501 @@
+{
+  "fontFamily": {
+    "display": {
+      "$type": "fontFamily",
+      "$value": [
+        "Clash Display",
+        "Clash Display Fallback"
+      ],
+      "evidence": [
+        "ev.src.css-font-vars",
+        "ev.assets.fonts"
+      ],
+      "$description": "Display face (EN). Referenced by family name ONLY - no font files ship in this repo.",
+      "license": {
+        "family": "Clash Display",
+        "foundry": "Indian Type Foundry (distributed via Fontshare)",
+        "terms": "Fontshare/ITF EULA - free-to-use terms with restrictions; this is NOT an OFL font. Verify the current license (commercial/web-embedding, self-hosting, redistribution) with ITF/Fontshare before any production use. Do not copy the source site's font files.",
+        "status": "verify-before-use"
+      },
+      "substitutes": [
+        {
+          "family": "Space Grotesk",
+          "license": "OFL-1.1",
+          "note": "closest open geometric-grotesk display substitute"
+        },
+        {
+          "family": "Sora",
+          "license": "OFL-1.1"
+        }
+      ],
+      "fallbackMetrics": {
+        "local": "Arial",
+        "ascent-override": "77.76%",
+        "descent-override": "21.84%",
+        "line-gap-override": "7.86%",
+        "size-adjust": "114.46%",
+        "evidence": "ev.src.css-fonts"
+      }
+    },
+    "body": {
+      "$type": "fontFamily",
+      "$value": [
+        "Outfit",
+        "Outfit Fallback"
+      ],
+      "evidence": [
+        "ev.src.css-font-vars",
+        "ev.assets.fonts"
+      ],
+      "$description": "Body face (EN). Variable 100-900.",
+      "license": {
+        "family": "Outfit",
+        "terms": "SIL Open Font License 1.1 (Google Fonts)",
+        "status": "open"
+      },
+      "substitutes": [
+        {
+          "family": "Outfit (official OFL release)",
+          "license": "OFL-1.1",
+          "note": "obtain from the upstream OFL distribution, not from the source site"
+        },
+        {
+          "family": "Urbanist",
+          "license": "OFL-1.1"
+        }
+      ],
+      "fallbackMetrics": {
+        "local": "Arial",
+        "ascent-override": "100.18%",
+        "descent-override": "26.05%",
+        "line-gap-override": "0%",
+        "size-adjust": "99.82%",
+        "evidence": "ev.src.css-fonts"
+      }
+    },
+    "display-uk": {
+      "$type": "fontFamily",
+      "$value": [
+        "Unbounded",
+        "Unbounded Fallback",
+        "Arial",
+        "sans-serif"
+      ],
+      "evidence": [
+        "ev.spec.pul.ua-fonts",
+        "ev.assets.ua-fonts"
+      ],
+      "$description": "Display face for locale uk (Cyrillic).",
+      "license": {
+        "family": "Unbounded",
+        "terms": "SIL Open Font License 1.1",
+        "status": "open"
+      },
+      "substitutes": [
+        {
+          "family": "Unbounded (upstream OFL release)",
+          "license": "OFL-1.1"
+        }
+      ],
+      "fallbackMetrics": {
+        "local": "Arial",
+        "size-adjust": "148.948%",
+        "ascent-override": "59.753%",
+        "descent-override": "16.784%",
+        "line-gap-override": "6.042%",
+        "evidence": "ev.src.css-fonts"
+      }
+    },
+    "body-uk": {
+      "$type": "fontFamily",
+      "$value": [
+        "Manrope",
+        "Manrope Fallback",
+        "Arial",
+        "sans-serif"
+      ],
+      "evidence": [
+        "ev.spec.pul.ua-fonts",
+        "ev.assets.ua-fonts"
+      ],
+      "$description": "Body face for locale uk (Cyrillic).",
+      "license": {
+        "family": "Manrope",
+        "terms": "SIL Open Font License 1.1",
+        "status": "open"
+      },
+      "substitutes": [
+        {
+          "family": "Manrope (upstream OFL release)",
+          "license": "OFL-1.1"
+        }
+      ],
+      "fallbackMetrics": {
+        "local": "Arial",
+        "size-adjust": "111.581%",
+        "ascent-override": "89.621%",
+        "descent-override": "23.301%",
+        "line-gap-override": "0%",
+        "evidence": "ev.src.css-fonts"
+      }
+    }
+  },
+  "fontSize": {
+    "10": {
+      "$type": "dimension",
+      "$value": "10px",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "11px",
+      "evidence": [
+        "ev.spec.pm.eyebrow"
+      ]
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "evidence": [
+        "ev.spec.pm.mock",
+        "ev.spec.pul.ua-lang"
+      ]
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "13px",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "14px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "evidence": [
+        "ev.src.css-body"
+      ]
+    },
+    "18": {
+      "$type": "dimension",
+      "$value": "18px",
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    },
+    "28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "evidence": [
+        "ev.spec.home.showcases"
+      ]
+    },
+    "30": {
+      "$type": "dimension",
+      "$value": "30px",
+      "evidence": [
+        "ev.spec.pm.section-heading"
+      ]
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "36": {
+      "$type": "dimension",
+      "$value": "36px",
+      "evidence": [
+        "ev.spec.home.statement"
+      ]
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": "48px",
+      "evidence": [
+        "ev.spec.pm.section-heading"
+      ]
+    },
+    "56": {
+      "$type": "dimension",
+      "$value": "56px",
+      "evidence": [
+        "ev.spec.pm.hero-type"
+      ]
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": "64px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    }
+  },
+  "lineHeight": {
+    "16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "evidence": [
+        "ev.spec.pm.eyebrow"
+      ]
+    },
+    "18": {
+      "$type": "dimension",
+      "$value": "18px",
+      "evidence": [
+        "ev.spec.pm.mock"
+      ]
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "22": {
+      "$type": "dimension",
+      "$value": "22px",
+      "evidence": [
+        "ev.spec.pm.buttons"
+      ]
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "evidence": [
+        "ev.src.css-body"
+      ]
+    },
+    "26": {
+      "$type": "dimension",
+      "$value": "26px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "evidence": [
+        "ev.spec.home.statement"
+      ]
+    },
+    "36": {
+      "$type": "dimension",
+      "$value": "36px",
+      "evidence": [
+        "ev.spec.pm.section-heading"
+      ]
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "evidence": [
+        "ev.spec.home.statement"
+      ]
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": "64px",
+      "evidence": [
+        "ev.spec.pm.section-heading"
+      ]
+    },
+    "72": {
+      "$type": "dimension",
+      "$value": "72px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "110pct": {
+      "$type": "dimension",
+      "$value": "110%",
+      "evidence": [
+        "ev.spec.pm.hero-type"
+      ]
+    },
+    "120pct": {
+      "$type": "dimension",
+      "$value": "120%",
+      "evidence": [
+        "ev.spec.pm.hero-type"
+      ]
+    },
+    "140pct": {
+      "$type": "dimension",
+      "$value": "140%",
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "150pct": {
+      "$type": "dimension",
+      "$value": "150%",
+      "evidence": [
+        "ev.spec.pm.faq"
+      ]
+    },
+    "none": {
+      "$type": "dimension",
+      "$value": "1",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    }
+  },
+  "fontWeight": {
+    "300": {
+      "$type": "fontWeight",
+      "$value": 300,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "400": {
+      "$type": "fontWeight",
+      "$value": 400,
+      "evidence": [
+        "ev.spec.home.nav"
+      ]
+    },
+    "500": {
+      "$type": "fontWeight",
+      "$value": 500,
+      "evidence": [
+        "ev.spec.pm.buttons"
+      ]
+    },
+    "600": {
+      "$type": "fontWeight",
+      "$value": 600,
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "700": {
+      "$type": "fontWeight",
+      "$value": 700,
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    }
+  },
+  "letterSpacing": {
+    "label": {
+      "$type": "dimension",
+      "$value": "0.05em",
+      "evidence": [
+        "ev.spec.pm.eyebrow"
+      ],
+      "$description": "Uppercase micro-labels."
+    },
+    "wide": {
+      "$type": "dimension",
+      "$value": "0.025em",
+      "evidence": [
+        "ev.spec.home.statement",
+        "ev.spec.home.showcases"
+      ]
+    },
+    "display": {
+      "$type": "dimension",
+      "$value": "0.02em",
+      "evidence": [
+        "ev.spec.home.hero"
+      ],
+      "$description": "Hero h1 (tracking 2%)."
+    },
+    "tight": {
+      "$type": "dimension",
+      "$value": "-0.025em",
+      "evidence": [
+        "ev.spec.home.process",
+        "ev.spec.pul.steps"
+      ],
+      "$description": "Step descriptions (-0.4px at 16px)."
+    },
+    "normal": {
+      "$type": "dimension",
+      "$value": "0",
+      "evidence": [
+        "ev.spec.pul.section-heading"
+      ]
+    }
+  },
+  "wordSpacing": {
+    "2": {
+      "$type": "dimension",
+      "$value": "2px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "3px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "4px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "6px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "7px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "8px",
+      "evidence": [
+        "ev.src.css-word-spacing",
+        "ev.spec.home.v4-v3"
+      ]
+    }
+  }
+}

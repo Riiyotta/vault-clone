@@ -1,0 +1,20 @@
+{
+  "id": "component.legal-table",
+  "kind": "component",
+  "purpose": "Responsive pair: md+ borderless table (14/20 white/60 headers, baseline-aligned cells); below md a divided card list.",
+  "props": {
+    "columns": "2-4"
+  },
+  "tokens": [
+    "text.secondary",
+    "text.body-strong",
+    "text.muted",
+    "border.hairline",
+    "layout.divider-semantics"
+  ],
+  "evidence": [
+    "ev.spec.pul.legal-tables",
+    "ev.src.legal-table-baseline"
+  ],
+  "file": "components/legal-table.json"
+}

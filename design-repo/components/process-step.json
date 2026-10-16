@@ -1,0 +1,26 @@
+{
+  "id": "component.process-step",
+  "kind": "component",
+  "purpose": "Numbered step: number box + display title, collapsible description (grid-rows 300ms), connector line to next step.",
+  "props": {
+    "variant": [
+      "timed-lottie",
+      "visual-dom"
+    ]
+  },
+  "tokens": [
+    "fontSize.20",
+    "wordSpacing.2",
+    "text.secondary",
+    "letterSpacing.tight",
+    "duration.process-connector",
+    "duration.visual-step-fill",
+    "color.white-alpha.20"
+  ],
+  "evidence": [
+    "ev.spec.home.process",
+    "ev.spec.pm.m5",
+    "ev.spec.pul.steps"
+  ],
+  "file": "components/process-step.json"
+}

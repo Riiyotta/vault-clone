@@ -1,0 +1,52 @@
+{
+  "breakpoint": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "640px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "768px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "1024px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "1280px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    },
+    "xxl": {
+      "$type": "dimension",
+      "$value": "1440px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "1536px",
+      "evidence": [
+        "ev.src.tw-screens",
+        "ev.spec.home.tokens"
+      ]
+    }
+  }
+}

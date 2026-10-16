@@ -3,6 +3,7 @@ import { isValidPhoneNumber } from 'libphonenumber-js'
 import { PrimaryCta } from '../Cta.jsx'
 import Icon from '../Icon.jsx'
 import PhoneField from './PhoneField.jsx'
+import { COUNTRIES } from './countries.js'
 import { rich, useT } from '../../i18n/index.jsx'
 
 // Partner lead form + result view (CLONE_SPEC_partners_ua_legal.md §B.9). Lazy-loaded by PartnerPopup.
@@ -13,21 +14,21 @@ import { rich, useT } from '../../i18n/index.jsx'
 const EMAIL_RE = /^(?!\.)(?!.*\.\.)([A-Z0-9_'+\-.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i
 const FIELDS = ['firstName', 'lastName', 'email', 'phone']
 const SIMULATED_REQUEST_MS = 800
+const DIAL_CODES = new Set(COUNTRIES.map((c) => c[2]))
 
 function validate(name, value, e) {
   const v = value.trim()
   if (name === 'firstName') return v ? null : e.firstName
   if (name === 'lastName') return v ? null : e.lastName
   if (name === 'email') return !v ? e.email : EMAIL_RE.test(v) ? null : e.emailInvalid
-  // phone: only the "+<dial code>" prefill (or nothing) counts as empty.
+  // phone: nothing, or only the "+<dial code>" prefix, counts as empty; otherwise libphonenumber-js isValid.
   const digits = value.replace(/\D/g, '')
-  if (!digits || /^\+\d{1,4}$/.test(value.replace(/[\s()-]/g, '')) && digits.length <= 4 && !isValidPhoneNumber(value))
-    return e.phoneRequired
+  if (!digits || DIAL_CODES.has(digits)) return e.phoneRequired
   return isValidPhoneNumber(value) ? null : e.phoneInvalid
 }
 
 const INPUT =
-  'h-12 w-full rounded-lg border bg-inherit pb-3.5 pl-4 pt-2.5 text-base font-light text-white outline-0 transition-all duration-200 focus:border-white disabled:opacity-60'
+  'h-12 w-full rounded-lg border bg-inherit pb-3.5 pl-4 pt-2.5 text-base font-light text-white outline-none transition-all duration-200 focus:border-white disabled:opacity-60'
 
 function TextField({ name, label, value, error, disabled, onChange, inputRef }) {
   const id = `lead-form-${name}`

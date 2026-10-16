@@ -1,0 +1,148 @@
+{
+  "id": "features.showcase-reports",
+  "category": "FEATURES",
+  "purpose": "Deep-dive on one capability: three auto-advancing tabs with a linear progress bar, one product animation segmented by tab markers, title, paragraph and a small primary CTA.",
+  "implementedBy": "src/components/FeatureTabs.jsx",
+  "evidence": [
+    "ev.spec.home.showcases",
+    "ev.src.featuretabs",
+    "ev.src.featuretabs-duration"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "anchorId",
+      "tabs",
+      "title",
+      "description",
+      "ctaLabel",
+      "ctaAction",
+      "media"
+    ],
+    "properties": {
+      "anchorId": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "tabs": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 70,
+          "maxWords": 5
+        },
+        "minItems": 3,
+        "maxItems": 3
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 154,
+        "maxWords": 11
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 504,
+        "maxWords": 36
+      },
+      "ctaLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "ctaAction": {
+        "type": "string",
+        "enum": [
+          "app-signup-link"
+        ]
+      },
+      "media": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "product-animation"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 112,
+            "maxWords": 8
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "auto-advancing-tabs-markers": {
+        "allowedFallbacks": [
+          "unhandled-in-source"
+        ],
+        "description": "IO 0.35 on the section resets to tab 0 on enter; timers start only after the animation and its markers load (corr.c); tab duration=(end-start)/30 s, fallback 5000ms; 1px progress bar scaleX linear; mobile title swap y±8 .25s easeOut. No reduced-motion branch on the source.",
+        "evidence": [
+          "ev.src.featuretabs",
+          "ev.src.featuretabs-duration",
+          "ev.spec.home.showcases"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "visual on top 240 tall, chevron pager header"
+    },
+    {
+      "at": "md",
+      "change": "visual 432 tall"
+    },
+    {
+      "at": "lg",
+      "change": "row-reverse: text left, visual right 50%; 3-col tab bar"
+    },
+    {
+      "at": "xl",
+      "change": "text padding 80/60/40"
+    }
+  ],
+  "accessibility": {
+    "tabs": "buttons; mobile pager chevrons labelled previous/next"
+  },
+  "example": {
+    "anchorId": "capability-two",
+    "tabs": [
+      "First placeholder tab",
+      "Second placeholder tab",
+      "Third placeholder tab"
+    ],
+    "title": "Placeholder title for this capability deep dive",
+    "description": "Placeholder paragraph describing the capability in two short sentences. It stays within the measured budget.",
+    "ctaLabel": "Try it",
+    "ctaAction": "app-signup-link",
+    "media": {
+      "role": "product-animation",
+      "ref": "placeholder:capability-two-segments",
+      "alt": "Capability walkthrough animation"
+    }
+  }
+}

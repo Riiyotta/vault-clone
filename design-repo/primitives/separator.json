@@ -1,0 +1,32 @@
+{
+  "id": "primitive.separator",
+  "kind": "primitive",
+  "purpose": "Full-bleed 1px row between sections.",
+  "props": {
+    "variant": [
+      "full",
+      "between-crosses-until-lg"
+    ],
+    "crosses": "boolean"
+  },
+  "tokens": [
+    "layout.separator",
+    "border.hairline"
+  ],
+  "evidence": [
+    "ev.spec.home.grid-frame",
+    "ev.spec.pm.separator",
+    "ev.src.gridframe"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "between-crosses-until-lg draws an inset ::before line inside the frame"
+    },
+    {
+      "at": "lg",
+      "change": "line becomes full-bleed"
+    }
+  ],
+  "file": "primitives/separator.json"
+}

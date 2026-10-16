@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "$comment": "Closed assetRole vocabulary. Wired through schema/pagespec.schema.json (definitions.assetRole enum + per-field role enums), tokens/llm/component-allowlist.json (assetRoles) and schema/example.pagespec.json. The source is a REAL, LIVE company's site: generated pages must never reproduce real logos, real people, or real proprietary product UI/content.",
+  "generationPolicies": {
+    "may-generate-new": "AI may create new original artwork/markup for this role.",
+    "must-reuse-exact": "Use a specific approved third-party/open asset unmodified (with attribution where the license requires).",
+    "must-not-fabricate": "Must be supplied by a human from the deploying brand; AI must not generate or approximate it.",
+    "must-not-reproduce-source": "AI may create NEW original content for this role but must not reproduce, trace or paraphrase the source site's asset."
+  },
+  "globalRules": [
+    "Never reproduce real logos (including the source brand's), real people's photos or likenesses, or real proprietary product UI/content.",
+    "Every PageSpec asset ref is a placeholder id (placeholder:<slug>); binary assets are resolved at build time by the deploying team, never fetched from the source site.",
+    "No external requests: the source clone served every asset locally (fonts, images, animations, flags, the animation WASM). Keep generated pages self-hosted; no CDN or third-party runtime fetches.",
+    "Fonts are referenced by family name only (see tokens/00-foundation/typography.json for licensing); no font files ship in this repo."
+  ],
+  "pinnedPolicies": {
+    "brand-mark": "must-not-fabricate",
+    "product-screenshot": "must-not-reproduce-source",
+    "product-animation": "must-not-reproduce-source",
+    "background-art": "must-not-reproduce-source",
+    "social-icon": "must-reuse-exact",
+    "flag": "must-reuse-exact"
+  },
+  "roles": {
+    "product-screenshot": {
+      "policy": "must-not-reproduce-source",
+      "usedFor": "Large framed product UI image in a centered hero.",
+      "aiGeneration": "Generate a NEW, fictional product UI (invented brand, invented data). Never reproduce, trace, re-color or paraphrase the source site's dashboard screenshots (hero-en/hero-uk) or any real company's proprietary UI. No real customer names, balances or logos inside the image.",
+      "evidence": [
+        "ev.spec.home.hero",
+        "ev.spec.pul.ua-shifts"
+      ]
+    },
+    "product-animation": {
+      "policy": "must-not-reproduce-source",
+      "usedFor": "Canvas/Lottie animation in product cards, tabbed showcases and timed steps. Tabbed/timed sections need named markers per tab/step (duration = frames/30).",
+      "aiGeneration": "Author NEW animations with fictional UI. Never ship, re-time or re-skin the source's .lottie files. Provide markers sectionN_in/sectionN_out (showcases) or step start frames (timed steps) so durations derive from the file, as on the source.",
+      "evidence": [
+        "ev.spec.home.product-grid",
+        "ev.spec.home.showcases",
+        "ev.src.featuretabs-duration"
+      ]
+    },
+    "illustration-mock": {
+      "policy": "may-generate-new",
+      "usedFor": "DOM-built mock scenes (cards, pills, rows, skeletons) inside split heroes, charts and visual-step panes.",
+      "aiGeneration": "Compose from primitives (mock-card, mock-pill, mock-row, skeleton-bar, avatar-initials) with obviously fictional names and numbers. Do not reproduce real companies, real people, or the source's exact mock content.",
+      "evidence": [
+        "ev.spec.pm.mock",
+        "ev.spec.pm.m1",
+        "ev.spec.pul.split-hero",
+        "ev.assets.pm-none"
+      ]
+    },
+    "icon": {
+      "policy": "may-generate-new",
+      "usedFor": "Generic UI glyphs: arrow, chevron, check, cross marker, close, upload, link, calendar, mail.",
+      "aiGeneration": "Use any generic open icon set or draw new 24-unit glyphs (stroke 1.5-2, currentColor). No brand logos.",
+      "evidence": [
+        "ev.spec.pm.faq",
+        "ev.spec.home.grid-frame"
+      ]
+    },
+    "icon-illustrated": {
+      "policy": "may-generate-new",
+      "usedFor": "56/44px badge icons in icon-row lists: rounded rect (rx 14, accent/10 fill, white/5 stroke) + 24-unit glyph scaled 1.1, one animatable path.",
+      "aiGeneration": "Draw new glyphs on the documented badge construction; mark exactly one path as animatable (pop/fade/rise/slideX/slideY/draw). Do not copy the source's glyphs.",
+      "evidence": [
+        "ev.spec.pm.m3",
+        "ev.spec.pul.audience"
+      ]
+    },
+    "background-art": {
+      "policy": "must-not-reproduce-source",
+      "usedFor": "Large raster/vector art behind a hero (the source uses a planet image) and the statement watermark mark.",
+      "aiGeneration": "Generate original abstract art. The source's planet raster and V-shaped watermark are part of its brand identity and must not be reproduced or traced.",
+      "evidence": [
+        "ev.spec.home.hero",
+        "ev.spec.home.statement"
+      ]
+    },
+    "background-glow": {
+      "policy": "may-generate-new",
+      "usedFor": "CSS-only radial accent glows, dot grids and fades (gradient tokens).",
+      "aiGeneration": "Build from gradient tokens only (gradient.glow, gradient.glow-wide, gradient.dot-grid, gradient.hero-fade). No raster needed.",
+      "evidence": [
+        "ev.src.tw-backgrounds"
+      ]
+    },
+    "brand-mark": {
+      "policy": "must-not-fabricate",
+      "usedFor": "Logo in navbar and footer.",
+      "aiGeneration": "Use ONLY the deploying brand's own approved logo supplied by a human. Never generate a logo, never reproduce the source's (Vault AI) wordmark/mark, never imitate any real company's mark.",
+      "evidence": [
+        "ev.spec.home.nav",
+        "ev.spec.home.footer"
+      ]
+    },
+    "social-icon": {
+      "policy": "must-reuse-exact",
+      "usedFor": "Third-party network icons in the footer (LinkedIn, Telegram).",
+      "aiGeneration": "Use the network's official icon asset unmodified per its brand guidelines; never redraw or recolor beyond what those guidelines allow. Link only to the deploying brand's own profiles.",
+      "evidence": [
+        "ev.spec.home.footer"
+      ]
+    },
+    "flag": {
+      "policy": "must-reuse-exact",
+      "usedFor": "Country flags in the phone-field country picker.",
+      "aiGeneration": "Reuse an open flag set unmodified with attribution (the source uses Twemoji, CC-BY 4.0 - attribution required). Do not generate flags.",
+      "evidence": [
+        "ev.assets.flags",
+        "ev.src.flags"
+      ],
+      "license": "CC-BY-4.0 (Twemoji) - attribution required"
+    }
+  }
+}

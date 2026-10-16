@@ -1,0 +1,172 @@
+{
+  "id": "hero.home-dashboard",
+  "category": "HERO",
+  "purpose": "Primary positioning for the product: centered eyebrow, display headline, light sub, primary CTA and a large framed product screenshot over background art with layered glows.",
+  "implementedBy": "src/components/Hero.jsx",
+  "evidence": [
+    "ev.spec.home.hero",
+    "ev.src.typography",
+    "ev.spec.pul.ua-lang"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "headline",
+      "subheadline",
+      "ctaLabel",
+      "ctaAction",
+      "media",
+      "backgroundArt"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 126,
+        "maxWords": 9
+      },
+      "subheadline": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 252,
+        "maxWords": 18
+      },
+      "ctaLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 42,
+        "maxWords": 3
+      },
+      "ctaAction": {
+        "type": "string",
+        "enum": [
+          "app-signup-link"
+        ]
+      },
+      "media": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "product-screenshot"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 224,
+            "maxWords": 16
+          }
+        }
+      },
+      "backgroundArt": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "background-art"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "static": {
+        "allowedFallbacks": [
+          "static"
+        ],
+        "description": "No entrance animation on the source hero.",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowGridFrame": true,
+    "templateOnly": [
+      "template.home"
+    ]
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "h1 32/38.4 ws4, text max 400, image 323px wide"
+    },
+    {
+      "at": "md",
+      "change": "h1 48/52.8 ws6, text max 560"
+    },
+    {
+      "at": "lg",
+      "change": "h1 64/72 ws8, text max 750, image max 1104 with 600px glow"
+    },
+    {
+      "at": "xxl",
+      "change": "background art switches contain -> cover"
+    },
+    {
+      "at": "uk",
+      "change": "text block max-w 880 at every width; micro-labels 12px"
+    }
+  ],
+  "accessibility": {
+    "image": "meaningful alt required",
+    "headingLevel": "h1"
+  },
+  "example": {
+    "eyebrow": "Placeholder platform label",
+    "headline": "One clear headline for the product",
+    "subheadline": "A short placeholder sentence that explains what the product does and who it is for.",
+    "ctaLabel": "Start now",
+    "ctaAction": "app-signup-link",
+    "media": {
+      "role": "product-screenshot",
+      "ref": "placeholder:fictional-dashboard",
+      "alt": "Fictional dashboard with sample charts"
+    },
+    "backgroundArt": {
+      "role": "background-art",
+      "ref": "placeholder:abstract-orb",
+      "alt": ""
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "narrative.scroll-statement",
+  "category": "NARRATIVE",
+  "purpose": "One positioning sentence presented as a scroll-scrubbed word-by-word fill (ghost words at 0.2 -> full white) over a watermark mark.",
+  "implementedBy": "src/components/Statement.jsx",
+  "evidence": [
+    "ev.spec.home.statement",
+    "ev.spec.pul.statement",
+    "ev.src.statement"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "text",
+      "watermark"
+    ],
+    "properties": {
+      "text": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 392,
+        "maxWords": 28
+      },
+      "watermark": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "background-art"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      }
+    }
+  },
+  "variants": [
+    "scrubbed-always",
+    "scrubbed-static-when-reduced"
+  ],
+  "motion": {
+    "patterns": {
+      "scroll-scrubbed-word-fill": {
+        "allowedFallbacks": [
+          "scroll-driven-unchanged",
+          "progress-fixed-at-1"
+        ],
+        "description": "useScroll target=paragraph, offset ['start 0.9','start 0.25']; word i fills over [i/n,(i+1)/n]; reversible. Reduced-motion behaviour depends on variant (see STATEMENT_REDUCED_MOTION_BY_TEMPLATE).",
+        "evidence": [
+          "ev.spec.home.statement",
+          "ev.src.statement"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "18/28, py 136, watermark 308x262"
+    },
+    {
+      "at": "md",
+      "change": "32px, py 212, watermark 626x544"
+    },
+    {
+      "at": "lg",
+      "change": "36/40, py 300, max-w 1200"
+    }
+  ],
+  "accessibility": {
+    "ghostCopy": "duplicate ghost words are aria-hidden; the readable text is the filled copy"
+  },
+  "example": {
+    "text": "Placeholder positioning statement that fills in word by word as the reader scrolls through the section",
+    "watermark": {
+      "role": "background-art",
+      "ref": "placeholder:watermark-mark",
+      "alt": ""
+    }
+  },
+  "exampleByTemplate": {
+    "template.home": {
+      "variant": "scrubbed-always",
+      "motion": {
+        "pattern": "scroll-scrubbed-word-fill",
+        "reducedMotionFallback": "scroll-driven-unchanged"
+      }
+    },
+    "template.partners": {
+      "variant": "scrubbed-static-when-reduced",
+      "motion": {
+        "pattern": "scroll-scrubbed-word-fill",
+        "reducedMotionFallback": "progress-fixed-at-1"
+      }
+    }
+  },
+  "notes": "corr.a: the home instance stays scroll-driven even with prefers-reduced-motion (the source never passes staticWhenReducedMotion there); the partners instance freezes at progress 1."
+}

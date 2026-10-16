@@ -1,0 +1,197 @@
+{
+  "id": "features.migration-conditions",
+  "category": "FEATURES",
+  "purpose": "Scannable list of criteria/audiences: illustrated icon badge, display title and one sentence per row, over a corner accent glow.",
+  "implementedBy": "src/components/migration/Conditions.jsx",
+  "evidence": [
+    "ev.spec.pm.m3",
+    "ev.src.icon-row"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "items",
+      "glow"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 70,
+        "maxWords": 5
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "description",
+            "icon"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 70,
+              "maxWords": 5
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 392,
+              "maxWords": 28
+            },
+            "icon": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "icon-illustrated"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 28,
+                  "maxWords": 2
+                }
+              }
+            }
+          }
+        },
+        "minItems": 3,
+        "maxItems": 5
+      },
+      "glow": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "background-glow"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "icon-glyph-reveal-once": {
+        "allowedFallbacks": [
+          "end-state-immediately"
+        ],
+        "description": "Each icon animates one path once at amount .6 (pop/fade/rise/slideX/slideY/draw, .26-.8s expo, delay .25s[+.09n]).",
+        "evidence": [
+          "ev.spec.pm.m3",
+          "ev.src.reveal"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "44px icon + title row, description spans full width below"
+    },
+    {
+      "at": "lg",
+      "change": "3 columns 72px / .9fr / 1.3fr, 56px icon, h3 24/28.8"
+    },
+    {
+      "at": "xl",
+      "change": "row padding x 56"
+    }
+  ],
+  "accessibility": {
+    "icons": "decorative unless they carry meaning"
+  },
+  "example": {
+    "heading": "Placeholder list heading",
+    "items": [
+      {
+        "title": "Placeholder item 1",
+        "description": "One placeholder sentence for this row.",
+        "icon": {
+          "role": "icon-illustrated",
+          "ref": "placeholder:badge-1",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder item 2",
+        "description": "One placeholder sentence for this row.",
+        "icon": {
+          "role": "icon-illustrated",
+          "ref": "placeholder:badge-2",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder item 3",
+        "description": "One placeholder sentence for this row.",
+        "icon": {
+          "role": "icon-illustrated",
+          "ref": "placeholder:badge-3",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder item 4",
+        "description": "One placeholder sentence for this row.",
+        "icon": {
+          "role": "icon-illustrated",
+          "ref": "placeholder:badge-4",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder item 5",
+        "description": "One placeholder sentence for this row.",
+        "icon": {
+          "role": "icon-illustrated",
+          "ref": "placeholder:badge-5",
+          "alt": ""
+        }
+      }
+    ],
+    "glow": {
+      "role": "background-glow",
+      "ref": "placeholder:corner-glow",
+      "alt": ""
+    }
+  }
+}

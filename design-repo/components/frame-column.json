@@ -1,0 +1,38 @@
+{
+  "id": "component.frame-column",
+  "kind": "component",
+  "purpose": "1440 max content column with 24/40/56 gutters and 1.5px white/5 side hairlines; every section sits in one.",
+  "props": {
+    "border": [
+      "1.5px",
+      "1px"
+    ]
+  },
+  "tokens": [
+    "layout.frame-max",
+    "layout.frame-border",
+    "spacing.frame-gutter.base",
+    "spacing.frame-gutter.md",
+    "spacing.frame-gutter.lg",
+    "border.hairline"
+  ],
+  "evidence": [
+    "ev.spec.home.grid-frame",
+    "ev.src.gridframe"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "gutter 24"
+    },
+    {
+      "at": "md",
+      "change": "gutter 40"
+    },
+    {
+      "at": "lg",
+      "change": "gutter 56"
+    }
+  ],
+  "file": "components/frame-column.json"
+}

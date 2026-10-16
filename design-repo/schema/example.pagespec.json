@@ -1,0 +1,355 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "id": "example-home",
+  "template": "template.home",
+  "route": "/",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Placeholder product | Example Co",
+    "description": "Placeholder description of a fictional product homepage composed from this design system."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "brand-mark",
+          "ref": "placeholder:brand-logo",
+          "alt": "Brand home"
+        },
+        "links": [
+          {
+            "label": "Overview",
+            "href": "/#overview"
+          },
+          {
+            "label": "Features",
+            "href": "/#features"
+          },
+          {
+            "label": "Pricing",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Start now",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "hero.home-dashboard",
+      "content": {
+        "eyebrow": "Placeholder platform label",
+        "headline": "One clear headline for the product",
+        "subheadline": "A short placeholder sentence that explains what the product does and who it is for.",
+        "ctaLabel": "Start now",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "product-screenshot",
+          "ref": "placeholder:fictional-dashboard",
+          "alt": "Fictional dashboard with sample charts"
+        },
+        "backgroundArt": {
+          "role": "background-art",
+          "ref": "placeholder:abstract-orb",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "narrative.scroll-statement",
+      "variant": "scrubbed-always",
+      "content": {
+        "text": "Placeholder positioning statement that fills in word by word as the reader scrolls through the section",
+        "watermark": {
+          "role": "background-art",
+          "ref": "placeholder:watermark-mark",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "scroll-scrubbed-word-fill",
+        "reducedMotionFallback": "scroll-driven-unchanged"
+      }
+    },
+    {
+      "type": "features.product-grid",
+      "content": {
+        "anchorId": "overview",
+        "cards": [
+          {
+            "title": "Placeholder capability 1",
+            "badge": null,
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-1-loop",
+              "alt": "Capability 1 animation"
+            }
+          },
+          {
+            "title": "Placeholder capability 2",
+            "badge": null,
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-2-loop",
+              "alt": "Capability 2 animation"
+            }
+          },
+          {
+            "title": "Placeholder capability 3",
+            "badge": null,
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-3-loop",
+              "alt": "Capability 3 animation"
+            }
+          },
+          {
+            "title": "Placeholder capability 4",
+            "badge": null,
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-4-loop",
+              "alt": "Capability 4 animation"
+            }
+          },
+          {
+            "title": "Placeholder capability 5",
+            "badge": "Soon",
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-5-loop",
+              "alt": "Capability 5 animation"
+            }
+          },
+          {
+            "title": "Placeholder capability 6",
+            "badge": "Soon",
+            "description": "One short placeholder sentence describing this capability.",
+            "media": {
+              "role": "product-animation",
+              "ref": "placeholder:card-6-loop",
+              "alt": "Capability 6 animation"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "looping-animation-offscreen-frozen",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-automation",
+      "content": {
+        "anchorId": "capability-one",
+        "tabs": [
+          "First placeholder tab",
+          "Second placeholder tab",
+          "Third placeholder tab"
+        ],
+        "title": "Placeholder title for this capability deep dive",
+        "description": "Placeholder paragraph describing the capability in two short sentences. It stays within the measured budget.",
+        "ctaLabel": "Try it",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:capability-one-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-reports",
+      "content": {
+        "anchorId": "capability-two",
+        "tabs": [
+          "First placeholder tab",
+          "Second placeholder tab",
+          "Third placeholder tab"
+        ],
+        "title": "Placeholder title for this capability deep dive",
+        "description": "Placeholder paragraph describing the capability in two short sentences. It stays within the measured budget.",
+        "ctaLabel": "Try it",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:capability-two-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-security",
+      "content": {
+        "anchorId": "capability-three",
+        "tabs": [
+          "First placeholder tab",
+          "Second placeholder tab",
+          "Third placeholder tab"
+        ],
+        "title": "Placeholder title for this capability deep dive",
+        "description": "Placeholder paragraph describing the capability in two short sentences. It stays within the measured budget.",
+        "ctaLabel": "Try it",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:capability-three-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "process.lottie-steps",
+      "content": {
+        "headingLines": [
+          "Placeholder clarity",
+          "heading line"
+        ],
+        "anchorId": "how-it-works",
+        "steps": [
+          {
+            "title": "Placeholder step 1",
+            "description": "Placeholder description of what happens in this step."
+          },
+          {
+            "title": "Placeholder step 2",
+            "description": "Placeholder description of what happens in this step."
+          },
+          {
+            "title": "Placeholder step 3",
+            "description": "Placeholder description of what happens in this step."
+          }
+        ],
+        "ctaLabel": "Start now",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:three-step-flow",
+          "alt": "Three step walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "timed-steps-animation",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "brand-mark",
+          "ref": "placeholder:brand-logo",
+          "alt": "Brand"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@example.com",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@example.com"
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Overview",
+                "href": "/#overview"
+              },
+              {
+                "label": "Features",
+                "href": "/#features"
+              },
+              {
+                "label": "Pricing",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Resources",
+            "links": [
+              {
+                "label": "Help center",
+                "href": "https://example.com/help"
+              },
+              {
+                "label": "Status",
+                "href": "https://example.com/status"
+              },
+              {
+                "label": "Partners",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Data processing",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Example Co. All rights reserved."
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

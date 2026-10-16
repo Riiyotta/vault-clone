@@ -1,0 +1,21 @@
+{
+  "id": "component.dot-grid-panel",
+  "kind": "component",
+  "purpose": "Visual well with dot-grid background (8px dots base, 12px md+), optionally masked to an ellipse.",
+  "props": {
+    "tone": [
+      "light-dots",
+      "steps-dots"
+    ],
+    "masked": "boolean"
+  },
+  "tokens": [
+    "gradient.dot-grid",
+    "gradient.dot-grid-steps"
+  ],
+  "evidence": [
+    "ev.spec.pm.mock",
+    "ev.spec.home.process"
+  ],
+  "file": "components/dot-grid-panel.json"
+}

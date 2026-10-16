@@ -1,0 +1,241 @@
+{
+  "semantic": {
+    "text": {
+      "primary": {
+        "$type": "alias",
+        "$value": "{color.white}",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "body-strong": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.80}",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ],
+        "$description": "nav links, legal body, table cells"
+      },
+      "secondary": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.60}",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ],
+        "$description": "body copy"
+      },
+      "inactive": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.50}",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "muted": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.40}",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ],
+        "$description": "group labels, ruler numbers"
+      },
+      "disabled-dash": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.30}",
+        "evidence": [
+          "ev.spec.pm.p2"
+        ]
+      },
+      "on-inverse": {
+        "$type": "alias",
+        "$value": "{color.cta-text}",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "on-inverse-strong": {
+        "$type": "alias",
+        "$value": "{color.primary-black}",
+        "evidence": [
+          "ev.spec.pm.m5"
+        ]
+      },
+      "subtle-gray": {
+        "$type": "alias",
+        "$value": "{color.gray}",
+        "evidence": [
+          "ev.spec.home.footer"
+        ]
+      },
+      "accent-soft": {
+        "$type": "alias",
+        "$value": "{color.accent-soft}",
+        "evidence": [
+          "ev.spec.pm.m1"
+        ]
+      },
+      "error": {
+        "$type": "alias",
+        "$value": "{color.red}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      }
+    },
+    "surface": {
+      "page": {
+        "$type": "alias",
+        "$value": "{color.primary-black}",
+        "evidence": [
+          "ev.src.css-body"
+        ]
+      },
+      "raised": {
+        "$type": "alias",
+        "$value": "{color.surface}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "inverse": {
+        "$type": "alias",
+        "$value": "{color.white}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "chip": {
+        "$type": "alias",
+        "$value": "{color.cta-chip}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "pill": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.8}",
+        "evidence": [
+          "ev.spec.pm.eyebrow"
+        ]
+      },
+      "ghost": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.2}",
+        "evidence": [
+          "ev.src.tokens-json"
+        ]
+      },
+      "accent-subtle": {
+        "$type": "alias",
+        "$value": "{color.accent-alpha.10}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "accent-muted": {
+        "$type": "alias",
+        "$value": "{color.accent-alpha.20}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "backdrop": {
+        "$type": "alias",
+        "$value": "{color.primary-black-alpha.60}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      }
+    },
+    "border": {
+      "hairline": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.5}",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      },
+      "subtle": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.10}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "control": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.20}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "focus": {
+        "$type": "alias",
+        "$value": "{color.white}",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      },
+      "accent": {
+        "$type": "alias",
+        "$value": "{color.accent-alpha.50}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "accent-highlight": {
+        "$type": "alias",
+        "$value": "{color.accent-alpha.35}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "error": {
+        "$type": "alias",
+        "$value": "{color.red}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "tick": {
+        "$type": "alias",
+        "$value": "{color.tick}",
+        "evidence": [
+          "ev.spec.home.process"
+        ]
+      }
+    },
+    "accent": {
+      "default": {
+        "$type": "alias",
+        "$value": "{color.accent}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "soft": {
+        "$type": "alias",
+        "$value": "{color.accent-soft}",
+        "evidence": [
+          "ev.spec.pm.m3"
+        ]
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "alias",
+        "$value": "{fontFamily.display}",
+        "evidence": [
+          "ev.src.tw-fonts"
+        ]
+      },
+      "body": {
+        "$type": "alias",
+        "$value": "{fontFamily.body}",
+        "evidence": [
+          "ev.src.tw-fonts"
+        ]
+      }
+    }
+  }
+}

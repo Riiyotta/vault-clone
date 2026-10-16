@@ -1,0 +1,249 @@
+{
+  "color": {
+    "primary-black": {
+      "$type": "color",
+      "$value": "#03020B",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Page background."
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "#7506A7",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Used only by a third-party badge hover on the source; not mapped to any semantic role."
+    },
+    "gray": {
+      "$type": "color",
+      "$value": "#BFBFBF",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Footer copyright + social icons."
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "#5176FE",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ]
+    },
+    "accent-soft": {
+      "$type": "color",
+      "$value": "#9BAEF2",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ]
+    },
+    "red": {
+      "$type": "color",
+      "$value": "#EE3D2C",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Form error."
+    },
+    "cta-text": {
+      "$type": "color",
+      "$value": "#090A11",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Text on white primary CTA."
+    },
+    "cta-chip": {
+      "$type": "color",
+      "$value": "#05040C",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Arrow chip inside primary CTA."
+    },
+    "badge": {
+      "$type": "color",
+      "$value": "#25222C",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ]
+    },
+    "tick": {
+      "$type": "color",
+      "$value": "#EDEDFA",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.src.tokens-json"
+      ],
+      "$description": "Step-box corner ticks."
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#080710",
+      "evidence": [
+        "ev.src.tokens-json",
+        "ev.spec.pm.mock"
+      ],
+      "$description": "Mock card / recommended column / dialog surface."
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "evidence": [
+        "ev.spec.home.tokens"
+      ]
+    },
+    "black": {
+      "$type": "color",
+      "$value": "#000000",
+      "evidence": [
+        "ev.src.tokens-json"
+      ],
+      "$description": "stepBox.activeText."
+    },
+    "white-alpha": {
+      "2": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.02)",
+        "evidence": [
+          "ev.spec.home.tokens",
+          "ev.src.tokens-json"
+        ]
+      },
+      "5": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.05)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "8": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.08)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "10": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.10)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "20": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.20)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "30": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.30)",
+        "evidence": [
+          "ev.spec.home.tokens",
+          "ev.spec.pm.p2"
+        ]
+      },
+      "40": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.40)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "50": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.50)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "60": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.60)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      },
+      "80": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.80)",
+        "evidence": [
+          "ev.spec.home.tokens"
+        ]
+      }
+    },
+    "accent-alpha": {
+      "10": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.10)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      },
+      "20": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.20)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      },
+      "35": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.35)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      },
+      "50": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.50)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      },
+      "60": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.60)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      },
+      "75": {
+        "$type": "color",
+        "$value": "rgba(81,118,254,.75)",
+        "evidence": [
+          "ev.spec.pm.mock",
+          "ev.spec.pul.split-hero"
+        ]
+      }
+    },
+    "primary-black-alpha": {
+      "60": {
+        "$type": "color",
+        "$value": "rgba(3,2,11,.6)",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ],
+        "$description": "Modal backdrop."
+      }
+    }
+  }
+}

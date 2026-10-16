@@ -38,7 +38,7 @@ function PlanCard({ plan, period }) {
     <article
       aria-labelledby={`plan-${plan.id}-name`}
       className={`relative row-span-4 grid grid-rows-subgrid gap-y-6 px-4 py-8 md:px-6 ${
-        plan.recommended ? 'plan-card-pro' : 'bg-primary-black'
+        plan.recommended ? 'plan-card-pro bg-primary-black' : 'bg-primary-black'
       }`}
     >
       <header className="flex flex-col gap-2">

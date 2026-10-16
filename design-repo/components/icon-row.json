@@ -1,0 +1,32 @@
+{
+  "id": "component.icon-row",
+  "kind": "component",
+  "purpose": "List row: illustrated icon badge, display title, body text; dividers follow v4 divide-y semantics.",
+  "props": {},
+  "tokens": [
+    "iconSize.badge-sm",
+    "iconSize.badge-lg",
+    "fontSize.24",
+    "fontSize.20",
+    "text.secondary",
+    "layout.grid.icon-row",
+    "layout.divider-semantics"
+  ],
+  "evidence": [
+    "ev.spec.pm.m3",
+    "ev.spec.pul.audience",
+    "ev.src.icon-row",
+    "ev.src.tw-divide"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "44px icon + title row, text spans 2 cols below"
+    },
+    {
+      "at": "lg",
+      "change": "3 columns 72px / .9fr / 1.3fr, 56px icon"
+    }
+  ],
+  "file": "components/icon-row.json"
+}

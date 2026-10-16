@@ -1,0 +1,26 @@
+{
+  "id": "primitive.link-inline",
+  "kind": "primitive",
+  "purpose": "Underlined inline action (white/40 decoration -> white on hover, 300ms; legal links white/20, 400ms).",
+  "props": {
+    "tone": [
+      "default",
+      "legal"
+    ],
+    "trailingArrow": "boolean"
+  },
+  "tokens": [
+    "text.primary",
+    "color.white-alpha.40",
+    "color.white-alpha.20",
+    "duration.base",
+    "duration.link-hover",
+    "easing.standard"
+  ],
+  "evidence": [
+    "ev.spec.pm.buttons",
+    "ev.spec.pul.legal-type",
+    "ev.spec.pul.value-grid"
+  ],
+  "file": "primitives/link-inline.json"
+}

@@ -1,0 +1,67 @@
+{
+  "repositoryId": "vault-clone-design-repo",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion is MACHINE-CHECKED (extraction/verify_all.py fails if it differs from tokens/llm/component-allowlist.json 'version'). counts are MACHINE-CHECKED (recomputed from disk). repositoryVersion is documentation-only (hand-maintained, nothing checks it). pageSpecVersion is enforced only indirectly: the schema pins pageSpecVersion const '1.0.0' for instances; this manifest field itself is hand-maintained.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "defaultTheme": "dark",
+  "schemaValidatedThemes": [
+    "dark"
+  ],
+  "locales": [
+    "en",
+    "uk"
+  ],
+  "outOfScopeLocales": [
+    "ru"
+  ],
+  "source": {
+    "kind": "clone of a real, live company marketing site",
+    "original": "https://www.usevault.ai/",
+    "cloneStack": "React 18.3 + Vite 5.4 + Tailwind CSS 3.4 (original: Next.js + Tailwind v4)",
+    "relation": "built from the sibling project folder that contains this design-repo; citations in extraction/measured-values.json",
+    "evidence": [
+      "ev.src.package"
+    ]
+  },
+  "contentPolicy": "Design system only. No source marketing copy, legal text, Ukrainian strings, screenshots, animations (.lottie), logos/brand marks or font files are included. Example content is generic placeholder text.",
+  "counts": {
+    "tokens": 293,
+    "tokensFoundation": 215,
+    "tokensSemantic": 32,
+    "tokensComponent": 39,
+    "tokensLocale": 7,
+    "primitives": 12,
+    "components": 15,
+    "sections": 23,
+    "templates": 6,
+    "routes": 17,
+    "assetRoles": 10,
+    "graphRules": 21,
+    "citations": 123
+  },
+  "entryPoints": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "schema": "schema/pagespec.schema.json",
+    "example": "schema/example.pagespec.json",
+    "validator": "schema/semantic_validate.py",
+    "adversarialTests": "schema/tests/adversarial_test.py",
+    "templates": "templates/templates.json",
+    "routes": "templates/routes.json",
+    "graph": "compatibility/graph.json",
+    "allowlist": "tokens/llm/component-allowlist.json",
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "theme": "tokens/themes/dark.json",
+    "assetRoles": "assets/asset-roles.json",
+    "measuredValues": "extraction/measured-values.json",
+    "verify": "extraction/verify_all.py",
+    "driftProof": "extraction/drift_proof.py",
+    "sectionsDir": "sections/",
+    "primitivesDir": "primitives/",
+    "componentsDir": "components/"
+  }
+}

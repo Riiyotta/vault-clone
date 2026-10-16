@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "enforced": [
+    "PageSpecs carry no raw style values: the schema has no style/token-override field (additionalProperties:false everywhere).",
+    "Semantic/component tokens must resolve through tokens/themes/dark.json (checked by extraction/verify_all.py).",
+    "Primitive/component contracts may only reference catalog token ids (checked by extraction/verify_all.py)."
+  ],
+  "convention": [
+    "Prefer semantic ids (text.secondary) over foundation ids (color.white-alpha.60) in new component code.",
+    "Hover is color-only (300/400ms); CTAs have no hover; wrap hover rules in (hover:hover).",
+    "Use Tailwind v4 semantics when porting: rounded-sm = 4px, divide-y = border-bottom on all but last child."
+  ],
+  "rawValueRestrictions": {
+    "color": "no raw literals in generated component code - reference a 'color' token",
+    "fontSize": "no raw literals in generated component code - reference a 'fontSize' token",
+    "fontFamily": "no raw literals in generated component code - reference a 'fontFamily' token",
+    "fontWeight": "no raw literals in generated component code - reference a 'fontWeight' token",
+    "lineHeight": "no raw literals in generated component code - reference a 'lineHeight' token",
+    "radius": "no raw literals in generated component code - reference a 'radius' token",
+    "elevation": "no raw literals in generated component code - reference a 'elevation' token",
+    "gradient": "no raw literals in generated component code - reference a 'gradient' token",
+    "duration": "no raw literals in generated component code - reference a 'duration' token",
+    "easing": "no raw literals in generated component code - reference a 'easing' token"
+  },
+  "overrides": "Not supported at PageSpec level (no such field exists - recorded rather than invented, per MASTER-GUIDE 3.21)."
+}

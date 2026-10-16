@@ -1,5 +1,6 @@
 const { colors } = require('./src/tokens.json')
 const plugin = require('tailwindcss/plugin')
+const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default
 
 /** @type {import('tailwindcss').Config} */
 // CommonJS on purpose: Node 20's require(esm) caches ESM configs, so a running dev server
@@ -88,6 +89,27 @@ module.exports = {
       },
     },
   },
-  // §C.3: `lang-uk:` = the original's `:lang(uk)` overrides (11px micro-labels → 12px, hero text max-w 880, ...).
-  plugins: [plugin(({ addVariant }) => addVariant('lang-uk', '&:lang(uk)'))],
+  // The original is Tailwind v4, whose divide-* puts the line on the BOTTOM of every child except the last
+  // (`:where(& > :not(:last-child))`); v3 puts it on the top of every child except the first, which draws each
+  // divider 1px lower. v3's divide plugins are replaced by v4-semantics equivalents below.
+  corePlugins: { divideWidth: false, divideColor: false, divideOpacity: false },
+  plugins: [
+    // §C.3: `lang-uk:` = the original's `:lang(uk)` overrides (11px micro-labels → 12px, hero text max-w 880, ...).
+    plugin(({ addVariant }) => addVariant('lang-uk', '&:lang(uk)')),
+    plugin(({ matchUtilities, theme }) => {
+      const child = '& > :not(:last-child)'
+      const widths = { DEFAULT: '1px', 0: '0px', 2: '2px', 4: '4px', 8: '8px' }
+      matchUtilities(
+        {
+          'divide-y': (w) => ({ [child]: { 'border-top-width': '0px', 'border-bottom-width': w, 'border-style': 'solid' } }),
+          'divide-x': (w) => ({ [child]: { 'border-left-width': '0px', 'border-right-width': w, 'border-style': 'solid' } }),
+        },
+        { values: widths },
+      )
+      matchUtilities(
+        { divide: (color) => ({ [child]: { 'border-color': color } }) },
+        { values: flattenColorPalette(theme('colors')), type: ['color', 'any'] },
+      )
+    }),
+  ],
 }

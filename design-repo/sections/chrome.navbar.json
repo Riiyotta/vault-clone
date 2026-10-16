@@ -1,0 +1,166 @@
+{
+  "id": "chrome.navbar",
+  "category": "CHROME",
+  "purpose": "Orient and convert: brand mark, up to five section links, locale switch and one outline CTA; collapses to a burger with a blurred dropdown below lg.",
+  "implementedBy": "src/components/Navbar.jsx",
+  "evidence": [
+    "ev.spec.home.nav",
+    "ev.spec.pul.chrome",
+    "ev.src.navbar-menu",
+    "ev.src.navbar-wrapper",
+    "ev.spec.pul.ua-links"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "brandMark",
+      "links",
+      "localeSwitch",
+      "ctaLabel",
+      "ctaAction"
+    ],
+    "properties": {
+      "brandMark": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "brand-mark"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 56,
+            "maxWords": 4
+          }
+        }
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 28,
+              "maxWords": 2
+            },
+            "href": {
+              "$ref": "#/definitions/href"
+            }
+          }
+        },
+        "minItems": 1,
+        "maxItems": 5
+      },
+      "activeHref": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/href"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "localeSwitch": {
+        "type": "boolean"
+      },
+      "ctaLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 42,
+        "maxWords": 3
+      },
+      "ctaAction": {
+        "type": "string",
+        "enum": [
+          "app-signup-link"
+        ]
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "mobile-menu-disclosure": {
+        "allowedFallbacks": [
+          "unhandled-in-source"
+        ],
+        "description": "Below lg: panel height 0->auto linear 0.5s (close 0.3s), opacity .22s/.16s; wrapper does NOT fade in on open, fades out .28s; body scroll lock. Desktop: static, not sticky. Source has no reduced-motion branch (on pricing/migration/partners the page-level MotionConfig reducedMotion=user makes these instant).",
+        "evidence": [
+          "ev.src.navbar-menu",
+          "ev.src.navbar-wrapper"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "mustBeFirst": true,
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "56px bar, burger 24px, dropdown menu with indexed items (01.-05.) and full-width CTA"
+    },
+    {
+      "at": "md",
+      "change": "76px bar, burger 28px"
+    },
+    {
+      "at": "lg",
+      "change": "120px static desktop row; link gap 20 (37 at xl)"
+    }
+  ],
+  "accessibility": {
+    "landmark": "nav",
+    "menuButton": "aria-label toggles open/close",
+    "active": "aria-current=page on the active link",
+    "localeLinks": "lang + hreflang on each locale link"
+  },
+  "example": {
+    "brandMark": {
+      "role": "brand-mark",
+      "ref": "placeholder:brand-logo",
+      "alt": "Brand home"
+    },
+    "links": [
+      {
+        "label": "Overview",
+        "href": "/#overview"
+      },
+      {
+        "label": "Features",
+        "href": "/#features"
+      },
+      {
+        "label": "Pricing",
+        "href": "/pricing"
+      }
+    ],
+    "activeHref": null,
+    "localeSwitch": true,
+    "ctaLabel": "Start now",
+    "ctaAction": "app-signup-link"
+  },
+  "notes": "Link hrefs must be internal or example-domain placeholders. /ru is out of scope."
+}

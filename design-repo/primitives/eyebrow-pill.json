@@ -1,0 +1,23 @@
+{
+  "id": "primitive.eyebrow-pill",
+  "kind": "primitive",
+  "purpose": "Uppercase micro-label pill with inset glow shadow; optional 14px leading icon.",
+  "props": {
+    "icon": "boolean",
+    "label": "string"
+  },
+  "tokens": [
+    "component.eyebrow.bg",
+    "component.eyebrow.shadow",
+    "component.eyebrow.size",
+    "component.eyebrow.tracking",
+    "locale.uk.micro-label-size",
+    "iconSize.xs"
+  ],
+  "evidence": [
+    "ev.spec.pm.eyebrow",
+    "ev.src.eyebrow",
+    "ev.spec.pul.ua-lang"
+  ],
+  "file": "primitives/eyebrow-pill.json"
+}

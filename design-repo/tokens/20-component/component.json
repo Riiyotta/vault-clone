@@ -1,0 +1,296 @@
+{
+  "component": {
+    "button-primary": {
+      "bg": {
+        "$type": "alias",
+        "$value": "{surface.inverse}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "text": {
+        "$type": "alias",
+        "$value": "{text.on-inverse}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "ring": {
+        "$type": "alias",
+        "$value": "{border.control}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "ring-width": {
+        "$type": "dimension",
+        "$value": "4px",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "chip": {
+        "$type": "alias",
+        "$value": "{surface.chip}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "radius": {
+        "$type": "alias",
+        "$value": "{radius.full}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "height-large": {
+        "$type": "dimension",
+        "$value": "64px",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "height-small": {
+        "$type": "dimension",
+        "$value": "56px",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      }
+    },
+    "button-outline": {
+      "border": {
+        "$type": "alias",
+        "$value": "{border.control}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "text": {
+        "$type": "alias",
+        "$value": "{text.primary}",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "56px",
+        "evidence": [
+          "ev.spec.pm.buttons"
+        ]
+      }
+    },
+    "eyebrow": {
+      "bg": {
+        "$type": "alias",
+        "$value": "{surface.pill}",
+        "evidence": [
+          "ev.spec.pm.eyebrow"
+        ]
+      },
+      "shadow": {
+        "$type": "alias",
+        "$value": "{elevation.pill}",
+        "evidence": [
+          "ev.spec.pm.eyebrow"
+        ]
+      },
+      "size": {
+        "$type": "alias",
+        "$value": "{fontSize.11}",
+        "evidence": [
+          "ev.spec.pm.eyebrow"
+        ]
+      },
+      "tracking": {
+        "$type": "alias",
+        "$value": "{letterSpacing.label}",
+        "evidence": [
+          "ev.spec.pm.eyebrow"
+        ]
+      }
+    },
+    "step-box": {
+      "active-bg": {
+        "$type": "alias",
+        "$value": "{color.white}",
+        "evidence": [
+          "ev.src.tokens-json"
+        ]
+      },
+      "inactive-bg": {
+        "$type": "alias",
+        "$value": "{color.white-alpha.2}",
+        "evidence": [
+          "ev.src.tokens-json"
+        ]
+      },
+      "active-text": {
+        "$type": "alias",
+        "$value": "{color.black}",
+        "evidence": [
+          "ev.src.tokens-json"
+        ],
+        "$description": "home steps (#000); visual steps use text.on-inverse-strong"
+      },
+      "inactive-text": {
+        "$type": "alias",
+        "$value": "{color.white}",
+        "evidence": [
+          "ev.src.tokens-json"
+        ]
+      },
+      "border": {
+        "$type": "alias",
+        "$value": "{border.subtle}",
+        "evidence": [
+          "ev.spec.home.process"
+        ]
+      },
+      "tick": {
+        "$type": "alias",
+        "$value": "{border.tick}",
+        "evidence": [
+          "ev.spec.home.process"
+        ]
+      }
+    },
+    "mock-card": {
+      "bg": {
+        "$type": "alias",
+        "$value": "{surface.raised}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "border": {
+        "$type": "alias",
+        "$value": "{border.subtle}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "radius": {
+        "$type": "alias",
+        "$value": "{radius.xl}",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      }
+    },
+    "faq": {
+      "chevron": {
+        "$type": "alias",
+        "$value": "{text.inactive}",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      },
+      "answer": {
+        "$type": "alias",
+        "$value": "{text.secondary}",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      },
+      "duration": {
+        "$type": "alias",
+        "$value": "{duration.base}",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      }
+    },
+    "plan-card": {
+      "recommended-ring": {
+        "$type": "alias",
+        "$value": "{gradient.accent-ring}",
+        "evidence": [
+          "ev.spec.pm.p1"
+        ]
+      },
+      "recommended-wash": {
+        "$type": "alias",
+        "$value": "{gradient.recommended-wash}",
+        "evidence": [
+          "ev.spec.pm.p1"
+        ]
+      },
+      "price-fade": {
+        "$type": "alias",
+        "$value": "{duration.price-fade}",
+        "evidence": [
+          "ev.spec.pm.p1"
+        ]
+      }
+    },
+    "dialog": {
+      "ring": {
+        "$type": "alias",
+        "$value": "{gradient.accent-ring}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "bg": {
+        "$type": "alias",
+        "$value": "{surface.raised}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "radius": {
+        "$type": "alias",
+        "$value": "{radius.dialog}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "backdrop": {
+        "$type": "alias",
+        "$value": "{surface.backdrop}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      }
+    },
+    "input": {
+      "border": {
+        "$type": "alias",
+        "$value": "{border.subtle}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "border-focus": {
+        "$type": "alias",
+        "$value": "{border.focus}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "border-error": {
+        "$type": "alias",
+        "$value": "{border.error}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "radius": {
+        "$type": "alias",
+        "$value": "{radius.lg}",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "48px",
+        "evidence": [
+          "ev.spec.pul.popup"
+        ]
+      }
+    }
+  }
+}

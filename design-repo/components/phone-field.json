@@ -1,0 +1,18 @@
+{
+  "id": "component.phone-field",
+  "kind": "component",
+  "purpose": "Country picker (flag + caret) + tel input; dropdown list max 200px, rows 28px with flag, name, dial code.",
+  "props": {},
+  "tokens": [
+    "component.input.border",
+    "component.input.border-focus",
+    "surface.raised",
+    "radius.flag",
+    "text.secondary"
+  ],
+  "evidence": [
+    "ev.spec.pul.popup",
+    "ev.src.flags"
+  ],
+  "file": "components/phone-field.json"
+}

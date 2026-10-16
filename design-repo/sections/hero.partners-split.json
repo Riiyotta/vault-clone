@@ -1,0 +1,184 @@
+{
+  "id": "hero.partners-split",
+  "category": "HERO",
+  "purpose": "Split hero for an offer/program page: left-aligned eyebrow, two-line headline, sub, primary CTA; right column holds a DOM mock scene that reveals once over an accent glow and masked dot grid.",
+  "implementedBy": "src/components/partners/PartnersHero.jsx + PartnerMock.jsx",
+  "evidence": [
+    "ev.spec.pul.split-hero",
+    "ev.spec.pul.hero-motion"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "headlineLines",
+      "subLines",
+      "ctaLabel",
+      "ctaAction",
+      "scene",
+      "glow"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 42,
+        "maxWords": 3
+      },
+      "headlineLines": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 56,
+          "maxWords": 4
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "subLines": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 378,
+          "maxWords": 27
+        },
+        "minItems": 1,
+        "maxItems": 2
+      },
+      "ctaLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "ctaAction": {
+        "type": "string",
+        "enum": [
+          "open-lead-form",
+          "contact-mailto",
+          "app-signup-link"
+        ]
+      },
+      "scene": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "illustration-mock"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      },
+      "glow": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "background-glow"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "reveal-sequence-once": {
+        "allowedFallbacks": [
+          "end-state-immediately"
+        ],
+        "description": "Scene whileInView once at amount .3: card rise (opacity .4s easeOut, y 12->0 .5s expo) -> connector scaleY .45s expo -> pill scale .9->1 -> second card -> highlight; ends ~2.7s; never loops.",
+        "evidence": [
+          "ev.spec.pm.m1",
+          "ev.spec.pul.hero-motion",
+          "ev.src.reveal"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowGridFrame": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "stacked: text (pt 96) then scene (pt 48 pb 64)"
+    },
+    {
+      "at": "md",
+      "change": "text pt 112"
+    },
+    {
+      "at": "lg",
+      "change": "row, min-h 720, text column 62% with forced 2-line h1 (56/64)"
+    },
+    {
+      "at": "xl",
+      "change": "text pl 56"
+    }
+  ],
+  "accessibility": {
+    "scene": "aria-hidden (decorative mock)",
+    "headingLevel": "h1"
+  },
+  "example": {
+    "eyebrow": "Placeholder program",
+    "headlineLines": [
+      "Placeholder headline",
+      "second line"
+    ],
+    "subLines": [
+      "Placeholder audience line.",
+      "Placeholder benefit line that stays under budget."
+    ],
+    "ctaLabel": "Get in touch",
+    "ctaAction": "open-lead-form",
+    "scene": {
+      "role": "illustration-mock",
+      "ref": "placeholder:invite-link-scene",
+      "alt": ""
+    },
+    "glow": {
+      "role": "background-glow",
+      "ref": "placeholder:accent-glow",
+      "alt": ""
+    }
+  }
+}

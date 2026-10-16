@@ -33,25 +33,25 @@ component library or stays local to its page.
 | `chrome.navbar` | CHROME | 6 | 17 | `src/components/Navbar.jsx` | All 17 routes. |
 | `chrome.grid-frame` | CHROME | 6 | 17 | `src/components/GridFrame.jsx` | All 17 routes; wraps every section between nav and footer. |
 | `chrome.footer` | CHROME | 6 | 17 | `src/components/Footer.jsx` | All 17 routes. |
-| `content.legal-article` | CONTENT | 1 | 8 | _not yet built_ | Legal template: 8 routes (4 documents x 2 locales). |
+| `content.legal-article` | CONTENT | 1 | 8 | `src/pages/LegalPage.jsx + src/components/legal/outline.js` | Legal template: 8 routes (4 documents x 2 locales). |
 | `support.faq-accordion` | SUPPORT | 3 | 6 | `src/components/shared/Faq.jsx` | Pricing, migration offer and partners templates. |
 | `narrative.scroll-statement` | NARRATIVE | 2 | 4 | `src/components/Statement.jsx` | Home and partners templates (4 routes with locales). |
 | `process.lottie-steps` | PROCESS | 2 | 4 | `src/components/HowItWorks.jsx` | Home and pricing templates. |
-| `process.visual-steps` | PROCESS | 2 | 4 | `src/components/migration/VisualSteps.jsx` | Migration offer and partners templates. |
+| `process.visual-steps` | PROCESS | 2 | 4 | `src/components/shared/VisualSteps.jsx` | Migration offer and partners templates. |
 | `hero.home-dashboard` | HERO | 1 | 2 | `src/components/Hero.jsx` | Home template only (/ and /ua). |
 | `hero.pricing-plans` | HERO | 1 | 2 | `src/components/pricing/PricingHero.jsx + PlanCards.jsx` | Pricing template only (/pricing and /ua/pricing). |
 | `hero.migration-split` | HERO | 1 | 2 | `src/components/migration/MigrationHero.jsx` | Migration offer template only. |
-| `hero.partners-split` | HERO | 1 | 2 | _not yet built_ | Partners template only. |
+| `hero.partners-split` | HERO | 1 | 2 | `src/components/partners/PartnersHero.jsx + PartnerMock.jsx` | Partners template only. |
 | `features.product-grid` | FEATURES | 1 | 2 | `src/components/ProductHighlights.jsx` | Home template only. |
 | `features.showcase-automation` | FEATURES | 1 | 2 | `src/components/FeatureTabs.jsx` | Home template only. |
 | `features.showcase-reports` | FEATURES | 1 | 2 | `src/components/FeatureTabs.jsx` | Home template only. |
 | `features.showcase-security` | FEATURES | 1 | 2 | `src/components/FeatureTabs.jsx` | Home template only. |
 | `features.migration-explainer` | FEATURES | 1 | 2 | `src/components/migration/OfferExplanation.jsx` | Migration offer template only. |
 | `features.migration-conditions` | FEATURES | 1 | 2 | `src/components/migration/Conditions.jsx` | Migration offer template only. |
-| `features.partner-audience` | FEATURES | 1 | 2 | _not yet built_ | Partners template only. |
-| `features.partner-value-grid` | FEATURES | 1 | 2 | _not yet built_ | Partners template only. |
+| `features.partner-audience` | FEATURES | 1 | 2 | `src/components/partners/Audience.jsx` | Partners template only. |
+| `features.partner-value-grid` | FEATURES | 1 | 2 | `src/components/partners/ValueGrid.jsx` | Partners template only. |
 | `commerce.compare-table` | COMMERCE | 1 | 2 | `src/components/pricing/CompareTable.jsx` | Pricing template only. |
-| `forms.partner-popup` | FORMS | 1 | 2 | _not yet built_ | Partners template only; opened from its hero and CTA buttons. |
+| `forms.partner-popup` | FORMS | 1 | 2 | `src/components/partners/PartnerPopup.jsx + LeadForm.jsx + PhoneField.jsx` | Partners template only; opened from its hero and CTA buttons. |
 | `hero.not-found` | HERO | 1 | 1 | `src/pages/NotFound.jsx` | Not-found template only (any unmatched path). |
 
 **7 shared sections** appear in more than one template and belong in a component library.
@@ -59,8 +59,6 @@ component library or stays local to its page.
 **16 single-use sections** appear in exactly one template. Building these
 as "reusable" components up front would be speculative — keep them page-local
 until a second caller actually appears.
-
-**5 sections have no `implementedBy` yet** — not necessarily missing, just not linked to a component in this pass: `content.legal-article`, `hero.partners-split`, `features.partner-audience`, `features.partner-value-grid`, `forms.partner-popup`.
 
 ## Templates
 
@@ -185,7 +183,7 @@ _Page-opening block directly under the nav._
 
 **`hero.partners-split`** — Split hero for the partner programme: text column with h1 and Become a partner button on the left, an animated DOM scene (invite-link card, connector line, workspace list) on the right that plays once on entering view.
 
-· Partners template only. · appears on 2 routes
+· Partners template only. · appears on 2 routes · implemented by `src/components/partners/PartnersHero.jsx + PartnerMock.jsx`
 
 **`hero.not-found`** — Clone-only 404 block: eyebrow, h1, subtitle and a link home. Has no counterpart on the original site.
 
@@ -229,11 +227,11 @@ _Product or offer explanation modules: grids, tabbed showcases, lists, charts._
 
 **`features.partner-audience`** — 'Who it's for': five-row audience list with icons that animate in on scroll.
 
-· Partners template only. · appears on 2 routes
+· Partners template only. · appears on 2 routes · implemented by `src/components/partners/Audience.jsx`
 
 **`features.partner-value-grid`** — 'What you and your clients get': two-column value grid (Your client / Your company) separated by an 'Or' divider.
 
-· Partners template only. · appears on 2 routes
+· Partners template only. · appears on 2 routes · implemented by `src/components/partners/ValueGrid.jsx`
 
 ### PROCESS
 
@@ -245,7 +243,7 @@ _Numbered, auto-advancing step sequences paired with a visual._
 
 **`process.visual-steps`** — Four-step sequence that auto-advances every 5s while in view and loops; the connector between numbers fills over 4.8s; clicking a step selects it and restarts the timer; each step shows its own DOM mock screen (no Lottie). Step content is per page.
 
-· Migration offer and partners templates. · appears on 4 routes · implemented by `src/components/migration/VisualSteps.jsx`
+· Migration offer and partners templates. · appears on 4 routes · implemented by `src/components/shared/VisualSteps.jsx`
 
 ### COMMERCE
 
@@ -269,7 +267,7 @@ _Lead capture overlays._
 
 **`forms.partner-popup`** — 'Become a partner' modal: gradient-bordered form with validated fields, phone country dropdown with flags, Esc and focus trap, body scroll lock. In the clone the submit is simulated locally and never leaves the browser.
 
-· Partners template only; opened from its hero and CTA buttons. · appears on 2 routes
+· Partners template only; opened from its hero and CTA buttons. · appears on 2 routes · implemented by `src/components/partners/PartnerPopup.jsx + LeadForm.jsx + PhoneField.jsx`
 
 ### CONTENT
 
@@ -277,4 +275,4 @@ _Document-style body content with no marketing motion._
 
 **`content.legal-article`** — Bordered frame with a 750px centred article: h1, last-updated line, h2/h3 headings, body paragraphs, lists, underlined links, tables that become stacked cards below 768px, in-page anchors that smooth-scroll to 40px above the heading. Body text in the clone is placeholder.
 
-· Legal template: 8 routes (4 documents x 2 locales). · appears on 8 routes
+· Legal template: 8 routes (4 documents x 2 locales). · appears on 8 routes · implemented by `src/pages/LegalPage.jsx + src/components/legal/outline.js`

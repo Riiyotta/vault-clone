@@ -1,0 +1,124 @@
+{
+  "elevation": {
+    "pill": {
+      "$type": "shadow",
+      "$value": "inset 0 .5px .5px rgba(255,255,255,.12), inset 0 1px 3px rgba(255,255,255,.10), inset 0 2px 8px rgba(255,255,255,.04), 0 .5px .5px rgba(8,1,20,.03), 0 1px 1px -.5px rgba(8,1,20,.03), 0 2px 2px -1px rgba(8,1,20,.03)",
+      "evidence": [
+        "ev.src.tw-shadow-pill",
+        "ev.spec.pm.eyebrow"
+      ]
+    },
+    "menu-panel": {
+      "$type": "shadow",
+      "$value": "0 25px 50px -12px rgba(0,0,0,.2)",
+      "evidence": [
+        "ev.spec.home.nav"
+      ],
+      "$description": "shadow-2xl shadow-black/20."
+    },
+    "sticky-header-rule": {
+      "$type": "shadow",
+      "$value": "inset 0 -1px 0 rgba(255,255,255,.05)",
+      "evidence": [
+        "ev.spec.pm.p2"
+      ]
+    }
+  },
+  "blur": {
+    "lg": {
+      "$type": "dimension",
+      "$value": "16px",
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.spec.home.nav"
+      ],
+      "$description": "Mobile menu backdrop blur."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "24px",
+      "evidence": [
+        "ev.spec.pm.m1",
+        "ev.spec.pul.split-hero"
+      ],
+      "$description": "Glow blur."
+    }
+  },
+  "gradient": {
+    "hero-fade": {
+      "$type": "gradient",
+      "$value": "linear-gradient(180deg, rgba(3,2,11,0) 0%, rgba(3,2,11,.05) 4.78%, #03020B 35.5%)",
+      "evidence": [
+        "ev.spec.home.hero",
+        "ev.src.tw-backgrounds"
+      ]
+    },
+    "menu-panel": {
+      "$type": "gradient",
+      "$value": "linear-gradient(180deg,#03020B 0%,rgba(3,2,11,0) 100%)",
+      "evidence": [
+        "ev.spec.home.nav"
+      ]
+    },
+    "dot-grid": {
+      "$type": "gradient",
+      "$value": "radial-gradient(circle, rgba(255,255,255,.08) .8px, transparent .8px), linear-gradient(180deg, rgba(217,217,217,.03) 0%, rgba(217,217,217,.01) 100%)",
+      "evidence": [
+        "ev.spec.home.showcases",
+        "ev.spec.pm.mock"
+      ]
+    },
+    "dot-grid-steps": {
+      "$type": "gradient",
+      "$value": "radial-gradient(circle, rgba(49,49,56,.35) .8px, transparent .8px), linear-gradient(180deg, rgba(217,217,217,.01) 0%, rgba(217,217,217,.03) 100%)",
+      "evidence": [
+        "ev.spec.home.process"
+      ]
+    },
+    "card-dots": {
+      "$type": "gradient",
+      "$value": "radial-gradient(circle,rgba(255,255,255,0.08) 0.8px,transparent 0.8px)",
+      "evidence": [
+        "ev.spec.home.product-grid"
+      ]
+    },
+    "glow": {
+      "$type": "gradient",
+      "$value": "radial-gradient(closest-side, rgba(81,118,254,.2) 0%, transparent 100%)",
+      "evidence": [
+        "ev.spec.pm.m1",
+        "ev.src.tw-backgrounds"
+      ]
+    },
+    "glow-wide": {
+      "$type": "gradient",
+      "$value": "radial-gradient(closest-side, rgba(81,118,254,.2) 0%, rgba(81,118,254,.1) 50%, transparent 100%)",
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "hatch": {
+      "$type": "gradient",
+      "$value": "repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 1px, transparent 1px 6px)",
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "accent-ring": {
+      "$type": "gradient",
+      "$value": "linear-gradient(96.18deg, rgba(81,118,254,.75) 7.9%, rgba(155,174,242,.5) 64.2%, rgba(81,118,254,.1) 118.37%)",
+      "evidence": [
+        "ev.spec.pm.p1",
+        "ev.spec.pul.popup",
+        "ev.src.css-pro-card"
+      ]
+    },
+    "recommended-wash": {
+      "$type": "gradient",
+      "$value": "linear-gradient(180deg, rgba(81,118,254,.10) 0%, rgba(3,2,11,0) 55%)",
+      "evidence": [
+        "ev.spec.pm.p1"
+      ]
+    }
+  }
+}

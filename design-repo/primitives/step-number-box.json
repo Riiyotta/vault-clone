@@ -1,0 +1,44 @@
+{
+  "id": "primitive.step-number-box",
+  "kind": "primitive",
+  "purpose": "Square numbered step button with two #EDEDFA corner ticks; filled white when active.",
+  "props": {
+    "state": [
+      "active",
+      "inactive"
+    ],
+    "transition": [
+      "framer-0.3s-easeOut",
+      "css-300ms"
+    ]
+  },
+  "tokens": [
+    "component.step-box.active-bg",
+    "component.step-box.inactive-bg",
+    "component.step-box.active-text",
+    "component.step-box.inactive-text",
+    "component.step-box.border",
+    "component.step-box.tick",
+    "fontWeight.700"
+  ],
+  "evidence": [
+    "ev.spec.home.process",
+    "ev.spec.pm.m5",
+    "ev.src.tokens-json"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "36px box, 14/20 number"
+    },
+    {
+      "at": "md",
+      "change": "42px box, 16/24"
+    },
+    {
+      "at": "xl",
+      "change": "40px box, 20/28"
+    }
+  ],
+  "file": "primitives/step-number-box.json"
+}

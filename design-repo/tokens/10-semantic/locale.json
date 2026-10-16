@@ -1,0 +1,69 @@
+{
+  "locale": {
+    "$comment": "Per-locale overrides applied on top of semantic tokens (resolution order: foundation -> theme -> semantic -> locale -> component). /ru exists on the original but is OUT OF SCOPE.",
+    "en": {
+      "font": {
+        "display": {
+          "$type": "alias",
+          "$value": "{fontFamily.display}",
+          "evidence": [
+            "ev.src.css-font-vars"
+          ]
+        },
+        "body": {
+          "$type": "alias",
+          "$value": "{fontFamily.body}",
+          "evidence": [
+            "ev.src.css-font-vars"
+          ]
+        }
+      }
+    },
+    "uk": {
+      "font": {
+        "display": {
+          "$type": "alias",
+          "$value": "{fontFamily.display-uk}",
+          "evidence": [
+            "ev.spec.pul.ua-fonts",
+            "ev.src.i18n-font-swap"
+          ]
+        },
+        "body": {
+          "$type": "alias",
+          "$value": "{fontFamily.body-uk}",
+          "evidence": [
+            "ev.spec.pul.ua-fonts",
+            "ev.src.i18n-font-swap"
+          ]
+        }
+      },
+      "micro-label-size": {
+        "$type": "alias",
+        "$value": "{fontSize.12}",
+        "evidence": [
+          "ev.spec.pul.ua-lang",
+          "ev.src.eyebrow",
+          "ev.src.tw-lang-uk"
+        ],
+        "$description": "11px uppercase labels become 12px"
+      },
+      "hero-text-max": {
+        "$type": "alias",
+        "$value": "{layout.hero-text.uk}",
+        "evidence": [
+          "ev.spec.pul.ua-lang",
+          "ev.src.pricing-hero-uk"
+        ]
+      },
+      "legal-heading-hyphens": {
+        "$type": "other",
+        "$value": "auto",
+        "evidence": [
+          "ev.spec.pul.ua-lang",
+          "ev.spec.pul.legal-type"
+        ]
+      }
+    }
+  }
+}

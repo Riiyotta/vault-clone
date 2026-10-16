@@ -1,0 +1,274 @@
+{
+  "id": "chrome.footer",
+  "category": "CHROME",
+  "purpose": "Close the page: brand column with socials/email, three link groups, copyright bar, final spacer.",
+  "implementedBy": "src/components/Footer.jsx",
+  "evidence": [
+    "ev.spec.home.footer",
+    "ev.src.footer-grid",
+    "ev.spec.pm.shell"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "brandMark",
+      "social",
+      "groups",
+      "copyright"
+    ],
+    "properties": {
+      "brandMark": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "brand-mark"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 56,
+            "maxWords": 4
+          }
+        }
+      },
+      "social": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "href",
+            "icon",
+            "label"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "linkedin",
+                "telegram",
+                "email"
+              ]
+            },
+            "href": {
+              "$ref": "#/definitions/href"
+            },
+            "icon": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "social-icon",
+                    "icon"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 70,
+                  "maxWords": 5
+                }
+              }
+            },
+            "label": {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 28,
+              "maxWords": 2
+            }
+          }
+        },
+        "minItems": 0,
+        "maxItems": 3
+      },
+      "groups": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "links"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 28,
+              "maxWords": 2
+            },
+            "links": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "href"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 56,
+                    "maxWords": 4
+                  },
+                  "href": {
+                    "$ref": "#/definitions/href"
+                  }
+                }
+              },
+              "minItems": 3,
+              "maxItems": 5
+            }
+          }
+        },
+        "minItems": 3,
+        "maxItems": 3
+      },
+      "copyright": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 126,
+        "maxWords": 9
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "static": {
+        "allowedFallbacks": [
+          "static"
+        ],
+        "description": "Color-only hovers (white/60 -> white 400ms, gray -> white 400ms).",
+        "evidence": [
+          "ev.spec.home.hover"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "mustBeLast": true,
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "2 cols, legal group spans 2, brand row on top"
+    },
+    {
+      "at": "md",
+      "change": "brand row + 3 max-content columns"
+    },
+    {
+      "at": "lg",
+      "change": "4 columns (brand 1fr + 3)"
+    },
+    {
+      "at": "xl",
+      "change": "56px padding, gap-x 80"
+    }
+  ],
+  "accessibility": {
+    "landmark": "footer"
+  },
+  "example": {
+    "brandMark": {
+      "role": "brand-mark",
+      "ref": "placeholder:brand-logo",
+      "alt": "Brand"
+    },
+    "social": [
+      {
+        "kind": "email",
+        "href": "mailto:hello@example.com",
+        "icon": {
+          "role": "icon",
+          "ref": "placeholder:mail-glyph",
+          "alt": ""
+        },
+        "label": "hello@example.com"
+      }
+    ],
+    "groups": [
+      {
+        "label": "Product",
+        "links": [
+          {
+            "label": "Overview",
+            "href": "/#overview"
+          },
+          {
+            "label": "Features",
+            "href": "/#features"
+          },
+          {
+            "label": "Pricing",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "label": "Resources",
+        "links": [
+          {
+            "label": "Help center",
+            "href": "https://example.com/help"
+          },
+          {
+            "label": "Status",
+            "href": "https://example.com/status"
+          },
+          {
+            "label": "Partners",
+            "href": "/partners"
+          }
+        ]
+      },
+      {
+        "label": "Legal",
+        "links": [
+          {
+            "label": "Terms",
+            "href": "/terms"
+          },
+          {
+            "label": "Privacy",
+            "href": "/privacy"
+          },
+          {
+            "label": "Data processing",
+            "href": "/dpa"
+          }
+        ]
+      }
+    ],
+    "copyright": "© Example Co. All rights reserved."
+  },
+  "notes": "The source's 'Built by <agency>' badge is a real third party's mark and is intentionally excluded from this contract."
+}

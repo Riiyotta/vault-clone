@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "$comment": "Closed list of what a generator may instantiate. Parity with primitives/, components/, sections/ is machine-checked by extraction/verify_all.py.",
+  "sections": {
+    "chrome.navbar": "sections/chrome.navbar.json",
+    "chrome.grid-frame": "sections/chrome.grid-frame.json",
+    "chrome.footer": "sections/chrome.footer.json",
+    "hero.home-dashboard": "sections/hero.home-dashboard.json",
+    "hero.pricing-plans": "sections/hero.pricing-plans.json",
+    "hero.migration-split": "sections/hero.migration-split.json",
+    "hero.partners-split": "sections/hero.partners-split.json",
+    "hero.not-found": "sections/hero.not-found.json",
+    "narrative.scroll-statement": "sections/narrative.scroll-statement.json",
+    "features.product-grid": "sections/features.product-grid.json",
+    "features.showcase-automation": "sections/features.showcase-automation.json",
+    "features.showcase-reports": "sections/features.showcase-reports.json",
+    "features.showcase-security": "sections/features.showcase-security.json",
+    "features.migration-explainer": "sections/features.migration-explainer.json",
+    "features.migration-conditions": "sections/features.migration-conditions.json",
+    "features.partner-audience": "sections/features.partner-audience.json",
+    "features.partner-value-grid": "sections/features.partner-value-grid.json",
+    "commerce.compare-table": "sections/commerce.compare-table.json",
+    "support.faq-accordion": "sections/support.faq-accordion.json",
+    "process.lottie-steps": "sections/process.lottie-steps.json",
+    "process.visual-steps": "sections/process.visual-steps.json",
+    "forms.partner-popup": "sections/forms.partner-popup.json",
+    "content.legal-article": "sections/content.legal-article.json"
+  },
+  "primitives": {
+    "primitive.button-primary": "primitives/button-primary.json",
+    "primitive.button-outline": "primitives/button-outline.json",
+    "primitive.eyebrow-pill": "primitives/eyebrow-pill.json",
+    "primitive.link-inline": "primitives/link-inline.json",
+    "primitive.icon": "primitives/icon.json",
+    "primitive.cross-marker": "primitives/cross-marker.json",
+    "primitive.separator": "primitives/separator.json",
+    "primitive.step-number-box": "primitives/step-number-box.json",
+    "primitive.text-input": "primitives/text-input.json",
+    "primitive.mock-pill": "primitives/mock-pill.json",
+    "primitive.avatar-initials": "primitives/avatar-initials.json",
+    "primitive.skeleton-bar": "primitives/skeleton-bar.json"
+  },
+  "components": {
+    "component.frame-column": "components/frame-column.json",
+    "component.section-heading": "components/section-heading.json",
+    "component.faq-item": "components/faq-item.json",
+    "component.segmented-control": "components/segmented-control.json",
+    "component.mock-card": "components/mock-card.json",
+    "component.mock-row": "components/mock-row.json",
+    "component.plan-card": "components/plan-card.json",
+    "component.process-step": "components/process-step.json",
+    "component.feature-tab-bar": "components/feature-tab-bar.json",
+    "component.icon-row": "components/icon-row.json",
+    "component.dot-grid-panel": "components/dot-grid-panel.json",
+    "component.flow-connector": "components/flow-connector.json",
+    "component.phone-field": "components/phone-field.json",
+    "component.lottie-canvas": "components/lottie-canvas.json",
+    "component.legal-table": "components/legal-table.json"
+  },
+  "nodeProperties": [
+    "type",
+    "variant",
+    "content",
+    "motion"
+  ],
+  "assetRoles": [
+    "product-screenshot",
+    "product-animation",
+    "illustration-mock",
+    "icon",
+    "icon-illustrated",
+    "background-art",
+    "background-glow",
+    "brand-mark",
+    "social-icon",
+    "flag"
+  ],
+  "ctaActions": [
+    "app-signup-link",
+    "contact-mailto",
+    "open-lead-form",
+    "internal-link"
+  ],
+  "reducedMotionFallbacks": [
+    "static",
+    "end-state-immediately",
+    "css-transitions-none",
+    "no-auto-advance",
+    "progress-fixed-at-1",
+    "scroll-driven-unchanged",
+    "unhandled-in-source"
+  ],
+  "locales": [
+    "en",
+    "uk"
+  ],
+  "themes": [
+    "dark"
+  ]
+}

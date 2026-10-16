@@ -1,0 +1,317 @@
+{
+  "duration": {
+    "fast": {
+      "$type": "duration",
+      "$value": "150ms",
+      "evidence": [
+        "ev.spec.home.tokens"
+      ],
+      "$description": "default Tailwind transition"
+    },
+    "price-fade": {
+      "$type": "duration",
+      "$value": "180ms",
+      "evidence": [
+        "ev.src.tw-keyframes",
+        "ev.spec.pm.p1"
+      ],
+      "$description": "fade-in keyframes"
+    },
+    "scale-in": {
+      "$type": "duration",
+      "$value": "220ms",
+      "evidence": [
+        "ev.src.tw-keyframes",
+        "ev.spec.pul.popup"
+      ],
+      "$description": "modal ring scale-in"
+    },
+    "menu-open-opacity": {
+      "$type": "duration",
+      "$value": "220ms",
+      "evidence": [
+        "ev.src.navbar-menu"
+      ]
+    },
+    "menu-close-opacity": {
+      "$type": "duration",
+      "$value": "160ms",
+      "evidence": [
+        "ev.src.navbar-menu"
+      ]
+    },
+    "title-swap": {
+      "$type": "duration",
+      "$value": "250ms",
+      "evidence": [
+        "ev.spec.home.showcases"
+      ],
+      "$description": "mobile tab title swap"
+    },
+    "menu-wrapper-exit": {
+      "$type": "duration",
+      "$value": "280ms",
+      "evidence": [
+        "ev.src.navbar-wrapper"
+      ],
+      "$description": "exit only - corr.h"
+    },
+    "base": {
+      "$type": "duration",
+      "$value": "300ms",
+      "evidence": [
+        "ev.spec.pm.faq",
+        "ev.spec.home.hover"
+      ],
+      "$description": "accordion, chevron, tab colors, segmented pill"
+    },
+    "menu-close-height": {
+      "$type": "duration",
+      "$value": "300ms",
+      "evidence": [
+        "ev.src.navbar-menu"
+      ]
+    },
+    "reveal-opacity": {
+      "$type": "duration",
+      "$value": "400ms",
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "link-hover": {
+      "$type": "duration",
+      "$value": "400ms",
+      "evidence": [
+        "ev.spec.home.hover"
+      ]
+    },
+    "connector-draw": {
+      "$type": "duration",
+      "$value": "450ms",
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "menu-open-height": {
+      "$type": "duration",
+      "$value": "500ms",
+      "evidence": [
+        "ev.src.navbar-menu"
+      ]
+    },
+    "reveal-y": {
+      "$type": "duration",
+      "$value": "500ms",
+      "evidence": [
+        "ev.spec.pm.m1"
+      ]
+    },
+    "glyph": {
+      "$type": "duration",
+      "$value": "700ms",
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "glyph-draw": {
+      "$type": "duration",
+      "$value": "800ms",
+      "evidence": [
+        "ev.spec.pm.m3"
+      ]
+    },
+    "anchor-scroll": {
+      "$type": "duration",
+      "$value": "1000ms",
+      "evidence": [
+        "ev.spec.home.stack",
+        "ev.src.anchor-scroll"
+      ],
+      "$description": "zenscroll"
+    },
+    "process-connector": {
+      "$type": "duration",
+      "$value": "1550ms",
+      "evidence": [
+        "ev.spec.home.process",
+        "ev.src.howitworks"
+      ],
+      "$description": "easeInOut"
+    },
+    "visual-step-fill": {
+      "$type": "duration",
+      "$value": "4800ms",
+      "evidence": [
+        "ev.spec.pm.m5",
+        "ev.src.visualsteps"
+      ],
+      "$description": "linear, = step - 0.2s"
+    },
+    "visual-step": {
+      "$type": "duration",
+      "$value": "5000ms",
+      "evidence": [
+        "ev.spec.pm.m5",
+        "ev.src.visualsteps"
+      ],
+      "$description": "auto-advance interval"
+    },
+    "tab-fallback": {
+      "$type": "duration",
+      "$value": "5000ms",
+      "evidence": [
+        "ev.src.featuretabs-duration"
+      ],
+      "$description": "used only if animation markers are missing"
+    }
+  },
+  "easing": {
+    "standard": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.4,
+        0,
+        0.2,
+        1
+      ],
+      "evidence": [
+        "ev.spec.home.tokens"
+      ],
+      "$description": "Tailwind default / color transitions"
+    },
+    "ease-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0,
+        0,
+        0.2,
+        1
+      ],
+      "evidence": [
+        "ev.spec.home.tokens",
+        "ev.spec.pm.faq"
+      ],
+      "$description": "Tailwind ease-out (grid-rows)"
+    },
+    "framer-ease-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0,
+        0,
+        0.58,
+        1
+      ],
+      "evidence": [
+        "ev.spec.pul.hero-motion"
+      ],
+      "$description": "Framer 'easeOut'"
+    },
+    "expo-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.22,
+        1,
+        0.36,
+        1
+      ],
+      "evidence": [
+        "ev.spec.pm.reveal",
+        "ev.src.reveal"
+      ],
+      "$description": "EASE_OUT_EXPO"
+    },
+    "linear": {
+      "$type": "cubicBezier",
+      "$value": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "evidence": [
+        "ev.spec.home.showcases"
+      ],
+      "$description": "progress bars, menu height"
+    }
+  },
+  "threshold": {
+    "visual-steps": {
+      "$type": "number",
+      "$value": 0.2,
+      "evidence": [
+        "ev.spec.pm.m5"
+      ],
+      "$description": "useInView amount, not once"
+    },
+    "explainer-chart": {
+      "$type": "number",
+      "$value": 0.2,
+      "evidence": [
+        "ev.spec.pm.m2"
+      ]
+    },
+    "reveal": {
+      "$type": "number",
+      "$value": 0.3,
+      "evidence": [
+        "ev.spec.pm.reveal"
+      ],
+      "$description": "default reveal amount"
+    },
+    "showcase": {
+      "$type": "number",
+      "$value": 0.35,
+      "evidence": [
+        "ev.src.featuretabs"
+      ]
+    },
+    "process": {
+      "$type": "number",
+      "$value": 0.4,
+      "evidence": [
+        "ev.src.howitworks",
+        "ev.src.howitworks-io"
+      ],
+      "$description": "observes anchor wrapper after load - corr.b"
+    },
+    "glyph": {
+      "$type": "number",
+      "$value": 0.6,
+      "evidence": [
+        "ev.spec.pm.m3",
+        "ev.spec.pul.audience"
+      ]
+    }
+  },
+  "scroll": {
+    "statement-offset": {
+      "$type": "other",
+      "$value": [
+        "start 0.9",
+        "start 0.25"
+      ],
+      "evidence": [
+        "ev.spec.home.statement",
+        "ev.src.statement"
+      ]
+    },
+    "statement-ghost-opacity": {
+      "$type": "number",
+      "$value": 0.2,
+      "evidence": [
+        "ev.spec.home.statement"
+      ]
+    }
+  },
+  "frameRate": {
+    "animation-markers": {
+      "$type": "number",
+      "$value": 30,
+      "evidence": [
+        "ev.src.featuretabs-duration"
+      ],
+      "$description": "tab/step duration = frames / 30"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "primitive.mock-pill",
+  "kind": "primitive",
+  "purpose": "Small rounded status pill used inside mock scenes.",
+  "props": {
+    "size": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "tone": [
+      "neutral",
+      "accent",
+      "surface",
+      "inverse"
+    ]
+  },
+  "tokens": [
+    "surface.pill",
+    "text.body-strong",
+    "border.accent",
+    "surface.accent-muted",
+    "surface.raised",
+    "radius.full",
+    "fontSize.11",
+    "fontSize.12"
+  ],
+  "evidence": [
+    "ev.spec.pm.mock"
+  ],
+  "file": "primitives/mock-pill.json"
+}

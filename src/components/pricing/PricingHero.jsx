@@ -19,7 +19,7 @@ export default function PricingHero() {
   return (
     <section className="flex w-full flex-col items-center">
       <Frame frameClassName="flex flex-col items-center px-4 pt-24 pb-12 md:pt-28 md:pb-14 lg:pt-[120px] lg:pb-16">
-        <div className="flex max-w-[400px] flex-col items-center gap-4 md:max-w-[560px] md:gap-6 lg:max-w-[750px]">
+        <div className="flex max-w-[400px] flex-col items-center gap-4 md:max-w-[560px] md:gap-6 lg:max-w-[750px] lang-uk:max-w-[880px]">
           <Eyebrow icon>{h.eyebrow}</Eyebrow>
           <h1 className={`text-center ${HERO_H1}`}>{h.headline}</h1>
           <p className={`text-balance px-4 text-center ${HERO_SUB}`}>

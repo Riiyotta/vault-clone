@@ -1,0 +1,22 @@
+{
+  "id": "primitive.button-outline",
+  "kind": "primitive",
+  "purpose": "Transparent pill with 1px white/20 border; secondary CTA (nav, plan cards, 404).",
+  "props": {
+    "fullWidth": "boolean",
+    "label": "string"
+  },
+  "tokens": [
+    "component.button-outline.border",
+    "component.button-outline.text",
+    "component.button-outline.height",
+    "radius.full",
+    "fontSize.18",
+    "fontWeight.500"
+  ],
+  "evidence": [
+    "ev.spec.pm.buttons",
+    "ev.spec.home.nav"
+  ],
+  "file": "primitives/button-outline.json"
+}

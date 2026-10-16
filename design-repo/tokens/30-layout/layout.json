@@ -1,0 +1,244 @@
+{
+  "layout": {
+    "frame-max": {
+      "$type": "dimension",
+      "$value": "1440px",
+      "evidence": [
+        "ev.spec.home.grid-frame"
+      ]
+    },
+    "frame-border": {
+      "$type": "dimension",
+      "$value": "1.5px",
+      "evidence": [
+        "ev.spec.home.grid-frame"
+      ],
+      "$description": "Side hairlines (statement frame uses 1px)."
+    },
+    "separator": {
+      "$type": "dimension",
+      "$value": "1px",
+      "evidence": [
+        "ev.spec.home.grid-frame"
+      ]
+    },
+    "cross-inset": {
+      "base": {
+        "$type": "dimension",
+        "$value": "18px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "34px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "50px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      }
+    },
+    "hero-text": {
+      "base": {
+        "$type": "dimension",
+        "$value": "400px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "560px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "750px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "uk": {
+        "$type": "dimension",
+        "$value": "880px",
+        "evidence": [
+          "ev.spec.pul.ua-lang",
+          "ev.src.pricing-hero-uk"
+        ],
+        "$description": "lang(uk) at every width - corr.g"
+      }
+    },
+    "hero-sub": {
+      "$type": "dimension",
+      "$value": "500px",
+      "evidence": [
+        "ev.spec.pm.hero-type"
+      ]
+    },
+    "hero-image": {
+      "$type": "dimension",
+      "$value": "1104px",
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "split-text-column": {
+      "$type": "dimension",
+      "$value": "62%",
+      "evidence": [
+        "ev.spec.pm.m1",
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "article": {
+      "$type": "dimension",
+      "$value": "750px",
+      "evidence": [
+        "ev.spec.pul.legal-layout",
+        "ev.src.page-legal-frame"
+      ]
+    },
+    "faq-answer": {
+      "$type": "dimension",
+      "$value": "800px",
+      "evidence": [
+        "ev.spec.pm.faq"
+      ]
+    },
+    "statement-text": {
+      "$type": "dimension",
+      "$value": "1200px",
+      "evidence": [
+        "ev.spec.home.statement"
+      ]
+    },
+    "dialog": {
+      "$type": "dimension",
+      "$value": "484px",
+      "evidence": [
+        "ev.spec.pul.popup"
+      ]
+    },
+    "card-height": {
+      "base": {
+        "$type": "dimension",
+        "$value": "356px",
+        "evidence": [
+          "ev.spec.home.product-grid"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "350px",
+        "evidence": [
+          "ev.spec.home.product-grid"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "372px",
+        "evidence": [
+          "ev.spec.home.product-grid"
+        ]
+      }
+    },
+    "nav-height": {
+      "base": {
+        "$type": "dimension",
+        "$value": "56px",
+        "evidence": [
+          "ev.spec.home.nav"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "76px",
+        "evidence": [
+          "ev.spec.home.nav"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "120px",
+        "evidence": [
+          "ev.spec.home.nav"
+        ]
+      }
+    },
+    "grid": {
+      "product": {
+        "$type": "other",
+        "$value": {
+          "base": 1,
+          "md": 2,
+          "lg": 3
+        },
+        "evidence": [
+          "ev.spec.home.product-grid",
+          "ev.src.product-grid"
+        ]
+      },
+      "plans": {
+        "$type": "other",
+        "$value": {
+          "base": 1,
+          "md": 2,
+          "xl": 4
+        },
+        "evidence": [
+          "ev.spec.pm.p1",
+          "ev.src.plan-grid"
+        ]
+      },
+      "footer": {
+        "$type": "other",
+        "$value": {
+          "base": "2 cols",
+          "md": "repeat(3,max-content)",
+          "lg": "minmax(0,1fr) repeat(3,max-content)"
+        },
+        "evidence": [
+          "ev.spec.home.footer",
+          "ev.src.footer-grid"
+        ]
+      },
+      "icon-row": {
+        "$type": "other",
+        "$value": {
+          "base": "44px minmax(0,1fr)",
+          "lg": "72px minmax(0,0.9fr) minmax(0,1.3fr)"
+        },
+        "evidence": [
+          "ev.spec.pm.m3",
+          "ev.src.icon-row"
+        ]
+      },
+      "timeline": {
+        "$type": "other",
+        "$value": {
+          "columns": 12
+        },
+        "evidence": [
+          "ev.spec.pm.m2"
+        ]
+      }
+    },
+    "divider-semantics": {
+      "$type": "other",
+      "$value": "border-bottom on every child except the last (Tailwind v4 divide-y)",
+      "evidence": [
+        "ev.src.tw-divide"
+      ],
+      "$description": "corr.f"
+    }
+  }
+}

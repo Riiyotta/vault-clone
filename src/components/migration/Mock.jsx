@@ -2,11 +2,12 @@
 import Icon from '../Icon.jsx'
 import { useT } from '../../i18n/index.jsx'
 
-export function MockCard({ as: Tag = 'div', className = '', children, ...props }) {
+// `padding` is replaceable (the partner workspace / referral cards use p-2).
+export function MockCard({ as: Tag = 'div', padding = 'p-4', className = '', children, ...props }) {
   return (
     <Tag
       {...props}
-      className={`w-full rounded-xl border border-white/10 bg-surface p-4 text-xs leading-[18px] text-white ${className}`}
+      className={`w-full rounded-xl border border-white/10 bg-surface ${padding} text-xs leading-[18px] text-white ${className}`}
     >
       {children}
     </Tag>
@@ -47,10 +48,12 @@ export function MockPill({ size = 'sm', tone = 'neutral', className = '', childr
 }
 
 export function MockRow({ label, value, highlighted = false, className = '' }) {
+  // Live (tailwind-merge): a text color passed in className replaces the default white/80, it doesn't fight it.
+  const tone = /(^|\s)text-white(\s|$)/.test(className) ? '' : 'text-white/80'
   return (
     <div
       className={`flex items-center justify-between gap-3 rounded-lg border px-2.5 py-2 ${
-        highlighted ? 'border-accent/35 bg-accent/10' : 'border-transparent text-white/80'
+        highlighted ? 'border-accent/35 bg-accent/10' : `border-transparent ${tone}`
       } ${className}`}
     >
       <span>{label}</span>

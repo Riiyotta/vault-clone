@@ -1,0 +1,25 @@
+{
+  "id": "component.mock-card",
+  "kind": "component",
+  "purpose": "12px-radius #080710 card with white/10 border, 12/18 text; container for every mock scene.",
+  "props": {
+    "padding": [
+      "p-2",
+      "p-4",
+      "lg:p-5",
+      "lg:p-6"
+    ]
+  },
+  "tokens": [
+    "component.mock-card.bg",
+    "component.mock-card.border",
+    "component.mock-card.radius",
+    "fontSize.12",
+    "lineHeight.18"
+  ],
+  "evidence": [
+    "ev.spec.pm.mock",
+    "ev.src.mock-card"
+  ],
+  "file": "components/mock-card.json"
+}

@@ -1,0 +1,375 @@
+{
+  "version": "1.0.0",
+  "$comment": "One entry per distinct page shape, derived from ia.json and verified against src/pages/*.jsx section order. nodes are ordered; required/repeatable are machine-enforced by schema/semantic_validate.py (TEMPLATE_NODE_SEQUENCE).",
+  "templates": {
+    "template.home": {
+      "id": "template.home",
+      "name": "Home",
+      "purpose": "Product homepage: centered hero, statement, capability grid, three tabbed deep dives, timed process.",
+      "routes": [
+        "/",
+        "/ua"
+      ],
+      "routeCount": 2,
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "heroless": false,
+      "cloneOnly": false,
+      "retrievalEligible": true,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.home-dashboard",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "narrative.scroll-statement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.product-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.showcase-automation",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.showcase-reports",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.showcase-security",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "process.lottie-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-home",
+        "ev.spec.home.responsive",
+        "ev.ia",
+        "ev.recon.qa",
+        "ev.recon.clone"
+      ]
+    },
+    "template.pricing": {
+      "id": "template.pricing",
+      "name": "Pricing",
+      "purpose": "Pricing page: plan cards hero, comparison table, FAQ, timed process.",
+      "routes": [
+        "/pricing",
+        "/ua/pricing"
+      ],
+      "routeCount": 2,
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "heroless": false,
+      "cloneOnly": false,
+      "retrievalEligible": true,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.pricing-plans",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "commerce.compare-table",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "support.faq-accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "process.lottie-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-pricing",
+        "ev.spec.pm.pricing-order",
+        "ev.spec.pm.pricing-responsive",
+        "ev.ia"
+      ]
+    },
+    "template.migration-offer": {
+      "id": "template.migration-offer",
+      "name": "Migration offer",
+      "purpose": "Offer page: split hero, mechanics explainer, eligibility list, FAQ, visual steps.",
+      "routes": [
+        "/migration-offer",
+        "/ua/migration-offer"
+      ],
+      "routeCount": 2,
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "heroless": false,
+      "cloneOnly": false,
+      "retrievalEligible": true,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.migration-split",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.migration-explainer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.migration-conditions",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "support.faq-accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "process.visual-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-migration",
+        "ev.spec.pm.migration-order",
+        "ev.spec.pm.migration-responsive",
+        "ev.spec.pm.motion-summary",
+        "ev.ia"
+      ]
+    },
+    "template.partners": {
+      "id": "template.partners",
+      "name": "Partners",
+      "purpose": "Program page: split hero, audience list, statement, two-sided value grid, FAQ, visual steps, lead-form overlay.",
+      "routes": [
+        "/partners",
+        "/ua/partners"
+      ],
+      "routeCount": 2,
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "heroless": false,
+      "cloneOnly": false,
+      "retrievalEligible": true,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.partners-split",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.partner-audience",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "narrative.scroll-statement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.partner-value-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "support.faq-accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "process.visual-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "forms.partner-popup",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-partners",
+        "ev.spec.pul.partners-order",
+        "ev.spec.pul.partners-responsive",
+        "ev.ia"
+      ]
+    },
+    "template.legal": {
+      "id": "template.legal",
+      "name": "Legal document",
+      "purpose": "Legal document page (heroless). Body text placeholder only.",
+      "routes": [
+        "/terms",
+        "/privacy",
+        "/dpa",
+        "/subprocessors",
+        "/ua/terms",
+        "/ua/privacy",
+        "/ua/dpa",
+        "/ua/subprocessors"
+      ],
+      "routeCount": 8,
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "heroless": true,
+      "cloneOnly": false,
+      "retrievalEligible": true,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.legal-article",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-legal",
+        "ev.spec.pul.legal-layout",
+        "ev.ia"
+      ]
+    },
+    "template.not-found": {
+      "id": "template.not-found",
+      "name": "Not found (clone-only)",
+      "purpose": "CLONE-ONLY catch-all 404 page.",
+      "routes": [
+        "/*"
+      ],
+      "routeCount": 1,
+      "locales": [
+        "en"
+      ],
+      "heroless": false,
+      "cloneOnly": true,
+      "retrievalEligible": false,
+      "nodes": [
+        {
+          "section": "chrome.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.grid-frame",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.not-found",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "chrome.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": [
+        "ev.src.page-notfound",
+        "ev.src.app-routes",
+        "ev.ia"
+      ]
+    }
+  }
+}

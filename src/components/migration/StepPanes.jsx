@@ -31,14 +31,14 @@ export function ChatPane() {
       </div>
       <MockDivider className="my-3.5" />
       <div className="flex flex-col gap-2.5 leading-5">
-        <p className="max-w-[82%] self-end rounded-xl rounded-br-sm bg-white/8 px-3 py-2.5">
+        <p className="max-w-[82%] self-end rounded-xl rounded-br-[4px] bg-white/8 px-3 py-2.5">
           {c.userMessage}
         </p>
         <div className="flex max-w-[86%] items-end gap-2 self-start">
           <IconDisc size="sm">
             <VaultMark className="h-2.5 w-3 text-white" />
           </IconDisc>
-          <p className="rounded-xl rounded-bl-sm border border-white/10 px-3 py-2.5 text-white/80">
+          <p className="rounded-xl rounded-bl-[4px] border border-white/10 px-3 py-2.5 text-white/80">
             {c.vaultMessage}
           </p>
         </div>

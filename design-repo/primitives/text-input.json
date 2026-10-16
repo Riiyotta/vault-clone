@@ -1,0 +1,26 @@
+{
+  "id": "primitive.text-input",
+  "kind": "primitive",
+  "purpose": "48px input, light 16px, white/10 border -> white on focus (200ms), red on error with 14/20 message.",
+  "props": {
+    "state": [
+      "default",
+      "focus",
+      "error",
+      "disabled"
+    ]
+  },
+  "tokens": [
+    "component.input.border",
+    "component.input.border-focus",
+    "component.input.border-error",
+    "component.input.radius",
+    "component.input.height",
+    "fontWeight.300",
+    "text.error"
+  ],
+  "evidence": [
+    "ev.spec.pul.popup"
+  ],
+  "file": "primitives/text-input.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "primitive.cross-marker",
+  "kind": "primitive",
+  "purpose": "12px plus marker placed on frame corners at separators and card corners (z 100).",
+  "props": {},
+  "tokens": [
+    "iconSize.marker",
+    "layout.cross-inset.base",
+    "layout.cross-inset.md",
+    "layout.cross-inset.lg"
+  ],
+  "evidence": [
+    "ev.spec.home.grid-frame",
+    "ev.src.gridframe"
+  ],
+  "file": "primitives/cross-marker.json"
+}

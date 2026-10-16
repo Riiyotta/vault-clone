@@ -1,0 +1,40 @@
+{
+  "id": "primitive.button-primary",
+  "kind": "primitive",
+  "purpose": "White pill CTA with dark arrow chip; the only filled button style. No hover state.",
+  "props": {
+    "size": [
+      "large",
+      "small"
+    ],
+    "as": [
+      "link",
+      "button"
+    ],
+    "fullWidth": "boolean",
+    "label": "string (see section ctaLabel budgets)"
+  },
+  "tokens": [
+    "component.button-primary.bg",
+    "component.button-primary.text",
+    "component.button-primary.ring",
+    "component.button-primary.ring-width",
+    "component.button-primary.chip",
+    "component.button-primary.radius",
+    "fontSize.18",
+    "fontSize.16",
+    "fontWeight.500",
+    "iconSize.chip-lg",
+    "iconSize.chip-sm"
+  ],
+  "evidence": [
+    "ev.spec.pm.buttons",
+    "ev.src.cta",
+    "ev.spec.home.hover"
+  ],
+  "accessibility": {
+    "hover": "none",
+    "focus": "visible outline"
+  },
+  "file": "primitives/button-primary.json"
+}

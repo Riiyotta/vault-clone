@@ -1,0 +1,28 @@
+{
+  "id": "component.segmented-control",
+  "kind": "component",
+  "purpose": "radiogroup with sliding white pill (shared layout 0.3s easeOut), optional badge per option, roving tabindex.",
+  "props": {
+    "size": [
+      "default",
+      "small"
+    ],
+    "options": "2-4"
+  },
+  "tokens": [
+    "surface.inverse",
+    "text.on-inverse",
+    "text.secondary",
+    "border.control",
+    "duration.base",
+    "radius.full"
+  ],
+  "evidence": [
+    "ev.spec.pm.p1",
+    "ev.src.segmented"
+  ],
+  "accessibility": {
+    "keyboard": "Arrow keys wrap, Home/End jump; each key selects and focuses"
+  },
+  "file": "components/segmented-control.json"
+}

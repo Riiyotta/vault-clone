@@ -19,8 +19,16 @@ function guessCountry(digits, current) {
   return best ?? current
 }
 
-function Flag({ iso2, className }) {
-  return <img src={flagSrc(iso2)} alt="" width={16} height={16} className={`size-4 shrink-0 rounded-[2px] ${className}`} />
+function Flag({ iso2, className, shrink = false }) {
+  return (
+    <img
+      src={flagSrc(iso2)}
+      alt=""
+      width={16}
+      height={16}
+      className={`size-4 rounded-[2px] ${shrink ? '' : 'shrink-0'} ${className}`}
+    />
+  )
 }
 
 const PhoneField = forwardRef(function PhoneField(
@@ -37,7 +45,8 @@ const PhoneField = forwardRef(function PhoneField(
 
   const measure = useCallback(() => {
     const r = wrapRef.current?.getBoundingClientRect()
-    if (r) setRect({ left: r.left, top: r.bottom, width: r.width })
+    // top: bottom − 1 — the original panel overlaps the field's (transparent) bottom border by 1px.
+    if (r) setRect({ left: r.left, top: r.bottom - 1, width: r.width })
   }, [])
 
   // The list panel is `fixed`, aligned to the field (x / width) and kept aligned on scroll / resize.
@@ -52,12 +61,11 @@ const PhoneField = forwardRef(function PhoneField(
     }
   }, [open, measure])
 
-  // On open: focus the selected option and scroll it into view.
+  // On open: focus the selected option without scrolling (the original list opens at the top, recon
+  // popup-country-dropdown-1440.png).
   useEffect(() => {
     if (!open || !rect) return
-    const selected = listRef.current?.querySelector('[aria-selected="true"]')
-    selected?.scrollIntoView({ block: 'nearest' })
-    selected?.focus({ preventScroll: true })
+    listRef.current?.querySelector('[aria-selected="true"]')?.focus({ preventScroll: true })
   }, [open, rect])
 
   // Click outside closes.
@@ -136,9 +144,11 @@ const PhoneField = forwardRef(function PhoneField(
               setOpen(true)
             }
           }}
-          className="my-3 flex h-6 shrink-0 cursor-pointer items-center border-r border-white/5 pl-5 pr-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          className="my-3 flex h-6 cursor-pointer items-center justify-center border-r border-white/5 pl-5 pr-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
         >
-          <Flag iso2={iso2} className="mr-1.5" />
+          {/* Button and flag are shrinkable (as on the original): the w-full input squeezes the button to 60.19px
+              and its 32px content overflows centred. */}
+          <Flag iso2={iso2} shrink className="mr-1.5" />
           <span
             aria-hidden="true"
             className={`size-0 border-x-[5px] border-t-[5px] border-x-transparent border-t-white ${open ? 'rotate-180' : ''}`}

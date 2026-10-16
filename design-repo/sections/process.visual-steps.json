@@ -1,0 +1,194 @@
+{
+  "id": "process.visual-steps",
+  "category": "PROCESS",
+  "purpose": "Explain a 4-step process with DOM mock panes: steps auto-advance every 5s while in view and loop; clicking a step restarts its timer; CTA at the end.",
+  "implementedBy": "src/components/shared/VisualSteps.jsx",
+  "evidence": [
+    "ev.spec.pm.m5",
+    "ev.spec.pul.steps",
+    "ev.src.visualsteps",
+    "ev.src.contact",
+    "ev.spec.pm.not-cloned"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "steps",
+      "ctaLabel",
+      "ctaAction"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 84,
+        "maxWords": 6
+      },
+      "steps": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "description",
+            "visual"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 70,
+              "maxWords": 5
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 392,
+              "maxWords": 28
+            },
+            "visual": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "illustration-mock"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 28,
+                  "maxWords": 2
+                }
+              }
+            }
+          }
+        },
+        "minItems": 4,
+        "maxItems": 4
+      },
+      "ctaLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "ctaAction": {
+        "type": "string",
+        "enum": [
+          "contact-mailto",
+          "open-lead-form"
+        ]
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "auto-advancing-steps-dom": {
+        "allowedFallbacks": [
+          "no-auto-advance"
+        ],
+        "description": "Runs while row >=20% in view, tab visible and reduced motion off; 5s per step, loops 4->1; connector fill 4.8s linear; panes cross-fade opacity .4s easeOut / y 10->0 .5s expo; highlight starts after first seen. Reduced motion: no timer, static pane index 2 until clicked.",
+        "evidence": [
+          "ev.src.visualsteps",
+          "ev.spec.pm.m5",
+          "ev.spec.pul.steps"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "closesContent": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "visual on top (stage 380), box 36"
+    },
+    {
+      "at": "md",
+      "change": "box 42, description pl 60"
+    },
+    {
+      "at": "lg",
+      "change": "row-reverse 560 tall, visual 50%, stage 400"
+    },
+    {
+      "at": "xl",
+      "change": "box 40, description pl 68"
+    }
+  ],
+  "accessibility": {
+    "steps": "h3>button aria-pressed; visual stage aria-hidden"
+  },
+  "example": {
+    "heading": "Process overview",
+    "steps": [
+      {
+        "title": "Placeholder step 1",
+        "description": "Placeholder description of this step in one short sentence.",
+        "visual": {
+          "role": "illustration-mock",
+          "ref": "placeholder:step-1-pane",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder step 2",
+        "description": "Placeholder description of this step in one short sentence.",
+        "visual": {
+          "role": "illustration-mock",
+          "ref": "placeholder:step-2-pane",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder step 3",
+        "description": "Placeholder description of this step in one short sentence.",
+        "visual": {
+          "role": "illustration-mock",
+          "ref": "placeholder:step-3-pane",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Placeholder step 4",
+        "description": "Placeholder description of this step in one short sentence.",
+        "visual": {
+          "role": "illustration-mock",
+          "ref": "placeholder:step-4-pane",
+          "alt": ""
+        }
+      }
+    ],
+    "ctaLabel": "Get in touch",
+    "ctaAction": "contact-mailto"
+  },
+  "exampleByTemplate": {
+    "template.partners": {
+      "content": {
+        "ctaAction": "open-lead-form"
+      }
+    },
+    "template.migration-offer": {
+      "content": {
+        "ctaAction": "contact-mailto"
+      }
+    }
+  }
+}

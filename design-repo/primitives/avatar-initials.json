@@ -1,0 +1,18 @@
+{
+  "id": "primitive.avatar-initials",
+  "kind": "primitive",
+  "purpose": "28px rounded-md tile with 12px semibold initials (fictional entities only).",
+  "props": {
+    "initials": "2 letters"
+  },
+  "tokens": [
+    "surface.pill",
+    "radius.md",
+    "fontSize.12",
+    "fontWeight.600"
+  ],
+  "evidence": [
+    "ev.spec.pul.split-hero"
+  ],
+  "file": "primitives/avatar-initials.json"
+}

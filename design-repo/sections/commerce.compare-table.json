@@ -1,0 +1,255 @@
+{
+  "id": "commerce.compare-table",
+  "category": "COMMERCE",
+  "purpose": "Detailed plan comparison: grouped feature rows x 4 plan columns; sticky header md+, sticky single-plan picker below md.",
+  "implementedBy": "src/components/pricing/CompareTable.jsx",
+  "evidence": [
+    "ev.spec.pm.p2",
+    "ev.src.compare-table"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "planNames",
+      "mobileDefaultPlanIndex",
+      "highlightPlanIndex",
+      "groups"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 42,
+        "maxWords": 3
+      },
+      "planNames": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 28,
+          "maxWords": 2
+        },
+        "minItems": 4,
+        "maxItems": 4
+      },
+      "mobileDefaultPlanIndex": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      },
+      "highlightPlanIndex": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      },
+      "groups": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "rows"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 56,
+              "maxWords": 4
+            },
+            "rows": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "feature",
+                  "cells"
+                ],
+                "properties": {
+                  "feature": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 84,
+                    "maxWords": 6
+                  },
+                  "cells": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "kind"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "included",
+                                "excluded"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "kind",
+                            "value"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "number",
+                                "text"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 42,
+                              "maxWords": 3
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "minItems": 4,
+                    "maxItems": 4
+                  }
+                }
+              },
+              "minItems": 1,
+              "maxItems": 4
+            }
+          }
+        },
+        "minItems": 1,
+        "maxItems": 5
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "segmented-pill": {
+        "allowedFallbacks": [
+          "css-transitions-none"
+        ],
+        "description": "Only the mobile plan picker moves (sliding pill 0.3s easeOut); column swap is instant.",
+        "evidence": [
+          "ev.spec.pm.p2",
+          "ev.src.segmented"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "requiresSection": "hero.pricing-plans"
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "sticky plan picker (top 0), feature column + 1 selected plan column"
+    },
+    {
+      "at": "md",
+      "change": "5 columns, table-fixed, sticky header cells with inset bottom rule"
+    },
+    {
+      "at": "lg",
+      "change": "text 16/24, plan headers 20/24"
+    }
+  ],
+  "accessibility": {
+    "table": "caption sr-only; group rows th scope=colgroup; row headers scope=row; included/excluded have sr-only text"
+  },
+  "example": {
+    "heading": "Plan comparison",
+    "planNames": [
+      "Starter",
+      "Team",
+      "Growth",
+      "Custom"
+    ],
+    "mobileDefaultPlanIndex": 2,
+    "highlightPlanIndex": 2,
+    "groups": [
+      {
+        "label": "Usage",
+        "rows": [
+          {
+            "feature": "Placeholder volume",
+            "cells": [
+              {
+                "kind": "number",
+                "value": "100"
+              },
+              {
+                "kind": "number",
+                "value": "500"
+              },
+              {
+                "kind": "number",
+                "value": "1,000"
+              },
+              {
+                "kind": "text",
+                "value": "Custom"
+              }
+            ]
+          },
+          {
+            "feature": "Placeholder import",
+            "cells": [
+              {
+                "kind": "included"
+              },
+              {
+                "kind": "included"
+              },
+              {
+                "kind": "included"
+              },
+              {
+                "kind": "included"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Support",
+        "rows": [
+          {
+            "feature": "Priority support",
+            "cells": [
+              {
+                "kind": "excluded"
+              },
+              {
+                "kind": "excluded"
+              },
+              {
+                "kind": "included"
+              },
+              {
+                "kind": "included"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "notes": "corr.d: group label rows carry NO top border (only data rows do); th/td compute vertical-align: baseline."
+}

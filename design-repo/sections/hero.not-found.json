@@ -1,0 +1,93 @@
+{
+  "id": "hero.not-found",
+  "category": "HERO",
+  "purpose": "CLONE-ONLY: recovery block for unknown URLs (eyebrow, h1, sub, outline link home). Has no counterpart on the original site.",
+  "implementedBy": "src/pages/NotFound.jsx",
+  "evidence": [
+    "ev.src.page-notfound",
+    "ev.src.typography"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "headline",
+      "subheadline",
+      "linkLabel",
+      "linkHref"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 28,
+        "maxWords": 2
+      },
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "subheadline": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 196,
+        "maxWords": 14
+      },
+      "linkLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "linkHref": {
+        "$ref": "#/definitions/href"
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "static": {
+        "allowedFallbacks": [
+          "static"
+        ],
+        "description": "Static.",
+        "evidence": [
+          "ev.src.page-notfound"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowGridFrame": true,
+    "cloneOnly": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "pt 96 pb 48, text max 400"
+    },
+    {
+      "at": "md",
+      "change": "pt 112, max 560"
+    },
+    {
+      "at": "lg",
+      "change": "pt 120, max 750"
+    }
+  ],
+  "accessibility": {
+    "headingLevel": "h1"
+  },
+  "example": {
+    "eyebrow": "404",
+    "headline": "Page not found",
+    "subheadline": "This placeholder page explains that the address is unknown.",
+    "linkLabel": "Back home",
+    "linkHref": "/"
+  }
+}

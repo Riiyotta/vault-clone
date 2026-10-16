@@ -20,6 +20,9 @@ This supplements `ASSET_MANIFEST.md`. Only **new** files are listed here. Everyt
 | `public/assets/svg/partners/vault-mark.svg` | 527 | inline SVG (viewBox 0 0 30 26, fill currentColor) | partners steps card 2 ("Partner team" avatar) | Rendered 16×14 in white inside a 28px `bg-white/8` rounded-md tile. |
 | `public/assets/svg/partners/popup-close.svg` | 216 | inline SVG (viewBox 0 0 21 21, stroke 1.667, currentColor) | partner popup close button | Rendered 20px in white/50, hover white. |
 | `public/assets/svg/partners/flag-us.svg` | 2,462 | `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg` | partner popup phone field (default country) | The other 217 flags come from the same Twemoji 14.0.2 CDN pattern, via the react-international-phone default. They were not downloaded. |
+| `public/assets/svg/flags/<iso2>.svg` (218 files, ~1.1 MB) | – | `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/<codepoints>.svg` (downloaded with curl on 2026-10-14) | partner popup country selector (all 218 countries) | One file per country in react-international-phone's default list (data in `src/components/partners/countries.js`); `us.svg` is byte-identical to `partners/flag-us.svg`. Referenced locally, so the clone makes no CDN requests. |
+
+Attribution: flag graphics are Twemoji by Twitter, Inc and other contributors, licensed CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/); the country list is from react-international-phone 4.8.0 (MIT, © 2022 Yurii Brusentsov).
 
 ## Reused existing assets (no download needed)
 - `svg/arrow-right.svg`: CTA arrow chips and the "Learn more" link arrow (14px).

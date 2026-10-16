@@ -27,9 +27,9 @@ export function InviteCard({ m, copied = false, copyVariants, copiedVariants }) 
       </div>
       <MockDivider className="my-3.5" />
       <div className="flex items-center gap-2 rounded-lg border border-white/10 py-1.5 pl-2.5 pr-1.5">
-        <span className="truncate text-white/80">{INVITE_URL}</span>
-        {/* Spec gives no alignment class for the pill cell; ml-auto matches the right-aligned pill in the recon shots. */}
-        <div className="ml-auto grid justify-items-end">
+        {/* The URL grows (measured 222 / 252px wide on the original), pushing the pill cell to the right edge. */}
+        <span className="min-w-0 flex-1 truncate text-white/80">{INVITE_URL}</span>
+        <div className="grid shrink-0 justify-items-end">
           <motion.span variants={copyVariants} className={`${PILL} bg-white text-primary-black`}>
             {m.copy}
           </motion.span>

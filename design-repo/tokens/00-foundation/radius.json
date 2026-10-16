@@ -1,0 +1,77 @@
+{
+  "radius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px",
+      "evidence": [
+        "ev.src.offer-swatch",
+        "ev.src.steppanes-radius"
+      ],
+      "$description": "Tailwind v4 rounded-sm (v3 would be 2px) - corr.e."
+    },
+    "flag": {
+      "$type": "dimension",
+      "$value": "2px",
+      "evidence": [
+        "ev.spec.pul.popup"
+      ],
+      "$description": "Flag image corner."
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "6px",
+      "evidence": [
+        "ev.spec.pm.m2"
+      ],
+      "$description": "Timeline bars."
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "8px",
+      "evidence": [
+        "ev.spec.pm.mock"
+      ],
+      "$description": "MockRow, inputs, link fields."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "12px",
+      "evidence": [
+        "ev.spec.pm.mock",
+        "ev.src.mock-card"
+      ],
+      "$description": "MockCard."
+    },
+    "icon-badge": {
+      "$type": "dimension",
+      "$value": "14px",
+      "evidence": [
+        "ev.spec.pm.m3"
+      ],
+      "$description": "Illustrated icon background rect rx."
+    },
+    "menu-cta": {
+      "$type": "dimension",
+      "$value": "36px",
+      "evidence": [
+        "ev.spec.home.nav"
+      ],
+      "$description": "Mobile menu full-width CTA."
+    },
+    "dialog": {
+      "$type": "dimension",
+      "$value": "32px",
+      "evidence": [
+        "ev.spec.pul.popup",
+        "ev.src.popup"
+      ]
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "9999px",
+      "evidence": [
+        "ev.spec.home.v4-v3"
+      ]
+    }
+  }
+}

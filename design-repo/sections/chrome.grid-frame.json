@@ -1,0 +1,64 @@
+{
+  "id": "chrome.grid-frame",
+  "category": "CHROME",
+  "purpose": "Hairline layout frame shared by every section: full-bleed separator with cross markers under the nav, 1.5px side rules on every section.",
+  "implementedBy": "src/components/GridFrame.jsx",
+  "evidence": [
+    "ev.spec.home.grid-frame",
+    "ev.spec.pm.separator",
+    "ev.src.gridframe"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "separator"
+    ],
+    "properties": {
+      "separator": {
+        "type": "string",
+        "enum": [
+          "full-with-crosses"
+        ]
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "static": {
+        "allowedFallbacks": [
+          "static"
+        ],
+        "description": "Decoration only.",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "mustFollowNav": true,
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "cross markers at x=18, inset separators"
+    },
+    {
+      "at": "md",
+      "change": "markers at 34"
+    },
+    {
+      "at": "lg",
+      "change": "markers at 50, separators full-bleed"
+    }
+  ],
+  "accessibility": {
+    "decorative": "separators and markers are aria-hidden"
+  },
+  "example": {
+    "separator": "full-with-crosses"
+  }
+}

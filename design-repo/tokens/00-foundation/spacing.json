@@ -1,0 +1,236 @@
+{
+  "spacing": {
+    "frame-gutter": {
+      "base": {
+        "$type": "dimension",
+        "$value": "24px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "40px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "56px",
+        "evidence": [
+          "ev.spec.home.grid-frame"
+        ]
+      }
+    },
+    "section-heading-top": {
+      "base": {
+        "$type": "dimension",
+        "$value": "96px",
+        "evidence": [
+          "ev.spec.pm.section-heading"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "120px",
+        "evidence": [
+          "ev.spec.pm.section-heading"
+        ]
+      }
+    },
+    "section-heading-bottom": {
+      "base": {
+        "$type": "dimension",
+        "$value": "40px",
+        "evidence": [
+          "ev.spec.pm.section-heading"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "48px",
+        "evidence": [
+          "ev.spec.pm.section-heading"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "64px",
+        "evidence": [
+          "ev.spec.pm.section-heading"
+        ]
+      }
+    },
+    "spacer": {
+      "base": {
+        "$type": "dimension",
+        "$value": "96px",
+        "evidence": [
+          "ev.spec.home.showcases"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "200px",
+        "evidence": [
+          "ev.spec.home.showcases"
+        ]
+      }
+    },
+    "footer-spacer": {
+      "base": {
+        "$type": "dimension",
+        "$value": "48px",
+        "evidence": [
+          "ev.spec.home.footer"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "50px",
+        "evidence": [
+          "ev.spec.home.footer"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "64px",
+        "evidence": [
+          "ev.spec.home.footer"
+        ]
+      }
+    },
+    "statement-y": {
+      "base": {
+        "$type": "dimension",
+        "$value": "136px",
+        "evidence": [
+          "ev.spec.home.statement"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "212px",
+        "evidence": [
+          "ev.spec.home.statement"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "300px",
+        "evidence": [
+          "ev.spec.home.statement"
+        ]
+      }
+    },
+    "hero-text-top": {
+      "base": {
+        "$type": "dimension",
+        "$value": "136px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "146px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      }
+    },
+    "split-hero-text-top": {
+      "base": {
+        "$type": "dimension",
+        "$value": "96px",
+        "evidence": [
+          "ev.spec.pm.m1"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "112px",
+        "evidence": [
+          "ev.spec.pm.m1"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "136px",
+        "evidence": [
+          "ev.spec.pm.m1"
+        ]
+      }
+    },
+    "stack-gap": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "8px",
+        "evidence": [
+          "ev.spec.pm.p1"
+        ]
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "12px",
+        "evidence": [
+          "ev.spec.pm.p1"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "16px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "24px",
+        "evidence": [
+          "ev.spec.home.hero"
+        ]
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "32px",
+        "evidence": [
+          "ev.spec.pm.m1"
+        ]
+      }
+    },
+    "faq-row": {
+      "base": {
+        "$type": "dimension",
+        "$value": "20px 16px",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "24px 34px",
+        "evidence": [
+          "ev.spec.pm.faq"
+        ]
+      }
+    },
+    "card-pad": {
+      "base": {
+        "$type": "dimension",
+        "$value": "16px",
+        "evidence": [
+          "ev.spec.pm.mock"
+        ]
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "24px",
+        "evidence": [
+          "ev.spec.pm.m2"
+        ]
+      }
+    }
+  }
+}

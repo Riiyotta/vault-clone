@@ -1,0 +1,27 @@
+{
+  "id": "component.plan-card",
+  "kind": "component",
+  "purpose": "Pricing card on a 4-row subgrid (header, price, CTA, features); recommended card gets a gradient ring + accent wash.",
+  "props": {
+    "recommended": "boolean",
+    "ctaKind": [
+      "outline-link",
+      "primary-link",
+      "contact-button"
+    ]
+  },
+  "tokens": [
+    "component.plan-card.recommended-ring",
+    "component.plan-card.recommended-wash",
+    "component.plan-card.price-fade",
+    "fontSize.48",
+    "fontSize.24",
+    "surface.page"
+  ],
+  "evidence": [
+    "ev.spec.pm.p1",
+    "ev.src.plan-cards",
+    "ev.src.css-pro-card"
+  ],
+  "file": "components/plan-card.json"
+}

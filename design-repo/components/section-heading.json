@@ -1,0 +1,39 @@
+{
+  "id": "component.section-heading",
+  "kind": "component",
+  "purpose": "Centered uppercase display h2 in its own frame, always followed by a crosses separator.",
+  "props": {
+    "lines": "1-2 (forced break at lg optional)"
+  },
+  "tokens": [
+    "font.display",
+    "fontSize.48",
+    "lineHeight.64",
+    "fontSize.30",
+    "lineHeight.36",
+    "wordSpacing.7",
+    "wordSpacing.4",
+    "spacing.section-heading-top.lg",
+    "spacing.section-heading-bottom.lg"
+  ],
+  "evidence": [
+    "ev.spec.pm.section-heading",
+    "ev.src.section-heading",
+    "ev.spec.pul.section-heading"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "30/36 ws4, padding 96/40"
+    },
+    {
+      "at": "md",
+      "change": "padding-bottom 48"
+    },
+    {
+      "at": "lg",
+      "change": "48/64 ws7, padding 120/64"
+    }
+  ],
+  "file": "components/section-heading.json"
+}

@@ -6,15 +6,18 @@ import SegmentedControl from '../shared/SegmentedControl.jsx'
 import { getCompareGroups, getPlans } from './plans.js'
 import { useT } from '../../i18n/index.jsx'
 
-const STICKY_TH = 'md:sticky md:top-0 md:z-10 shadow-[inset_0_-1px_0_rgba(255,255,255,.05)]'
+// Live: the inset hairline is md+ only (no shadow under the <md single-column header).
+const STICKY_TH = 'md:sticky md:top-0 md:z-10 md:shadow-[inset_0_-1px_0_rgba(255,255,255,.05)]'
 
+// Live computes vertical-align: baseline on th/td (its align-middle doesn't apply), and the check is a block-level
+// svg, so text cells in mixed rows sit on the icon's bottom edge. Mirror both to keep the 2.5px baseline offset.
 function Cell({ value }) {
   const t = useT()
   const c = t.pricing.compare
   if (value === true)
     return (
       <>
-        <Icon name="check" className="mx-auto block size-5 text-white" />
+        <Icon name="check" className="mx-auto !block size-5 text-white" />
         <span className="sr-only">{c.included}</span>
       </>
     )
@@ -76,7 +79,8 @@ export default function CompareTable() {
           </thead>
           {getCompareGroups(t).map((g) => (
             <tbody key={g.label}>
-              <tr className="border-t border-white/5">
+              {/* Live: group-label rows carry no border-top (only data rows do). */}
+              <tr>
                 <th
                   scope="colgroup"
                   colSpan={5}
@@ -89,14 +93,14 @@ export default function CompareTable() {
                 <tr key={label} className="border-t border-white/5">
                   <th
                     scope="row"
-                    className="px-3 py-4 text-left align-middle text-sm font-normal leading-5 text-white/80 md:px-6 lg:text-base lg:leading-6"
+                    className="px-3 py-4 text-left align-baseline text-sm font-normal leading-5 text-white/80 md:px-6 lg:text-base lg:leading-6"
                   >
                     {label}
                   </th>
                   {PLANS.map((p, i) => (
                     <td
                       key={p.id}
-                      className={`px-2 py-4 text-center align-middle text-sm leading-5 tabular-nums text-white/80 lg:text-base lg:leading-6 ${proBg(
+                      className={`px-2 py-4 text-center align-baseline text-sm leading-5 tabular-nums text-white/80 lg:text-base lg:leading-6 ${proBg(
                         p.id,
                       )} ${colVisibility(p.id)}`}
                     >

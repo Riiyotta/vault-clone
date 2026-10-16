@@ -1,0 +1,193 @@
+{
+  "id": "features.product-grid",
+  "category": "FEATURES",
+  "purpose": "Breadth of product: six cards, each a short title (+ optional 'soon' badge), one-sentence description and a looping product animation.",
+  "implementedBy": "src/components/ProductHighlights.jsx",
+  "evidence": [
+    "ev.spec.home.product-grid",
+    "ev.src.product-grid"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "anchorId",
+      "cards"
+    ],
+    "properties": {
+      "anchorId": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "cards": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "badge",
+            "description",
+            "media"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 84,
+              "maxWords": 6
+            },
+            "badge": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 28,
+                  "maxWords": 2
+                }
+              ]
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 252,
+              "maxWords": 18
+            },
+            "media": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "product-animation"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 112,
+                  "maxWords": 8
+                }
+              }
+            }
+          }
+        },
+        "minItems": 6,
+        "maxItems": 6
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "looping-animation-offscreen-frozen": {
+        "allowedFallbacks": [
+          "unhandled-in-source"
+        ],
+        "description": "Each card loops autoplay; canvas freezes off screen (IO threshold 0). No reduced-motion branch on the source.",
+        "evidence": [
+          "ev.spec.home.motion",
+          "ev.src.product-grid"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "1 column, cards 356 tall"
+    },
+    {
+      "at": "md",
+      "change": "2 columns, 350 tall, animation box 216"
+    },
+    {
+      "at": "lg",
+      "change": "3 columns, 372 tall, row gap 70, animation box 230"
+    }
+  ],
+  "accessibility": {
+    "animation": "canvas has aria-label '<title> animation'",
+    "headingLevel": "h4 per card on the source"
+  },
+  "example": {
+    "anchorId": "overview",
+    "cards": [
+      {
+        "title": "Placeholder capability 1",
+        "badge": null,
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-1-loop",
+          "alt": "Capability 1 animation"
+        }
+      },
+      {
+        "title": "Placeholder capability 2",
+        "badge": null,
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-2-loop",
+          "alt": "Capability 2 animation"
+        }
+      },
+      {
+        "title": "Placeholder capability 3",
+        "badge": null,
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-3-loop",
+          "alt": "Capability 3 animation"
+        }
+      },
+      {
+        "title": "Placeholder capability 4",
+        "badge": null,
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-4-loop",
+          "alt": "Capability 4 animation"
+        }
+      },
+      {
+        "title": "Placeholder capability 5",
+        "badge": "Soon",
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-5-loop",
+          "alt": "Capability 5 animation"
+        }
+      },
+      {
+        "title": "Placeholder capability 6",
+        "badge": "Soon",
+        "description": "One short placeholder sentence describing this capability.",
+        "media": {
+          "role": "product-animation",
+          "ref": "placeholder:card-6-loop",
+          "alt": "Capability 6 animation"
+        }
+      }
+    ]
+  }
+}

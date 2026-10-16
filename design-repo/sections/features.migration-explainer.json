@@ -1,0 +1,167 @@
+{
+  "id": "features.migration-explainer",
+  "category": "FEATURES",
+  "purpose": "Explain an offer's mechanics: two paragraphs beside a 12-column timeline chart (hatched/accent/neutral bars + legend) that fills on reveal.",
+  "implementedBy": "src/components/migration/OfferExplanation.jsx",
+  "evidence": [
+    "ev.spec.pm.m2",
+    "ev.src.offer-swatch"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headingLines",
+      "paragraphs",
+      "chart"
+    ],
+    "properties": {
+      "headingLines": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 70,
+          "maxWords": 5
+        },
+        "minItems": 1,
+        "maxItems": 2
+      },
+      "paragraphs": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 700,
+          "maxWords": 50
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "chart": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "caption",
+          "ariaLabel",
+          "legend",
+          "note",
+          "visual"
+        ],
+        "properties": {
+          "caption": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 140,
+            "maxWords": 10
+          },
+          "ariaLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 476,
+            "maxWords": 34
+          },
+          "legend": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 56,
+              "maxWords": 4
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 196,
+            "maxWords": 14
+          },
+          "visual": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "role",
+              "ref",
+              "alt"
+            ],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": [
+                  "illustration-mock"
+                ]
+              },
+              "ref": {
+                "$ref": "#/definitions/placeholderRef"
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 28,
+                "maxWords": 2
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "reveal-bars-once": {
+        "allowedFallbacks": [
+          "end-state-immediately"
+        ],
+        "description": "Figure fades/rises .3s at amount .2 once; bars scaleX (origin-left, expo) with delays .2/.6/1.0s; dashed divider at 1.3s.",
+        "evidence": [
+          "ev.spec.pm.m2",
+          "ev.src.reveal"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "1 column: chart first, text below; ruler shows months 1/4/8/12 only"
+    },
+    {
+      "at": "lg",
+      "change": "2 columns, text left, chart right (min-h 480), all 12 months"
+    }
+  ],
+  "accessibility": {
+    "chart": "figure with aria-label; bars aria-hidden"
+  },
+  "example": {
+    "headingLines": [
+      "Placeholder heading",
+      "on two lines"
+    ],
+    "paragraphs": [
+      "First placeholder paragraph explaining the problem this offer removes, in plain words.",
+      "Second placeholder paragraph explaining how the offer works and what the reader keeps."
+    ],
+    "chart": {
+      "caption": "Example: placeholder timeline caption",
+      "ariaLabel": "Placeholder description of the timeline chart for screen readers.",
+      "legend": [
+        "Existing period",
+        "Covered period",
+        "Paid period"
+      ],
+      "note": "Placeholder note under the chart.",
+      "visual": {
+        "role": "illustration-mock",
+        "ref": "placeholder:timeline-chart",
+        "alt": ""
+      }
+    }
+  }
+}

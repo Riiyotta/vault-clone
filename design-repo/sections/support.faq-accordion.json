@@ -1,0 +1,135 @@
+{
+  "id": "support.faq-accordion",
+  "category": "SUPPORT",
+  "purpose": "Answer objections: section heading + multi-open accordion of 3-7 questions; answers may hold up to 3 paragraphs and inline contact/link actions.",
+  "implementedBy": "src/components/shared/Faq.jsx",
+  "evidence": [
+    "ev.spec.pm.faq",
+    "ev.spec.pm.p3",
+    "ev.spec.pm.m4",
+    "ev.spec.pul.faq",
+    "ev.src.faq"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "items"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 56,
+        "maxWords": 4
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "question",
+            "answer"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-zA-Z0-9-]*$"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 154,
+              "maxWords": 11
+            },
+            "answer": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 812,
+                "maxWords": 58
+              },
+              "minItems": 1,
+              "maxItems": 3
+            }
+          }
+        },
+        "minItems": 3,
+        "maxItems": 7
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "accordion-grid-rows": {
+        "allowedFallbacks": [
+          "css-transitions-none"
+        ],
+        "description": "grid-rows 0fr<->1fr 300ms ease-out; chevron rotate 90deg<->-90deg 300ms; motion-reduce:transition-none.",
+        "evidence": [
+          "ev.spec.pm.faq",
+          "ev.src.faq"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "button padding 20/16"
+    },
+    {
+      "at": "md",
+      "change": "button padding 24/34"
+    },
+    {
+      "at": "lg",
+      "change": "answer max-w 800"
+    }
+  ],
+  "accessibility": {
+    "aria": "h3>button aria-expanded/aria-controls; answer role=region aria-labelledby, inert when closed; focus-visible 2px white outline"
+  },
+  "example": {
+    "heading": "Common questions",
+    "items": [
+      {
+        "id": "q1",
+        "question": "Placeholder question number 1?",
+        "answer": [
+          "Placeholder answer in one or two short sentences."
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "Placeholder question number 2?",
+        "answer": [
+          "Placeholder answer in one or two short sentences."
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "Placeholder question number 3?",
+        "answer": [
+          "Placeholder answer in one or two short sentences."
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "Placeholder question number 4?",
+        "answer": [
+          "Placeholder answer in one or two short sentences."
+        ]
+      }
+    ]
+  },
+  "notes": "Inline 'contact' actions inside answers use mailto (the source opens a chat widget when present; the clone deliberately has no chat widget)."
+}

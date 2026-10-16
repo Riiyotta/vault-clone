@@ -1,0 +1,241 @@
+{
+  "id": "features.partner-value-grid",
+  "category": "FEATURES",
+  "purpose": "Two-sided value proposition: left column (what the end client gets, two options split by an 'or' divider), right column (what the partner gets, three benefits, note, CTA).",
+  "implementedBy": "src/components/partners/ValueGrid.jsx",
+  "evidence": [
+    "ev.spec.pul.value-grid"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "leftColumn",
+      "rightColumn"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 112,
+        "maxWords": 8
+      },
+      "leftColumn": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "primary",
+          "dividerLabel",
+          "secondary"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 42,
+            "maxWords": 3
+          },
+          "primary": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "description",
+              "linkLabel",
+              "linkHref"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 84,
+                "maxWords": 6
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 336,
+                "maxWords": 24
+              },
+              "linkLabel": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 42,
+                "maxWords": 3
+              },
+              "linkHref": {
+                "$ref": "#/definitions/href"
+              }
+            }
+          },
+          "dividerLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 28,
+            "maxWords": 2
+          },
+          "secondary": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "description"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 42,
+                "maxWords": 3
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 140,
+                "maxWords": 10
+              }
+            }
+          }
+        }
+      },
+      "rightColumn": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "benefits",
+          "note",
+          "ctaLabel",
+          "ctaAction"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 42,
+            "maxWords": 3
+          },
+          "benefits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "title",
+                "description"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 56,
+                  "maxWords": 4
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 322,
+                  "maxWords": 23
+                }
+              }
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 322,
+            "maxWords": 23
+          },
+          "ctaLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 56,
+            "maxWords": 4
+          },
+          "ctaAction": {
+            "type": "string",
+            "enum": [
+              "open-lead-form",
+              "contact-mailto"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "static": {
+        "allowedFallbacks": [
+          "static"
+        ],
+        "description": "Static; link hover is color-only 300ms.",
+        "evidence": [
+          "ev.spec.pul.value-grid"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "1 column stacked with 1px gap"
+    },
+    {
+      "at": "lg",
+      "change": "2 columns"
+    },
+    {
+      "at": "xl",
+      "change": "column padding x 56"
+    }
+  ],
+  "accessibility": {
+    "divider": "decorative lines aria-hidden"
+  },
+  "example": {
+    "heading": "Placeholder value heading",
+    "leftColumn": {
+      "title": "For clients",
+      "primary": {
+        "title": "Placeholder first option",
+        "description": "Placeholder description of the first option for the end client.",
+        "linkLabel": "Learn more",
+        "linkHref": "/offer"
+      },
+      "dividerLabel": "Or",
+      "secondary": {
+        "title": "Second option",
+        "description": "Placeholder description of the second option."
+      }
+    },
+    "rightColumn": {
+      "title": "For partners",
+      "benefits": [
+        {
+          "title": "Placeholder benefit 1",
+          "description": "One placeholder sentence describing this benefit."
+        },
+        {
+          "title": "Placeholder benefit 2",
+          "description": "One placeholder sentence describing this benefit."
+        },
+        {
+          "title": "Placeholder benefit 3",
+          "description": "One placeholder sentence describing this benefit."
+        }
+      ],
+      "note": "Placeholder note inviting the reader to get in touch.",
+      "ctaLabel": "Apply now",
+      "ctaAction": "open-lead-form"
+    }
+  }
+}

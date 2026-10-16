@@ -40,7 +40,8 @@ function Step({ index, step, isActive, isOpen, isLast, runId, ariaLabel }) {
           onUpdate={noop}
           animate={{ backgroundColor: isActive ? stepBox.activeBg : stepBox.inactiveBg }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          className={`relative flex size-9 shrink-0 items-center justify-center border border-white/10 md:size-[42px] xl:size-10 ${
+          // Not shrink-0: on the original a long title squeezes the box (UA 390: step 3 box is 30×36).
+          className={`relative flex size-9 items-center justify-center border border-white/10 md:size-[42px] xl:size-10 ${
             isActive ? 'overflow-hidden' : ''
           }`}
         >

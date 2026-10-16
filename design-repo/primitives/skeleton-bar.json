@@ -1,0 +1,22 @@
+{
+  "id": "primitive.skeleton-bar",
+  "kind": "primitive",
+  "purpose": "8px tall rounded bar standing in for numbers/text in mocks.",
+  "props": {
+    "tone": [
+      "muted",
+      "strong",
+      "accent"
+    ]
+  },
+  "tokens": [
+    "color.white-alpha.20",
+    "color.white-alpha.40",
+    "color.accent-alpha.60",
+    "radius.sm"
+  ],
+  "evidence": [
+    "ev.spec.pm.mock"
+  ],
+  "file": "primitives/skeleton-bar.json"
+}

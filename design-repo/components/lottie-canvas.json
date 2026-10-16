@@ -1,0 +1,18 @@
+{
+  "id": "component.lottie-canvas",
+  "kind": "component",
+  "purpose": "Canvas animation holder (contain-fit, ResizeObserver); frozen off screen; markers drive tab/step timing.",
+  "props": {
+    "loop": "boolean",
+    "autoplay": "boolean"
+  },
+  "tokens": [
+    "frameRate.animation-markers"
+  ],
+  "evidence": [
+    "ev.spec.home.product-grid",
+    "ev.src.featuretabs-duration"
+  ],
+  "notes": "Token 'motion.frameRate.animation-markers' resolves to frameRate.animation-markers.",
+  "file": "components/lottie-canvas.json"
+}

@@ -1,0 +1,251 @@
+{
+  "id": "forms.partner-popup",
+  "category": "FORMS",
+  "purpose": "Lead capture overlay opened by 'apply' CTAs: gradient-ring dialog with 4 validated fields (phone with country picker), local-only submit, success/error views.",
+  "implementedBy": "src/components/partners/PartnerPopup.jsx + LeadForm.jsx + PhoneField.jsx",
+  "evidence": [
+    "ev.spec.pul.popup",
+    "ev.src.leadform",
+    "ev.src.popup",
+    "ev.src.flags",
+    "ev.spec.pul.limits"
+  ],
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "description",
+      "fields",
+      "submitLabel",
+      "submission",
+      "defaultCountry",
+      "flags",
+      "success",
+      "error"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 70,
+        "maxWords": 5
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 224,
+        "maxWords": 16
+      },
+      "fields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "label",
+            "errorRequired"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 42,
+              "maxWords": 3
+            },
+            "errorRequired": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 84,
+              "maxWords": 6
+            }
+          }
+        },
+        "minItems": 4,
+        "maxItems": 4
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 42,
+        "maxWords": 3
+      },
+      "submission": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "mode"
+        ],
+        "properties": {
+          "mode": {
+            "type": "string",
+            "const": "local-simulated"
+          }
+        }
+      },
+      "defaultCountry": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "flags": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "alt"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "flag"
+            ]
+          },
+          "ref": {
+            "$ref": "#/definitions/placeholderRef"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 28,
+            "maxWords": 2
+          }
+        }
+      },
+      "success": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "body"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 56,
+            "maxWords": 4
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 224,
+            "maxWords": 16
+          }
+        }
+      },
+      "error": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "body"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 56,
+            "maxWords": 4
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 112,
+            "maxWords": 8
+          }
+        }
+      }
+    }
+  },
+  "variants": [],
+  "motion": {
+    "patterns": {
+      "modal-fade-scale": {
+        "allowedFallbacks": [
+          "unhandled-in-source"
+        ],
+        "description": "Portal fade-in .18s; ring scale-in .22s expo (translateY 8px, scale .96 -> 1). Esc closes, focus trap, body scroll lock. Keyframes are not gated by motion-safe on the source.",
+        "evidence": [
+          "ev.spec.pul.popup",
+          "ev.src.tw-keyframes"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true,
+    "overlay": true,
+    "requiresTrigger": "open-lead-form"
+  },
+  "responsive": [
+    {
+      "at": "base",
+      "change": "dialog padding 24, name fields stacked, outer padding 16"
+    },
+    {
+      "at": "md",
+      "change": "padding 32, name fields side by side, width 90% (max 484), min-h 400"
+    }
+  ],
+  "accessibility": {
+    "dialog": "role=dialog aria-modal aria-labelledby; Esc; focus trap + restore; first invalid field receives focus"
+  },
+  "example": {
+    "heading": "Apply to the program",
+    "description": "Placeholder line asking the reader to share a few details.",
+    "fields": [
+      {
+        "name": "firstName",
+        "label": "First name",
+        "errorRequired": "Enter your first name"
+      },
+      {
+        "name": "lastName",
+        "label": "Last name",
+        "errorRequired": "Enter your last name"
+      },
+      {
+        "name": "email",
+        "label": "Work email",
+        "errorRequired": "Enter your email"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "errorRequired": "Enter your phone number"
+      }
+    ],
+    "submitLabel": "Submit details",
+    "submission": {
+      "mode": "local-simulated"
+    },
+    "defaultCountry": "us",
+    "flags": {
+      "role": "flag",
+      "ref": "placeholder:open-flag-set",
+      "alt": ""
+    },
+    "success": {
+      "title": "Thanks!",
+      "body": "Placeholder confirmation that the request was received."
+    },
+    "error": {
+      "title": "Something failed",
+      "body": "Please try again."
+    }
+  },
+  "notes": "CLONE-ONLY BEHAVIOUR: the source POSTs to a real lead endpoint; the clone never sends data (simulated 800ms). This contract FORBIDS any endpoint: submission.mode is const 'local-simulated' and the object is closed. Wiring a real endpoint is a human, out-of-band decision."
+}

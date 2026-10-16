@@ -1,0 +1,18 @@
+{
+  "id": "component.mock-row",
+  "kind": "component",
+  "purpose": "Label/value row inside mock cards; highlighted variant uses accent/10 fill + accent/35 border.",
+  "props": {
+    "highlighted": "boolean"
+  },
+  "tokens": [
+    "border.accent-highlight",
+    "surface.accent-subtle",
+    "text.body-strong",
+    "radius.lg"
+  ],
+  "evidence": [
+    "ev.spec.pm.mock"
+  ],
+  "file": "components/mock-row.json"
+}

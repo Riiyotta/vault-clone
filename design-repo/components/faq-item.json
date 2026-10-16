@@ -1,0 +1,25 @@
+{
+  "id": "component.faq-item",
+  "kind": "component",
+  "purpose": "Accordion row: 18/27 question button + rotating chevron, grid-rows answer region (inert when closed).",
+  "props": {
+    "open": "boolean (multi-open, all closed on load)"
+  },
+  "tokens": [
+    "component.faq.chevron",
+    "component.faq.answer",
+    "component.faq.duration",
+    "easing.ease-out",
+    "layout.faq-answer",
+    "spacing.faq-row.base",
+    "spacing.faq-row.md"
+  ],
+  "evidence": [
+    "ev.spec.pm.faq",
+    "ev.src.faq"
+  ],
+  "accessibility": {
+    "aria": "button aria-expanded/aria-controls; region aria-labelledby; inert when closed"
+  },
+  "file": "components/faq-item.json"
+}

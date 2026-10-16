@@ -1,0 +1,31 @@
+{
+  "id": "component.feature-tab-bar",
+  "kind": "component",
+  "purpose": "3-column tab bar (lg+) or chevron pager with swapping title (<lg); active tab carries a 1px linear progress bar.",
+  "props": {
+    "tabs": 3
+  },
+  "tokens": [
+    "text.inactive",
+    "text.primary",
+    "duration.base",
+    "duration.title-swap",
+    "easing.linear",
+    "border.hairline"
+  ],
+  "evidence": [
+    "ev.spec.home.showcases",
+    "ev.src.featuretabs"
+  ],
+  "responsive": [
+    {
+      "at": "base",
+      "change": "chevron pager + centered h3, 56px tall"
+    },
+    {
+      "at": "lg",
+      "change": "3-col tab bar, 74px tabs"
+    }
+  ],
+  "file": "components/feature-tab-bar.json"
+}

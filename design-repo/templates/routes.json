@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "$comment": "Every real route of the clone mapped to exactly one template. /ru/* exists on the original but is OUT OF SCOPE. '/*' is the clone-only catch-all.",
+  "routes": [
+    {
+      "path": "/",
+      "template": "template.home",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua",
+      "template": "template.home",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/pricing",
+      "template": "template.pricing",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/pricing",
+      "template": "template.pricing",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/migration-offer",
+      "template": "template.migration-offer",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/migration-offer",
+      "template": "template.migration-offer",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/partners",
+      "template": "template.partners",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/partners",
+      "template": "template.partners",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/terms",
+      "template": "template.legal",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/privacy",
+      "template": "template.legal",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/dpa",
+      "template": "template.legal",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/subprocessors",
+      "template": "template.legal",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/terms",
+      "template": "template.legal",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/privacy",
+      "template": "template.legal",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/dpa",
+      "template": "template.legal",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/ua/subprocessors",
+      "template": "template.legal",
+      "locale": "uk",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    },
+    {
+      "path": "/*",
+      "template": "template.not-found",
+      "locale": "en",
+      "evidence": [
+        "ev.src.app-routes",
+        "ev.src.i18n-locale"
+      ]
+    }
+  ]
+}

@@ -69,7 +69,7 @@ function Chart() {
             [c.legend.paid, PAID],
           ].map(([label, swatch]) => (
             <li key={label} className="flex items-center gap-2">
-              <span className={`h-3 w-6 shrink-0 rounded-sm border bg-clip-padding ${swatch}`} />
+              <span className={`h-3 w-6 shrink-0 rounded-[4px] border bg-clip-padding ${swatch}`} />
               {label}
             </li>
           ))}

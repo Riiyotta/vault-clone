@@ -1,0 +1,17 @@
+{
+  "id": "component.flow-connector",
+  "kind": "component",
+  "purpose": "88px vertical line (white/20) with 8px end dots and a centered surface pill; draws scaleY on reveal.",
+  "props": {},
+  "tokens": [
+    "color.white-alpha.20",
+    "color.white-alpha.40",
+    "duration.connector-draw",
+    "easing.expo-out"
+  ],
+  "evidence": [
+    "ev.spec.pm.m1",
+    "ev.spec.pul.split-hero"
+  ],
+  "file": "components/flow-connector.json"
+}
