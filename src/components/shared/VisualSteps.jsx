@@ -84,7 +84,8 @@ export default function VisualSteps({ heading, steps, panes: renderPanes, cta, e
                   const current = i === index
                   const expanded = current || (expandAllWhenReduced && reduced)
                   // Highlight starts only after the row has been seen once (step 1's text is open before that).
-                  const pressed = seen && current
+                  // Reduced motion: original highlights nothing until the user clicks a step (measured on /partners).
+                  const pressed = (seen && !reduced && current) || (chosen && current)
                   const isLast = i === STEP_COUNT - 1
                   return (
                     <li key={i} className="relative flex flex-col">

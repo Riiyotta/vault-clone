@@ -24,14 +24,28 @@ function portalTarget() {
 }
 
 function Spinner({ label }) {
-  // TODO(animation): unspecified — spinner glyph geometry is not in the spec; only `size-8 animate-spin text-white/60`.
+  // Measured on the original (module 98775 + the popup's Suspense fallback): a 32x32 filled "ring with a gap" glyph,
+  // `size-8 animate-spin text-white/60 [&_path]:fill-current` (Tailwind spin: 1s linear infinite) inside
+  // `div[role=status].flex.justify-center.py-10`, whose sr-only span carries the #popup-title id until the form mounts.
   return (
-    <div className="flex justify-center py-10">
-      <svg className="size-8 animate-spin text-white/60" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeOpacity="0.25" strokeWidth="2" />
-        <path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <div role="status" className="flex justify-center py-10">
+      <span id="popup-title" className="sr-only">
+        {label}
+      </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="none"
+        viewBox="0 0 32 32"
+        aria-hidden="true"
+        className="size-8 animate-spin text-white/60 [&_path]:fill-current"
+      >
+        <path
+          fill="#000"
+          d="M16 29.334C8.654 29.334 2.667 23.347 2.667 16c0-2.493.693-4.92 2-7.026a1.337 1.337 0 0 1 1.84-.427c.627.387.813 1.213.427 1.84A10.7 10.7 0 0 0 5.334 16c0 5.88 4.786 10.667 10.666 10.667S26.667 21.88 26.667 16 21.88 5.334 16 5.334c-.733 0-1.333-.6-1.333-1.334 0-.733.6-1.333 1.333-1.333 7.347 0 13.334 5.987 13.334 13.333 0 7.347-5.987 13.334-13.334 13.334"
+        />
       </svg>
-      <span className="sr-only">{label}</span>
     </div>
   )
 }
@@ -93,7 +107,8 @@ function Popup({ onClose }) {
   return createPortal(
     <div className="fixed inset-0 z-[1000] flex h-dvh w-screen animate-fade-in items-center justify-center p-4 md:p-6">
       <div aria-hidden="true" className="absolute inset-0 bg-primary-black/60" onClick={onClose} />
-      {/* TODO(animation): unspecified — the close (exit) transition is not specced; the popup unmounts instantly. */}
+      {/* Exit: none. Measured on the original (rAF + MutationObserver, Esc / backdrop / close button): the portal subtree is
+          removed in the same frame as the close (`open && <PopupPortal>`), with no fade/scale-out. Matching: instant unmount. */}
       <div className="relative flex max-h-full w-full max-w-[484px] transform-gpu animate-scale-in rounded-[32px] bg-popup-border p-px will-change-transform md:min-h-[400px] md:w-[90%]">
         <div
           ref={dialogRef}
