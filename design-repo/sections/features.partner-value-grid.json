@@ -1,11 +1,24 @@
 {
   "id": "features.partner-value-grid",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.partner-value-grid",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.partners.ValueGrid.section@L31",
+    "file": "src/components/partners/ValueGrid.jsx",
+    "lines": "31-74",
+    "tag": "section"
+  },
   "purpose": "Two-sided value proposition: left column (what the end client gets, two options split by an 'or' divider), right column (what the partner gets, three benefits, note, CTA).",
   "implementedBy": "src/components/partners/ValueGrid.jsx",
   "evidence": [
     "ev.spec.pul.value-grid"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
+  "inlineCtaJustification": "One 'apply' button closes the right column; the section's job is the benefit grid (client vs. company value), so it stays FEATURES.",
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

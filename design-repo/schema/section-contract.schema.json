@@ -1,0 +1,326 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "section-contract.schema.json",
+  "title": "Section contract (design-repo: vault-clone)",
+  "description": "Closed meta-schema for every sections/*.json contract. `source` is provenance (which component/DOM element, traceable: verify_all re-reads file:lines and checks the tag at the first cited line); `semantic` is the AI-facing taxonomy (id = contract id). retrievalEligible is pinned in code (RETRIEVAL_INELIGIBLE in schema/semantic_validate.py and extraction/verify_all.py). Semantic checks beyond this schema: schema/semantic_validate.py validate_section_contract().",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "category",
+    "semantic",
+    "source",
+    "purpose",
+    "implementedBy",
+    "evidence",
+    "retrievalEligible",
+    "generatedAssetRoles",
+    "contentSchema",
+    "variants",
+    "motion",
+    "constraints",
+    "responsive",
+    "accessibility",
+    "example"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(chrome|hero|narrative|features|commerce|support|process|forms|content)\\.[a-z0-9-]+$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "CHROME",
+        "HERO",
+        "NARRATIVE",
+        "FEATURES",
+        "COMMERCE",
+        "SUPPORT",
+        "PROCESS",
+        "CONVERSION",
+        "CONTENT"
+      ]
+    },
+    "semantic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "CHROME",
+            "HERO",
+            "NARRATIVE",
+            "FEATURES",
+            "COMMERCE",
+            "SUPPORT",
+            "PROCESS",
+            "CONVERSION",
+            "CONTENT"
+          ]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "file",
+        "lines",
+        "tag"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^src\\.[A-Za-z0-9.]+\\.[A-Za-z][A-Za-z0-9]*@L[0-9]+$"
+        },
+        "file": {
+          "type": "string",
+          "pattern": "^src/[A-Za-z0-9/_.-]+\\.(jsx|js)$"
+        },
+        "lines": {
+          "type": "string",
+          "pattern": "^[0-9]+-[0-9]+$"
+        },
+        "tag": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9.]*$"
+        }
+      }
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 20
+    },
+    "implementedBy": {
+      "type": "string",
+      "minLength": 4
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ev\\."
+      }
+    },
+    "retrievalEligible": {
+      "type": "boolean"
+    },
+    "retrievalReason": {
+      "type": "string",
+      "minLength": 30
+    },
+    "generatedAssetRoles": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "product-screenshot",
+          "product-animation",
+          "illustration-mock",
+          "icon",
+          "icon-illustrated",
+          "background-art",
+          "background-glow",
+          "brand-mark",
+          "social-icon",
+          "flag",
+          "third-party-logo",
+          "placeholder-brand-mark",
+          "generated-product-visual",
+          "generated-product-animation",
+          "generated-background-art",
+          "generated-mock-scene",
+          "fictional-avatar",
+          "generic-partner-placeholder",
+          "placeholder-url",
+          "original-copy"
+        ]
+      }
+    },
+    "inlineCtaJustification": {
+      "type": "string",
+      "minLength": 30
+    },
+    "contentSchema": {
+      "type": "object",
+      "required": [
+        "type",
+        "properties"
+      ],
+      "properties": {
+        "type": {
+          "const": "object"
+        },
+        "additionalProperties": {
+          "const": false
+        }
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "patterns"
+      ],
+      "properties": {
+        "patterns": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "allowedFallbacks",
+              "description",
+              "evidence"
+            ],
+            "properties": {
+              "allowedFallbacks": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "onePerPage": {
+          "type": "boolean"
+        },
+        "repeatable": {
+          "type": "boolean"
+        },
+        "mustBeFirst": {
+          "type": "boolean"
+        },
+        "mustBeLast": {
+          "type": "boolean"
+        },
+        "mustFollowNav": {
+          "type": "boolean"
+        },
+        "mustFollowGridFrame": {
+          "type": "boolean"
+        },
+        "mustFollow": {
+          "type": "string"
+        },
+        "mustPrecedeFooter": {
+          "type": "boolean"
+        },
+        "overlay": {
+          "type": "boolean"
+        },
+        "requiresTrigger": {
+          "type": "string"
+        },
+        "requiresSection": {
+          "type": "string"
+        },
+        "closesContent": {
+          "type": "boolean"
+        },
+        "templateOnly": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cloneOnly": {
+          "type": "boolean"
+        },
+        "exactlyOneRecommendedPlan": {
+          "type": "boolean"
+        }
+      }
+    },
+    "responsive": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "change"
+        ],
+        "properties": {
+          "at": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "example": {
+      "type": "object"
+    },
+    "exampleByTemplate": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^template\\.[a-z0-9-]+$"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "retrievalEligible": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "retrievalReason"
+        ]
+      }
+    }
+  ]
+}

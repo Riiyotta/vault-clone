@@ -1,12 +1,24 @@
 {
   "id": "hero.not-found",
   "category": "HERO",
+  "semantic": {
+    "id": "hero.not-found",
+    "category": "HERO"
+  },
+  "source": {
+    "id": "src.pages.NotFound.Frame@L22",
+    "file": "src/pages/NotFound.jsx",
+    "lines": "22-33",
+    "tag": "Frame"
+  },
   "purpose": "CLONE-ONLY: recovery block for unknown URLs (eyebrow, h1, sub, outline link home). Has no counterpart on the original site.",
   "implementedBy": "src/pages/NotFound.jsx",
   "evidence": [
     "ev.src.page-notfound",
     "ev.src.typography"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

@@ -1,6 +1,16 @@
 {
   "id": "chrome.grid-frame",
   "category": "CHROME",
+  "semantic": {
+    "id": "chrome.grid-frame",
+    "category": "CHROME"
+  },
+  "source": {
+    "id": "src.components.GridFrame.div@L41",
+    "file": "src/components/GridFrame.jsx",
+    "lines": "41-50",
+    "tag": "div"
+  },
   "purpose": "Hairline layout frame shared by every section: full-bleed separator with cross markers under the nav, 1.5px side rules on every section.",
   "implementedBy": "src/components/GridFrame.jsx",
   "evidence": [
@@ -8,6 +18,8 @@
     "ev.spec.pm.separator",
     "ev.src.gridframe"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

@@ -1,0 +1,4 @@
+{
+  "$comment": "Reviewed exceptions to the whole-page-wrapper gate (extraction/wrapper_gate.py). Empty on purpose: at 1440px no HERO exceeds 1800px and no in-flow section holds more than 50% of its page after content.legal-article was decomposed (see extraction/measured-values.json -> sectionHeights). An entry exempts ONE (route, section) from the listed *_FAIL rules only while its measured height stays <= maxHeightPx. attestation 'agent' means an automated reviewer: reviewedBy must then say 'agent attestation, not a human sign-off'. A stale entry fails the gate.",
+  "entries": []
+}

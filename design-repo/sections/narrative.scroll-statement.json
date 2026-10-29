@@ -1,12 +1,26 @@
 {
   "id": "narrative.scroll-statement",
   "category": "NARRATIVE",
+  "semantic": {
+    "id": "narrative.scroll-statement",
+    "category": "NARRATIVE"
+  },
+  "source": {
+    "id": "src.components.Statement.Tag@L38",
+    "file": "src/components/Statement.jsx",
+    "lines": "38-52",
+    "tag": "Tag"
+  },
   "purpose": "One positioning sentence presented as a scroll-scrubbed word-by-word fill (ghost words at 0.2 -> full white) over a watermark mark.",
   "implementedBy": "src/components/Statement.jsx",
   "evidence": [
     "ev.spec.home.statement",
     "ev.spec.pul.statement",
     "ev.src.statement"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generated-background-art"
   ],
   "contentSchema": {
     "type": "object",
@@ -34,7 +48,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "background-art"
+              "background-art",
+              "generated-background-art"
             ]
           },
           "ref": {

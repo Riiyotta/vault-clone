@@ -1,5 +1,6 @@
 {
-  "pageSpecVersion": "1.0.0",
+  "pageSpecVersion": "2.0.0",
+  "mode": "reference",
   "id": "example-home",
   "template": "template.home",
   "route": "/",

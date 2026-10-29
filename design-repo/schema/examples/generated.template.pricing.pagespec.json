@@ -1,0 +1,418 @@
+{
+  "pageSpecVersion": "2.0.0",
+  "mode": "generated",
+  "id": "generated-pricing",
+  "template": "template.pricing",
+  "route": "/pricing",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Plans | Tallybrook",
+    "description": "Plans and prices for a fictional bookkeeping product."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook home"
+        },
+        "links": [
+          {
+            "label": "Tour",
+            "href": "/#tour"
+          },
+          {
+            "label": "Ledger",
+            "href": "/#ledger"
+          },
+          {
+            "label": "Plans",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "hero.pricing-plans",
+      "content": {
+        "eyebrow": "Plans",
+        "headline": "Pay for the books you keep",
+        "subLines": [
+          "Try every feature for thirty days on us.",
+          "Switch plans whenever your studio grows."
+        ],
+        "billing": {
+          "monthlyLabel": "Monthly",
+          "annualLabel": "Annual",
+          "annualBadge": "Save more",
+          "default": "annual"
+        },
+        "plans": [
+          {
+            "name": "Starter",
+            "tagline": "For individuals",
+            "price": {
+              "monthly": "$0",
+              "annual": "$0"
+            },
+            "priceSubline": null,
+            "ctaLabel": "Start now",
+            "ctaKind": "outline-link",
+            "recommended": false,
+            "featuresHeader": null,
+            "features": [
+              "Placeholder feature one",
+              "Placeholder feature two",
+              "Placeholder feature three"
+            ]
+          },
+          {
+            "name": "Team",
+            "tagline": "For small teams",
+            "price": {
+              "monthly": "$10",
+              "annual": "$8"
+            },
+            "priceSubline": {
+              "monthly": "per seat monthly",
+              "annual": "per seat, billed yearly"
+            },
+            "ctaLabel": "Start now",
+            "ctaKind": "outline-link",
+            "recommended": false,
+            "featuresHeader": "Everything above, plus:",
+            "features": [
+              "Placeholder feature one",
+              "Placeholder feature two",
+              "Placeholder feature three"
+            ]
+          },
+          {
+            "name": "Growth",
+            "tagline": "For growing teams",
+            "price": {
+              "monthly": "$20",
+              "annual": "$16"
+            },
+            "priceSubline": {
+              "monthly": "per seat monthly",
+              "annual": "per seat, billed yearly"
+            },
+            "ctaLabel": "Start trial",
+            "ctaKind": "primary-link",
+            "recommended": true,
+            "recommendedLabel": "Popular",
+            "featuresHeader": "Everything above, plus:",
+            "features": [
+              "Placeholder feature one",
+              "Placeholder feature two",
+              "Placeholder feature three"
+            ]
+          },
+          {
+            "name": "Custom",
+            "tagline": "For larger companies",
+            "price": {
+              "monthly": "Custom",
+              "annual": "Custom"
+            },
+            "priceSubline": null,
+            "ctaLabel": "Contact us",
+            "ctaKind": "contact-button",
+            "recommended": false,
+            "featuresHeader": "Everything above, plus:",
+            "features": [
+              "Placeholder feature one",
+              "Placeholder feature two",
+              "Placeholder feature three"
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "segmented-pill-and-price-fade",
+        "reducedMotionFallback": "css-transitions-none"
+      }
+    },
+    {
+      "type": "commerce.compare-table",
+      "content": {
+        "heading": "Plan by plan",
+        "planNames": [
+          "Starter",
+          "Team",
+          "Growth",
+          "Custom"
+        ],
+        "mobileDefaultPlanIndex": 2,
+        "highlightPlanIndex": 2,
+        "groups": [
+          {
+            "label": "Usage",
+            "rows": [
+              {
+                "feature": "Placeholder volume",
+                "cells": [
+                  {
+                    "kind": "number",
+                    "value": "100"
+                  },
+                  {
+                    "kind": "number",
+                    "value": "500"
+                  },
+                  {
+                    "kind": "number",
+                    "value": "1,000"
+                  },
+                  {
+                    "kind": "text",
+                    "value": "Custom"
+                  }
+                ]
+              },
+              {
+                "feature": "Placeholder import",
+                "cells": [
+                  {
+                    "kind": "included"
+                  },
+                  {
+                    "kind": "included"
+                  },
+                  {
+                    "kind": "included"
+                  },
+                  {
+                    "kind": "included"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Support",
+            "rows": [
+              {
+                "feature": "Priority support",
+                "cells": [
+                  {
+                    "kind": "excluded"
+                  },
+                  {
+                    "kind": "excluded"
+                  },
+                  {
+                    "kind": "included"
+                  },
+                  {
+                    "kind": "included"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "segmented-pill",
+        "reducedMotionFallback": "css-transitions-none"
+      }
+    },
+    {
+      "type": "support.faq-accordion",
+      "content": {
+        "heading": "Questions studios ask",
+        "items": [
+          {
+            "id": "trial",
+            "question": "What happens when the trial ends?",
+            "answer": [
+              "You pick a plan or keep a read-only copy of your ledger."
+            ]
+          },
+          {
+            "id": "bank",
+            "question": "Do I need to link a bank?",
+            "answer": [
+              "No. You can type entries or upload a spreadsheet instead."
+            ]
+          },
+          {
+            "id": "seats",
+            "question": "Can my bookkeeper join?",
+            "answer": [
+              "Yes, invite them with a reviewer role at no extra cost."
+            ]
+          },
+          {
+            "id": "export",
+            "question": "Can I take my data with me?",
+            "answer": [
+              "Export everything as spreadsheet files at any time."
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "accordion-grid-rows",
+        "reducedMotionFallback": "css-transitions-none"
+      }
+    },
+    {
+      "type": "process.lottie-steps",
+      "content": {
+        "headingLines": [
+          "Three steps",
+          "to a calm close"
+        ],
+        "anchorId": null,
+        "steps": [
+          {
+            "title": "Link an account",
+            "description": "Pick your bank and approve read-only access."
+          },
+          {
+            "title": "Forward receipts",
+            "description": "Email or photograph receipts as they arrive."
+          },
+          {
+            "title": "Review and lock",
+            "description": "Check the flagged lines, then lock the month."
+          }
+        ],
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-animation",
+          "ref": "placeholder:three-step-flow",
+          "alt": "Three step walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "timed-steps-animation",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@tallybrook.example",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@tallybrook.example"
+          },
+          {
+            "kind": "linkedin",
+            "href": "https://social.tallybrook.example/linkedin",
+            "icon": {
+              "role": "social-icon",
+              "ref": "placeholder:network-glyph",
+              "alt": "Network profile"
+            },
+            "label": ""
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Tour",
+                "href": "/#tour"
+              },
+              {
+                "label": "Ledger",
+                "href": "/#ledger"
+              },
+              {
+                "label": "Plans",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Help",
+            "links": [
+              {
+                "label": "Guides",
+                "href": "https://help.tallybrook.example/guides"
+              },
+              {
+                "label": "Uptime",
+                "href": "https://uptime.tallybrook.invalid/"
+              },
+              {
+                "label": "Referrals",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Processing terms",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Tallybrook Ledger Co. (fictional)",
+        "credit": {
+          "label": "Made by",
+          "href": "https://studio.example/",
+          "mark": {
+            "role": "generic-partner-placeholder",
+            "ref": "placeholder:studio-badge",
+            "alt": "Studio"
+          }
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

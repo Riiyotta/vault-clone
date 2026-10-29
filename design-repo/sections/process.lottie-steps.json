@@ -1,6 +1,16 @@
 {
   "id": "process.lottie-steps",
   "category": "PROCESS",
+  "semantic": {
+    "id": "process.lottie-steps",
+    "category": "PROCESS"
+  },
+  "source": {
+    "id": "src.components.HowItWorks.section@L194",
+    "file": "src/components/HowItWorks.jsx",
+    "lines": "194-249",
+    "tag": "section"
+  },
   "purpose": "Show the path to value: two-line heading, three timed steps that expand in turn beside one product animation, small primary CTA.",
   "implementedBy": "src/components/HowItWorks.jsx",
   "evidence": [
@@ -10,6 +20,11 @@
     "ev.src.howitworks-io",
     "ev.src.howitworks-anchor"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generated-product-animation"
+  ],
+  "inlineCtaJustification": "Three timed how-it-works steps with one closing signup button; most of the block is the step explainer and animation, so it is PROCESS with an inline CTA.",
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,
@@ -95,7 +110,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "product-animation"
+              "product-animation",
+              "generated-product-animation"
             ]
           },
           "ref": {

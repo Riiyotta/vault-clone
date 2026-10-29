@@ -1,6 +1,16 @@
 {
   "id": "process.visual-steps",
   "category": "PROCESS",
+  "semantic": {
+    "id": "process.visual-steps",
+    "category": "PROCESS"
+  },
+  "source": {
+    "id": "src.components.shared.VisualSteps.section@L58",
+    "file": "src/components/shared/VisualSteps.jsx",
+    "lines": "58-149",
+    "tag": "section"
+  },
   "purpose": "Explain a 4-step process with DOM mock panes: steps auto-advance every 5s while in view and loop; clicking a step restarts its timer; CTA at the end.",
   "implementedBy": "src/components/shared/VisualSteps.jsx",
   "evidence": [
@@ -10,6 +20,14 @@
     "ev.src.contact",
     "ev.spec.pm.not-cloned"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "fictional-avatar",
+    "generated-mock-scene",
+    "generic-partner-placeholder",
+    "placeholder-brand-mark"
+  ],
+  "inlineCtaJustification": "Four how-it-works steps with visual panes and one closing button; the block explains the process, the CTA is a single trailing action.",
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,
@@ -61,7 +79,8 @@
                 "role": {
                   "type": "string",
                   "enum": [
-                    "illustration-mock"
+                    "illustration-mock",
+                    "generated-mock-scene"
                   ]
                 },
                 "ref": {
@@ -72,6 +91,40 @@
                   "minLength": 0,
                   "maxLength": 28,
                   "maxWords": 2
+                },
+                "parts": {
+                  "type": "array",
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "role",
+                      "ref",
+                      "alt"
+                    ],
+                    "properties": {
+                      "role": {
+                        "type": "string",
+                        "enum": [
+                          "brand-mark",
+                          "placeholder-brand-mark",
+                          "fictional-avatar",
+                          "generic-partner-placeholder"
+                        ]
+                      },
+                      "ref": {
+                        "$ref": "#/definitions/placeholderRef"
+                      },
+                      "alt": {
+                        "type": "string",
+                        "minLength": 0,
+                        "maxLength": 42,
+                        "maxWords": 3
+                      }
+                    }
+                  },
+                  "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
                 }
               }
             }

@@ -1,0 +1,170 @@
+{
+  "pageSpecVersion": "2.0.0",
+  "mode": "generated",
+  "id": "generated-not-found",
+  "template": "template.not-found",
+  "route": "/missing-page",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Not found | Tallybrook",
+    "description": "The requested page does not exist."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook home"
+        },
+        "links": [
+          {
+            "label": "Tour",
+            "href": "/#tour"
+          },
+          {
+            "label": "Ledger",
+            "href": "/#ledger"
+          },
+          {
+            "label": "Plans",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "hero.not-found",
+      "content": {
+        "eyebrow": "404",
+        "headline": "Nothing filed here",
+        "subheadline": "This address has no page. The ledger is still safe.",
+        "linkLabel": "Back home",
+        "linkHref": "/"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@tallybrook.example",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@tallybrook.example"
+          },
+          {
+            "kind": "linkedin",
+            "href": "https://social.tallybrook.example/linkedin",
+            "icon": {
+              "role": "social-icon",
+              "ref": "placeholder:network-glyph",
+              "alt": "Network profile"
+            },
+            "label": ""
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Tour",
+                "href": "/#tour"
+              },
+              {
+                "label": "Ledger",
+                "href": "/#ledger"
+              },
+              {
+                "label": "Plans",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Help",
+            "links": [
+              {
+                "label": "Guides",
+                "href": "https://help.tallybrook.example/guides"
+              },
+              {
+                "label": "Uptime",
+                "href": "https://uptime.tallybrook.invalid/"
+              },
+              {
+                "label": "Referrals",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Processing terms",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Tallybrook Ledger Co. (fictional)",
+        "credit": {
+          "label": "Made by",
+          "href": "https://studio.example/",
+          "mark": {
+            "role": "generic-partner-placeholder",
+            "ref": "placeholder:studio-badge",
+            "alt": "Studio"
+          }
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

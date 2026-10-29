@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "$comment": "Closed assetRole vocabulary. Wired through schema/pagespec.schema.json (definitions.assetRole enum + per-field role enums), tokens/llm/component-allowlist.json (assetRoles) and schema/example.pagespec.json. The source is a REAL, LIVE company's site: generated pages must never reproduce real logos, real people, or real proprietary product UI/content.",
+  "version": "2.0.0",
+  "$comment": "Closed assetRole vocabulary with a closed three-way `availability` per role (reference-only | generation-safe | blocked-for-generation). Wired through schema/pagespec.schema.json (definitions.assetRole + per-field role enums), tokens/llm/component-allowlist.json (assetRoles), every section contract (generatedAssetRoles) and the examples. Availability is PINNED in code (PINNED_AVAILABILITY in schema/semantic_validate.py and, as an independent literal, in extraction/verify_all.py): editing this file alone cannot loosen it. The source is a REAL, LIVE company's site.",
   "generationPolicies": {
     "may-generate-new": "AI may create new original artwork/markup for this role.",
     "must-reuse-exact": "Use a specific approved third-party/open asset unmodified (with attribution where the license requires).",
@@ -8,8 +8,8 @@
     "must-not-reproduce-source": "AI may create NEW original content for this role but must not reproduce, trace or paraphrase the source site's asset."
   },
   "globalRules": [
-    "Never reproduce real logos (including the source brand's), real people's photos or likenesses, or real proprietary product UI/content.",
-    "Every PageSpec asset ref is a placeholder id (placeholder:<slug>); binary assets are resolved at build time by the deploying team, never fetched from the source site.",
+    "Never reproduce real logos (including the source brand's), real people's photos or likenesses, or real proprietary product UI/content in a generated page.",
+    "Every PageSpec asset ref is a placeholder id (placeholder:<slug>); binary assets are resolved at build time by the deploying team, never fetched from the source site. In generated mode the slug must not name a source file (GENERATED_MODE_ASSET_REF).",
     "No external requests: the source clone served every asset locally (fonts, images, animations, flags, the animation WASM). Keep generated pages self-hosted; no CDN or third-party runtime fetches.",
     "Fonts are referenced by family name only (see tokens/00-foundation/typography.json for licensing); no font files ship in this repo."
   ],
@@ -29,7 +29,13 @@
       "evidence": [
         "ev.spec.home.hero",
         "ev.spec.pul.ua-shifts"
-      ]
+      ],
+      "kind": "media",
+      "availability": "reference-only",
+      "generationSafeSubstitutes": [
+        "generated-product-visual"
+      ],
+      "generatedModeGuidance": "Not allowed in generated pages: the slot held the source's real dashboard screenshots. Use generated-product-visual (an invented UI with an invented brand and invented data)."
     },
     "product-animation": {
       "policy": "must-not-reproduce-source",
@@ -39,18 +45,32 @@
         "ev.spec.home.product-grid",
         "ev.spec.home.showcases",
         "ev.src.featuretabs-duration"
-      ]
+      ],
+      "kind": "media",
+      "availability": "reference-only",
+      "generationSafeSubstitutes": [
+        "generated-product-animation"
+      ],
+      "generatedModeGuidance": "Not allowed in generated pages: the slot held the source's .lottie files. Use generated-product-animation (new animation, fictional UI, own markers)."
     },
     "illustration-mock": {
       "policy": "may-generate-new",
-      "usedFor": "DOM-built mock scenes (cards, pills, rows, skeletons) inside split heroes, charts and visual-step panes.",
+      "usedFor": "DOM-built mock scenes (cards, pills, rows, skeletons) inside split heroes, charts and visual-step panes. The source's scenes embed its own brand mark and mock company names (parts).",
       "aiGeneration": "Compose from primitives (mock-card, mock-pill, mock-row, skeleton-bar, avatar-initials) with obviously fictional names and numbers. Do not reproduce real companies, real people, or the source's exact mock content.",
       "evidence": [
         "ev.spec.pm.mock",
         "ev.spec.pm.m1",
         "ev.spec.pul.split-hero",
-        "ev.assets.pm-none"
-      ]
+        "ev.assets.pm-none",
+        "ev.src.mock-brand-avatar",
+        "ev.src.mock-vaultmark"
+      ],
+      "kind": "media",
+      "availability": "reference-only",
+      "generationSafeSubstitutes": [
+        "generated-mock-scene"
+      ],
+      "generatedModeGuidance": "Not allowed in generated pages: the source's DOM mock scenes embed its own brand mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and its mock company names. Use generated-mock-scene with fictional-avatar / generic-partner-placeholder / placeholder-brand-mark parts."
     },
     "icon": {
       "policy": "may-generate-new",
@@ -59,7 +79,10 @@
       "evidence": [
         "ev.spec.pm.faq",
         "ev.spec.home.grid-frame"
-      ]
+      ],
+      "kind": "media",
+      "availability": "generation-safe",
+      "generatedModeGuidance": "Allowed: generic UI glyphs (any open icon set or newly drawn). No brand marks."
     },
     "icon-illustrated": {
       "policy": "may-generate-new",
@@ -68,7 +91,10 @@
       "evidence": [
         "ev.spec.pm.m3",
         "ev.spec.pul.audience"
-      ]
+      ],
+      "kind": "media",
+      "availability": "generation-safe",
+      "generatedModeGuidance": "Allowed: draw new glyphs on the documented badge construction. Do not copy the source's glyph paths."
     },
     "background-art": {
       "policy": "must-not-reproduce-source",
@@ -77,7 +103,14 @@
       "evidence": [
         "ev.spec.home.hero",
         "ev.spec.home.statement"
-      ]
+      ],
+      "kind": "media",
+      "availability": "reference-only",
+      "generationSafeSubstitutes": [
+        "generated-background-art",
+        "background-glow"
+      ],
+      "generatedModeGuidance": "Not allowed in generated pages: the source's planet raster and V-shaped watermark are part of its identity. Use generated-background-art or background-glow."
     },
     "background-glow": {
       "policy": "may-generate-new",
@@ -85,7 +118,10 @@
       "aiGeneration": "Build from gradient tokens only (gradient.glow, gradient.glow-wide, gradient.dot-grid, gradient.hero-fade). No raster needed.",
       "evidence": [
         "ev.src.tw-backgrounds"
-      ]
+      ],
+      "kind": "media",
+      "availability": "generation-safe",
+      "generatedModeGuidance": "Allowed: CSS-only glows/dot grids built from gradient tokens."
     },
     "brand-mark": {
       "policy": "must-not-fabricate",
@@ -94,7 +130,13 @@
       "evidence": [
         "ev.spec.home.nav",
         "ev.spec.home.footer"
-      ]
+      ],
+      "kind": "media",
+      "availability": "reference-only",
+      "generationSafeSubstitutes": [
+        "placeholder-brand-mark"
+      ],
+      "generatedModeGuidance": "Not allowed in generated pages: in this repo the slot is the source's own wordmark/mark. Use placeholder-brand-mark (user-supplied logo, a neutral placeholder, or a newly generated mark for a fictional brand)."
     },
     "social-icon": {
       "policy": "must-reuse-exact",
@@ -102,7 +144,10 @@
       "aiGeneration": "Use the network's official icon asset unmodified per its brand guidelines; never redraw or recolor beyond what those guidelines allow. Link only to the deploying brand's own profiles.",
       "evidence": [
         "ev.spec.home.footer"
-      ]
+      ],
+      "kind": "media",
+      "availability": "generation-safe",
+      "generatedModeGuidance": "Allowed: the network's official icon per its brand guidelines, linking to the deploying brand's own profile on a reserved placeholder URL until bound. Never the source's profile URLs (GENERATED_MODE_URL)."
     },
     "flag": {
       "policy": "must-reuse-exact",
@@ -112,7 +157,374 @@
         "ev.assets.flags",
         "ev.src.flags"
       ],
-      "license": "CC-BY-4.0 (Twemoji) - attribution required"
+      "license": "CC-BY-4.0 (Twemoji) - attribution required",
+      "kind": "media",
+      "availability": "generation-safe",
+      "generatedModeGuidance": "Allowed: an open flag set unmodified with attribution (Twemoji CC-BY 4.0)."
+    },
+    "third-party-logo": {
+      "kind": "media",
+      "policy": "must-not-fabricate",
+      "availability": "blocked-for-generation",
+      "generationSafeSubstitutes": [
+        "generic-partner-placeholder"
+      ],
+      "usedFor": "A real third party's logo/wordmark rendered by the source: the builder-agency credit badge in the footer bottom bar.",
+      "aiGeneration": "Never generate, redraw or approximate a real company's logo. Reference pages may only cite the source's credit as evidence.",
+      "generatedModeGuidance": "Not allowed in generated pages. Use generic-partner-placeholder (initials/abstract badge) or omit the credit.",
+      "evidence": [
+        "ev.src.footer-credit"
+      ]
+    },
+    "placeholder-brand-mark": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Brand mark of the brand a generated page is FOR: a user-supplied logo, a neutral placeholder, or a new mark generated for a fictional brand. Navbar, footer and mock parts.",
+      "aiGeneration": "Use the deploying brand's own approved logo when supplied; otherwise a neutral placeholder or a newly generated mark for an obviously fictional name. Never resemble the source's V mark/wordmark or any real company's mark.",
+      "generatedModeGuidance": "Allowed; substitute for brand-mark.",
+      "substituteFor": [
+        "brand-mark"
+      ],
+      "evidence": [
+        "ev.spec.home.nav",
+        "ev.spec.home.footer"
+      ]
+    },
+    "generated-product-visual": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Framed product UI image in the centered hero of a generated page.",
+      "aiGeneration": "Generate a NEW fictional product UI (invented brand, invented data and names). Never trace, re-color or paraphrase the source's dashboard screenshots.",
+      "generatedModeGuidance": "Allowed; substitute for product-screenshot.",
+      "substituteFor": [
+        "product-screenshot"
+      ],
+      "evidence": [
+        "ev.spec.home.hero"
+      ]
+    },
+    "generated-product-animation": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Canvas/Lottie animation in product cards, tabbed showcases and timed steps of a generated page.",
+      "aiGeneration": "Author NEW animations with fictional UI. Provide sectionN_in/sectionN_out markers (showcases) or step start frames (timed steps) so durations derive from the file. Never ship or re-skin the source's .lottie files.",
+      "generatedModeGuidance": "Allowed; substitute for product-animation.",
+      "substituteFor": [
+        "product-animation"
+      ],
+      "evidence": [
+        "ev.spec.home.product-grid",
+        "ev.src.featuretabs-duration"
+      ]
+    },
+    "generated-background-art": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Original abstract art behind a hero or a statement watermark in a generated page.",
+      "aiGeneration": "Generate original abstract art. No planet raster, no V-shaped mark, nothing traced from the source.",
+      "generatedModeGuidance": "Allowed; substitute for background-art.",
+      "substituteFor": [
+        "background-art"
+      ],
+      "evidence": [
+        "ev.spec.home.hero",
+        "ev.spec.home.statement"
+      ]
+    },
+    "generated-mock-scene": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "DOM-built mock scene of a generated page composed from the mock primitives with fictional names and numbers.",
+      "aiGeneration": "Compose from mock-card, mock-pill, mock-row, skeleton-bar and avatar-initials with obviously fictional names/numbers. Brand marks inside the scene are placeholder-brand-mark parts; people are fictional-avatar; client/partner companies are generic-partner-placeholder.",
+      "generatedModeGuidance": "Allowed; substitute for illustration-mock.",
+      "substituteFor": [
+        "illustration-mock"
+      ],
+      "evidence": [
+        "ev.spec.pm.mock",
+        "ev.spec.pul.split-hero"
+      ]
+    },
+    "fictional-avatar": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Avatar of a fictional person or team (initials badge or generated portrait) inside a mock scene, e.g. the chat / intro-call team row.",
+      "aiGeneration": "Initials or an obviously synthetic portrait of a fictional person. Never a real person's photo or likeness, never a real name.",
+      "generatedModeGuidance": "Allowed. Names in alt text are still checked by GENERATED_MODE_PERSON / _CUSTOMER.",
+      "evidence": [
+        "ev.src.mock-avatar",
+        "ev.src.mock-brand-avatar"
+      ]
+    },
+    "generic-partner-placeholder": {
+      "kind": "media",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Generic client / partner / integration badge (initials or abstract mark) in mock workspace rows and in a builder/partner credit.",
+      "aiGeneration": "Initials on the avatar badge or an abstract mark for a fictional company. Never a real company's logo (no bank/wallet provider logos, no agency wordmarks).",
+      "generatedModeGuidance": "Allowed; substitute for third-party-logo and for the source's mock company badges.",
+      "substituteFor": [
+        "third-party-logo"
+      ],
+      "evidence": [
+        "ev.src.partner-mock-rows",
+        "ev.src.footer-credit"
+      ]
+    },
+    "placeholder-url": {
+      "kind": "convention",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Every link target of a generated page: internal paths, #anchors, or reserved placeholder hosts (*.example, *.invalid, example.com/.org/.net) until the deploying team binds real URLs.",
+      "aiGeneration": "Write internal paths or reserved placeholder hosts only. Never the source's domains, subdomains, profiles or form endpoints.",
+      "generatedModeGuidance": "Enforced by the href schema definition and by GENERATED_MODE_URL / GENERATED_MODE_EXTERNAL_URL over all text.",
+      "wiredTo": "definitions.href",
+      "enforcedBy": [
+        "GENERATED_MODE_URL",
+        "GENERATED_MODE_EXTERNAL_URL"
+      ],
+      "evidence": [
+        "ev.src.footer-links"
+      ]
+    },
+    "original-copy": {
+      "kind": "convention",
+      "policy": "may-generate-new",
+      "availability": "generation-safe",
+      "usedFor": "Every human-readable string of a generated page (headings, body, labels, CTAs, alt text, meta).",
+      "aiGeneration": "Write new copy for the fictional/deploying brand within the maxWords budgets. Do not reuse, translate-back or lightly edit the source's copy or CTA strings.",
+      "generatedModeGuidance": "Enforced by GENERATED_MODE_COPY (hashed 5-word shingles) and GENERATED_MODE_CTA (source CTA strings).",
+      "wiredTo": "maxWords text fields",
+      "enforcedBy": [
+        "GENERATED_MODE_COPY",
+        "GENERATED_MODE_CTA"
+      ],
+      "evidence": [
+        "ev.src.i18n-meta"
+      ]
+    }
+  },
+  "availabilityValues": {
+    "reference-only": "The source's own asset (its logo, screenshots, animations, art, mock scenes that embed its mark). Allowed in a `mode: reference` PageSpec (faithful reconstruction, evidence only). Rejected in `mode: generated` (GENERATED_MODE_ASSET); use one of generationSafeSubstitutes.",
+    "generation-safe": "May appear in a `mode: generated` PageSpec, provided the section lists it in generatedAssetRoles and the ref is a placeholder id that names no source file.",
+    "blocked-for-generation": "A real third party's identity (its logo / mark). Never in a generated page; reference pages may only show it as evidence of the source. Use one of generationSafeSubstitutes."
+  },
+  "modes": {
+    "reference": "Faithful reconstruction of the source page for review/evidence. Real brand, copy and asset roles of every availability are accepted.",
+    "generated": "A NEW page for some other brand built from this design system. Only generation-safe roles; no source brand, CTA, copy, URL, person, customer, partner or media (GENERATED_MODE_* rules in schema/semantic_validate.py)."
+  },
+  "sourceBrand": {
+    "$comment": "GENERATED by extraction/build_source_brand.py from the clone's src/, CLONE_SPEC*.md, ASSET_MANIFEST*.md, public/ and recon/. NOT human-reviewed. Do not hand-edit; re-run the script (verify_all runs it with --check when the source tree is present).",
+    "matching": "Applied only to `mode: generated` PageSpecs. Every human-readable string (id, route, meta, every content string incl. alt text, labels and hrefs; structural enum vocabulary excluded) is normalised with schema/textnorm.py (NFKC, zero-width removal, curly quotes -> straight, Latin look-alike folding) and matched case-insensitively. String-based detection: paraphrase or translation into another language is not detected.",
+    "brand": {
+      "rule": "GENERATED_MODE_BRAND",
+      "productName": "Vault AI",
+      "legalEntities": [
+        "Overcode Limited"
+      ],
+      "stems": [
+        "overcode",
+        "vault"
+      ],
+      "patterns": [
+        "overcode",
+        "vault",
+        "(?<![\\w])overcode[\\s._-]*limited(?![\\w])"
+      ],
+      "squashedTokens": [
+        "overcode",
+        "overcodelimited",
+        "usevault",
+        "vaultai"
+      ],
+      "observedVariants": [
+        "app.usevault",
+        "c.vaultmessage",
+        "c.vaultplan",
+        "fieldinvault",
+        "footer.overcodearialabel",
+        "help.usevault",
+        "im.fieldinvault",
+        "m.paysforvault",
+        "m.vaultpro",
+        "overcode",
+        "overcode-",
+        "overcode-icon",
+        "overcode-wordmark",
+        "overcodearialabel",
+        "partners.mock.paysforvault",
+        "paysforvault",
+        "status.usevault",
+        "t.footer.overcodearialabel",
+        "usevault",
+        "usevault-ai",
+        "usevault_ai",
+        "vault",
+        "vault-logo",
+        "vault-mark",
+        "vaultmark",
+        "vaultmessage",
+        "vaultplan",
+        "vaultpro",
+        "vaultproheader",
+        "www.overcode",
+        "www.usevault"
+      ],
+      "derivation": "productName = the home page twitterTitle in src/i18n/en.js; legalEntities = '<Name> Limited|Ltd|Inc|LLC' in src/ (the operator named in the legal meta descriptions, also the 'Built by' credit host); stems = first word of each, matched as SUBSTRINGS (so wordmark/file/handle spellings such as usevault, vault-ai, vault_ai, VAULT AI, VaultPro, overcode-wordmark are all caught; 'vaulted' is caught too, a deliberate false positive). squashedTokens are matched after removing every separator (V.a.u.l.t-A.I); they are the product name, the legal entity and the first label of each brand domain.",
+      "evidence": [
+        "ev.src.i18n-meta",
+        "ev.src.footer-credit"
+      ]
+    },
+    "urls": {
+      "rule": "GENERATED_MODE_URL",
+      "domains": [
+        "overcode.tech",
+        "usevault.ai"
+      ],
+      "hostPatterns": [
+        "(?:[a-z0-9-]+\\.)*overcode\\.tech",
+        "(?:[a-z0-9-]+\\.)*usevault\\.ai"
+      ],
+      "pathPatterns": [
+        "linkedin\\.com/company/usevault\\-ai",
+        "t\\.me/usevault_ai"
+      ],
+      "emails": [
+        "usevault.ai"
+      ],
+      "endpointPaths": [
+        "/api/add-lead"
+      ],
+      "endpointPatterns": [
+        "/api/add\\-lead(?![\\w/-])"
+      ],
+      "reservedHostSuffixes": [
+        ".example",
+        ".invalid",
+        "example.com",
+        "example.org",
+        "example.net"
+      ],
+      "derivation": "http(s) URL literals and e-mail addresses in src/ and the specs (namespace/CDN/licence hosts ignored); a host whose registrable domain carries a brand stem is blocked with all subdomains (app./help./status./www.); shared platforms (linkedin.com, t.me) are blocked only on the source's own profile path; endpointPaths = `POST /path` form endpoints the specs record on the original.",
+      "note": "Any other http(s) URL or e-mail host in a generated page's text is GENERATED_MODE_EXTERNAL_URL unless it is on a reserved .example/.invalid (or example.com/.org/.net) host. PageSpec href fields are additionally restricted by the schema.",
+      "evidence": [
+        "ev.src.footer-links",
+        "ev.spec.pul.form-endpoint"
+      ]
+    },
+    "people": {
+      "rule": "GENERATED_MODE_PERSON",
+      "names": [
+        "Yurii Brusentsov"
+      ],
+      "patterns": [
+        "(?<![\\w])yurii[\\s._-]*brusentsov(?![\\w])"
+      ],
+      "derivation": "'(c) YEAR Name' / '© YEAR Name' attributions in src/ and the specs (the country-list author credited in src/components/partners/countries.js). The source has no testimonials, team, founders or reviewer names, so this list is short; first names alone are not matched.",
+      "evidence": [
+        "ev.src.countries-credit"
+      ]
+    },
+    "customers": {
+      "rule": "GENERATED_MODE_CUSTOMER",
+      "names": [
+        "Alder Logistics",
+        "Harbor Dental",
+        "Ledgerline",
+        "Northwind Studio"
+      ],
+      "patterns": [
+        "(?<![\\w])alder[\\s._-]*logistics(?![\\w])",
+        "(?<![\\w])harbor[\\s._-]*dental(?![\\w])",
+        "(?<![\\w])ledgerline(?![\\w])",
+        "(?<![\\w])northwind[\\s._-]*studio(?![\\w])"
+      ],
+      "derivation": "Company names the source renders in its partner-program mocks (ListItem title=\"...\" and ['XX', 'Name'] rows in src/components/partners/*.jsx), kept only when the measured spec records the same name on the original.",
+      "evidence": [
+        "ev.src.partner-mock-rows",
+        "ev.spec.pul.mock-rows"
+      ]
+    },
+    "partners": {
+      "rule": "GENERATED_MODE_PARTNER",
+      "names": [
+        "Intercom",
+        "Plaid"
+      ],
+      "patterns": [
+        "(?<![\\w])intercom(?![\\w])",
+        "(?<![\\w])plaid(?![\\w])"
+      ],
+      "derivation": "Integration providers the source's copy names ('trusted providers like X' in src/i18n) and third-party widgets the specs record on the original ('X launcher/messenger'). A generated page is a different brand: it must not borrow the source's named partners/vendors.",
+      "evidence": [
+        "ev.src.i18n-providers",
+        "ev.spec.home.third-party"
+      ]
+    },
+    "ctas": {
+      "rule": "GENERATED_MODE_CTA",
+      "file": "assets/source-copy-hashes.json",
+      "sourceCtaStrings": 24,
+      "blockedCtaStrings": 6,
+      "genericExempt": [
+        "close",
+        "contact us",
+        "copied",
+        "copy",
+        "get started",
+        "import",
+        "learn more",
+        "or",
+        "send",
+        "send request",
+        "talk to us",
+        "або",
+        "детальніше",
+        "дізнатися більше",
+        "закрити",
+        "зв'язатися з нами",
+        "копіювати",
+        "надіслати",
+        "надіслати запит",
+        "надіслати заявку",
+        "напишіть нам",
+        "почати",
+        "скопійовано",
+        "імпортувати"
+      ],
+      "derivation": "Values of cta / submit / getStarted / startTrial / contact / learnMore keys in the src/i18n tables (EN + UK). Generic UI verbs in genericExempt (agent attestation, not a human sign-off) are allowed; every other source CTA string is rejected when a generated text equals it after normalisation, and any CTA-like text containing a brand stem is caught by GENERATED_MODE_BRAND."
+    },
+    "copy": {
+      "rule": "GENERATED_MODE_COPY",
+      "file": "assets/source-copy-hashes.json",
+      "shingleWords": 5,
+      "minStringWords": 5,
+      "sourceStrings": 594,
+      "derivation": "String literals and JSX text in src/ (EN + UK i18n tables included) plus quoted strings and table cells in the specs, kept when they have 5+ words, are mostly alphabetic, are not code/class strings and are not clone-authored placeholder text. A generated text is rejected when any 5 consecutive normalised words hash to a source shingle."
+    },
+    "assets": {
+      "rule": "GENERATED_MODE_ASSET_REF",
+      "file": "assets/source-copy-hashes.json",
+      "derivation": "Lower-cased file stems of the proprietary media of the source: public/assets/img, public/assets/lottie, public/assets/favicon, recon/ screenshots, the saved original page's *_files media and every svg whose name carries a brand stem. Generic UI glyphs and the open Twemoji flag set are not included. A generated asset ref whose last segment equals one of these stems names a source file (screenshot / media reuse)."
+    },
+    "counts": {
+      "brandPatterns": 3,
+      "urlDomains": 2,
+      "urlPaths": 2,
+      "endpoints": 1,
+      "people": 1,
+      "customers": 4,
+      "partners": 2,
+      "copyShingles": 2717,
+      "ctaStrings": 6,
+      "assetStems": 63
     }
   }
 }

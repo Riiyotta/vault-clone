@@ -282,7 +282,7 @@
     "template.legal": {
       "id": "template.legal",
       "name": "Legal document",
-      "purpose": "Legal document page (heroless). Body text placeholder only.",
+      "purpose": "Legal document page (heroless): document header, then one legal part per h2 (none on /subprocessors). Body text placeholder only.",
       "routes": [
         "/terms",
         "/privacy",
@@ -313,9 +313,14 @@
           "repeatable": false
         },
         {
-          "section": "content.legal-article",
+          "section": "content.legal-header",
           "required": true,
           "repeatable": false
+        },
+        {
+          "section": "content.legal-section",
+          "required": false,
+          "repeatable": true
         },
         {
           "section": "chrome.footer",
@@ -325,6 +330,9 @@
       ],
       "evidence": [
         "ev.src.page-legal",
+        "ev.src.legal-header",
+        "ev.src.legal-section",
+        "ev.src.legal-outline",
         "ev.spec.pul.legal-layout",
         "ev.ia"
       ]

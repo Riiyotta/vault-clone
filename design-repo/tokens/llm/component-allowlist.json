@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "$comment": "Closed list of what a generator may instantiate. Parity with primitives/, components/, sections/ is machine-checked by extraction/verify_all.py.",
   "sections": {
     "chrome.navbar": "sections/chrome.navbar.json",
@@ -24,7 +24,8 @@
     "process.lottie-steps": "sections/process.lottie-steps.json",
     "process.visual-steps": "sections/process.visual-steps.json",
     "forms.partner-popup": "sections/forms.partner-popup.json",
-    "content.legal-article": "sections/content.legal-article.json"
+    "content.legal-header": "sections/content.legal-header.json",
+    "content.legal-section": "sections/content.legal-section.json"
   },
   "primitives": {
     "primitive.button-primary": "primitives/button-primary.json",
@@ -58,10 +59,11 @@
     "component.legal-table": "components/legal-table.json"
   },
   "nodeProperties": [
-    "type",
-    "variant",
     "content",
-    "motion"
+    "motion",
+    "retrievalEligible",
+    "type",
+    "variant"
   ],
   "assetRoles": [
     "product-screenshot",
@@ -73,7 +75,17 @@
     "background-glow",
     "brand-mark",
     "social-icon",
-    "flag"
+    "flag",
+    "third-party-logo",
+    "placeholder-brand-mark",
+    "generated-product-visual",
+    "generated-product-animation",
+    "generated-background-art",
+    "generated-mock-scene",
+    "fictional-avatar",
+    "generic-partner-placeholder",
+    "placeholder-url",
+    "original-copy"
   ],
   "ctaActions": [
     "app-signup-link",
@@ -96,5 +108,28 @@
   ],
   "themes": [
     "dark"
+  ],
+  "generationSafeAssetRoles": [
+    "icon",
+    "icon-illustrated",
+    "background-glow",
+    "social-icon",
+    "flag",
+    "placeholder-brand-mark",
+    "generated-product-visual",
+    "generated-product-animation",
+    "generated-background-art",
+    "generated-mock-scene",
+    "fictional-avatar",
+    "generic-partner-placeholder",
+    "placeholder-url",
+    "original-copy"
+  ],
+  "retrievalIneligibleSections": [
+    "forms.partner-popup"
+  ],
+  "modes": [
+    "reference",
+    "generated"
   ]
 }

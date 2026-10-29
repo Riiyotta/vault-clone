@@ -1,6 +1,16 @@
 {
   "id": "support.faq-accordion",
   "category": "SUPPORT",
+  "semantic": {
+    "id": "support.faq-accordion",
+    "category": "SUPPORT"
+  },
+  "source": {
+    "id": "src.components.shared.Faq.div@L19",
+    "file": "src/components/shared/Faq.jsx",
+    "lines": "19-72",
+    "tag": "div"
+  },
   "purpose": "Answer objections: section heading + multi-open accordion of 3-7 questions; answers may hold up to 3 paragraphs and inline contact/link actions.",
   "implementedBy": "src/components/shared/Faq.jsx",
   "evidence": [
@@ -10,6 +20,8 @@
     "ev.spec.pul.faq",
     "ev.src.faq"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

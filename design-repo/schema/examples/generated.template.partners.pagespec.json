@@ -1,0 +1,485 @@
+{
+  "pageSpecVersion": "2.0.0",
+  "mode": "generated",
+  "id": "generated-partners",
+  "template": "template.partners",
+  "route": "/referrals",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Referral circle | Tallybrook",
+    "description": "A fictional referral programme page generated from this design system."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook home"
+        },
+        "links": [
+          {
+            "label": "Tour",
+            "href": "/#tour"
+          },
+          {
+            "label": "Ledger",
+            "href": "/#ledger"
+          },
+          {
+            "label": "Plans",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "hero.partners-split",
+      "content": {
+        "eyebrow": "Referral circle",
+        "headlineLines": [
+          "Bring your clients",
+          "a tidier ledger"
+        ],
+        "subLines": [
+          "For bookkeepers and fractional finance leads.",
+          "Earn a thank-you for every studio that stays past its trial."
+        ],
+        "ctaLabel": "Join the circle",
+        "ctaAction": "open-lead-form",
+        "scene": {
+          "role": "generated-mock-scene",
+          "ref": "placeholder:referral-scene",
+          "alt": "",
+          "parts": [
+            {
+              "role": "placeholder-brand-mark",
+              "ref": "placeholder:tallybrook-mark",
+              "alt": "Tallybrook"
+            },
+            {
+              "role": "fictional-avatar",
+              "ref": "placeholder:avatar-initials-mq",
+              "alt": "Mira Quell"
+            },
+            {
+              "role": "generic-partner-placeholder",
+              "ref": "placeholder:badge-initials-pb",
+              "alt": "Pinecone Bakery"
+            }
+          ]
+        },
+        "glow": {
+          "role": "background-glow",
+          "ref": "placeholder:accent-glow",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "reveal-sequence-once",
+        "reducedMotionFallback": "end-state-immediately"
+      }
+    },
+    {
+      "type": "features.partner-audience",
+      "content": {
+        "heading": "Who joins the circle",
+        "items": [
+          {
+            "title": "Placeholder item 1",
+            "description": "One placeholder sentence for this row.",
+            "icon": {
+              "role": "icon-illustrated",
+              "ref": "placeholder:badge-1",
+              "alt": ""
+            }
+          },
+          {
+            "title": "Placeholder item 2",
+            "description": "One placeholder sentence for this row.",
+            "icon": {
+              "role": "icon-illustrated",
+              "ref": "placeholder:badge-2",
+              "alt": ""
+            }
+          },
+          {
+            "title": "Placeholder item 3",
+            "description": "One placeholder sentence for this row.",
+            "icon": {
+              "role": "icon-illustrated",
+              "ref": "placeholder:badge-3",
+              "alt": ""
+            }
+          },
+          {
+            "title": "Placeholder item 4",
+            "description": "One placeholder sentence for this row.",
+            "icon": {
+              "role": "icon-illustrated",
+              "ref": "placeholder:badge-4",
+              "alt": ""
+            }
+          },
+          {
+            "title": "Placeholder item 5",
+            "description": "One placeholder sentence for this row.",
+            "icon": {
+              "role": "icon-illustrated",
+              "ref": "placeholder:badge-5",
+              "alt": ""
+            }
+          }
+        ],
+        "glow": {
+          "role": "background-glow",
+          "ref": "placeholder:corner-glow",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "icon-glyph-reveal-once",
+        "reducedMotionFallback": "end-state-immediately"
+      }
+    },
+    {
+      "type": "narrative.scroll-statement",
+      "variant": "scrubbed-static-when-reduced",
+      "content": {
+        "text": "Tallybrook turns a shoebox of receipts into a ledger your accountant can sign off without a single follow-up email",
+        "watermark": {
+          "role": "generated-background-art",
+          "ref": "placeholder:watermark-mark",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "scroll-scrubbed-word-fill",
+        "reducedMotionFallback": "progress-fixed-at-1"
+      }
+    },
+    {
+      "type": "features.partner-value-grid",
+      "content": {
+        "heading": "What everyone gets",
+        "leftColumn": {
+          "title": "For clients",
+          "primary": {
+            "title": "Placeholder first option",
+            "description": "Placeholder description of the first option for the end client.",
+            "linkLabel": "Learn more",
+            "linkHref": "/offer"
+          },
+          "dividerLabel": "Or",
+          "secondary": {
+            "title": "Second option",
+            "description": "Placeholder description of the second option."
+          }
+        },
+        "rightColumn": {
+          "title": "For partners",
+          "benefits": [
+            {
+              "title": "Placeholder benefit 1",
+              "description": "One placeholder sentence describing this benefit."
+            },
+            {
+              "title": "Placeholder benefit 2",
+              "description": "One placeholder sentence describing this benefit."
+            },
+            {
+              "title": "Placeholder benefit 3",
+              "description": "One placeholder sentence describing this benefit."
+            }
+          ],
+          "note": "Placeholder note inviting the reader to get in touch.",
+          "ctaLabel": "Join the circle",
+          "ctaAction": "open-lead-form"
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "support.faq-accordion",
+      "content": {
+        "heading": "Questions studios ask",
+        "items": [
+          {
+            "id": "trial",
+            "question": "What happens when the trial ends?",
+            "answer": [
+              "You pick a plan or keep a read-only copy of your ledger."
+            ]
+          },
+          {
+            "id": "bank",
+            "question": "Do I need to link a bank?",
+            "answer": [
+              "No. You can type entries or upload a spreadsheet instead."
+            ]
+          },
+          {
+            "id": "seats",
+            "question": "Can my bookkeeper join?",
+            "answer": [
+              "Yes, invite them with a reviewer role at no extra cost."
+            ]
+          },
+          {
+            "id": "export",
+            "question": "Can I take my data with me?",
+            "answer": [
+              "Export everything as spreadsheet files at any time."
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "accordion-grid-rows",
+        "reducedMotionFallback": "css-transitions-none"
+      }
+    },
+    {
+      "type": "process.visual-steps",
+      "content": {
+        "heading": "How switching works",
+        "steps": [
+          {
+            "title": "Send the old invoice",
+            "description": "Reply to our welcome email with the last invoice attached.",
+            "visual": {
+              "role": "generated-mock-scene",
+              "ref": "placeholder:inbox-pane",
+              "alt": "",
+              "parts": [
+                {
+                  "role": "fictional-avatar",
+                  "ref": "placeholder:avatar-initials-mq",
+                  "alt": "Mira Quell"
+                }
+              ]
+            }
+          },
+          {
+            "title": "We confirm the credit",
+            "description": "A person checks the dates and replies within a day.",
+            "visual": {
+              "role": "generated-mock-scene",
+              "ref": "placeholder:check-pane",
+              "alt": "",
+              "parts": [
+                {
+                  "role": "placeholder-brand-mark",
+                  "ref": "placeholder:tallybrook-mark",
+                  "alt": "Tallybrook"
+                },
+                {
+                  "role": "fictional-avatar",
+                  "ref": "placeholder:avatar-initials-mq",
+                  "alt": "Mira Quell"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Choose a yearly plan",
+            "description": "The credit is already applied when the first bill arrives.",
+            "visual": {
+              "role": "generated-mock-scene",
+              "ref": "placeholder:bill-pane",
+              "alt": ""
+            }
+          },
+          {
+            "title": "Import your history",
+            "description": "Upload a spreadsheet and map columns on one screen.",
+            "visual": {
+              "role": "generated-mock-scene",
+              "ref": "placeholder:import-pane",
+              "alt": ""
+            }
+          }
+        ],
+        "ctaLabel": "Ask about switching",
+        "ctaAction": "open-lead-form"
+      },
+      "motion": {
+        "pattern": "auto-advancing-steps-dom",
+        "reducedMotionFallback": "no-auto-advance"
+      }
+    },
+    {
+      "type": "forms.partner-popup",
+      "content": {
+        "heading": "Join the referral circle",
+        "description": "Share a few details and a person from our team will reply.",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First name",
+            "errorRequired": "Enter your first name"
+          },
+          {
+            "name": "lastName",
+            "label": "Last name",
+            "errorRequired": "Enter your last name"
+          },
+          {
+            "name": "email",
+            "label": "Work email",
+            "errorRequired": "Enter your email"
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "errorRequired": "Enter your phone number"
+          }
+        ],
+        "submitLabel": "Send details",
+        "submission": {
+          "mode": "local-simulated"
+        },
+        "defaultCountry": "us",
+        "flags": {
+          "role": "flag",
+          "ref": "placeholder:open-flag-set",
+          "alt": ""
+        },
+        "success": {
+          "title": "Thanks!",
+          "body": "Placeholder confirmation that the request was received."
+        },
+        "error": {
+          "title": "Something failed",
+          "body": "Please try again."
+        }
+      },
+      "motion": {
+        "pattern": "modal-fade-scale",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@tallybrook.example",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@tallybrook.example"
+          },
+          {
+            "kind": "linkedin",
+            "href": "https://social.tallybrook.example/linkedin",
+            "icon": {
+              "role": "social-icon",
+              "ref": "placeholder:network-glyph",
+              "alt": "Network profile"
+            },
+            "label": ""
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Tour",
+                "href": "/#tour"
+              },
+              {
+                "label": "Ledger",
+                "href": "/#ledger"
+              },
+              {
+                "label": "Plans",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Help",
+            "links": [
+              {
+                "label": "Guides",
+                "href": "https://help.tallybrook.example/guides"
+              },
+              {
+                "label": "Uptime",
+                "href": "https://uptime.tallybrook.invalid/"
+              },
+              {
+                "label": "Referrals",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Processing terms",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Tallybrook Ledger Co. (fictional)",
+        "credit": {
+          "label": "Made by",
+          "href": "https://studio.example/",
+          "mark": {
+            "role": "generic-partner-placeholder",
+            "ref": "placeholder:studio-badge",
+            "alt": "Studio"
+          }
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

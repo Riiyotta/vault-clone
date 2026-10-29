@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "$comment": "Rhythm/position rules JSON Schema cannot express. Every rule id here is enforced by the function of the same id in schema/semantic_validate.py; extraction/verify_all.py fails if the two sets differ.",
+  "version": "2.0.0",
+  "$comment": "Rhythm/position rules JSON Schema cannot express. Every rule id in `rules` is enforced by the function of the same id in schema/semantic_validate.py; every id in `generatedModeRules` is raised by check_generated() for mode 'generated' PageSpecs only. extraction/verify_all.py fails if either set differs from the code.",
   "rules": [
     {
       "id": "TEMPLATE_NODE_SEQUENCE",
@@ -16,7 +16,7 @@
     {
       "id": "DUPLICATE_SECTION_VARIANT",
       "severity": "error",
-      "description": "No (section, variant) pair may appear twice on one page (keyed on the pair, not the bare id, so a future repeatable section with distinct variants is not a false positive).",
+      "description": "No (section, variant) pair may appear twice on one page (keyed on the pair, not the bare id, so a future repeatable section with distinct variants is not a false positive). Sections a template marks repeatable (content.legal-section) are exempt: they repeat by design.",
       "exceptions": null,
       "enforcedBy": "schema/semantic_validate.py",
       "evidence": [
@@ -77,7 +77,7 @@
         "templates": [
           "template.legal"
         ],
-        "reason": "content.legal-article takes the hero slot"
+        "reason": "content.legal-header takes the hero slot on heroless legal pages"
       },
       "enforcedBy": "schema/semantic_validate.py",
       "evidence": [
@@ -189,16 +189,6 @@
       ]
     },
     {
-      "id": "BRAND_DENYLIST",
-      "severity": "error",
-      "description": "No string in a PageSpec may reference the source brand, its domains, or its agency (design system only; never the source's copy).",
-      "exceptions": null,
-      "enforcedBy": "schema/semantic_validate.py",
-      "evidence": [
-        "ev.spec.home.stack"
-      ]
-    },
-    {
       "id": "NO_ADJACENT_SAME_CATEGORY",
       "severity": "warn",
       "description": "Two adjacent nodes of the same category read as stapled fragments; only adjacencies observed on the real site are exempt.",
@@ -223,6 +213,14 @@
           [
             "features.migration-explainer",
             "features.migration-conditions"
+          ],
+          [
+            "content.legal-header",
+            "content.legal-section"
+          ],
+          [
+            "content.legal-section",
+            "content.legal-section"
           ]
         ]
       },
@@ -262,6 +260,16 @@
       "evidence": [
         "ev.spec.home.motion"
       ]
+    },
+    {
+      "id": "RETRIEVAL_ELIGIBILITY",
+      "severity": "error",
+      "description": "A node may restate retrievalEligible, but only with the value pinned for its section (RETRIEVAL_INELIGIBLE in schema/semantic_validate.py; independently in extraction/verify_all.py). Runtime UI (the lead-form modal) is never retrieval-eligible; content sections are never marked ineligible.",
+      "exceptions": null,
+      "enforcedBy": "schema/semantic_validate.py",
+      "evidence": [
+        "ev.src.popup"
+      ]
     }
   ],
   "sectionCompatibility": {
@@ -275,7 +283,7 @@
     "chrome.grid-frame": {
       "category": "CHROME",
       "observedBefore": [
-        "content.legal-article",
+        "content.legal-header",
         "hero.home-dashboard",
         "hero.migration-split",
         "hero.not-found",
@@ -290,7 +298,8 @@
       "category": "CHROME",
       "observedBefore": [],
       "observedAfter": [
-        "content.legal-article",
+        "content.legal-header",
+        "content.legal-section",
         "forms.partner-popup",
         "hero.not-found",
         "process.lottie-steps",
@@ -467,7 +476,7 @@
       ]
     },
     "forms.partner-popup": {
-      "category": "FORMS",
+      "category": "CONVERSION",
       "observedBefore": [
         "chrome.footer"
       ],
@@ -475,14 +484,105 @@
         "process.visual-steps"
       ]
     },
-    "content.legal-article": {
+    "content.legal-header": {
       "category": "CONTENT",
       "observedBefore": [
-        "chrome.footer"
+        "chrome.footer",
+        "content.legal-section"
       ],
       "observedAfter": [
         "chrome.grid-frame"
       ]
+    },
+    "content.legal-section": {
+      "category": "CONTENT",
+      "observedBefore": [
+        "chrome.footer",
+        "content.legal-section"
+      ],
+      "observedAfter": [
+        "content.legal-header",
+        "content.legal-section"
+      ]
     }
-  }
+  },
+  "generatedModeRules": [
+    {
+      "id": "GENERATED_MODE_BRAND",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "source brand name / wordmark / domain label / legal entity in any text",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_CTA",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a source CTA string reused verbatim (after normalisation)",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_COPY",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a 5-word run of source copy (hashed shingles)",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_URL",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a source domain, profile path, e-mail domain or form endpoint",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_EXTERNAL_URL",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "any http(s) URL or e-mail host that is not a reserved placeholder host",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_PERSON",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a real person named by the source",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_CUSTOMER",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a customer / client company the source depicts",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_PARTNER",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "an integration partner / vendor the source names",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    },
+    {
+      "id": "GENERATED_MODE_ASSET",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "an asset role that is reference-only or blocked-for-generation (source logo, screenshot, animation, art, mock, third-party logo)",
+      "patternsFrom": "assets/asset-roles.json availability (pinned) + section generatedAssetRoles"
+    },
+    {
+      "id": "GENERATED_MODE_ASSET_ROLE",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "a generation-safe role the section does not list in generatedAssetRoles",
+      "patternsFrom": "assets/asset-roles.json availability (pinned) + section generatedAssetRoles"
+    },
+    {
+      "id": "GENERATED_MODE_ASSET_REF",
+      "severity": "error",
+      "appliesTo": "mode: generated",
+      "description": "an asset ref whose slug names a source media file",
+      "patternsFrom": "assets/asset-roles.json sourceBrand + assets/source-copy-hashes.json (extraction/build_source_brand.py)"
+    }
+  ]
 }

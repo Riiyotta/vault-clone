@@ -2,11 +2,12 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "pagespec.schema.json",
   "title": "PageSpec (design-repo: vault-clone)",
-  "description": "Machine contract for one generated page composed from this design system. Custom keyword 'maxWords' is enforced by schema/semantic_validate.py (JSON Schema cannot count words); maxLength is a coarse backstop. There is deliberately NO per-instance style/token override field: styling is owned by section/component contracts.",
+  "description": "Machine contract for one generated page composed from this design system. Custom keyword 'maxWords' is enforced by schema/semantic_validate.py (JSON Schema cannot count words); maxLength is a coarse backstop. There is deliberately NO per-instance style/token override field: styling is owned by section/component contracts. Every PageSpec declares a closed `mode` (reference | generated); the consequences of the mode are enforced by schema/semantic_validate.py.",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "pageSpecVersion",
+    "mode",
     "id",
     "template",
     "route",
@@ -18,7 +19,15 @@
   "properties": {
     "pageSpecVersion": {
       "type": "string",
-      "const": "1.0.0"
+      "const": "2.0.0"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "reference",
+        "generated"
+      ],
+      "$comment": "reference = faithful reconstruction of the source (real brand/copy/asset roles allowed as evidence); generated = a new page for another brand: schema/semantic_validate.py enforces GENERATED_MODE_* (no source brand, CTA, copy, URL, person, customer, partner or media; generation-safe asset roles only)."
     },
     "id": {
       "type": "string",
@@ -83,8 +92,8 @@
   "definitions": {
     "href": {
       "type": "string",
-      "pattern": "^(/[a-z0-9\\-/]*(#[a-z0-9-]+)?|#[a-z0-9-]+|mailto:[a-z0-9._-]+@example\\.(com|org)|https://(www\\.)?example\\.(com|org)(/[a-zA-Z0-9\\-/._]*)?)$",
-      "$comment": "Internal paths, in-page anchors, or example-domain placeholders only. Real third-party/brand URLs are bound at deploy time, never in a PageSpec."
+      "pattern": "^(/[a-z0-9\\-/]*(#[a-z0-9-]+)?|#[a-z0-9-]+|mailto:[a-z0-9._-]+@([a-z0-9-]+\\.)*(example\\.(com|org|net)|[a-z0-9-]+\\.(example|invalid))|https://([a-z0-9-]+\\.)*(example\\.(com|org|net)|[a-z0-9-]+\\.(example|invalid))(/[a-zA-Z0-9\\-/._]*)?)$",
+      "$comment": "Internal paths, in-page anchors, or reserved placeholder hosts only (example.com/.org/.net, *.example, *.invalid; RFC 2606/6761). Real third-party/brand URLs are bound at deploy time, never in a PageSpec (asset role placeholder-url)."
     },
     "placeholderRef": {
       "type": "string",
@@ -103,7 +112,17 @@
         "background-glow",
         "brand-mark",
         "social-icon",
-        "flag"
+        "flag",
+        "third-party-logo",
+        "placeholder-brand-mark",
+        "generated-product-visual",
+        "generated-product-animation",
+        "generated-background-art",
+        "generated-mock-scene",
+        "fictional-avatar",
+        "generic-partner-placeholder",
+        "placeholder-url",
+        "original-copy"
       ]
     },
     "reducedMotionFallback": {
@@ -150,7 +169,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "brand-mark"
+                "brand-mark",
+                "placeholder-brand-mark"
               ]
             },
             "ref": {
@@ -296,7 +316,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "brand-mark"
+                "brand-mark",
+                "placeholder-brand-mark"
               ]
             },
             "ref": {
@@ -421,6 +442,54 @@
           "minLength": 1,
           "maxLength": 126,
           "maxWords": 9
+        },
+        "credit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href",
+            "mark"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 28,
+              "maxWords": 2
+            },
+            "href": {
+              "$ref": "#/definitions/href"
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "third-party-logo",
+                    "generic-partner-placeholder"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 56,
+                  "maxWords": 4
+                }
+              }
+            }
+          },
+          "$comment": "Optional builder credit in the bottom bar (ev.src.footer-credit). The source credits a real agency with its wordmark: role third-party-logo is blocked-for-generation."
         }
       }
     },
@@ -501,7 +570,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "product-screenshot"
+                "product-screenshot",
+                "generated-product-visual"
               ]
             },
             "ref": {
@@ -527,7 +597,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "background-art"
+                "background-art",
+                "generated-background-art"
               ]
             },
             "ref": {
@@ -859,7 +930,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "illustration-mock"
+                "illustration-mock",
+                "generated-mock-scene"
               ]
             },
             "ref": {
@@ -870,6 +942,40 @@
               "minLength": 0,
               "maxLength": 28,
               "maxWords": 2
+            },
+            "parts": {
+              "type": "array",
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "ref",
+                  "alt"
+                ],
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "brand-mark",
+                      "placeholder-brand-mark",
+                      "fictional-avatar",
+                      "generic-partner-placeholder"
+                    ]
+                  },
+                  "ref": {
+                    "$ref": "#/definitions/placeholderRef"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "minLength": 0,
+                    "maxLength": 42,
+                    "maxWords": 3
+                  }
+                }
+              },
+              "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
             }
           }
         },
@@ -990,7 +1096,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "illustration-mock"
+                "illustration-mock",
+                "generated-mock-scene"
               ]
             },
             "ref": {
@@ -1001,6 +1108,40 @@
               "minLength": 0,
               "maxLength": 28,
               "maxWords": 2
+            },
+            "parts": {
+              "type": "array",
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "ref",
+                  "alt"
+                ],
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "brand-mark",
+                      "placeholder-brand-mark",
+                      "fictional-avatar",
+                      "generic-partner-placeholder"
+                    ]
+                  },
+                  "ref": {
+                    "$ref": "#/definitions/placeholderRef"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "minLength": 0,
+                    "maxLength": 42,
+                    "maxWords": 3
+                  }
+                }
+              },
+              "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
             }
           }
         },
@@ -1142,7 +1283,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "background-art"
+                "background-art",
+                "generated-background-art"
               ]
             },
             "ref": {
@@ -1242,7 +1384,8 @@
                   "role": {
                     "type": "string",
                     "enum": [
-                      "product-animation"
+                      "product-animation",
+                      "generated-product-animation"
                     ]
                   },
                   "ref": {
@@ -1349,7 +1492,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "product-animation"
+                "product-animation",
+                "generated-product-animation"
               ]
             },
             "ref": {
@@ -1451,7 +1595,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "product-animation"
+                "product-animation",
+                "generated-product-animation"
               ]
             },
             "ref": {
@@ -1553,7 +1698,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "product-animation"
+                "product-animation",
+                "generated-product-animation"
               ]
             },
             "ref": {
@@ -1674,7 +1820,8 @@
                 "role": {
                   "type": "string",
                   "enum": [
-                    "illustration-mock"
+                    "illustration-mock",
+                    "generated-mock-scene"
                   ]
                 },
                 "ref": {
@@ -1685,6 +1832,40 @@
                   "minLength": 0,
                   "maxLength": 28,
                   "maxWords": 2
+                },
+                "parts": {
+                  "type": "array",
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "role",
+                      "ref",
+                      "alt"
+                    ],
+                    "properties": {
+                      "role": {
+                        "type": "string",
+                        "enum": [
+                          "brand-mark",
+                          "placeholder-brand-mark",
+                          "fictional-avatar",
+                          "generic-partner-placeholder"
+                        ]
+                      },
+                      "ref": {
+                        "$ref": "#/definitions/placeholderRef"
+                      },
+                      "alt": {
+                        "type": "string",
+                        "minLength": 0,
+                        "maxLength": 42,
+                        "maxWords": 3
+                      }
+                    }
+                  },
+                  "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
                 }
               }
             }
@@ -2447,7 +2628,8 @@
             "role": {
               "type": "string",
               "enum": [
-                "product-animation"
+                "product-animation",
+                "generated-product-animation"
               ]
             },
             "ref": {
@@ -2536,7 +2718,8 @@
                   "role": {
                     "type": "string",
                     "enum": [
-                      "illustration-mock"
+                      "illustration-mock",
+                      "generated-mock-scene"
                     ]
                   },
                   "ref": {
@@ -2547,6 +2730,40 @@
                     "minLength": 0,
                     "maxLength": 28,
                     "maxWords": 2
+                  },
+                  "parts": {
+                    "type": "array",
+                    "maxItems": 6,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "role",
+                        "ref",
+                        "alt"
+                      ],
+                      "properties": {
+                        "role": {
+                          "type": "string",
+                          "enum": [
+                            "brand-mark",
+                            "placeholder-brand-mark",
+                            "fictional-avatar",
+                            "generic-partner-placeholder"
+                          ]
+                        },
+                        "ref": {
+                          "$ref": "#/definitions/placeholderRef"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "minLength": 0,
+                          "maxLength": 42,
+                          "maxWords": 3
+                        }
+                      }
+                    },
+                    "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
                   }
                 }
               }
@@ -2773,14 +2990,15 @@
         }
       }
     },
-    "content.content.legal-article": {
+    "content.content.legal-header": {
       "type": "object",
       "additionalProperties": false,
       "required": [
         "bodyIsPlaceholder",
         "title",
-        "effectiveDateLine",
-        "outline"
+        "anchorId",
+        "operatorLine",
+        "effectiveDateLine"
       ],
       "properties": {
         "bodyIsPlaceholder": {
@@ -2793,31 +3011,355 @@
           "maxLength": 56,
           "maxWords": 4
         },
+        "anchorId": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9.-]*$"
+        },
+        "operatorLine": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 56,
+          "maxWords": 4
+        },
         "effectiveDateLine": {
           "type": "string",
           "minLength": 1,
           "maxLength": 84,
           "maxWords": 6
         },
-        "outline": {
+        "intro": {
           "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "text"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "p"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 364,
+                    "maxWords": 26
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "items"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "ul"
+                    ]
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 168,
+                      "maxWords": 12
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "columns",
+                  "rowCount"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "table"
+                    ]
+                  },
+                  "columns": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 56,
+                      "maxWords": 4
+                    },
+                    "minItems": 2,
+                    "maxItems": 4
+                  },
+                  "rowCount": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 8
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 4
+        },
+        "preamble": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "text"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "p"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 364,
+                    "maxWords": 26
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "items"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "ul"
+                    ]
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 168,
+                      "maxWords": 12
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "columns",
+                  "rowCount"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "table"
+                    ]
+                  },
+                  "columns": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 56,
+                      "maxWords": 4
+                    },
+                    "minItems": 2,
+                    "maxItems": 4
+                  },
+                  "rowCount": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 8
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 4
+        }
+      }
+    },
+    "motion.content.legal-header": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pattern",
+        "reducedMotionFallback"
+      ],
+      "properties": {
+        "pattern": {
+          "type": "string",
+          "enum": [
+            "anchor-smooth-scroll"
+          ]
+        },
+        "reducedMotionFallback": {
+          "type": "string",
+          "enum": [
+            "unhandled-in-source"
+          ]
+        }
+      }
+    },
+    "content.content.legal-section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bodyIsPlaceholder",
+        "anchorId",
+        "heading",
+        "blocks"
+      ],
+      "properties": {
+        "bodyIsPlaceholder": {
+          "type": "boolean",
+          "const": true
+        },
+        "anchorId": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9.-]*$"
+        },
+        "heading": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 140,
+          "maxWords": 10
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "text"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "p"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 364,
+                    "maxWords": 26
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "items"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "ul"
+                    ]
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 168,
+                      "maxWords": 12
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "columns",
+                  "rowCount"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "table"
+                    ]
+                  },
+                  "columns": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 56,
+                      "maxWords": 4
+                    },
+                    "minItems": 2,
+                    "maxItems": 4
+                  },
+                  "rowCount": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 8
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 6
+        },
+        "subsections": {
+          "type": "array",
+          "maxItems": 6,
           "items": {
             "type": "object",
             "additionalProperties": false,
             "required": [
-              "level",
               "anchorId",
               "heading",
               "blocks"
             ],
             "properties": {
-              "level": {
-                "type": "string",
-                "enum": [
-                  "h2",
-                  "h3"
-                ]
-              },
               "anchorId": {
                 "type": "string",
                 "pattern": "^[a-z0-9][a-z0-9.-]*$"
@@ -2920,13 +3462,11 @@
                 "maxItems": 6
               }
             }
-          },
-          "minItems": 1,
-          "maxItems": 20
+          }
         }
       }
     },
-    "motion.content.legal-article": {
+    "motion.content.legal-section": {
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -2998,7 +3538,8 @@
             "process.lottie-steps",
             "process.visual-steps",
             "forms.partner-popup",
-            "content.legal-article"
+            "content.legal-header",
+            "content.legal-section"
           ]
         },
         "variant": {
@@ -3009,6 +3550,10 @@
         },
         "motion": {
           "$ref": "#/definitions/motion"
+        },
+        "retrievalEligible": {
+          "type": "boolean",
+          "$comment": "Optional. When present it must equal the section's pinned eligibility (RETRIEVAL_ELIGIBILITY); runtime UI such as the lead-form modal is never retrieval-eligible."
         }
       },
       "allOf": [
@@ -3573,7 +4118,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "content.legal-article"
+                "const": "content.legal-header"
               }
             },
             "required": [
@@ -3583,10 +4128,35 @@
           "then": {
             "properties": {
               "content": {
-                "$ref": "#/definitions/content.content.legal-article"
+                "$ref": "#/definitions/content.content.legal-header"
               },
               "motion": {
-                "$ref": "#/definitions/motion.content.legal-article"
+                "$ref": "#/definitions/motion.content.legal-header"
+              },
+              "variant": {
+                "not": {}
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "content.legal-section"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "content": {
+                "$ref": "#/definitions/content.content.legal-section"
+              },
+              "motion": {
+                "$ref": "#/definitions/motion.content.legal-section"
               },
               "variant": {
                 "not": {}

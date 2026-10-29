@@ -1,0 +1,236 @@
+{
+  "pageSpecVersion": "2.0.0",
+  "mode": "generated",
+  "id": "generated-legal",
+  "template": "template.legal",
+  "route": "/terms-of-use",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Terms of use | Tallybrook",
+    "description": "Placeholder terms for a fictional company."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook home"
+        },
+        "links": [
+          {
+            "label": "Tour",
+            "href": "/#tour"
+          },
+          {
+            "label": "Ledger",
+            "href": "/#ledger"
+          },
+          {
+            "label": "Plans",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "content.legal-header",
+      "content": {
+        "bodyIsPlaceholder": true,
+        "title": "Terms of use",
+        "anchorId": "terms-of-use",
+        "operatorLine": "Tallybrook Ledger Co.",
+        "effectiveDateLine": "Effective date: placeholder",
+        "intro": [
+          {
+            "kind": "p",
+            "text": "Placeholder terms for a fictional company. Replace with text approved by counsel."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "anchor-smooth-scroll",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "content.legal-section",
+      "content": {
+        "bodyIsPlaceholder": true,
+        "anchorId": "1",
+        "heading": "1. Placeholder scope",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Placeholder legal paragraph. Replace with text approved by counsel."
+          },
+          {
+            "kind": "table",
+            "columns": [
+              "Item",
+              "Purpose",
+              "Location"
+            ],
+            "rowCount": 3
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "anchor-smooth-scroll",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "content.legal-section",
+      "content": {
+        "bodyIsPlaceholder": true,
+        "anchorId": "2",
+        "heading": "2. Placeholder accounts",
+        "blocks": [
+          {
+            "kind": "ul",
+            "items": [
+              "Placeholder duty one",
+              "Placeholder duty two"
+            ]
+          }
+        ],
+        "subsections": [
+          {
+            "anchorId": "2.1",
+            "heading": "2.1 Placeholder sign-in",
+            "blocks": [
+              {
+                "kind": "p",
+                "text": "Placeholder clause about sign-in for a fictional service."
+              }
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "anchor-smooth-scroll",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@tallybrook.example",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@tallybrook.example"
+          },
+          {
+            "kind": "linkedin",
+            "href": "https://social.tallybrook.example/linkedin",
+            "icon": {
+              "role": "social-icon",
+              "ref": "placeholder:network-glyph",
+              "alt": "Network profile"
+            },
+            "label": ""
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Tour",
+                "href": "/#tour"
+              },
+              {
+                "label": "Ledger",
+                "href": "/#ledger"
+              },
+              {
+                "label": "Plans",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Help",
+            "links": [
+              {
+                "label": "Guides",
+                "href": "https://help.tallybrook.example/guides"
+              },
+              {
+                "label": "Uptime",
+                "href": "https://uptime.tallybrook.invalid/"
+              },
+              {
+                "label": "Referrals",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Processing terms",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Tallybrook Ledger Co. (fictional)",
+        "credit": {
+          "label": "Made by",
+          "href": "https://studio.example/",
+          "mark": {
+            "role": "generic-partner-placeholder",
+            "ref": "placeholder:studio-badge",
+            "alt": "Studio"
+          }
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

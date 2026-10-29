@@ -1,12 +1,24 @@
 {
   "id": "commerce.compare-table",
   "category": "COMMERCE",
+  "semantic": {
+    "id": "commerce.compare-table",
+    "category": "COMMERCE"
+  },
+  "source": {
+    "id": "src.components.pricing.CompareTable.section@L48",
+    "file": "src/components/pricing/CompareTable.jsx",
+    "lines": "48-116",
+    "tag": "section"
+  },
   "purpose": "Detailed plan comparison: grouped feature rows x 4 plan columns; sticky header md+, sticky single-plan picker below md.",
   "implementedBy": "src/components/pricing/CompareTable.jsx",
   "evidence": [
     "ev.spec.pm.p2",
     "ev.src.compare-table"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

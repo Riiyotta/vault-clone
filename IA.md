@@ -1,8 +1,8 @@
-# https://www.usevault.ai/ (clone in /Users/riyaghosh/V3/vault)
+# https://www.usevault.ai/ (local clone of the site; this repository)
 
-Source: https://www.usevault.ai/ (clone in /Users/riyaghosh/V3/vault)
+Source: https://www.usevault.ai/ (local clone of the site; this repository)
 Status: **draft**
-17 routes · 6 templates · 23 unique sections
+17 routes · 6 templates · 24 unique sections
 
 > Generated from `ia.json` by `build.mjs`. Edit the JSON, not this file.
 
@@ -33,7 +33,8 @@ component library or stays local to its page.
 | `chrome.navbar` | CHROME | 6 | 17 | `src/components/Navbar.jsx` | All 17 routes. |
 | `chrome.grid-frame` | CHROME | 6 | 17 | `src/components/GridFrame.jsx` | All 17 routes; wraps every section between nav and footer. |
 | `chrome.footer` | CHROME | 6 | 17 | `src/components/Footer.jsx` | All 17 routes. |
-| `content.legal-article` | CONTENT | 1 | 8 | `src/pages/LegalPage.jsx + src/components/legal/outline.js` | Legal template: 8 routes (4 documents x 2 locales). |
+| `content.legal-header` | CONTENT | 1 | 8 | `src/pages/LegalPage.jsx + src/components/legal/outline.js` | Legal template: 8 routes (4 documents x 2 locales), once per page. |
+| `content.legal-section` | CONTENT | 1 | 8 | `src/pages/LegalPage.jsx + src/components/legal/outline.js` | Legal template: 6 of 8 routes (terms, privacy, dpa x 2 locales; none on sub-processors), repeated per h2. |
 | `support.faq-accordion` | SUPPORT | 3 | 6 | `src/components/shared/Faq.jsx` | Pricing, migration offer and partners templates. |
 | `narrative.scroll-statement` | NARRATIVE | 2 | 4 | `src/components/Statement.jsx` | Home and partners templates (4 routes with locales). |
 | `process.lottie-steps` | PROCESS | 2 | 4 | `src/components/HowItWorks.jsx` | Home and pricing templates. |
@@ -56,7 +57,7 @@ component library or stays local to its page.
 
 **7 shared sections** appear in more than one template and belong in a component library.
 
-**16 single-use sections** appear in exactly one template. Building these
+**17 single-use sections** appear in exactly one template. Building these
 as "reusable" components up front would be speculative — keep them page-local
 until a second caller actually appears.
 
@@ -133,8 +134,9 @@ until a second caller actually appears.
 |---:|---|---|---|
 | 1 | CHROME | `chrome.navbar` | shared ×6 |
 | 2 | CHROME | `chrome.grid-frame` | shared ×6 |
-| 3 | CONTENT | `content.legal-article` | page-local |
-| 4 | CHROME | `chrome.footer` | shared ×6 |
+| 3 | CONTENT | `content.legal-header` | page-local |
+| 4 | CONTENT | `content.legal-section` | page-local |
+| 5 | CHROME | `chrome.footer` | shared ×6 |
 
 ### Not found (clone-only) — `template.not-found`
 
@@ -273,6 +275,10 @@ _Lead capture overlays._
 
 _Document-style body content with no marketing motion._
 
-**`content.legal-article`** — Bordered frame with a 750px centred article: h1, last-updated line, h2/h3 headings, body paragraphs, lists, underlined links, tables that become stacked cards below 768px, in-page anchors that smooth-scroll to 40px above the heading. Body text in the clone is placeholder.
+**`content.legal-header`** — Opening of a legal document inside the bordered 750px frame: h1, the operator and effective-date line, and the optional intro (sub-processors) or preamble (DPA) before the first numbered part. Body text in the clone is placeholder.
 
-· Legal template: 8 routes (4 documents x 2 locales). · appears on 8 routes · implemented by `src/pages/LegalPage.jsx + src/components/legal/outline.js`
+· Legal template: 8 routes (4 documents x 2 locales), once per page. · appears on 8 routes · implemented by `src/pages/LegalPage.jsx + src/components/legal/outline.js`
+
+**`content.legal-section`** — One heading-bounded part of a legal document: top rule, numbered h2 with its paragraphs, lists, underlined links and tables that become stacked cards below 768px, plus any h3 sub-parts; in-page anchors smooth-scroll to 40px above the heading. Repeated once per h2. Body text in the clone is placeholder.
+
+· Legal template: 6 of 8 routes (terms, privacy, dpa x 2 locales; none on sub-processors), repeated per h2. · appears on 8 routes · implemented by `src/pages/LegalPage.jsx + src/components/legal/outline.js`

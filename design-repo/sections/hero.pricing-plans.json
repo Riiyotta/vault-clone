@@ -1,6 +1,16 @@
 {
   "id": "hero.pricing-plans",
   "category": "HERO",
+  "semantic": {
+    "id": "hero.pricing-plans",
+    "category": "HERO"
+  },
+  "source": {
+    "id": "src.components.pricing.PricingHero.section@L20",
+    "file": "src/components/pricing/PricingHero.jsx",
+    "lines": "20-40",
+    "tag": "section"
+  },
   "purpose": "Convert on price: eyebrow, headline, two-line sub, billing segmented control (default annual) and a 4-card plan grid with one recommended card.",
   "implementedBy": "src/components/pricing/PricingHero.jsx + PlanCards.jsx",
   "evidence": [
@@ -10,6 +20,8 @@
     "ev.src.segmented",
     "ev.src.pricing-hero-uk"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,

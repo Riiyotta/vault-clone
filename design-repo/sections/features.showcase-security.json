@@ -1,6 +1,16 @@
 {
   "id": "features.showcase-security",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.showcase-security",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.FeatureTabs.section@L121",
+    "file": "src/components/FeatureTabs.jsx",
+    "lines": "121-204",
+    "tag": "section"
+  },
   "purpose": "Deep-dive on one capability: three auto-advancing tabs with a linear progress bar, one product animation segmented by tab markers, title, paragraph and a small primary CTA.",
   "implementedBy": "src/components/FeatureTabs.jsx",
   "evidence": [
@@ -8,6 +18,11 @@
     "ev.src.featuretabs",
     "ev.src.featuretabs-duration"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generated-product-animation"
+  ],
+  "inlineCtaJustification": "A single inline signup button sits under the tab copy; the section is a capability walkthrough (tabs + timed animation), not a conversion block.",
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,
@@ -72,7 +87,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "product-animation"
+              "product-animation",
+              "generated-product-animation"
             ]
           },
           "ref": {

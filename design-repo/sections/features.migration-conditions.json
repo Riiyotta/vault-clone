@@ -1,11 +1,26 @@
 {
   "id": "features.migration-conditions",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.migration-conditions",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.migration.Conditions.section@L125",
+    "file": "src/components/migration/Conditions.jsx",
+    "lines": "125-151",
+    "tag": "section"
+  },
   "purpose": "Scannable list of criteria/audiences: illustrated icon badge, display title and one sentence per row, over a corner accent glow.",
   "implementedBy": "src/components/migration/Conditions.jsx",
   "evidence": [
     "ev.spec.pm.m3",
     "ev.src.icon-row"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "background-glow",
+    "icon-illustrated"
   ],
   "contentSchema": {
     "type": "object",

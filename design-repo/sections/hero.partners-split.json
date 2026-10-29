@@ -1,11 +1,29 @@
 {
   "id": "hero.partners-split",
   "category": "HERO",
+  "semantic": {
+    "id": "hero.partners-split",
+    "category": "HERO"
+  },
+  "source": {
+    "id": "src.components.partners.PartnersHero.section@L85",
+    "file": "src/components/partners/PartnersHero.jsx",
+    "lines": "85-114",
+    "tag": "section"
+  },
   "purpose": "Split hero for an offer/program page: left-aligned eyebrow, two-line headline, sub, primary CTA; right column holds a DOM mock scene that reveals once over an accent glow and masked dot grid.",
   "implementedBy": "src/components/partners/PartnersHero.jsx + PartnerMock.jsx",
   "evidence": [
     "ev.spec.pul.split-hero",
     "ev.spec.pul.hero-motion"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "background-glow",
+    "fictional-avatar",
+    "generated-mock-scene",
+    "generic-partner-placeholder",
+    "placeholder-brand-mark"
   ],
   "contentSchema": {
     "type": "object",
@@ -74,7 +92,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "illustration-mock"
+              "illustration-mock",
+              "generated-mock-scene"
             ]
           },
           "ref": {
@@ -85,6 +104,40 @@
             "minLength": 0,
             "maxLength": 28,
             "maxWords": 2
+          },
+          "parts": {
+            "type": "array",
+            "maxItems": 6,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role",
+                "ref",
+                "alt"
+              ],
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "brand-mark",
+                    "placeholder-brand-mark",
+                    "fictional-avatar",
+                    "generic-partner-placeholder"
+                  ]
+                },
+                "ref": {
+                  "$ref": "#/definitions/placeholderRef"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 42,
+                  "maxWords": 3
+                }
+              }
+            },
+            "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
           }
         }
       },

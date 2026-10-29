@@ -1,11 +1,25 @@
 {
   "id": "features.product-grid",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.product-grid",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.ProductHighlights.section@L103",
+    "file": "src/components/ProductHighlights.jsx",
+    "lines": "103-111",
+    "tag": "section"
+  },
   "purpose": "Breadth of product: six cards, each a short title (+ optional 'soon' badge), one-sentence description and a looping product animation.",
   "implementedBy": "src/components/ProductHighlights.jsx",
   "evidence": [
     "ev.spec.home.product-grid",
     "ev.src.product-grid"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generated-product-animation"
   ],
   "contentSchema": {
     "type": "object",
@@ -68,7 +82,8 @@
                 "role": {
                   "type": "string",
                   "enum": [
-                    "product-animation"
+                    "product-animation",
+                    "generated-product-animation"
                   ]
                 },
                 "ref": {

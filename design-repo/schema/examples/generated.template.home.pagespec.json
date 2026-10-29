@@ -1,0 +1,375 @@
+{
+  "pageSpecVersion": "2.0.0",
+  "mode": "generated",
+  "id": "generated-home",
+  "template": "template.home",
+  "route": "/",
+  "locale": "en",
+  "theme": "dark",
+  "meta": {
+    "title": "Tallybrook | Bookkeeping for studios",
+    "description": "A fictional bookkeeping product homepage generated from this design system."
+  },
+  "nodes": [
+    {
+      "type": "chrome.navbar",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook home"
+        },
+        "links": [
+          {
+            "label": "Tour",
+            "href": "/#tour"
+          },
+          {
+            "label": "Ledger",
+            "href": "/#ledger"
+          },
+          {
+            "label": "Plans",
+            "href": "/pricing"
+          }
+        ],
+        "activeHref": null,
+        "localeSwitch": true,
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link"
+      },
+      "motion": {
+        "pattern": "mobile-menu-disclosure",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.grid-frame",
+      "content": {
+        "separator": "full-with-crosses"
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "hero.home-dashboard",
+      "content": {
+        "eyebrow": "Bookkeeping for studios",
+        "headline": "Every receipt sorted before Friday",
+        "subheadline": "Tallybrook files your receipts, matches them to bank lines and drafts the monthly close for small studios.",
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-visual",
+          "ref": "placeholder:tallybrook-ledger-ui",
+          "alt": "Invented ledger screen with sample entries"
+        },
+        "backgroundArt": {
+          "role": "generated-background-art",
+          "ref": "placeholder:soft-aurora",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "type": "narrative.scroll-statement",
+      "variant": "scrubbed-always",
+      "content": {
+        "text": "Tallybrook turns a shoebox of receipts into a ledger your accountant can sign off without a single follow-up email",
+        "watermark": {
+          "role": "generated-background-art",
+          "ref": "placeholder:watermark-mark",
+          "alt": ""
+        }
+      },
+      "motion": {
+        "pattern": "scroll-scrubbed-word-fill",
+        "reducedMotionFallback": "scroll-driven-unchanged"
+      }
+    },
+    {
+      "type": "features.product-grid",
+      "content": {
+        "anchorId": "tour",
+        "cards": [
+          {
+            "title": "Receipt inbox",
+            "badge": null,
+            "description": "Forward a photo and the amount, date and vendor land in the ledger.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-1-loop",
+              "alt": "Capability 1 animation"
+            }
+          },
+          {
+            "title": "Bank matching",
+            "badge": null,
+            "description": "Each statement line is paired with its receipt or flagged for a look.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-2-loop",
+              "alt": "Capability 2 animation"
+            }
+          },
+          {
+            "title": "Close checklist",
+            "badge": null,
+            "description": "A short list of what is still open before the month can be locked.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-3-loop",
+              "alt": "Capability 3 animation"
+            }
+          },
+          {
+            "title": "Shared access",
+            "badge": null,
+            "description": "Invite a bookkeeper with read-only rights in two clicks.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-4-loop",
+              "alt": "Capability 4 animation"
+            }
+          },
+          {
+            "title": "Mileage log",
+            "badge": "Later",
+            "description": "Trips recorded from a calendar entry, priced at the local rate.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-5-loop",
+              "alt": "Capability 5 animation"
+            }
+          },
+          {
+            "title": "Quote to invoice",
+            "badge": "Later",
+            "description": "Turn an accepted quote into an invoice without retyping.",
+            "media": {
+              "role": "generated-product-animation",
+              "ref": "placeholder:card-6-loop",
+              "alt": "Capability 6 animation"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "looping-animation-offscreen-frozen",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-automation",
+      "content": {
+        "anchorId": "ledger",
+        "tabs": [
+          "Snap a receipt",
+          "Match a payment",
+          "Lock the month"
+        ],
+        "title": "Let the ledger keep itself tidy",
+        "description": "Rules you write once tag recurring vendors and split shared costs. You review the odd ones out.",
+        "ctaLabel": "See the ledger",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-animation",
+          "ref": "placeholder:capability-one-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-reports",
+      "content": {
+        "anchorId": "numbers",
+        "tabs": [
+          "Monthly snapshot",
+          "Vendor spend",
+          "Project margins"
+        ],
+        "title": "Numbers a studio owner can read",
+        "description": "Plain charts show what came in, what went out and which project paid for itself.",
+        "ctaLabel": "Browse the charts",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-animation",
+          "ref": "placeholder:capability-two-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "features.showcase-security",
+      "content": {
+        "anchorId": "safety",
+        "tabs": [
+          "Read-only bank links",
+          "Per-person roles",
+          "Audit trail"
+        ],
+        "title": "Careful with your books by default",
+        "description": "Bank links are read-only, every change is logged and each person sees only what they need.",
+        "ctaLabel": "Read the safety notes",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-animation",
+          "ref": "placeholder:capability-three-segments",
+          "alt": "Capability walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "auto-advancing-tabs-markers",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "process.lottie-steps",
+      "content": {
+        "headingLines": [
+          "Three steps",
+          "to a calm close"
+        ],
+        "anchorId": "how-it-works",
+        "steps": [
+          {
+            "title": "Link an account",
+            "description": "Pick your bank and approve read-only access."
+          },
+          {
+            "title": "Forward receipts",
+            "description": "Email or photograph receipts as they arrive."
+          },
+          {
+            "title": "Review and lock",
+            "description": "Check the flagged lines, then lock the month."
+          }
+        ],
+        "ctaLabel": "Open a ledger",
+        "ctaAction": "app-signup-link",
+        "media": {
+          "role": "generated-product-animation",
+          "ref": "placeholder:three-step-flow",
+          "alt": "Three step walkthrough animation"
+        }
+      },
+      "motion": {
+        "pattern": "timed-steps-animation",
+        "reducedMotionFallback": "unhandled-in-source"
+      }
+    },
+    {
+      "type": "chrome.footer",
+      "content": {
+        "brandMark": {
+          "role": "placeholder-brand-mark",
+          "ref": "placeholder:tallybrook-mark",
+          "alt": "Tallybrook"
+        },
+        "social": [
+          {
+            "kind": "email",
+            "href": "mailto:hello@tallybrook.example",
+            "icon": {
+              "role": "icon",
+              "ref": "placeholder:mail-glyph",
+              "alt": ""
+            },
+            "label": "hello@tallybrook.example"
+          },
+          {
+            "kind": "linkedin",
+            "href": "https://social.tallybrook.example/linkedin",
+            "icon": {
+              "role": "social-icon",
+              "ref": "placeholder:network-glyph",
+              "alt": "Network profile"
+            },
+            "label": ""
+          }
+        ],
+        "groups": [
+          {
+            "label": "Product",
+            "links": [
+              {
+                "label": "Tour",
+                "href": "/#tour"
+              },
+              {
+                "label": "Ledger",
+                "href": "/#ledger"
+              },
+              {
+                "label": "Plans",
+                "href": "/pricing"
+              }
+            ]
+          },
+          {
+            "label": "Help",
+            "links": [
+              {
+                "label": "Guides",
+                "href": "https://help.tallybrook.example/guides"
+              },
+              {
+                "label": "Uptime",
+                "href": "https://uptime.tallybrook.invalid/"
+              },
+              {
+                "label": "Referrals",
+                "href": "/partners"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Processing terms",
+                "href": "/dpa"
+              }
+            ]
+          }
+        ],
+        "copyright": "© Tallybrook Ledger Co. (fictional)",
+        "credit": {
+          "label": "Made by",
+          "href": "https://studio.example/",
+          "mark": {
+            "role": "generic-partner-placeholder",
+            "ref": "placeholder:studio-badge",
+            "alt": "Studio"
+          }
+        }
+      },
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

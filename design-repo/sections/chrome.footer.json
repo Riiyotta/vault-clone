@@ -1,12 +1,30 @@
 {
   "id": "chrome.footer",
   "category": "CHROME",
+  "semantic": {
+    "id": "chrome.footer",
+    "category": "CHROME"
+  },
+  "source": {
+    "id": "src.components.Footer.footer@L51",
+    "file": "src/components/Footer.jsx",
+    "lines": "51-138",
+    "tag": "footer"
+  },
   "purpose": "Close the page: brand column with socials/email, three link groups, copyright bar, final spacer.",
   "implementedBy": "src/components/Footer.jsx",
   "evidence": [
     "ev.spec.home.footer",
     "ev.src.footer-grid",
-    "ev.spec.pm.shell"
+    "ev.spec.pm.shell",
+    "ev.src.footer-credit"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generic-partner-placeholder",
+    "icon",
+    "placeholder-brand-mark",
+    "social-icon"
   ],
   "contentSchema": {
     "type": "object",
@@ -30,7 +48,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "brand-mark"
+              "brand-mark",
+              "placeholder-brand-mark"
             ]
           },
           "ref": {
@@ -155,6 +174,54 @@
         "minLength": 1,
         "maxLength": 126,
         "maxWords": 9
+      },
+      "credit": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href",
+          "mark"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 28,
+            "maxWords": 2
+          },
+          "href": {
+            "$ref": "#/definitions/href"
+          },
+          "mark": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "role",
+              "ref",
+              "alt"
+            ],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": [
+                  "third-party-logo",
+                  "generic-partner-placeholder"
+                ]
+              },
+              "ref": {
+                "$ref": "#/definitions/placeholderRef"
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 56,
+                "maxWords": 4
+              }
+            }
+          }
+        },
+        "$comment": "Optional builder credit in the bottom bar (ev.src.footer-credit). The source credits a real agency with its wordmark: role third-party-logo is blocked-for-generation."
       }
     }
   },

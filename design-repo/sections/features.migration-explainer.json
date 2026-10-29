@@ -1,11 +1,28 @@
 {
   "id": "features.migration-explainer",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.migration-explainer",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.migration.OfferExplanation.section@L88",
+    "file": "src/components/migration/OfferExplanation.jsx",
+    "lines": "88-103",
+    "tag": "section"
+  },
   "purpose": "Explain an offer's mechanics: two paragraphs beside a 12-column timeline chart (hatched/accent/neutral bars + legend) that fills on reveal.",
   "implementedBy": "src/components/migration/OfferExplanation.jsx",
   "evidence": [
     "ev.spec.pm.m2",
     "ev.src.offer-swatch"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "fictional-avatar",
+    "generated-mock-scene",
+    "generic-partner-placeholder",
+    "placeholder-brand-mark"
   ],
   "contentSchema": {
     "type": "object",
@@ -90,7 +107,8 @@
               "role": {
                 "type": "string",
                 "enum": [
-                  "illustration-mock"
+                  "illustration-mock",
+                  "generated-mock-scene"
                 ]
               },
               "ref": {
@@ -101,6 +119,40 @@
                 "minLength": 0,
                 "maxLength": 28,
                 "maxWords": 2
+              },
+              "parts": {
+                "type": "array",
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "role",
+                    "ref",
+                    "alt"
+                  ],
+                  "properties": {
+                    "role": {
+                      "type": "string",
+                      "enum": [
+                        "brand-mark",
+                        "placeholder-brand-mark",
+                        "fictional-avatar",
+                        "generic-partner-placeholder"
+                      ]
+                    },
+                    "ref": {
+                      "$ref": "#/definitions/placeholderRef"
+                    },
+                    "alt": {
+                      "type": "string",
+                      "minLength": 0,
+                      "maxLength": 42,
+                      "maxWords": 3
+                    }
+                  }
+                },
+                "$comment": "Sub-assets embedded in the mock scene (brand marks, people avatars, client/partner badges). The source's scenes embed its own mark (ev.src.mock-brand-avatar, ev.src.mock-vaultmark) and initials badges for mock companies (ev.src.mock-avatar)."
               }
             }
           }

@@ -1,12 +1,27 @@
 {
   "id": "hero.home-dashboard",
   "category": "HERO",
+  "semantic": {
+    "id": "hero.home-dashboard",
+    "category": "HERO"
+  },
+  "source": {
+    "id": "src.components.Hero.section@L9",
+    "file": "src/components/Hero.jsx",
+    "lines": "9-48",
+    "tag": "section"
+  },
   "purpose": "Primary positioning for the product: centered eyebrow, display headline, light sub, primary CTA and a large framed product screenshot over background art with layered glows.",
   "implementedBy": "src/components/Hero.jsx",
   "evidence": [
     "ev.spec.home.hero",
     "ev.src.typography",
     "ev.spec.pul.ua-lang"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "generated-background-art",
+    "generated-product-visual"
   ],
   "contentSchema": {
     "type": "object",
@@ -63,7 +78,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "product-screenshot"
+              "product-screenshot",
+              "generated-product-visual"
             ]
           },
           "ref": {
@@ -89,7 +105,8 @@
           "role": {
             "type": "string",
             "enum": [
-              "background-art"
+              "background-art",
+              "generated-background-art"
             ]
           },
           "ref": {

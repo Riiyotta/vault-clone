@@ -8,8 +8,11 @@ build time). External citation checks run against it when the cited files exist 
 degrade to WARNINGS when they do not (e.g. the folder was unzipped on its own).
 Every other check is internal and always fatal. Exit 1 on any error.
 
-Each check below is proven to catch drift by extraction/drift_proof.py, which copies this
-repo to a scratch directory, injects one defect per check, and asserts this script fails.
+Each check below is proven to catch drift by extraction/prove_drift.py, which copies this
+repo to a scratch directory, injects one defect per check/pin/gate, and asserts this script fails.
+
+Pins live here as INDEPENDENT literals (PINNED_AVAILABILITY, RETRIEVAL_INELIGIBLE_PIN, the wrapper-gate thresholds,
+the source-brand minimum), so editing a registry or schema/semantic_validate.py alone cannot loosen them.
 """
 import argparse
 import json
@@ -23,7 +26,7 @@ sys.path.insert(0, os.path.join(REPO, "schema"))
 
 ERRORS, WARNINGS, PASSED = [], [], []
 FORBIDDEN_EXT = {".woff", ".woff2", ".ttf", ".otf", ".lottie", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".mp4", ".webm", ".avif", ".svg", ".zip"}
-ABS_PATTERNS = ["/" + "Users/", "/" + "home/", "C:" + "\\\\", "/private/" + "tmp", "/" + "var/folders"]
+ABS_PATTERNS = ["/" + "Users/", "/" + "home/", "C:" + "\\\\", "/" + "private/" + "tmp", "/" + "var/folders"]
 
 
 def load(rel):
@@ -75,18 +78,37 @@ def _():
     from jsonschema import Draft7Validator
     schema = load("schema/pagespec.schema.json")
     Draft7Validator.check_schema(schema)
-    ex = load("schema/example.pagespec.json")
-    errs = list(Draft7Validator(schema).iter_errors(ex))
-    for e in errs:
-        err("schema-draft07", f"example: {'/'.join(map(str, e.absolute_path))}: {e.message[:160]}")
+    Draft7Validator.check_schema(load("schema/section-contract.schema.json"))
+    for rel in example_files():
+        for e in Draft7Validator(schema).iter_errors(load(rel)):
+            err("schema-draft07", f"{rel}: {'/'.join(map(str, e.absolute_path))}: {e.message[:160]}")
+
+
+def example_files():
+    out = ["schema/example.pagespec.json"]
+    d = os.path.join(REPO, "schema", "examples")
+    if os.path.isdir(d):
+        out += ["schema/examples/" + f for f in sorted(os.listdir(d)) if f.endswith(".pagespec.json")]
+    return out
 
 
 @check("semantic-example")
 def _():
     import semantic_validate as V
-    e, w = V.validate(load("schema/example.pagespec.json"))
-    for x in e + w:
-        err("semantic-example", x)
+    gen_tpl = set()
+    for rel in example_files():
+        spec = load(rel)
+        e, w = V.validate(spec)
+        for x in e + w:
+            err("semantic-example", f"{rel}: {x}")
+        if spec.get("mode") == "generated":
+            gen_tpl.add(spec.get("template"))
+            if not os.path.basename(rel).startswith("generated."):
+                err("semantic-example", f"{rel}: generated examples are named generated.<template>.pagespec.json")
+    if load("schema/example.pagespec.json").get("mode") != "reference":
+        err("semantic-example", "schema/example.pagespec.json must stay the mode 'reference' example")
+    for t in sorted(set(V.TEMPLATES) - gen_tpl):
+        err("semantic-example", f"no generation-safe (mode generated) example for {t} in schema/examples/")
 
 
 @check("allowlist-parity")
@@ -152,7 +174,10 @@ def _():
               "sections": len([x for x in os.listdir(os.path.join(REPO, "sections")) if x.endswith(".json")]),
               "templates": len(tpl), "routes": len(load("templates/routes.json")["routes"]),
               "assetRoles": len(load("assets/asset-roles.json")["roles"]), "graphRules": len(load("compatibility/graph.json")["rules"]),
-              "citations": len(load("extraction/measured-values.json")["citations"])}
+              "citations": len(load("extraction/measured-values.json")["citations"]),
+              "generatedExamples": len([x for x in example_files() if x.startswith("schema/examples/generated.")]),
+              "generatedModeRules": len(load("compatibility/graph.json")["generatedModeRules"]),
+              "measuredRoutes": len((load("extraction/measured-values.json").get("sectionHeights") or {}).get("routes", {}))}
     for k, v in actual.items():
         if man["counts"].get(k) != v:
             err("manifest-counts", f"counts.{k} = {man['counts'].get(k)} but disk has {v}")
@@ -219,6 +244,8 @@ def _():
     ids = {c["id"] for c in load("extraction/measured-values.json")["citations"]}
     acc = []
     for rel in json_files():
+        if rel.endswith(".schema.json"):  # meta-schemas declare an 'evidence' PROPERTY, they cite nothing
+            continue
         collect_evidence(load(rel), acc, rel)
     for e, where in acc:
         if e not in ids:
@@ -282,6 +309,8 @@ def _():
             err("schema-section-parity", f"reducedMotionFallback enum for {sid} differs between schema and contract")
         if defs.get("motion." + sid, {}).get("additionalProperties") is not False:
             err("schema-section-parity", f"motion.{sid} must be closed (additionalProperties false)")
+    if schema["properties"].get("mode", {}).get("enum") != ["reference", "generated"] or "mode" not in schema["required"]:
+        err("schema-section-parity", "PageSpec `mode` must be a REQUIRED closed enum ['reference', 'generated']")
     tpl = load("templates/templates.json")["templates"]
     if sorted(schema["properties"]["template"]["enum"]) != sorted(tpl):
         err("schema-section-parity", "schema template enum differs from templates/templates.json")
@@ -327,13 +356,33 @@ def _():
             for v in o:
                 walk(v)
     walk(schema["definitions"])
+    media = {r for r, v in roles.items() if v.get("kind") == "media"}
+    conv = {r for r, v in roles.items() if v.get("kind") == "convention"}
+    if media | conv != set(roles):
+        err("asset-roles", f"roles without kind media|convention: {sorted(set(roles) - media - conv)}")
     if used - set(roles):
         err("asset-roles", f"schema fields use unknown roles {used - set(roles)}")
-    if set(roles) - used:
-        err("asset-roles", f"roles never wired to a schema field: {set(roles) - used}")
-    ex_roles = set(re.findall(r'"role": "([a-z-]+)"', open(os.path.join(REPO, "schema/example.pagespec.json"), encoding="utf-8").read()))
+    if media - used:
+        err("asset-roles", f"media roles never wired to a schema field: {media - used}")
+    if conv & used:
+        err("asset-roles", f"convention roles must not be asset fields: {conv & used}")
+    import semantic_validate as V
+    adv = open(os.path.join(REPO, "schema/tests/adversarial_test.py"), encoding="utf-8").read()
+    for r in sorted(conv):
+        rules = roles[r].get("enforcedBy") or []
+        if not rules or any(x not in V.GENERATED_MODE_RULES or f'"{x}"' not in adv for x in rules):
+            err("asset-roles", f"convention role {r} must be enforcedBy GENERATED_MODE_* rules that exist in the validator and are proven by the adversarial suite (got {rules})")
+    for r, v in roles.items():
+        if len(v.get("generatedModeGuidance") or "") < 20:
+            err("asset-roles", f"{r}: missing generatedModeGuidance")
+    ex_roles = set()
+    for rel in example_files():
+        ex_roles |= set(re.findall(r'"role": "([a-z-]+)"', open(os.path.join(REPO, rel), encoding="utf-8").read()))
     if not ex_roles or ex_roles - set(roles):
-        err("asset-roles", f"example uses roles {ex_roles} outside the vocabulary")
+        err("asset-roles", f"examples use roles {ex_roles - set(roles)} outside the vocabulary")
+    gen_safe_media = {r for r in media if roles[r]["availability"] == "generation-safe"}
+    if gen_safe_media - ex_roles - {"social-icon", "flag", "icon", "icon-illustrated", "background-glow"}:
+        err("asset-roles", f"generation-safe roles not exercised by any example: {sorted(gen_safe_media - ex_roles)}")
 
 
 @check("token-resolution")
@@ -398,8 +447,21 @@ def _():
     tpl = load("templates/templates.json")["templates"]
     pairs = [tuple(p) for r in load("compatibility/graph.json")["rules"] if r["id"] == "NO_ADJACENT_SAME_CATEGORY" for p in r["exceptions"]["pairs"]]
     for a, b in pairs:
-        if not any([a, b] == [x["section"] for x in t["nodes"]][i:i + 2] for t in tpl.values() for i in range(len(t["nodes"]))):
+        seen = any([a, b] == [x["section"] for x in t["nodes"]][i:i + 2] for t in tpl.values() for i in range(len(t["nodes"])))
+        rep = a == b and any(n["section"] == a and n["repeatable"] for t in tpl.values() for n in t["nodes"])
+        if not (seen or rep):
             err("graph-validator-parity", f"adjacency exception {a}->{b} is not observed in any real template")
+    gm = {r["id"] for r in load("compatibility/graph.json")["generatedModeRules"]}
+    if gm != set(V.GENERATED_MODE_RULES):
+        err("graph-validator-parity", f"generatedModeRules graph-only {sorted(gm - set(V.GENERATED_MODE_RULES))}, validator-only {sorted(set(V.GENERATED_MODE_RULES) - gm)}")
+    import inspect
+    code = inspect.getsource(V.check_generated)
+    adv = open(os.path.join(REPO, "schema/tests/adversarial_test.py"), encoding="utf-8").read()
+    for rid in sorted(V.GENERATED_MODE_RULES):
+        if f'"{rid}"' not in code:
+            err("graph-validator-parity", f"{rid} is never raised by check_generated()")
+        if f'"{rid}"' not in adv:
+            err("graph-validator-parity", f"{rid} has no adversarial mutation in schema/tests/adversarial_test.py")
 
 
 @check("route-coverage")
@@ -426,9 +488,174 @@ def _():
     import semantic_validate as V
     for t in V.TEMPLATES:
         for r in V.TEMPLATES[t]["routes"]:
-            e, w = V.validate(V.build_control(t, r))
-            for x in e + w:
-                err("controls-pass", f"{t} {r}: {x}")
+            for mode in ("reference", "generated"):
+                e, w = V.validate(V.build_control(t, r, mode))
+                for x in e + w:
+                    err("controls-pass", f"{t} {r} [{mode}]: {x}")
+
+
+# ------------------------------------------------------------------ baseline pins (independent literals)
+PINNED_AVAILABILITY = {
+    "product-screenshot": "reference-only", "product-animation": "reference-only", "illustration-mock": "reference-only",
+    "icon": "generation-safe", "icon-illustrated": "generation-safe", "background-art": "reference-only",
+    "background-glow": "generation-safe", "brand-mark": "reference-only", "social-icon": "generation-safe", "flag": "generation-safe",
+    "third-party-logo": "blocked-for-generation", "placeholder-brand-mark": "generation-safe", "generated-product-visual": "generation-safe",
+    "generated-product-animation": "generation-safe", "generated-background-art": "generation-safe", "generated-mock-scene": "generation-safe",
+    "fictional-avatar": "generation-safe", "generic-partner-placeholder": "generation-safe", "placeholder-url": "generation-safe",
+    "original-copy": "generation-safe",
+}
+RETRIEVAL_INELIGIBLE_PIN = {"forms.partner-popup"}
+UTILITY_WORDS = ("cookie", "consent", "modal", "dialog", "drawer", "overlay", "popup", "toast", "preloader", "cursor", "ticker")
+WRAPPER_THRESHOLDS = {"HERO_WARN_PX": 1800, "HERO_FAIL_PX": 3000, "SHARE_WARN_PCT": 50.0, "SHARE_FAIL_PCT": 60.0, "MIN_SECTIONS": 3, "VIEWPORT_WIDTH": 1440}
+SOURCE_BRAND_MINIMUM = {"stems": {"vault", "overcode"}, "domains": {"usevault.ai", "overcode.tech"}, "endpoints": {"/api/add-lead"},
+                        "min_copy_shingles": 1000, "min_cta_strings": 3, "min_asset_stems": 20}
+
+
+def sections_on_disk():
+    out = {}
+    for f in sorted(os.listdir(os.path.join(REPO, "sections"))):
+        if f.endswith(".json"):
+            c = load("sections/" + f)
+            out[c["id"]] = c
+    return out
+
+
+@check("availability-pin")
+def _():
+    import semantic_validate as V
+    roles = load("assets/asset-roles.json")["roles"]
+    if V.PINNED_AVAILABILITY != PINNED_AVAILABILITY:
+        err("availability-pin", "schema/semantic_validate.py PINNED_AVAILABILITY differs from the pin in verify_all.py")
+    for r, want in PINNED_AVAILABILITY.items():
+        if roles.get(r, {}).get("availability") != want:
+            err("availability-pin", f"asset role {r} must be '{want}', registry says {roles.get(r, {}).get('availability')!r}")
+    for r, v in roles.items():
+        if r not in PINNED_AVAILABILITY:
+            err("availability-pin", f"asset role {r} has no pinned availability")
+        if v.get("availability") not in ("reference-only", "generation-safe", "blocked-for-generation"):
+            err("availability-pin", f"{r}: availability {v.get('availability')!r} not in the closed set")
+        if v.get("availability") != "generation-safe":
+            subs = v.get("generationSafeSubstitutes") or []
+            if not subs or any(PINNED_AVAILABILITY.get(x) != "generation-safe" for x in subs):
+                err("availability-pin", f"{r}: generationSafeSubstitutes {subs} must be non-empty and generation-safe")
+    if roles.get("brand-mark", {}).get("policy") == "must-reuse-exact":
+        err("availability-pin", "brand-mark (the source wordmark) can never be must-reuse-exact")
+    allow = load("tokens/llm/component-allowlist.json")
+    want_safe = [r for r in roles if PINNED_AVAILABILITY.get(r) == "generation-safe"]
+    if sorted(allow.get("generationSafeAssetRoles", [])) != sorted(want_safe):
+        err("availability-pin", "allowlist generationSafeAssetRoles differs from the pinned generation-safe roles")
+    for sid, c in sections_on_disk().items():
+        offered = set()
+
+        def walk(o):
+            if isinstance(o, dict):
+                if set(o.get("properties", {})) >= {"role", "ref", "alt"}:
+                    offered.update(o["properties"]["role"]["enum"])
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for v in o:
+                    walk(v)
+        walk(c["contentSchema"])
+        want = sorted(r for r in offered if PINNED_AVAILABILITY.get(r) == "generation-safe")
+        if sorted(c.get("generatedAssetRoles", [])) != want:
+            err("availability-pin", f"{sid}: generatedAssetRoles {c.get('generatedAssetRoles')} != pinned generation-safe roles of its fields {want}")
+
+
+@check("retrieval-pin")
+def _():
+    import semantic_validate as V
+    if set(V.RETRIEVAL_INELIGIBLE) != RETRIEVAL_INELIGIBLE_PIN:
+        err("retrieval-pin", f"schema/semantic_validate.py RETRIEVAL_INELIGIBLE {sorted(V.RETRIEVAL_INELIGIBLE)} differs from the pin in verify_all.py {sorted(RETRIEVAL_INELIGIBLE_PIN)}")
+    allow = load("tokens/llm/component-allowlist.json")
+    if set(allow.get("retrievalIneligibleSections", [])) != RETRIEVAL_INELIGIBLE_PIN:
+        err("retrieval-pin", "allowlist retrievalIneligibleSections differs from the pin")
+    for sid, c in sections_on_disk().items():
+        want = sid not in RETRIEVAL_INELIGIBLE_PIN
+        if c.get("retrievalEligible") is not want:
+            err("retrieval-pin", f"{sid}: retrievalEligible {c.get('retrievalEligible')!r}, pinned {want}")
+        if (any(w in sid for w in UTILITY_WORDS) or c.get("constraints", {}).get("overlay") is True) and want:
+            err("retrieval-pin", f"{sid} looks like runtime/utility UI but is not pinned retrieval-ineligible")
+        if not want and len(c.get("retrievalReason") or "") < 30:
+            err("retrieval-pin", f"{sid}: ineligible without a 30+ character retrievalReason")
+    schema = load("schema/pagespec.schema.json")
+    if schema["definitions"]["node"]["properties"].get("retrievalEligible", {}).get("type") != "boolean":
+        err("retrieval-pin", "PageSpec node.retrievalEligible must be a closed boolean")
+
+
+@check("section-contracts")
+def _():
+    import semantic_validate as V
+    secs = sections_on_disk()
+    for sid, c in secs.items():
+        for f in V.validate_section_contract(c):
+            err("section-contracts", f)
+    src = ARGS.source_root
+    present = 0
+    for sid, c in secs.items():
+        s = c.get("source") or {}
+        fp = os.path.join(src, s.get("file", ""))
+        if not s.get("file") or not os.path.isfile(fp):
+            WARNINGS.append(f"[section-contracts] {sid}: source file {s.get('file')!r} not present (no sibling source tree) - range not re-read")
+            continue
+        present += 1
+        a, b = (int(x) for x in s["lines"].split("-"))
+        lines = open(fp, encoding="utf-8").read().split("\n")
+        if a < 1 or b < a or b > len(lines):
+            err("section-contracts", f"{sid}: source range {s['lines']} outside {s['file']} ({len(lines)} lines)")
+            continue
+        if not re.search(r"<" + re.escape(s["tag"]) + r"(\s|>|/|$)", lines[a - 1]):
+            err("section-contracts", f"{sid}: tag <{s['tag']}> not at {s['file']}:{a} (found {lines[a - 1].strip()[:60]!r})")
+    if present == 0:
+        WARNINGS.append("[section-contracts] no sibling source tree - source ranges not re-read (expected for a standalone copy)")
+    tpl_secs = {n["section"] for t in load("templates/templates.json")["templates"].values() for n in t["nodes"]}
+    for sid in sorted(set(secs) - tpl_secs):
+        err("section-contracts", f"{sid} is used by no template")
+
+
+@check("generated-mode-registry")
+def _():
+    ar = load("assets/asset-roles.json")
+    sb = ar.get("sourceBrand") or {}
+    hashes = load("assets/source-copy-hashes.json")
+    m = SOURCE_BRAND_MINIMUM
+    if not m["stems"] <= set((sb.get("brand") or {}).get("stems", [])):
+        err("generated-mode-registry", f"sourceBrand.brand.stems lost pinned stems {sorted(m['stems'])}")
+    if not m["domains"] <= set((sb.get("urls") or {}).get("domains", [])):
+        err("generated-mode-registry", f"sourceBrand.urls.domains lost pinned domains {sorted(m['domains'])}")
+    if not m["endpoints"] <= set((sb.get("urls") or {}).get("endpointPaths", [])):
+        err("generated-mode-registry", "sourceBrand.urls.endpointPaths lost the source form endpoint")
+    if len(hashes.get("copyShingles", [])) < m["min_copy_shingles"] or len(hashes.get("ctaStrings", [])) < m["min_cta_strings"] or len(hashes.get("assetStems", [])) < m["min_asset_stems"]:
+        err("generated-mode-registry", "assets/source-copy-hashes.json fell below the pinned minimum (copy / CTA / asset-stem hashes)")
+    for k in ("people", "customers", "partners"):
+        if not (sb.get(k) or {}).get("patterns"):
+            err("generated-mode-registry", f"sourceBrand.{k} has no patterns")
+    if os.path.isdir(os.path.join(ARGS.source_root, "src")) and os.path.abspath(ARGS.source_root) == os.path.dirname(REPO):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("build_source_brand", os.path.join(HERE, "build_source_brand.py"))
+        B = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(B)
+        reg, h = B.build()
+        if reg != sb or B.dump(h) != open(os.path.join(REPO, "assets/source-copy-hashes.json"), encoding="utf-8").read():
+            err("generated-mode-registry", "sourceBrand / source-copy-hashes.json are OUT OF DATE against the real source (run extraction/build_source_brand.py)")
+    else:
+        WARNINGS.append("[generated-mode-registry] no sibling src/ - registry not re-derived (pinned minimum checked only)")
+
+
+@check("wrapper-gate")
+def _():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("wrapper_gate", os.path.join(HERE, "wrapper_gate.py"))
+    WG = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(WG)
+    for k, v in WRAPPER_THRESHOLDS.items():
+        if getattr(WG, k, None) != v:
+            err("wrapper-gate", f"wrapper_gate.{k} = {getattr(WG, k, None)!r}, pinned {v!r}")
+    errs, warns, info = WG.evaluate(*WG.load_inputs(REPO))
+    for c, msg in errs:
+        err("wrapper-gate", f"{c}: {msg}")
+    for c, msg in warns:
+        WARNINGS.append(f"[wrapper-gate] {c}: {msg}")
 
 
 def main():

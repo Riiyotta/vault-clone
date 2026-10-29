@@ -1,11 +1,26 @@
 {
   "id": "features.partner-audience",
   "category": "FEATURES",
+  "semantic": {
+    "id": "features.partner-audience",
+    "category": "FEATURES"
+  },
+  "source": {
+    "id": "src.components.partners.Audience.section@L85",
+    "file": "src/components/partners/Audience.jsx",
+    "lines": "85-111",
+    "tag": "section"
+  },
   "purpose": "Scannable list of criteria/audiences: illustrated icon badge, display title and one sentence per row, over a corner accent glow.",
   "implementedBy": "src/components/partners/Audience.jsx",
   "evidence": [
     "ev.spec.pul.audience",
     "ev.src.icon-row"
+  ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [
+    "background-glow",
+    "icon-illustrated"
   ],
   "contentSchema": {
     "type": "object",

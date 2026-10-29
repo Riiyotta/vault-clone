@@ -815,9 +815,9 @@
     {
       "id": "ev.src.popup",
       "path": "src/components/partners/PartnerPopup.jsx",
-      "lines": "97-104",
+      "lines": "112-119",
       "anchor": "rounded-[32px]",
-      "claim": "Popup ring + dialog."
+      "claim": "Popup ring (line 112: max-w-[484px], rounded-[32px], bg-popup-border, 1px padding, scale-in) wrapping the role=dialog panel (lines 113-119: rounded-[32px], bg-surface, p-6 / md:p-8)."
     },
     {
       "id": "ev.src.icon-row",
@@ -850,9 +850,9 @@
     {
       "id": "ev.ia",
       "path": "ia.json",
-      "lines": "160-305",
+      "lines": "166-311",
       "anchor": "\"templates\": [",
-      "claim": "IA templates/sections backbone (17 routes, 6 templates, 23 sections)."
+      "claim": "IA templates backbone (17 routes, 6 templates; 24 sections after the legal article was split into header + per-h2 sections)."
     },
     {
       "id": "ev.recon.qa",
@@ -867,6 +867,111 @@
       "lines": null,
       "anchor": null,
       "claim": "QA screenshot of the clone (evidence only; never shipped)."
+    },
+    {
+      "id": "ev.src.footer-credit",
+      "path": "src/components/Footer.jsx",
+      "lines": "117-131",
+      "anchor": "overcode-wordmark.svg",
+      "claim": "Footer bottom bar: 'Built by' label + third-party builder credit link (the agency's wordmark + icon badge, external link)."
+    },
+    {
+      "id": "ev.src.footer-links",
+      "path": "src/components/Footer.jsx",
+      "lines": "65-75",
+      "anchor": "linkedin.com/company/usevault-ai",
+      "claim": "Footer social links: the source's LinkedIn company page, Telegram channel and mailto address."
+    },
+    {
+      "id": "ev.src.i18n-meta",
+      "path": "src/i18n/en.js",
+      "lines": "13-20",
+      "anchor": "twitterTitle",
+      "claim": "Home page meta: product name used as the head/twitter title."
+    },
+    {
+      "id": "ev.src.i18n-providers",
+      "path": "src/i18n/en.js",
+      "lines": "58-62",
+      "anchor": "providers like",
+      "claim": "Product card copy names a real integration provider."
+    },
+    {
+      "id": "ev.src.countries-credit",
+      "path": "src/components/partners/countries.js",
+      "lines": "1-3",
+      "anchor": "(c) 2022",
+      "claim": "Country list credited to its open-source author (a real, named person)."
+    },
+    {
+      "id": "ev.src.partner-mock-rows",
+      "path": "src/components/partners/PartnersHero.jsx",
+      "lines": "68-72",
+      "anchor": "Northwind Studio",
+      "claim": "Partners hero mock: workspace rows with two-letter avatar badges and mock company names."
+    },
+    {
+      "id": "ev.spec.pul.mock-rows",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "110-111",
+      "anchor": "Northwind Studio",
+      "claim": "Measured on the original: the mock workspace rows (initial badges + company names)."
+    },
+    {
+      "id": "ev.spec.home.third-party",
+      "path": "CLONE_SPEC.md",
+      "lines": "322-322",
+      "anchor": "Intercom launcher",
+      "claim": "Third-party chat launcher visible on the original, intentionally not cloned."
+    },
+    {
+      "id": "ev.spec.pul.form-endpoint",
+      "path": "CLONE_SPEC_partners_ua_legal.md",
+      "lines": "320-320",
+      "anchor": "/api/add-lead",
+      "claim": "The original's lead form posts to its own endpoint (not exercised; the clone submits locally)."
+    },
+    {
+      "id": "ev.src.mock-avatar",
+      "path": "src/components/partners/PartnerMock.jsx",
+      "lines": "47-71",
+      "anchor": "export function Avatar",
+      "claim": "Mock avatar badge (28px, rounded-md, initials) used by workspace / referral rows."
+    },
+    {
+      "id": "ev.src.mock-brand-avatar",
+      "path": "src/components/partners/PartnerSteps.jsx",
+      "lines": "55-61",
+      "anchor": "partners/vault-mark",
+      "claim": "Intro-call mock: the team row uses the source's own brand mark as its avatar."
+    },
+    {
+      "id": "ev.src.mock-vaultmark",
+      "path": "src/components/migration/Mock.jsx",
+      "lines": "78-81",
+      "anchor": "VaultMark",
+      "claim": "Migration mocks embed the source's brand mark (fill currentColor)."
+    },
+    {
+      "id": "ev.src.legal-header",
+      "path": "src/pages/LegalPage.jsx",
+      "lines": "167-182",
+      "anchor": "<h1 id={d.h1.id}",
+      "claim": "Legal document header: h1, operator + effective-date line, optional intro (subprocessors) and preamble (DPA)."
+    },
+    {
+      "id": "ev.src.legal-section",
+      "path": "src/pages/LegalPage.jsx",
+      "lines": "183-199",
+      "anchor": "<hr className={HR} />",
+      "claim": "One heading-bounded legal part per h2: rule, numbered h2, its body blocks and any h3 sub-parts."
+    },
+    {
+      "id": "ev.src.legal-outline",
+      "path": "src/components/legal/outline.js",
+      "lines": "12-98",
+      "anchor": "export const LEGAL_DOCS",
+      "claim": "Real legal outlines: terms 18 h2, privacy 15 h2 (+4 h3), dpa 11 numbered h2 + 2 annexes + contact (+4 h3), subprocessors intro only."
     }
   ],
   "correctionsOverridingSpecs": [
@@ -1782,6 +1887,1366 @@
       "evidence": [
         "ev.spec.pm.m4"
       ]
+    }
+  },
+  "sectionHeights": {
+    "$comment": "Rendered height of every template section at 1440x900 on every route of templates/routes.json, written by extraction/measure_sections.mjs from a local production build of the clone (vite build + vite preview) and read by extraction/wrapper_gate.py. inFlow=false = position fixed/absolute (an overlay that takes no page height). chrome.grid-frame is the sum of the 1px frame separators. Legal pages are split at their top-level <hr> rules.",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "measuredOn": "2026-10-29",
+    "tool": "playwright chromium 153.0.8010.12 via extraction/measure_sections.mjs",
+    "source": "local production build of the sibling clone (npx vite build --outDir <scratch>; npx vite preview --port 5705)",
+    "routes": {
+      "/": {
+        "template": "template.home",
+        "measuredPath": "/",
+        "pageHeight": 6624,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.home-dashboard",
+            "heightPx": 1362.78,
+            "position": "relative",
+            "inFlow": true
+          },
+          {
+            "section": "narrative.scroll-statement",
+            "heightPx": 808,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.product-grid",
+            "heightPx": 814,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-automation",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-reports",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-security",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.lottie-steps",
+            "heightPx": 914,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua": {
+        "template": "template.home",
+        "measuredPath": "/ua",
+        "pageHeight": 6624,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.home-dashboard",
+            "heightPx": 1362.78,
+            "position": "relative",
+            "inFlow": true
+          },
+          {
+            "section": "narrative.scroll-statement",
+            "heightPx": 808,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.product-grid",
+            "heightPx": 814,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-automation",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-reports",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.showcase-security",
+            "heightPx": 708,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.lottie-steps",
+            "heightPx": 914,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/pricing": {
+        "template": "template.pricing",
+        "measuredPath": "/pricing",
+        "pageHeight": 4632,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.pricing-plans",
+            "heightPx": 1112.2,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "commerce.compare-table",
+            "heightPx": 1377,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 628,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.lottie-steps",
+            "heightPx": 914,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/pricing": {
+        "template": "template.pricing",
+        "measuredPath": "/ua/pricing",
+        "pageHeight": 4656,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.pricing-plans",
+            "heightPx": 1136.2,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "commerce.compare-table",
+            "heightPx": 1377,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 628,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.lottie-steps",
+            "heightPx": 914,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/migration-offer": {
+        "template": "template.migration-offer",
+        "measuredPath": "/migration-offer",
+        "pageHeight": 4806,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.migration-split",
+            "heightPx": 720,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.migration-explainer",
+            "heightPx": 793,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.migration-conditions",
+            "heightPx": 901,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 780,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.visual-steps",
+            "heightPx": 1011,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/migration-offer": {
+        "template": "template.migration-offer",
+        "measuredPath": "/ua/migration-offer",
+        "pageHeight": 4806,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 5,
+            "position": "static",
+            "instances": 5,
+            "inFlow": true
+          },
+          {
+            "section": "hero.migration-split",
+            "heightPx": 720,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.migration-explainer",
+            "heightPx": 793,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.migration-conditions",
+            "heightPx": 901,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 780,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.visual-steps",
+            "heightPx": 1011,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/partners": {
+        "template": "template.partners",
+        "measuredPath": "/partners",
+        "pageHeight": 5446,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 6,
+            "position": "static",
+            "instances": 6,
+            "inFlow": true
+          },
+          {
+            "section": "hero.partners-split",
+            "heightPx": 720,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.partner-audience",
+            "heightPx": 901,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "narrative.scroll-statement",
+            "heightPx": 756,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.partner-value-grid",
+            "heightPx": 903.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 552,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.visual-steps",
+            "heightPx": 1011,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "forms.partner-popup",
+            "heightPx": 540.8,
+            "position": "fixed",
+            "opened": "first <main> button (hero CTA)",
+            "pageHeightUnchanged": true,
+            "inFlow": false
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/partners": {
+        "template": "template.partners",
+        "measuredPath": "/ua/partners",
+        "pageHeight": 5447,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 6,
+            "position": "static",
+            "instances": 6,
+            "inFlow": true
+          },
+          {
+            "section": "hero.partners-split",
+            "heightPx": 720,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.partner-audience",
+            "heightPx": 902.59,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "narrative.scroll-statement",
+            "heightPx": 756,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "features.partner-value-grid",
+            "heightPx": 903.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "support.faq-accordion",
+            "heightPx": 552,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "process.visual-steps",
+            "heightPx": 1011,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "forms.partner-popup",
+            "heightPx": 540.8,
+            "position": "fixed",
+            "opened": "first <main> button (hero CTA)",
+            "pageHeightUnchanged": true,
+            "inFlow": false
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/terms": {
+        "template": "template.legal",
+        "measuredPath": "/terms",
+        "pageHeight": 5063,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 244.8,
+            "position": "static",
+            "rules": 18,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 227.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 453.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 299.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 227.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 345.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 299.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/privacy": {
+        "template": "template.legal",
+        "measuredPath": "/privacy",
+        "pageHeight": 5446,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 244.8,
+            "position": "static",
+            "rules": 15,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 227.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 1293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 402.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 402.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 345.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/dpa": {
+        "template": "template.legal",
+        "measuredPath": "/dpa",
+        "pageHeight": 4758,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 423.8,
+            "position": "static",
+            "rules": 15,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 829.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 227.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 227.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 181.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 299.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 402.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/subprocessors": {
+        "template": "template.legal",
+        "measuredPath": "/subprocessors",
+        "pageHeight": 1222,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 623.8,
+            "position": "static",
+            "rules": 0,
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/terms": {
+        "template": "template.legal",
+        "measuredPath": "/ua/terms",
+        "pageHeight": 5505,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 244.8,
+            "position": "static",
+            "rules": 18,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 279.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 479.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 325.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 371.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 325.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/privacy": {
+        "template": "template.legal",
+        "measuredPath": "/ua/privacy",
+        "pageHeight": 5810,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 244.8,
+            "position": "static",
+            "rules": 15,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 1319.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 428.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 428.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 371.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/dpa": {
+        "template": "template.legal",
+        "measuredPath": "/ua/dpa",
+        "pageHeight": 5096,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 423.8,
+            "position": "static",
+            "rules": 15,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 855.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 253.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 207.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 325.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 428.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-section",
+            "heightPx": 293.8,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/ua/subprocessors": {
+        "template": "template.legal",
+        "measuredPath": "/ua/subprocessors",
+        "pageHeight": 1248,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "content.legal-header",
+            "heightPx": 649.8,
+            "position": "static",
+            "rules": 0,
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      },
+      "/*": {
+        "template": "template.not-found",
+        "measuredPath": "/missing-page",
+        "pageHeight": 1040,
+        "sections": [
+          {
+            "section": "chrome.navbar",
+            "heightPx": 120,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.grid-frame",
+            "heightPx": 2,
+            "position": "static",
+            "instances": 2,
+            "inFlow": true
+          },
+          {
+            "section": "hero.not-found",
+            "heightPx": 442,
+            "position": "static",
+            "inFlow": true
+          },
+          {
+            "section": "chrome.footer",
+            "heightPx": 476,
+            "position": "static",
+            "inFlow": true
+          }
+        ]
+      }
     }
   }
 }

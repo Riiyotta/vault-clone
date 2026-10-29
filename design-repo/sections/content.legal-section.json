@@ -1,60 +1,155 @@
 {
-  "id": "content.legal-article",
+  "id": "content.legal-section",
   "category": "CONTENT",
-  "purpose": "Document body for legal pages: h1, effective-date line, numbered h2/h3 outline with paragraphs, lists and responsive tables; no hero, TOC or motion. Body text is ALWAYS placeholder.",
+  "semantic": {
+    "id": "content.legal-section",
+    "category": "CONTENT"
+  },
+  "source": {
+    "id": "src.pages.LegalPage.hr@L187",
+    "file": "src/pages/LegalPage.jsx",
+    "lines": "187-197",
+    "tag": "hr"
+  },
+  "purpose": "One heading-bounded part of a legal document: top rule, numbered h2 (anchor = its number or annex slug), its body blocks (paragraphs, lists, responsive tables) and any h3 sub-parts. Repeated once per h2.",
   "implementedBy": "src/pages/LegalPage.jsx + src/components/legal/outline.js",
   "evidence": [
-    "ev.spec.pul.legal-layout",
+    "ev.src.legal-section",
+    "ev.src.legal-outline",
     "ev.spec.pul.legal-type",
     "ev.spec.pul.legal-tables",
     "ev.spec.pul.legal-behaviour",
-    "ev.src.page-legal"
+    "ev.src.legal-table-baseline"
   ],
+  "retrievalEligible": true,
+  "generatedAssetRoles": [],
   "contentSchema": {
     "type": "object",
     "additionalProperties": false,
     "required": [
       "bodyIsPlaceholder",
-      "title",
-      "effectiveDateLine",
-      "outline"
+      "anchorId",
+      "heading",
+      "blocks"
     ],
     "properties": {
       "bodyIsPlaceholder": {
         "type": "boolean",
         "const": true
       },
-      "title": {
+      "anchorId": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9.-]*$"
+      },
+      "heading": {
         "type": "string",
         "minLength": 1,
-        "maxLength": 56,
-        "maxWords": 4
+        "maxLength": 140,
+        "maxWords": 10
       },
-      "effectiveDateLine": {
-        "type": "string",
-        "minLength": 1,
-        "maxLength": 84,
-        "maxWords": 6
-      },
-      "outline": {
+      "blocks": {
         "type": "array",
+        "items": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "text"
+              ],
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "p"
+                  ]
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 364,
+                  "maxWords": 26
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "items"
+              ],
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "ul"
+                  ]
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 168,
+                    "maxWords": 12
+                  },
+                  "minItems": 1,
+                  "maxItems": 8
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "columns",
+                "rowCount"
+              ],
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "table"
+                  ]
+                },
+                "columns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 56,
+                    "maxWords": 4
+                  },
+                  "minItems": 2,
+                  "maxItems": 4
+                },
+                "rowCount": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 8
+                }
+              }
+            }
+          ]
+        },
+        "minItems": 0,
+        "maxItems": 6
+      },
+      "subsections": {
+        "type": "array",
+        "maxItems": 6,
         "items": {
           "type": "object",
           "additionalProperties": false,
           "required": [
-            "level",
             "anchorId",
             "heading",
             "blocks"
           ],
           "properties": {
-            "level": {
-              "type": "string",
-              "enum": [
-                "h2",
-                "h3"
-              ]
-            },
             "anchorId": {
               "type": "string",
               "pattern": "^[a-z0-9][a-z0-9.-]*$"
@@ -157,9 +252,7 @@
               "maxItems": 6
             }
           }
-        },
-        "minItems": 1,
-        "maxItems": 20
+        }
       }
     }
   },
@@ -179,8 +272,8 @@
     }
   },
   "constraints": {
-    "onePerPage": true,
-    "mustFollowGridFrame": true
+    "repeatable": true,
+    "mustFollow": "content.legal-header"
   },
   "responsive": [
     {
@@ -205,48 +298,27 @@
     }
   ],
   "accessibility": {
-    "headings": "h1 id = slug, h2 ids = section numbers; table header th; link underline offset 4"
+    "headings": "h2 ids = section numbers / annex slugs, h3 ids = 'n.m'; scroll-mt-10; table header th; link underline offset 4"
   },
   "example": {
     "bodyIsPlaceholder": true,
-    "title": "Placeholder legal document",
-    "effectiveDateLine": "Effective date: placeholder",
-    "outline": [
+    "anchorId": "1",
+    "heading": "1. Placeholder section",
+    "blocks": [
       {
-        "level": "h2",
-        "anchorId": "1",
-        "heading": "1. Placeholder section",
-        "blocks": [
-          {
-            "kind": "p",
-            "text": "Placeholder legal paragraph. Replace with text approved by counsel."
-          }
-        ]
+        "kind": "p",
+        "text": "Placeholder legal paragraph. Replace with text approved by counsel."
       },
       {
-        "level": "h2",
-        "anchorId": "2",
-        "heading": "2. Placeholder section",
-        "blocks": [
-          {
-            "kind": "ul",
-            "items": [
-              "Placeholder list item",
-              "Placeholder list item"
-            ]
-          },
-          {
-            "kind": "table",
-            "columns": [
-              "Item",
-              "Purpose",
-              "Location"
-            ],
-            "rowCount": 3
-          }
-        ]
+        "kind": "table",
+        "columns": [
+          "Item",
+          "Purpose",
+          "Location"
+        ],
+        "rowCount": 3
       }
     ]
   },
-  "notes": "CLONE-ONLY CONTENT: the clone's legal body text is placeholder by design and generated pages must keep it that way (bodyIsPlaceholder const true). Real legal text must come from counsel."
+  "notes": "CLONE-ONLY CONTENT: legal body text is placeholder by design. One node per h2 (terms 18, privacy 15, dpa 14 incl. annexes and contact, subprocessors 0)."
 }
